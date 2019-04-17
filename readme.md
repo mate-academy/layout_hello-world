@@ -1,5 +1,7 @@
 # Hello world
 
+Display the "Hello, world!" text with the default browser styling.
+
 You can find some sample screenshots in the [backstop_data/bitmaps_reference](backstop_data/bitmaps_reference) folder.
 
 ___
