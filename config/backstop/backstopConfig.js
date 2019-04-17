@@ -29,9 +29,9 @@ const config = {
   id: 'test',
   viewports: [
     {
-      name: 'tablet_h',
-      width: 1024,
-      height: 768
+      name: 'custom-size',
+      width: 200,
+      height: 50
     }
   ],
   scenarios: [
