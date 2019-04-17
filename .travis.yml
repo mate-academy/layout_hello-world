@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+- '11'
+cache: npm
+services:
+- docker
+before_script:
+  - bash ./config/hooks/start-server.sh
+script:
+  - bash ./config/hooks/test-ci.sh
