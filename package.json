@@ -1,7 +1,7 @@
 {
-  "name": "layout-task-boilerplate",
+  "name": "hello-world",
   "version": "1.0.0",
-  "description": "Boilerplate for layout tasks with visual regression testing",
+  "description": "Hello World",
   "main": "src/main.js",
   "scripts": {
     "css:test:ci": "rimraf ./backstop_data/bitmaps_test && backstop test --docker --config=config/backstop/backstopConfigTravis",
