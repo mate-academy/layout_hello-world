@@ -1,5 +1,8 @@
-# Boilerplate for layout tasks
+# Hello world
 
+You can find some sample screenshots in the [backstop_data/bitmaps_reference](backstop_data/bitmaps_reference) folder.
+
+___
 **Read the guideline before start**
 
 [Guideline](https://github.com/mate-academy/layout_task-guideline/blob/master/README.md)
