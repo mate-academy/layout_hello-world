@@ -1,6 +1,6 @@
 # Hello world
 
-Display the "Hello, world!" text with the default browser styling.
+Display the "Hello, world!" text with the default browser styling. Please do not use any enclosing tags like `<h1>` or `<p>`.
 
 You can find some sample screenshots in the [backstop_data/bitmaps_reference](backstop_data/bitmaps_reference) folder.
 
