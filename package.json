@@ -5,6 +5,7 @@
   "main": "src/main.js",
   "scripts": {
     "css:test:ci": "rimraf ./backstop_data/bitmaps_test && backstop test --docker --config=config/backstop/backstopConfigTravis",
+    "css:test:linux": "sudo rm -rf ./backstop_data/bitmaps_test && backstop test --docker --config=config/backstop/backstopConfigTravis",
     "css:test": "rimraf ./backstop_data/bitmaps_test && backstop test --docker --config=config/backstop/backstopConfigDev",
     "css:reference": "rimraf ./backstop_data/bitmaps_reference && backstop reference --docker --config=config/backstop/backstopConfigDev",
     "deploy": "bash ./config/hooks/deploy.sh",
