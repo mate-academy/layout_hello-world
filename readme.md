@@ -11,5 +11,5 @@ ___
 
 **Result**
 
-[Demo link](https://mate-academy.github.io/layout_task-boilerplate-ci/) <br>
-[Test report](https://mate-academy.github.io/layout_task-boilerplate-ci/report/html_report/)
+[Demo link](https://github.com/GitKurmax/layout_hello-world.git) <br>
+[Test report](https://github.com/GitKurmax/layout_hello-world.git/report/html_report/)
