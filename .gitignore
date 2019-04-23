@@ -3,3 +3,4 @@ node_modules
 .DS_Store
 yarn.lock
 backstop_data
+!backstop_data/engine_scripts/
