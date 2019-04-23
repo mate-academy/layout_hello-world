@@ -11,5 +11,5 @@ ___
 
 **Result**
 
-[Demo link](https://github.com/GitKurmax/layout_hello-world) <br>
-[Test report](https://github.com/GitKurmax/layout_hello-world/report/html_report/)
+[Demo link](https://github.com/GitKurmax/layout_hello-world.git) <br>
+[Test report](https://github.com/GitKurmax/layout_hello-world.git/report/html_report/)
