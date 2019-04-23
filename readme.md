@@ -9,5 +9,6 @@ ___
 
 **Result**
 
-[Demo link](https://mate-academy.github.io/layout_task-boilerplate-ci/) <br>
-[Test report](https://mate-academy.github.io/layout_task-boilerplate-ci/report/html_report/)
+[Demo link](https://kresh24107.github.io/layout_hello-world/) <br>
+[Test report](https://kresh24107.github.io/layout_hello-world/report/html_report/) <br>
+[GitHub files](https://github.com/mate-academy/layout_hello-world/pull/17/files)
