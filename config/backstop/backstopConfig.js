@@ -4,7 +4,7 @@
 const basicScenario = {
   label: 'test', // name of the test
   url: 'http://localhost:8080',
-  referenceUrl: '', // put here reference to github-pages with ready project
+  referenceUrl: 'https://mate-academy.github.io/layout_solutions/html-form/',
   readyEvent: '',
   readySelector: '',
   delay: 1000,
@@ -32,7 +32,36 @@ module.exports = {
     }
   ],
   scenarios: [
-    { ...basicScenario }
+    {
+      ...basicScenario,
+      label: 'entire-document',
+      selectors: ['document']
+    },
+    {
+      ...basicScenario,
+      label: 'form',
+      selectors: ['form']
+    },
+    {
+      ...basicScenario,
+      label: 'fieldset', // test all fieldsets because all of them are different
+      selectors: ['fieldset']
+    },
+    {
+      ...basicScenario,
+      label: 'submit-button',
+      selectors: ['[type="submit"]']
+    },
+    {
+      ...basicScenario,
+      label: 'field-placeholder',
+      selectors: ['[data-qa="field-placeholder"]']
+    },
+    {
+      ...basicScenario,
+      label: 'field-placeholder',
+      selectors: ['[data-qa="field-value"]']
+    }
     // define here scenarios for testing
   ],
   paths: {
