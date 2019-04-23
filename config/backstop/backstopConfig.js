@@ -1,15 +1,10 @@
 'use strict';
 
-const urls = {
-  development: 'http://host.docker.internal:8080',
-  travis: 'http://127.0.0.1:8080'
-};
-
 // https://github.com/garris/BackstopJS#advanced-scenarios
 const basicScenario = {
   label: 'test', // name of the test
-  url: urls.development,
-  referenceUrl: '', // put here reference to github-pages with ready project
+  url: 'http://localhost:8080',
+  referenceUrl: 'https://mate-academy.github.io/layout_solutions/hello-world/',
   readyEvent: '',
   readySelector: '',
   delay: 1000,
@@ -25,7 +20,7 @@ const basicScenario = {
   requireSameDimensions: true
 };
 
-const config = {
+module.exports = {
   id: 'test',
   viewports: [
     {
@@ -53,12 +48,5 @@ const config = {
   asyncCaptureLimit: 5,
   asyncCompareLimit: 50,
   debug: false,
-  debugWindow: false,
-  // eslint-disable-next-line max-len
-  dockerCommandTemplate: 'docker run --rm -it --network host --mount type=bind,source="{cwd}",target=/src backstopjs/backstopjs:{version} {backstopCommand} {args}'
-};
-
-module.exports = {
-  urls,
-  config
+  debugWindow: false
 };
