@@ -16,7 +16,6 @@
   "devDependencies": {
     "@mate-academy/eslint-config": "0.0.5",
     "@mate-academy/stylelint-config": "0.0.4",
-    "backstopjs": "^4.0.3",
     "eslint": "^5.16.0",
     "eslint-plugin-node": "^8.0.1",
     "htmllint": "^0.7.3",
@@ -52,5 +51,8 @@
       "post-commit": "git update-index --again",
       "pre-commit": "lint-staged"
     }
+  },
+  "dependencies": {
+    "backstopjs": "^3.8.8"
   }
 }

@@ -30,7 +30,10 @@ module.exports = {
     }
   ],
   scenarios: [
-    { ...basicScenario }
+    {
+      ...basicScenario,
+      selectors: ['body']
+    }
     // define here scenarios for testing
   ],
   paths: {
@@ -41,11 +44,11 @@ module.exports = {
     ci_report: 'backstop_data/ci_report'
   },
   report: ['browser'],
-  engine: 'puppeteer',
+  engine: 'chromy',
   engineOptions: {
     args: ['--no-sandbox']
   },
-  asyncCaptureLimit: 5,
+  asyncCaptureLimit: 1,
   asyncCompareLimit: 50,
   debug: false,
   debugWindow: false
