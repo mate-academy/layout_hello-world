@@ -9,5 +9,5 @@ ___
 
 **Result**
 
-[Demo link](https://ilovepinkpony1.github.io/fs_apr19_vitalii_o/) <br>
-[Test report](https://ilovepinkpony1.github.io/fs_apr19_vitalii_o/report/html_report/)
+[Demo link](https://ilovepinkpony1.github.io/layout_hello-world/) <br>
+[Test report](https://ilovepinkpony1.github.io/layout_hello-world/report/html_report/)
