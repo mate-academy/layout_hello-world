@@ -30,7 +30,7 @@ Form should have different inputs with such types:
 Also form should have textarea and select elements.
   
 Every field should have label which focus the input by click. See reference 
-![screenshot](./references/form-example.png) for label names.
+[screenshot](./references/form-example.png) for label names.
 Every field should have name attribute.
   
 - You should use every of this attribute at least one time - required, min, max, 
