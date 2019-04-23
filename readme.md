@@ -9,5 +9,5 @@ ___
 
 **Result**
 
-[Demo link](https://mate-academy.github.io/layout_task-boilerplate-ci/) <br>
-[Test report](https://mate-academy.github.io/layout_task-boilerplate-ci/report/html_report/)
+[Demo link](https://ilovepinkpony1/layout_hello-world/) <br>
+[Test report](https://ilovepinkpony1/layout_hello-world/report/html_report/)
