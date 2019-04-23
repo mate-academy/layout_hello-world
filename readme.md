@@ -9,5 +9,5 @@ ___
 
 **Result**
 
-[Demo link](https://mate-academy.github.io/layout_task-boilerplate-ci/) <br>
-[Test report](https://mate-academy.github.io/layout_task-boilerplate-ci/report/html_report/)
+[UPDATE DEMO LINK](https://<your_account>.github.io/<repo_name>/) <br>
+[UPDATE TEST REPORT LINK](https://<your_account>.github.io/<repo_name>/report/html_report/)
