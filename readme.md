@@ -25,6 +25,8 @@ row should have blue color on :hover.
 * add attribute `data-qa="hover"` to the 4th link for testing (`Ноутбуки и 
 компьютеры`)
 
+Screenshot of the header:
+![screenshot](./references/header-example.png)
 
 ---
 **Read the guideline before start**
