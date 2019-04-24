@@ -4,7 +4,7 @@
 const basicScenario = {
   label: 'test', // name of the test
   url: 'http://localhost:8080',
-  referenceUrl: '', // put here reference to github-pages with ready project
+  referenceUrl: 'https://mate-academy.github.io/layout_solutions/header/',
   readyEvent: '',
   readySelector: '',
   delay: 1000,
@@ -32,7 +32,23 @@ module.exports = {
     }
   ],
   scenarios: [
-    { ...basicScenario }
+    {
+      ...basicScenario,
+      label: 'header-tag',
+      selectors: ['header']
+    },
+    {
+      ...basicScenario,
+      label: 'nav-tag',
+      selectors: ['nav']
+    },
+    {
+      ...basicScenario,
+      label: 'nav-item-hovered',
+      selectors: ['[data-qa="hover"]'],
+      hoverSelector: '[data-qa="hover"]',
+      postInteractionWait: 1000
+    }
     // define here scenarios for testing
   ],
   paths: {
