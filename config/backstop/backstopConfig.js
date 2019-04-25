@@ -4,7 +4,7 @@
 const basicScenario = {
   label: 'test', // name of the test
   url: 'http://localhost:8080',
-  referenceUrl: 'https://mate-academy.github.io/layout_solutions/header/',
+  referenceUrl: 'https://mate-academy.github.io/layout_solutions/moyo-header/',
   readyEvent: '',
   readySelector: '',
   delay: 1000,
@@ -26,8 +26,13 @@ module.exports = {
   onReadyScript: 'puppet/onReady.js',
   viewports: [
     {
-      name: 'tablet_h',
+      name: 'desktop_s',
       width: 1024,
+      height: 768
+    },
+    {
+      name: 'desktop_m',
+      width: 1200,
       height: 768
     }
   ],
@@ -48,6 +53,11 @@ module.exports = {
       selectors: ['[data-qa="hover"]'],
       hoverSelector: '[data-qa="hover"]',
       postInteractionWait: 1000
+    },
+    {
+      ...basicScenario,
+      label: 'nav-item-active',
+      selectors: ['a.is-active']
     }
     // define here scenarios for testing
   ],

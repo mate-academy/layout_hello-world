@@ -4,7 +4,11 @@
 Create HTML page with header. Understand `flexbox` usage. Create
 HTML layout from the mockup.
 
-Use this [mockup](#) for development.
+Use this [mockup](https://www.figma.com/file/KAV1NnDp7hgQtPnaD6XdOcnG/Moyo-Header?node-id=0%3A1) 
+for development.
+
+If you don't want to see other users cursors you can disable `Multiplayer 
+Cursors` in figma. [Learn how](https://mate-academy.github.io/layout_task-guideline/figma.html#multiplayer-cursors)
 
 ## Common mistakes
 * Do not use tabs. Use 2 spaces for indentation.
@@ -14,12 +18,15 @@ Use this [mockup](#) for development.
 
 ## Requirements:
 
+* pay attention the mock is adaptive. Develop the layout to fit on 1024px and
+1200px the same as on the mock.
 * reset browser's default margins
 * use images from [src/images](src/images)
 * Use semantic tags. `<header>`, `<nav>`
 * change links styles on :hover
-* link with blue color and line below is an active link. Add some class pointing 
-that it is active (`class="active"`).
+* follow styles from the mock
+* link with blue color and line below is an active link. It should have
+ `class="is-active"` and relevant styles
 * link with only blue color is an example of `:hover` styles. Every link in the 
 row should have blue color on :hover. 
 * add attribute `data-qa="hover"` to the 4th link for testing (`Ноутбуки и 
