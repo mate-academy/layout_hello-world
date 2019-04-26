@@ -15,7 +15,7 @@
   "license": "GPL-3.0",
   "devDependencies": {
     "@mate-academy/eslint-config": "*",
-    "@mate-academy/htmllint-config": "0.0.2",
+    "@mate-academy/htmllint-config": "*",
     "@mate-academy/stylelint-config": "*",
     "backstopjs": "^4.0.3",
     "eslint": "^5.16.0",
