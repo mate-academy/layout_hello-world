@@ -11,5 +11,5 @@ ___
 **Result**
 
 [DEMO LINK](https://OlgaTitarenko.github.io/fs_on_dec18_olha/) <br>
-[TEST REPORT LINK](https://OlgaTitarenko.github.io/fs_on_dec18_olha/report/html_report/)
+[TEST REPORT LINK](https://OlgaTitarenko.github.io/fs_on_dec18_olha/report/html_report/) <br>
 [PR](https://github.com/mate-academy/layout_hello-world/pull/39)
