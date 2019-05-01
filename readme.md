@@ -10,6 +10,6 @@ ___
 
 **Result**
 
-[DEMO LINK](https://OlgaTitarenko.github.io/fs_on_dec18_olha/) <br>
-[TEST REPORT LINK](https://OlgaTitarenko.github.io/fs_on_dec18_olha/report/html_report/) <br>
+[DEMO LINK](https://OlgaTitarenko.github.io/layout_hello-world/) <br>
+[TEST REPORT LINK](https://OlgaTitarenko.github.io/layout_hello-world/report/html_report/) <br>
 [PR](https://github.com/mate-academy/layout_hello-world/pull/39)
