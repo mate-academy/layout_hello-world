@@ -11,4 +11,4 @@ ___
 **Result**
 
 [UPDATE DEMO LINK](https://tamango92.github.io/layout_hello-world/) <br>
-[UPDATE TEST REPORT LINK](https://tamango92.github.io/<repo_name>/report/layout_hello-world/)
+[UPDATE TEST REPORT LINK](https://tamango92.github.io/layout_hello-world/report/html_report/)
