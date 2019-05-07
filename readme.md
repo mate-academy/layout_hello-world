@@ -11,4 +11,4 @@ ___
 **Result**
 
 [DEMO LINK](https://Drew11.github.io/layout_hello-world) <br>
-[TEST REPORT LINK](https://Drew11..github.io/layout_hello-world/report/html_report/)
+[TEST REPORT LINK](https://Drew11.github.io/layout_hello-world/report/html_report/)
