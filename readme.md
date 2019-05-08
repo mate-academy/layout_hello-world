@@ -10,5 +10,5 @@ ___
 
 **Result**
 
-[UPDATE DEMO LINK](https://<your_account>.github.io/<repo_name>/) <br>
-[UPDATE TEST REPORT LINK](https://<your_account>.github.io/<repo_name>/report/html_report/)
+[DEMO LINK](https://Helena-herasymiuk.github.io/layout_hello-world/) <br>
+[TEST REPORT LINK](https://Helena-herasymiuk.github.io/layout_hello-world/report/html_report/)
