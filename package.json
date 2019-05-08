@@ -53,5 +53,8 @@
       "post-commit": "git update-index --again",
       "pre-commit": "lint-staged"
     }
+  },
+  "dependencies": {
+    "ecstatic": "^4.1.2"
   }
 }
