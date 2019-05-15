@@ -10,6 +10,6 @@ ___
 
 **Result**
 
-[-DEMO LINK](https://ovchinnikovs.github.io/layout_hello-world/) <br>
+- [DEMO LINK](https://ovchinnikovs.github.io/layout_hello-world/) <br>
 **Зафейлились тесты, не могу прикремить ссылку на репорт** <br>
-[UPDATE TEST REPORT LINK](https://<your_account>.github.io/<repo_name>/report/html_report/)
+- [TEST REPORT LINK](https://<your_account>.github.io/<repo_name>/report/html_report/)
