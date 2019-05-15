@@ -9,5 +9,6 @@ ___
 [Guideline](https://mate-academy.github.io/layout_task-guideline/)
 
 **Result**
+
 [DEMO LINK](https://volodymyrkryvytskyy.github.io/layout_hello-world/) <br>
-[UPDATE TEST REPORT LINK](https://volodymyrkryvytskyy.github.io/layout_hello-world/report/html_report/)
+[TEST REPORT LINK](https://volodymyrkryvytskyy.github.io/layout_hello-world/report/html_report/)
