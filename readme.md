@@ -11,5 +11,4 @@ ___
 **Result**
 
 - [DEMO LINK](https://ovchinnikovs.github.io/layout_hello-world/) <br>
-**Зафейлились тесты, не могу прикремить ссылку на репорт** <br>
-- [TEST REPORT LINK](https://<your_account>.github.io/<repo_name>/report/html_report/)
+- [REPORT LINK](https://ovchinnikovs.github.io/layout_hello-world/report/html_report/)
