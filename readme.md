@@ -11,4 +11,4 @@ ___
 **Result**
 
 [ DEMO LINK]( https://artem-kumskov.github.io/layout_hello-world/) <br>
-[TEST REPORT LINK](https://github.com/Artem-Kumskov/layout_hello-world/tree/gh-pages/report/html_report)
+[TEST REPORT LINK](https://artem-kumskov.github.io/layout_hello-world/report/html_report/)
