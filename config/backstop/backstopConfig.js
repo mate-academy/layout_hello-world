@@ -17,7 +17,7 @@ const basicScenario = {
   selectorExpansion: true,
   expect: 0,
   misMatchThreshold: 1, // 1% of 100%
-  requireSameDimensions: true
+  requireSameDimensions: true,
 };
 
 module.exports = {
@@ -28,40 +28,40 @@ module.exports = {
     {
       name: 'tablet_h',
       width: 1024,
-      height: 768
-    }
+      height: 768,
+    },
   ],
   scenarios: [
     {
       ...basicScenario,
       label: 'entire-document',
-      selectors: ['document']
+      selectors: ['document'],
     },
     {
       ...basicScenario,
       label: 'form',
-      selectors: ['form']
+      selectors: ['form'],
     },
     {
       ...basicScenario,
       label: 'fieldset', // test all fieldsets because all of them are different
-      selectors: ['fieldset']
+      selectors: ['fieldset'],
     },
     {
       ...basicScenario,
       label: 'submit-button',
-      selectors: ['[type="submit"]']
+      selectors: ['[type="submit"]'],
     },
     {
       ...basicScenario,
       label: 'field-placeholder',
-      selectors: ['[data-qa="field-placeholder"]']
+      selectors: ['[data-qa="field-placeholder"]'],
     },
     {
       ...basicScenario,
       label: 'field-placeholder',
-      selectors: ['[data-qa="field-value"]']
-    }
+      selectors: ['[data-qa="field-value"]'],
+    },
     // define here scenarios for testing
   ],
   paths: {
@@ -69,15 +69,15 @@ module.exports = {
     bitmaps_test: 'backstop_data/bitmaps_test',
     engine_scripts: 'backstop_data/engine_scripts',
     html_report: 'backstop_data/html_report',
-    ci_report: 'backstop_data/ci_report'
+    ci_report: 'backstop_data/ci_report',
   },
   report: ['browser'],
   engine: 'puppeteer',
   engineOptions: {
-    args: ['--no-sandbox']
+    args: ['--no-sandbox'],
   },
   asyncCaptureLimit: 5,
   asyncCompareLimit: 50,
   debug: false,
-  debugWindow: false
+  debugWindow: false,
 };
