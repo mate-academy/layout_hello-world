@@ -17,7 +17,7 @@ const basicScenario = {
   selectorExpansion: true,
   expect: 0,
   misMatchThreshold: 1, // 1% of 100%
-  requireSameDimensions: true
+  requireSameDimensions: true,
 };
 
 module.exports = {
@@ -28,37 +28,37 @@ module.exports = {
     {
       name: 'desktop_s',
       width: 1024,
-      height: 768
+      height: 768,
     },
     {
       name: 'desktop_m',
       width: 1200,
-      height: 768
-    }
+      height: 768,
+    },
   ],
   scenarios: [
     {
       ...basicScenario,
       label: 'header-tag',
-      selectors: ['header']
+      selectors: ['header'],
     },
     {
       ...basicScenario,
       label: 'nav-tag',
-      selectors: ['nav']
+      selectors: ['nav'],
     },
     {
       ...basicScenario,
       label: 'nav-item-hovered',
       selectors: ['[data-qa="hover"]'],
       hoverSelector: '[data-qa="hover"]',
-      postInteractionWait: 1000
+      postInteractionWait: 1000,
     },
     {
       ...basicScenario,
       label: 'nav-item-active',
-      selectors: ['a.is-active']
-    }
+      selectors: ['a.is-active'],
+    },
     // define here scenarios for testing
   ],
   paths: {
@@ -66,15 +66,15 @@ module.exports = {
     bitmaps_test: 'backstop_data/bitmaps_test',
     engine_scripts: 'backstop_data/engine_scripts',
     html_report: 'backstop_data/html_report',
-    ci_report: 'backstop_data/ci_report'
+    ci_report: 'backstop_data/ci_report',
   },
   report: ['browser'],
   engine: 'puppeteer',
   engineOptions: {
-    args: ['--no-sandbox']
+    args: ['--no-sandbox'],
   },
   asyncCaptureLimit: 5,
   asyncCompareLimit: 50,
   debug: false,
-  debugWindow: false
+  debugWindow: false,
 };
