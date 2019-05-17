@@ -17,7 +17,7 @@ const basicScenario = {
   selectorExpansion: true,
   expect: 0,
   misMatchThreshold: 1, // 1% of 100%
-  requireSameDimensions: true
+  requireSameDimensions: true,
 };
 
 module.exports = {
@@ -26,11 +26,11 @@ module.exports = {
     {
       name: 'custom-size',
       width: 200,
-      height: 50
-    }
+      height: 50,
+    },
   ],
   scenarios: [
-    { ...basicScenario }
+    { ...basicScenario },
     // define here scenarios for testing
   ],
   paths: {
@@ -38,15 +38,15 @@ module.exports = {
     bitmaps_test: 'backstop_data/bitmaps_test',
     engine_scripts: 'backstop_data/engine_scripts',
     html_report: 'backstop_data/html_report',
-    ci_report: 'backstop_data/ci_report'
+    ci_report: 'backstop_data/ci_report',
   },
   report: ['browser'],
   engine: 'puppeteer',
   engineOptions: {
-    args: ['--no-sandbox']
+    args: ['--no-sandbox'],
   },
   asyncCaptureLimit: 5,
   asyncCompareLimit: 50,
   debug: false,
-  debugWindow: false
+  debugWindow: false,
 };
