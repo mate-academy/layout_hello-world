@@ -1,5 +1,5 @@
 {
-  "name": "hello-world",
+  "name": "package",
   "version": "1.0.0",
   "description": "Hello World",
   "main": "src/main.js",
@@ -17,7 +17,7 @@
     "@mate-academy/eslint-config": "*",
     "@mate-academy/htmllint-config": "*",
     "@mate-academy/stylelint-config": "*",
-    "backstopjs": "^4.0.3",
+    "backstopjs": "^4.0.6",
     "eslint": "^5.16.0",
     "eslint-plugin-node": "^8.0.1",
     "htmllint": "^0.7.3",
@@ -53,5 +53,16 @@
       "post-commit": "git update-index --again",
       "pre-commit": "lint-staged"
     }
-  }
+  },
+  "dependencies": {
+    "phantomjs": "^2.1.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandrachupryna/layout_hello-world.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alexandrachupryna/layout_hello-world/issues"
+  },
+  "homepage": "https://github.com/alexandrachupryna/layout_hello-world#readme"
 }
