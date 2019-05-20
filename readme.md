@@ -10,5 +10,5 @@ ___
 
 **Result**
 
-[UPDATE DEMO LINK](https://SvitlanaTsupryk-jul18.github.io/layout_hello-world/) <br>
+[UPDATE DEMO LINK](https://SvitlanaTsupryk-jul18.github.io/layout_hello-world/index.html) <br>
 [UPDATE TEST REPORT LINK](https://SvitlanaTsupryk-jul18.github.io/layout_hello-world/backstop_data/html_report/index.html)
