@@ -1,2 +1,2 @@
-[Demo link](https://github.com/greencodeio/layout_hello-world/tree/fe_mar19_igor/src/index.html)
-[Test report](https://github.com/greencodeio/layout_hello-world/tree/gh-pages/report/html_report/index.html)
+-[Demo link](https://greencodeio.github.io/layout_hello-world/)  
+-[Test report](https://greencodeio.github.io/layout_hello-world/report/html_report/index.html)
