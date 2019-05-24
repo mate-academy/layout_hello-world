@@ -10,5 +10,5 @@ ___
 
 **Result**
 
-- [DEMO LINK](https://simonshulhin.github.io/layout_hello-world/) <br>
+- [LINK](https://simonshulhin.github.io/layout_hello-world/) <br>
 - [TEST REPORT LINK](https://simonshulhin.github.io/layout_hello-world/report/html_report/)
