@@ -10,5 +10,5 @@ ___
 
 **Result**
 
-[DEMO LINK](https://annakuvarina.github.io/layout_hello-world/) <br>
-[TEST REPORT LINK](https://annakuvarina.github.io/layout_hello-world/report/html_report/)
+[DEMO LINK](https://github.com/AnnaKuvarina/layout_hello-world) <br>
+[TEST REPORT LINK](https://github.com/AnnaKuvarina/layout_hello-world/report/html_report/)
