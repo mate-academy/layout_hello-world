@@ -11,4 +11,4 @@ ___
 **Result**
 
 [DEMO LINK](https://ivanvfedenko.github.io/layout_hello-world/) <br>
-[TEST REPORT LINK](https://ivanvfedenko.github.io/layout_hello-worl/report/html_report/)
+[TEST REPORT LINK](https://ivanvfedenko.github.io/layout_hello-world/report/html_report/)
