@@ -10,5 +10,5 @@ ___
 
 **Result**
 
-[DEMO LINK](https://natanua.github.io/layout_hello-world/) <br>
+[DEMO LINK](https://natanua.github.io/layout_hello-world/)  <br>
 [TEST REPORT LINK](https://natanua.github.io/layout_hello-world/report/html_report/)
