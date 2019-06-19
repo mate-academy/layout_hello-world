@@ -10,5 +10,5 @@ ___
 
 **Result**
 
-[UPDATE DEMO LINK](https://<your_account>.github.io/<repo_name>/) <br>
-[UPDATE TEST REPORT LINK](https://<your_account>.github.io/<repo_name>/report/html_report/)
+[DEMO LINK](https://afin9n.github.io/layout_hello-world/) <br>
+[TEST REPORT LINK](https://Afin9n.github.io/layout_hello-world/report/html_report/)
