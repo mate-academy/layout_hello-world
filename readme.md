@@ -10,5 +10,5 @@ Display the "Hello, world!" text with the default browser styling. Please do not
 
 **Result**
 
-[UPDATE DEMO LINK](https://mozbie.github.io/layout_hello-world/) <br>
-[UPDATE TEST REPORT LINK](https://mozbie.github.io/layout_hello-world/report/html_report/)
+[DEMO LINK](https://mozbie.github.io/layout_hello-world/) <br>
+[TEST REPORT LINK](https://mozbie.github.io/layout_hello-world/report/html_report/)
