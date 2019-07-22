@@ -11,4 +11,4 @@ ___
 **Result**
 
 [UPDATE DEMO LINK](https://github.com/amserhii11/layout_hello-world/blob/master/src/index.html) <br>
-[UPDATE TEST REPORT LINK](file:///home/serhii/Desktop/Mate/Lesson0/layout_hello-world/backstop_data/html_report/index.html)
+[UPDATE TEST REPORT LINK](https://amserhii11.github.io/layout_hello-world/report/html_report/)
