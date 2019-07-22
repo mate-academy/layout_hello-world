@@ -10,5 +10,5 @@ ___
 
 **Result**
 
-[UPDATE DEMO LINK](https://<your_account>.github.io/<repo_name>/) <br>
-[UPDATE TEST REPORT LINK](https://<your_account>.github.io/<repo_name>/report/html_report/)
+[UPDATE DEMO LINK](https://yakovina.github.io/fs_jul19_sasha/) <br>
+[UPDATE TEST REPORT LINK](https://yakovina.github.io/fs_jul19_sasha/report/html_report/)
