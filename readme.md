@@ -10,5 +10,5 @@ ___
 
 **Result**
 
-[UPDATE DEMO LINK](https://vladyslavsak.github.io/layout_hello-world/) <br>
-[UPDATE TEST REPORT LINK](https://vladyslavsak.github.io/layout_hello-world/report/html_report/)
+[My demo link](https://vladyslavsak.github.io/layout_hello-world/) <br>
+[Test report for my demo](https://vladyslavsak.github.io/layout_hello-world/report/html_report/)
