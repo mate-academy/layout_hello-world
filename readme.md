@@ -10,5 +10,5 @@ ___
 
 **Result**
 
-[UPDATE DEMO LINK](https://yakovina.github.io/fs_jul19_sasha/) <br>
-[UPDATE TEST REPORT LINK](https://yakovina.github.io/fs_jul19_sasha/report/html_report/)
+[DEMO LINK](https://yakovina.github.io/layout_hello-world/) <br>
+[TEST REPORT LINK](https://yakovina.github.io/layout_hello-world/report/html_report/)
