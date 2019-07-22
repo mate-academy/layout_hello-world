@@ -1,8 +1,9 @@
 # Hello world
 
-Display the "Hello, world!" text with the default browser styling. Please do not 
+Display the "Hello, world!" text with the default browser styling. Please do not
 use any enclosing tags like `<h1>` or `<p>`.
-___
+
+---
 
 **Read the guideline before start**
 
@@ -11,4 +12,4 @@ ___
 **Result**
 
 [UPDATE DEMO LINK](https://KosBelozyorov.github.io/layout_hello-world/) <br>
-[UPDATE TEST REPORT LINK](https://KosBelozyorov.github.io/layout_hello-world/report/html_report/)
+[UPDATE TEST REPORT LINK](https://KosBelozyorov.github.io/layout_hello-world/pull/169/)
