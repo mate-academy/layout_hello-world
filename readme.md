@@ -11,5 +11,5 @@ ___
 **Result**
 
 [UPDATE DEMO LINK](https://igaryok.github.io/layout_hello-world/) <br>
-[UPDATE TEST REPORT LINK](https://igaryok.github.io/layout_hello-world/report/html_report/)
+[UPDATE TEST REPORT LINK](https://igaryok.github.io/layout_hello-world/report/html_report/)<br/>
 [RP](https://github.com/mate-academy/layout_hello-world/pull/177) 
