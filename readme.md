@@ -11,4 +11,4 @@ ___
 **Result**
 
 [DEMO LINK](https://github.com/ArnyCorp/layout_hello-world) <br>
-[UPDATE TEST REPORT LINK](https://<your_account>.github.io/<repo_name>/report/html_report/)
+[TEST REPORT LINK](https://github.com/mate-academy/layout_hello-world/pull/172)
