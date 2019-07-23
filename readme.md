@@ -12,4 +12,4 @@ use any enclosing tags like `<h1>` or `<p>`.
 **Result**
 
 [UPDATE DEMO LINK](https://KosBelozyorov.github.io/layout_hello-world/) <br>
-[UPDATE TEST REPORT LINK](https://KosBelozyorov.github.io/layout_hello-world/pull/169/)
+[UPDATE TEST REPORT LINK](https://KosBelozyorov.github.io/layout_hello-world/report/html_report/)
