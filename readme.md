@@ -10,5 +10,5 @@ ___
 
 **Result**
 
-[UPDATE DEMO LINK](https://rop777.github.io/layout_hello-world/) <br>
-[UPDATE TEST REPORT LINK](https://Drop777.github.io/layout_hello-world/report/html_report/)
+- [UPDATE LINK](https://drop777.github.io/layout_hello-world/) <br>
+- [UPDATE TEST REPORT LINK](https://drop777.github.io/layout_hello-world/report/html_report/)
