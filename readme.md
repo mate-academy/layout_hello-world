@@ -41,6 +41,7 @@ minlength, maxlength, etc
 Add attribute `data-qa="field-placeholder"` to test it correctly.
 - The text fields should have disabled autocomplete.
 - Add a button which submits the form.
+- Add onsubmit="onSubmit(event)" attribute to show form value on form submit
 - Vertical distance between inputs should be 10px
 - Vertical distance between blocks with inputs should be 20px
 - Any other styles should be browser's default
