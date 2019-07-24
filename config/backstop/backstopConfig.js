@@ -4,17 +4,16 @@
 
 const backstop = require('@mate-academy/backstop-config');
 
-const { basicScenario, viewports, scenarios } = backstop;
+const { basicScenario } = backstop;
 
 const config = {
   ...backstop,
-  viewports: [...viewports, {
+  viewports: [{
     name: 'custom-size',
     width: 200,
     height: 50,
   }],
   scenarios: [
-    ...scenarios,
     {
       ...basicScenario,
       label: 'Elementary test',
