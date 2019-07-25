@@ -10,5 +10,5 @@ ___
 
 **Result**
 
-[UPDATE DEMO LINK](https://shklyarigor2015.github.io/layout_hello-world/) <br>
-[UPDATE TEST REPORT LINK](https://shklyarigor2015.github.io/layout_hello-world/report/html_report/)
+- [DEMO LINK](https://shklyarigor2015.github.io/layout_hello-world/) <br>
+- [TEST REPORT LINK](https://shklyarigor2015.github.io/layout_hello-world/report/html_report/)
