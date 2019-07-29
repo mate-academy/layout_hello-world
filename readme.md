@@ -11,4 +11,4 @@ ___
 **Result**
 
 - [DEMO LINK](https://chernijanna.github.io/layout_hello-world/) <br>
-- [TEST REPORT LINK](https://chernijanna.github.io/layout_hello-world/report/html_report/)
+- [TEST REPORT LINK](file:///D:/chernij.projects/layout_hello-world/backstop_data/html_report/index.html)
