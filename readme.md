@@ -10,5 +10,5 @@ ___
 
 **Result**
 
-[UPDATE DEMO LINK](https://veronika-donets.github.io/layout_hello-world/) <br>
-[UPDATE TEST REPORT LINK](https://veronika-donets.github.io/layout_hello-world//report/html_report/)
+[DEMO LINK](https://veronika-donets.github.io/layout_hello-world/) <br>
+[TEST REPORT LINK](https://veronika-donets.github.io/layout_hello-world//report/html_report/)
