@@ -10,5 +10,5 @@ ___
 
 **Result**
 
- - [DEMO LINK](https://lubremets.github.io/layout_hello-world/) <br>
- - [TEST REPORT LINK](https://lubremets.github.io/layout_hello-world//report/html_report/)
+ [DEMO LINK](https://lubremets.github.io/layout_hello-world/) <br>
+ [TEST REPORT LINK](https://lubremets.github.io/layout_hello-world//report/html_report/)
