@@ -6,5 +6,5 @@ ___
 
 **Result**
 
-[Demo link](https://nikakarelets.github.io/layout_hello-world/)
+[Demo link](https://nikakarelets.github.io/layout_hello-world/) \
 [Test report](https://nikakarelets.github.io/layout_hello-world/report/html_report/)
