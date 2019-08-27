@@ -10,5 +10,5 @@ ___
 
 **Result**
 
-[UPDATE DEMO LINK](https://lyudmila1711.github.io/layout_hello-world/) <br>
-[UPDATE TEST REPORT LINK](https://lyudmila1711.github.io/layout_hello-world/report/html_report/)
+ - [UPDATE DEMO LINK](https://lyudmila1711.github.io/layout_hello-world/) <br>
+ - [UPDATE TEST REPORT LINK](https://lyudmila1711.github.io/layout_hello-world/report/html_report/)
