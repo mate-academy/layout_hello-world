@@ -14,10 +14,10 @@
   "author": "Mate Academy",
   "license": "GPL-3.0",
   "devDependencies": {
+    "@mate-academy/backstop-config": "*",
     "@mate-academy/eslint-config": "*",
     "@mate-academy/htmllint-config": "*",
     "@mate-academy/stylelint-config": "*",
-    "@mate-academy/backstop-config": "*",
     "backstopjs": "^4.0.3",
     "eslint": "^5.16.0",
     "eslint-plugin-node": "^8.0.1",
@@ -54,5 +54,8 @@
       "post-commit": "git update-index --again",
       "pre-commit": "lint-staged"
     }
+  },
+  "dependencies": {
+    "ecstatic": "^3.3.2"
   }
 }
