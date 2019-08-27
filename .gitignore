@@ -5,4 +5,3 @@ yarn.lock
 package-lock.json
 backstop_data
 !backstop_data/engine_scripts/
-!backstop_data/html_report/
