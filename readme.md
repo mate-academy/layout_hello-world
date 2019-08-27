@@ -11,4 +11,4 @@ ___
 **Result**
 
 - [DEMO LINK](https://frucelestine.github.io/layout_hello-world/) <br>
-[UPDATE TEST REPORT LINK](https://<your_account>.github.io/<repo_name>/report/html_report/)
+- [TEST REPORT LINK](https://frucelestine.github.io/layout_hello-world/report/html_report/)
