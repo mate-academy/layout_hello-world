@@ -1,7 +1,7 @@
 # Frontend practice with html forms
 
 ## Main goal:
-Create HTML page with form. On form submit send form data to 
+Create HTML page with form. On form submit send form data to
 `https://mate-academy-form-lesson.herokuapp.com/create-application`
 
 Screenshot of this form:
@@ -28,14 +28,14 @@ Form should have different inputs with such types:
   - date
 
 Also form should have textarea and select elements.
-  
-Every field should have label which focus the input by click. See reference 
+
+Every field should have label which focus the input by click. See reference
 [screenshot](./references/form-example.png) for label names.
 Every field should have name attribute.
-  
-- You should use every of this attribute at least one time - required, min, max, 
+
+- You should use every of this attribute at least one time - required, min, max,
 minlength, maxlength, etc
-- The number field should have default value: '12'. Add attribute 
+- The number field should have default value: '12'. Add attribute
 `data-qa="field-value"` to test it correctly.
 - The email field should have placeholder value: 'email@example.com'.
 Add attribute `data-qa="field-placeholder"` to test it correctly.
@@ -53,5 +53,5 @@ Add attribute `data-qa="field-placeholder"` to test it correctly.
 
 **Result**
 
-- [UPDATE DEMO LINK](https://<your_account>.github.io/<repo_name>/)
-- [UPDATE TEST REPORT LINK](https://<your_account>.github.io/<repo_name>/report/html_report/)
+- [DEMO LINK](https://felineking.github.io/layout_html-form/)
+- [TEST REPORT LINK](https://felineking.github.io/layout_html-form/report/html_report/)
