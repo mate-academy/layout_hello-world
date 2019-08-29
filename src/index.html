@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -9,11 +9,75 @@
           maximum-scale=1.0,
           minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>HTML-form</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
+  <form onsubmit="onSubmit(event)" action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+    <fieldset class="fieldset-block">
+      <legend>Personal information</legend>
+      <label class="in-form"> Surname:
+        <input type="text" name="lastname" placeholder="in english pls" autocomplete="off">
+      </label>
+      <label class="in-form"> Name:
+        <input type="text" name="firstname" placeholder="in english pls" autocomplete="off" required>
+      </label>
+      <label class="in-form"> How old are You?
+        <input type="number" name="age" value="12" min="8" max="110" data-qa="field-value">
+      </label>
+      <label class="in-form"> Full date of birth:
+        <input type="date" name="born-date">
+      </label>
+      <label class="in-form">I accept the term of the agreement
+        <input type="checkbox" name="nobody_reads_them_anyway" required>
+      </label>
+    </fieldset>
+    <fieldset class="fieldset-block">
+      <legend>Registration</legend>
+      <label class="in-form">E-mail:
+        <input type="email" name="e-mail" placeholder="email@example.com" data-qa="field-placeholder" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 3}$" required>
+      </label>
+      <label class="in-form">Password:
+        <input type="password" name="password" minlength="6" maxlength="16" required>
+      </label>
+    </fieldset>
+    <fieldset class="fieldset-block">
+      <legend>An interesting fact about you!</legend>
+      <label class="in-form">Do you love cats?
+        <input type="radio" name="love-cats">Yes
+        <input type="radio" name="love-cats">No
+      </label>
+      <label class="in-form">What is your favorite color?
+        <input type="color" name="fav-color">
+      </label>
+      <label class="in-form">What time do you go to bed?
+        <input type="time" name="sleep-time">
+      </label>
+      <label class="in-form">What are your favorite brand of cars?
+        <select name="fav-car" size="4">
+          <option value="BMW">BMW</option>
+          <option value="Audi">Audi</option>
+          <option value="Lada">Lada</option>
+        </select>
+      </label>
+      <label class="in-form">How do you rate our work?
+        <input type="range" min="1" max="10" step="1" name="own-rate" value="5">
+      </label>
+    </fieldset>
+    <fieldset class="fieldset-block">
+      <legend>Additional info:</legend>
+      <label class="in-form">Comments:
+        <textarea name="feedback"></textarea>
+      </label>
+      <label class="in-form">Would you recommend us?
+        <select name="recommend">
+          <option value="Yes">yes</option>
+          <option value="No">no</option>
+        </select>
+      </label>
+    </fieldset>
+    <button type="submit">Submit</button>
+  </form>
 <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
