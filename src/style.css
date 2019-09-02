@@ -1,5 +1,6 @@
-.in-form {
+.field {
   display: block;
+  margin-bottom: 10px;
 }
 
 .fieldset-block {
@@ -7,5 +8,5 @@
 }
 
 .fieldset-block > .in-form:not(:first-of-type) {
-  margin-top: 10px;
+  margin-top: 10;
 }
