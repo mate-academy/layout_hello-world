@@ -17,15 +17,15 @@
     <fieldset class="fieldset-block">
       <legend>Personal information</legend>
       <label class="field"> Surname:
-        <input type="text" name="lastname" placeholder="in english pls" autocomplete="off">
+        <input type="text" name="lastname" autocomplete="off">
       </label>
-      <label class="field">Name:
-        <input type="text" name="firstname" placeholder="in english pls" autocomplete="off" required>
+      <label class="field"> Name:
+        <input type="text" name="firstname" autocomplete="off" required>
       </label>
-      <label class="field">How old are You?
+      <label class="field"> How old are You?
         <input type="number" name="age" value="12" min="8" max="110" data-qa="field-value">
       </label>
-      <label class="field">Full date of birth:
+      <label class="field"> Full date of birth:
         <input type="date" name="born-date">
       </label>
       <label class="field">I accept the term of the agreement
@@ -43,9 +43,10 @@
     </fieldset>
     <fieldset class="fieldset-block">
       <legend>An interesting fact about you!</legend>
-          Do you love cats?
-          <label class="cats"><input type="radio" name="love-cats">Yes</label>
-          <label class="cats"><input type="radio" name="love-cats">No</label>
+      <div class="field"><span>Do you love cats?</span>
+        <label><input type="radio" name="love-cats"> Yes</label>
+        <label><input type="radio" name="love-cats"> No</label>
+      </div>
       <label class="field">What is your favorite color?
         <input type="color" name="fav-color">
       </label>
@@ -60,7 +61,7 @@
         </select>
       </label>
       <label class="field">How do you rate our work?
-        <input type="range" min="1" max="10" step="1" name="own-rate" value="5">
+        <input type="range" min="1" max="10" step="1" name="own-rate" value="1">
       </label>
     </fieldset>
     <fieldset class="fieldset-block">
@@ -77,6 +78,5 @@
     </fieldset>
     <button type="submit">Submit</button>
   </form>
-<script type="text/javascript" src="./main.js"></script>
 </body>
 </html>

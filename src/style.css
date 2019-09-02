@@ -7,6 +7,6 @@
   margin-bottom: 20px;
 }
 
-.fieldset-block > .in-form:not(:first-of-type) {
-  margin-top: 10;
+.fieldset-block > .field:last-child {
+  margin-bottom: 0;
 }
