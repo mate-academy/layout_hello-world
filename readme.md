@@ -1,14 +1,10 @@
 # Hello world
-
-Display the "Hello, world!" text with the default browser styling. Please do not 
-use any enclosing tags like `<h1>` or `<p>`.
+1. Replace `<your_account>` with your Github username in the links
+    - [DEMO LINK](https://<your_account>.github.io/layout_hello-world/) <br>
+    - [TEST REPORT LINK](https://<your_account>.github.io/layout_hello-world/report/html_report/)
+2. Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/)
 ___
 
-**Read the guideline before start**
-
-[Guideline](https://mate-academy.github.io/layout_task-guideline/)
-
-**Result**
-
-[UPDATE DEMO LINK](https://<your_account>.github.io/<repo_name>/) <br>
-[UPDATE TEST REPORT LINK](https://<your_account>.github.io/<repo_name>/report/html_report/)
+## The task 
+Display the "Hello, world!" text with the default browser styling. Please do not 
+use any enclosing tags like `<h1>` or `<p>`.
