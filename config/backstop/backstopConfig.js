@@ -7,8 +7,7 @@ const { basicScenario } = backstop;
 const basic = {
   ...basicScenario,
   label: 'Elementary test',
-  referenceUrl:
-    'https://mate-academy.github.io/layout_solutions/moyo-header/',
+  referenceUrl: basicScenario.referenceUrl + '/moyo-header/',
 };
 
 const config = {
