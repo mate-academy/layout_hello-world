@@ -1,20 +1,18 @@
 'use strict';
-
 // https://github.com/garris/BackstopJS#advanced-scenarios
 
 const backstop = require('@mate-academy/backstop-config');
-
 const { basicScenario } = backstop;
 
 const basic = {
   ...basicScenario,
   label: 'Elementary test',
-  referenceUrl:
-    'https://mate-academy.github.io/layout_solutions/html-form',
+  referenceUrl: basicScenario.referenceUrl + '/html-form/',
 };
 
 const config = {
   ...backstop,
+  fileNameTemplate: '{scenarioLabel}-{selectorIndex}',
   viewports: [
     {
       name: 'tablet_h',
@@ -25,33 +23,33 @@ const config = {
   scenarios: [
     {
       ...basic,
-      label: 'entire-document',
+      label: 'Entire document',
       selectors: ['document'],
     },
     {
       ...basic,
-      label: 'form',
+      label: 'Form',
       selectors: ['form'],
     },
     {
       ...basic,
-      label: 'fieldset', // test all fieldsets because all of them are different
+      label: 'Fieldset tag', // all fieldsets are different
       selectors: ['fieldset'],
     },
     {
       ...basic,
-      label: 'submit-button',
+      label: 'Submit button',
       selectors: ['[type="submit"]'],
     },
     {
       ...basic,
-      label: 'field-placeholder',
-      selectors: ['[data-qa="field-placeholder"]'],
+      label: 'Email with placeholder',
+      selectors: ['[type="email"][placeholder]'],
     },
     {
       ...basic,
-      label: 'field-placeholder',
-      selectors: ['[data-qa="field-value"]'],
+      label: 'Number with value',
+      selectors: ['[type="number"][value]'],
     },
   ],
 };
