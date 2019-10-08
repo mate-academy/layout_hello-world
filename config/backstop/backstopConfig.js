@@ -8,6 +8,7 @@ const { basicScenario } = backstop;
 
 const config = {
   ...backstop,
+  fileNameTemplate: '{scenarioLabel}',
   viewports: [{
     name: 'custom-size',
     width: 200,
@@ -16,9 +17,8 @@ const config = {
   scenarios: [
     {
       ...basicScenario,
-      label: 'Elementary test',
-      referenceUrl:
-        'https://mate-academy.github.io/layout_solutions/hello-world/',
+      label: 'Entire document',
+      referenceUrl: basicScenario.referenceUrl + '/hello-world/',
     }],
 };
 
