@@ -1,9 +1,7 @@
 'use strict';
-
 // https://github.com/garris/BackstopJS#advanced-scenarios
 
 const backstop = require('@mate-academy/backstop-config');
-
 const { basicScenario } = backstop;
 
 const basic = {
@@ -15,16 +13,17 @@ const basic = {
 
 const config = {
   ...backstop,
+  fileNameTemplate: '{scenarioLabel}_{viewportLabel}',
   onBeforeScript: 'puppet/onBefore.js',
   onReadyScript: 'puppet/onReady.js',
   viewports: [
     {
-      name: 'desktop_s',
+      name: '1024px',
       width: 1024,
       height: 768,
     },
     {
-      name: 'desktop_m',
+      name: '1200px',
       width: 1200,
       height: 768,
     },
@@ -32,24 +31,24 @@ const config = {
   scenarios: [
     {
       ...basic,
-      label: 'header-tag',
+      label: 'Header tag',
       selectors: ['header'],
     },
     {
       ...basic,
-      label: 'nav-tag',
+      label: 'Nav tag',
       selectors: ['nav'],
     },
     {
       ...basic,
-      label: 'nav-item-hovered',
+      label: 'Link with data-qa_hover',
       selectors: ['[data-qa="hover"]'],
       hoverSelector: '[data-qa="hover"]',
       postInteractionWait: 1000,
     },
     {
       ...basic,
-      label: 'nav-item-active',
+      label: 'Link with class_is-active',
       selectors: ['a.is-active'],
     },
   ],
