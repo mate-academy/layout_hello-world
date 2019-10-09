@@ -1,6 +1,6 @@
 # Frontend practice with header
 1. Replace `<your_account>` with your Github username in the links
-    - [DEMO LINK](https://<your_account>.github.io/layout_moyo-header/) <br>
+    - [DEMO LINK](https://<your_account>.github.io/layout_moyo-header/)
     - [TEST REPORT LINK](https://<your_account>.github.io/layout_moyo-header/report/html_report/)
 2. Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/)
 ___
@@ -9,6 +9,7 @@ ___
 Create HTML page with the header using `flexbox` basing on [this mockup](https://www.figma.com/file/KAV1NnDp7hgQtPnaD6XdOcnG/Moyo-Header?node-id=0%3A1).
 
 ### Common mistakes
+- Add `data-qa="hover"` and `class="is-active"` required for tests
 - Do not use tabs. Use 2 spaces for indentation.
 - Don't use repeated styles.
 - Don't use extra elements for blue line. Figure out how to work with `::after`
