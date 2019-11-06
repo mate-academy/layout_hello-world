@@ -16,8 +16,8 @@ const config = {
   viewports: [
     {
       name: 'tablet_h',
-      width: 1024,
-      height: 768,
+      width: 100,
+      height: 100,
     },
   ],
   scenarios: [
