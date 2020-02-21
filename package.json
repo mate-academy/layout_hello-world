@@ -5,6 +5,7 @@
   "main": "src/main.js",
   "scripts": {
     "css:test": "rimraf ./backstop_data/bitmaps_test && backstop test --config=config/backstop/backstopConfig",
+    "deploy": "git add . && git commit -m 'solution' && git push origin develop && npm run publish",
     "css:reference": "rimraf ./backstop_data/bitmaps_reference && backstop reference --config=config/backstop/backstopConfig",
     "lint": "stylelint src/**/*.css && eslint src/**/*.js && htmllint --rc ./node_modules/@mate-academy/htmllint-config/.htmllintrc src/*.html",
     "postinstall": "npm run css:reference",
