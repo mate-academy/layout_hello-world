@@ -7,8 +7,8 @@
     "css:test": "rimraf ./backstop_data/bitmaps_test && backstop test --config=config/backstop/backstopConfig",
     "css:reference": "rimraf ./backstop_data/bitmaps_reference && backstop reference --config=config/backstop/backstopConfig",
     "deploy": "git add . && git commit -m 'solution' && git push origin develop && npm run publish",
-    "lint": "stylelint src/**/*.css && eslint src/**/*.js && htmllint --rc ./node_modules/@mate-academy/htmllint-config/.htmllintrc src/*.html",
-    "postinstall": "npm run css:reference && git checkout -b develop",
+    "lint": "stylelint src/**/*.css && eslint src/**/*.js && linthtml src/*.html",
+    "postinstall": "bash ./config/hooks/postinstall.sh",
     "publish": "bash ./config/hooks/deploy.sh",
     "start": "node server.js",
     "test": "npm run lint && npm run css:test"
@@ -17,17 +17,16 @@
   "author": "Mate Academy",
   "license": "GPL-3.0",
   "devDependencies": {
+    "@linthtml/linthtml": "^0.3.2",
+    "@mate-academy/backstop-config": "*",
     "@mate-academy/browsersync-config": "*",
     "@mate-academy/eslint-config": "*",
     "@mate-academy/htmllint-config": "*",
     "@mate-academy/stylelint-config": "*",
-    "@mate-academy/backstop-config": "*",
     "backstopjs": "^4.0.3",
+    "browser-sync": "^2.1.6",
     "eslint": "^5.16.0",
     "eslint-plugin-node": "^8.0.1",
-    "htmllint": "^0.7.3",
-    "htmllint-cli": "0.0.7",
-    "browser-sync": "^2.1.6",
     "husky": "^1.3.1",
     "lint-staged": "^8.1.5",
     "rimraf": "^2.6.3",
@@ -44,7 +43,7 @@
         "git add"
       ],
       "*.html": [
-        "htmllint --rc  ./node_modules/@mate-academy/htmllint-config/.htmllintrc",
+        "linthtml",
         "git add"
       ]
     },
