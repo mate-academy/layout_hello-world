@@ -60,13 +60,13 @@ const parseCommandLineOptions = (argList) => {
 const args = parseCommandLineOptions(process.argv);
 
 const distDirectory = args.destination || args.d || 'dist';
-const htmlBlob = 'src/*.html';
+const htmlBlob = 'src/**/*.html';
 const imagesBlob = 'src/images/**';
 const fontsBlob = 'src/fonts/**';
-const stylesBlob = 'src/styles/**';
-const jsBlob = 'src/scripts/**';
+const stylesBlob = ['src/**/*.css', 'src/**/*.scss'];
+const jsBlob = 'src/**/*.js';
 
-gulpLintHTML.description = "Analyse all HTML files using linthtml";
+gulpLintHTML.description = 'Analyse all HTML files using linthtml';
 
 /**
  * Clean
@@ -110,10 +110,10 @@ task('buildStyles', () => (
   src(stylesBlob)
     .pipe(sourcemaps.init())
     .pipe(sass())
-    .pipe(gulpReplacePath(/(?:\.\.\/){2,}images/g, '../images'))
+    .pipe(gulpReplacePath(/(?:\.\.\/)+images/g, './images'))
     .pipe(autoprefixer())
     .pipe(sourcemaps.write('.'))
-    .pipe(dest(`${distDirectory}/styles`))
+    .pipe(dest(distDirectory))
     // NOTE: need to leave here to pass changed styles to the BrowserSync
     .pipe(browserSync.reload({ stream: true }))
 ));
@@ -131,7 +131,7 @@ task('lintJavascript', () => (
 
 task('buildJavascript', () => (
   src(jsBlob)
-    .pipe(dest(`${distDirectory}/scripts/`))
+    .pipe(dest(distDirectory))
 ));
 
 task('processJavascript', series('lintJavascript', 'buildJavascript'));
