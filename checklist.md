@@ -1,0 +1,1 @@
+- check your work using basic recommendations [here](https://github.com/mate-academy/layout_colored-blocks/blob/master/checklist.md)
