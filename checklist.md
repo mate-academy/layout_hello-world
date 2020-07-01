@@ -1,0 +1,2 @@
+- check your work using basic recommendations [here](https://github.com/mate-academy/layout_search-bar-airbnb/blob/master/checklist.md)
+- are you sure you've polished your code? :)
