@@ -1,2 +1,7 @@
 - check your work using basic recommendations [here](https://github.com/mate-academy/layout_search-bar-airbnb/blob/master/checklist.md)
 - check alt attributes, they must be present ([find out more](https://osric.com/chris/accidental-developer/2012/01/when-should-alt-text-be-blank/) [and this](https://9clouds.com/blog/the-importance-of-alt-attributes-aka-alt-text/))
+- logo should be a link to the main page of the website
+- use alternative font-family in case the main one doesn't work [like this](https://www.w3schools.com/cssref/pr_font_font-family.asp)
+- check the demo page with different screen sizes (including those bigger than 1700px)
+- do not use overcomplicated media conditions (try to follow desktop-driven or mobile-driven development)
+- are you sure you've polished your code? :)
