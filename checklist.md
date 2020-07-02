@@ -5,4 +5,5 @@
 - check the demo page with different screen sizes (including those bigger than 1700px)
 - do not use overcomplicated media conditions (try to follow desktop-driven or mobile-driven development)
 - uppercase letters for navlist are made with styles, not hardcoded into html (you have usual text with first uppercase letter in html)
+- links should be with cursor pointer
 - are you sure you've polished your code? :)
