@@ -1,1 +1,17 @@
-/* styles go here */
+.block-red {
+    height: 100px;
+    width: 100%;
+    color: red;
+}
+
+.block-green {
+    height: 100px;
+    width: 100%;
+    color: green;
+}
+
+.block-blue {
+    height: 100px;
+    width: 100%;
+    color: blue;
+}
