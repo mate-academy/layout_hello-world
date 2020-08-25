@@ -22,7 +22,7 @@
     "@mate-academy/backstop-config": "*",
     "@mate-academy/eslint-config": "*",
     "@mate-academy/linthtml-config": "0.0.1",
-    "@mate-academy/scripts": "^0.3.22",
+    "@mate-academy/scripts": "^0.3.26",
     "@mate-academy/stylelint-config": "0.0.9",
     "backstopjs": "^5.0.1",
     "cross-env": "^7.0.2",
