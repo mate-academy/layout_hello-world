@@ -1,6 +1,6 @@
 # Hello world
 1. Replace `<your_account>` with your Github username in the links
-    - [DEMO LINK](hhttps://github.com/milla-romankova/layout_hello-world.git/) <br>
+    - [DEMO LINK](https://milla-romankova.github.io/layout_hello-world/) <br>
     - [TEST REPORT LINK](https://milla-romankova.github.io/layout_hello-world/report/html_report/)
 2. Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/)
 ___
