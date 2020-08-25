@@ -1,7 +1,7 @@
 # Hello world
-1. Replace `<marina-gerasymova>` with your Github username in the links
-    - [DEMO LINK](https://<marina-gerasymova>.github.io/layout_hello-world/) <br>
-    - [TEST REPORT LINK](https://<marina-gerasymova>.github.io/layout_hello-world/report/html_report/)
+1. Replace `marina-gerasymova` with your Github username in the links
+    - [DEMO LINK](https://marina-gerasymova.github.io/layout_hello-world/) <br>
+    - [TEST REPORT LINK](https://marina-gerasymova.github.io/layout_hello-world/report/html_report/)
 2. Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/)
 ___
 
