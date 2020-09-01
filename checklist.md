@@ -2,3 +2,4 @@
 - are you sure you've polished your code? :)
 - BEM modifier should only be used on element which has the corresponding block class
 - add empty lines between blocks of HTML
+- one BEM block shouldn't style another BEM block
