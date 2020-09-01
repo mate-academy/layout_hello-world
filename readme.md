@@ -9,6 +9,8 @@ ___
 
 ## The task
 Implement the `stars` block used in [the card](https://www.figma.com/file/bS8N1lTT0Ew0Brf1Nfl36iMV/Product-Cards?node-id=0%3A1).
+Do not need to implement card in this task, just stars.
+
 - Reset browser's default `margin`
 - Implement 6 `stars` blocks
   - The first one is general
