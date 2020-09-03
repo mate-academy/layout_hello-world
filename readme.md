@@ -1,7 +1,7 @@
 # Product cards
 1. Replace `<your_account>` with your Github username in the links
-    - [DEMO LINK](https://<your_account>.github.io/layout_stars/) <br>
-    - [TEST REPORT LINK](https://<your_account>.github.io/layout_stars/report/html_report/)
+    - [DEMO LINK](https://CasualJackie.github.io/layout_stars/) <br>
+    - [TEST REPORT LINK](https://CasualJackie.github.io/layout_stars/report/html_report/)
 2. Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/)
 
 > Disable `Multiplayer Cursors` in figma to hide other cursors ([Learn how](https://mate-academy.github.io/layout_task-guideline/figma.html#multiplayer-cursors))
