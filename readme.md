@@ -1,7 +1,7 @@
 # Hello world
 1. Replace `DmytroTsehelnyk` with your Github username in the links
-    - [DEMO LINK](https://DmytroTsehelnyk.github.io/layout_hello-world/) <br>
-    - [TEST REPORT LINK](https://DmytroTsehelnyk.github.io/layout_hello-world/report/html_report/)
+    - [DEMO LINK](https://dmytrotsehelnyk.github.io/layout_hello-world/) <br>
+    - [TEST REPORT LINK](https://dmytrotsehelnyk.github.io/layout_hello-world/report/html_report/)
 2. Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/)
 ___
 
