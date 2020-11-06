@@ -2,4 +2,4 @@
 - make sure you have `method` and `action` attributes for form
 - if you have 3 or more attributes, move each of the on the new line (including the first one)
 - No need to provide empty `value=''` attribute for inputs
-- You need to wrap separate inputs in their own label tags. Such way every one of them will be activated by clicking on label. To combine 2 checkboxes/radiobuttons in one group you need to provide same to needed inputs.
+- You need to use label tag for each input. So that every input could be activated by clicking on the corresponding label.
