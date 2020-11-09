@@ -6,13 +6,14 @@
   "scripts": {
     "init": "mate-scripts init",
     "start": "mate-scripts start",
+    "test": "npm run lint && npm run test:only",
     "lint": "mate-scripts lint",
     "test:only": "mate-scripts test",
     "build": "mate-scripts build",
     "deploy": "mate-scripts deploy",
     "update": "mate-scripts update",
-    "postinstall": "npm run update",
-    "test": "npm run lint && npm run test:only"
+    "postinstall": "npm run update"
+
   },
   "keywords": [],
   "author": "Mate Academy",
@@ -22,7 +23,7 @@
     "@mate-academy/backstop-config": "*",
     "@mate-academy/eslint-config": "*",
     "@mate-academy/linthtml-config": "0.0.1",
-    "@mate-academy/scripts": "^0.3.14",
+    "@mate-academy/scripts": "^0.6.7",
     "@mate-academy/stylelint-config": "0.0.9",
     "backstopjs": "^5.0.1",
     "eslint": "^5.16.0",
