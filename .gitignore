@@ -12,3 +12,7 @@ node_modules
 backstop_data
 dist
 .cache
+
+.github/*
+package-lock.json
+*.yml
