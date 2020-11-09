@@ -3,20 +3,21 @@
   "version": "1.0.0",
   "description": "Hello World",
   "main": "src/main.js",
+  "keywords": [],
+  "author": "Mate Academy",
+  "license": "GPL-3.0",
   "scripts": {
     "init": "mate-scripts init",
     "start": "mate-scripts start",
+    "test": "npm run lint && npm run test:only",
     "lint": "mate-scripts lint",
     "test:only": "mate-scripts test",
     "build": "mate-scripts build",
     "deploy": "mate-scripts deploy",
     "update": "mate-scripts update",
-    "postinstall": "npm run update",
-    "test": "npm run lint && npm run test:only"
+    "postinstall": "npm run update"
   },
-  "keywords": [],
-  "author": "Mate Academy",
-  "license": "GPL-3.0",
+  "dependencies": {},
   "devDependencies": {
     "@linthtml/linthtml": "^0.4.1",
     "@mate-academy/backstop-config": "*",
@@ -34,6 +35,5 @@
   },
   "mateAcademy": {
     "projectType": "layout"
-  },
-  "dependencies": {}
+  }
 }
