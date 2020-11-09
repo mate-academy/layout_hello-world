@@ -11,7 +11,7 @@
     "build": "mate-scripts build",
     "deploy": "mate-scripts deploy",
     "update": "mate-scripts update",
-    "postinstall": "npm run update",
+    "postinstall": "npm run update && git checkout -b develop",
     "test": "npm run lint && npm run test:only"
   },
   "keywords": [],
@@ -22,7 +22,7 @@
     "@mate-academy/backstop-config": "*",
     "@mate-academy/eslint-config": "*",
     "@mate-academy/linthtml-config": "0.0.1",
-    "@mate-academy/scripts": "^0.3.14",
+    "@mate-academy/scripts": "^0.6.7",
     "@mate-academy/stylelint-config": "0.0.9",
     "backstopjs": "^5.0.1",
     "eslint": "^5.16.0",
