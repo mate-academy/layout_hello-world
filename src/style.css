@@ -1,7 +1,3 @@
-div {
-  width: 100%;
-}
-
-span {
-  display: inline;
+body {
+  margin: 0;
 }
