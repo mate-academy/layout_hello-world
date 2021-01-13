@@ -13,7 +13,7 @@ You DON'T need to implement the card now, just the stars block.
 
 - Reset browser's default `margin`
 - Implement 6 blocks with `stars` class
-  - The first does not have additional classes
+  - The first should have `stars--0` class
   - The next 5 blocks should have an extra class `stars--1`, `stars--2` ... `stars--5` (one extra class per block)
 - Each block should have exactly 5 stars styled as in the card design
 - The number of atcive (yellow) stars should be different for all 6 blocks depending on modifier class
