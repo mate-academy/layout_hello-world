@@ -11,6 +11,7 @@ ___
 Implement the `stars` block used in [the card](https://www.figma.com/file/bS8N1lTT0Ew0Brf1Nfl36iMV/Product-Cards?node-id=0%3A1).
 You DON'T need to implement the card now, just the stars block.
 
+- You can find star images in `images` folder
 - Reset browser's default `margin`
 - Implement 6 blocks with `stars` class
   - The first should have `stars--0` class
