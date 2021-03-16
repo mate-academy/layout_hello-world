@@ -1,4 +1,4 @@
-# Product cards
+# Stars block
 1. Replace `<your_account>` with your Github username in the links
     - [DEMO LINK](https://<your_account>.github.io/layout_stars/) <br>
     - [TEST REPORT LINK](https://<your_account>.github.io/layout_stars/report/html_report/)
