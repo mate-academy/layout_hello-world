@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AAAA,KACE,qBAAsB,CACtB,SAEF,CAEA,YAHE,iBAKF","file":"style.14680c88.css","sourceRoot":"..\\src","sourcesContent":[".par {\n  background-color: aqua;\n  color: red;\n  text-align: center;\n}\n\n.hello {\n  text-align: center;\n}\n"]}
