@@ -1,1 +1,9 @@
 /* styles go here */
+body {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: serif;
+  font-size: 30px;
+  background-color: #4f0c6e;
+  color: white;
+}
