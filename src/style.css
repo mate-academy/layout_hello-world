@@ -1,1 +1,9 @@
-/* styles go here */
+.par {
+  background-color: aqua;
+  color: red;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+}
