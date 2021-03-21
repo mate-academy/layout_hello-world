@@ -3,7 +3,7 @@
     - [DEMO LINK]
     (https://Vladyslav-Kondiievskyi.github.io/layout_hello-world/) <br>
     - [TEST REPORT LINK]
-    (https://Vladyslav-Kondiievskyi.github.io/layout_hello-world/report/html_report/)
+(https://Vladyslav-Kondiievskyi.github.io/Hello/layout_hello-world/report/html_report/)
 2. Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/)
 ___
 
