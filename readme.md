@@ -1,16 +1,9 @@
 # Hello world
-<<<<<<< HEAD
-1. Replace `Vladyslav-Kondiievskyi` with your Github username in the links
+1. Replace `<user name>` with your Github username in the links
     - [DEMO LINK]
     (https://Vladyslav-Kondiievskyi.github.io/layout_hello-world/) <br>
     - [TEST REPORT LINK]
-(https://Vladyslav-Kondiievskyi.github.io/layout_hello-world/report/html_report/)
-=======
-1. Replace `<Vladyslav Kondiievskyi>` with your Github username in the links
-    - [DEMO LINK](https://Vladyslav-Kondiievskyi.github.io/layout_hello-world/) <br>
-    - [TEST REPORT LINK]
-    (https://Vladyslav-Kondiievskyi.github.io/layout_hello-world/report/html_report/)
->>>>>>> c86c9dd07b3b69a8d75937766e05d77aa68d7526
+(https://Vladyslav-Kondiievskyi.github.io/layout_hello-world/report/ html_report/)
 2. Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/)
 ___
 
