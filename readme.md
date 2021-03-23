@@ -1,5 +1,5 @@
 # Hello world
-Replace `<your_account>` with your Github username and copy the link to Pull Request description:
+Replace `<your_account>` with your Github username and copy the links to Pull Request description:
 - [DEMO LINK](https://<your_account>.github.io/layout_hello-world/) <br>
 - [TEST REPORT LINK](https://<your_account>.github.io/layout_hello-world/report/html_report/)
 
