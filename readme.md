@@ -1,8 +1,10 @@
 # Stars block
-1. Replace `<your_account>` with your Github username in the links
-    - [DEMO LINK](https://<your_account>.github.io/layout_stars/) <br>
-    - [TEST REPORT LINK](https://<your_account>.github.io/layout_stars/report/html_report/)
-2. Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/)
+Replace `<your_account>` with your Github username and copy the links to Pull Request description:
+- [DEMO LINK](https://<your_account>.github.io/layout_enclosures/) <br>
+- [TEST REPORT LINK](https://<your_account>.github.io/layout_enclosures/report/html_report/)
+
+> Follow [this instructions](https://github.com/mate-academy/layout_task-guideline#how-to-solve-the-layout-tasks-on-github)
+___
 
 > Disable `Multiplayer Cursors` in figma to hide other cursors ([Learn how](https://mate-academy.github.io/layout_task-guideline/figma.html#multiplayer-cursors))
 ___
