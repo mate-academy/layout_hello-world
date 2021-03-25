@@ -33,7 +33,7 @@ Create HTML page with form. On form submit send form data to `https://mate-acade
   - [ ] minlength
   - [ ] maxlength
   - [ ] multiple
-- The number field should have default value: `12`.
+- The number field should have default value: `12` and maximum value 100.
 - The email field should have placeholder value: `email@example.com`.
 - The text fields should have disabled autocomplete.
 - Add a button which submits the form.
