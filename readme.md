@@ -9,6 +9,9 @@ ___
 ## The task:
 Create HTML page with form. On form submit send form data to `https://mate-academy-form-lesson.herokuapp.com/create-application`
 
+![screenshot](./references/form-example.png)
+
+## Notes
 - Every field should have name attribute
 - Every field should have label, which focuses input on label click
   - Please add `for` attribute for each <label> and `id` to the field (it is important for tests)
@@ -44,5 +47,3 @@ Create HTML page with form. On form submit send form data to `https://mate-acade
 
 ## Tips
 - You can group different input sections with [fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) tag 
-
-![screenshot](./references/form-example.png)
