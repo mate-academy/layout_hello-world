@@ -4,11 +4,9 @@ Replace `<your_account>` with your Github username and copy the links to Pull Re
 - [TEST REPORT LINK](https://<your_account>.github.io/layout_moyo-header/report/html_report/)
 
 > Follow [this instructions](https://github.com/mate-academy/layout_task-guideline#how-to-solve-the-layout-tasks-on-github)
-___
 
 ## The task
 Create HTML page with the header using `flexbox` basing on [this mockup](https://www.figma.com/file/KAV1NnDp7hgQtPnaD6XdOcnG/Moyo-Header?node-id=0%3A1).
-___
 
 ![screenshot](./references/header-example.png)
 
