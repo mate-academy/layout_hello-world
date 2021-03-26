@@ -8,7 +8,7 @@ ___
 
 ## The task
 Create HTML page with the header using `flexbox` basing on [this mockup](https://www.figma.com/file/KAV1NnDp7hgQtPnaD6XdOcnG/Moyo-Header?node-id=0%3A1).
----
+___
 
 ![screenshot](./references/header-example.png)
 
