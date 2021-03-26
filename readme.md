@@ -24,7 +24,7 @@ Create HTML page with the header using `flexbox` basing on [this mockup](https:/
 ![screenshot](./references/header-example.png)
 
 ### Common mistakes
-- Add `data-qa="hover"` and `class="is-active"` required for tests
+- Check is you added `data-qa="hover"` and `class="is-active"` required for tests
 - Do not use `tabs`. Use `2 spaces` for indentation.
 - Don't use repeated styles.
 - Don't use extra elements for blue line. Figure out how to work with `::after`
