@@ -28,7 +28,7 @@ Create HTML page with form. On form submit send form data to `https://mate-acade
   - [ ] time
   - [ ] color
   - [ ] date
-- Form should have textarea and select elements.  
+- Form should have textarea and select elements.
 - You should use every of this attribute at least one time
   - [ ] required
   - [ ] min
@@ -40,10 +40,10 @@ Create HTML page with form. On form submit send form data to `https://mate-acade
 - The email field should have placeholder value: `email@example.com`.
 - The text fields should have disabled autocomplete.
 - Add a button which submits the form.
-- Add `onsubmit="onSubmit()"` attribute to show form value on form submit
+- Add `onsubmit="onSubmit()"` attribute to `form` tag to show form value on submit
 - Vertical distance between inputs should be `10px`
 - Vertical distance between blocks with inputs should be `20px`
 - Any other styles should be browser default
 
 ## Tips
-- You can group different input sections with [fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) tag 
+- You can group different input sections with [fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) tag
