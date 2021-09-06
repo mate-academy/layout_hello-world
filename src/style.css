@@ -1,1 +1,8 @@
 /* styles go here */
+div {
+  margin-top: 10px;
+}
+
+.field {
+  margin-bottom: 20px;
+}
