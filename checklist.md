@@ -1,5 +1,64 @@
-- check your work using basic recommendations [here](https://github.com/mate-academy/layout_search-bar-airbnb/blob/master/checklist.md)
-- are you sure you've polished your code? :)
-- BEM modifier should only be used on element which has the corresponding block class
-- add empty lines between blocks of HTML
-- one BEM block shouldn't style another BEM block
+1. [CODE STYLE] - Add empty lines between multiline sibling blocks of HTML.
+But don't add empty lines between parent and child elements
+
+GOOD example:
+```html
+<ul>
+  <li class="nav__item">
+    <a href="#home">Home</a>
+  </li>
+
+  <li class="nav__item">
+    <a href="#shop">Shop</a>
+  </li>
+
+  <li class="nav__item">
+    <a href="#contacts">Contacts</a>
+  </li>
+</ul>
+```
+BAD example:
+```html
+<ul>
+
+  <li class="nav__item">
+    <a href="#home">Home</a>
+  </li>
+  <li class="nav__item">
+    <a href="#shop">Shop</a>
+  </li>
+  <li class="nav__item">
+    <a href="#contacts">Contacts</a>
+  </li>
+
+</ul>
+```
+
+2. [CODE STYLE] - Combine selectors that have same styles using `,`
+
+GOOD example:
+```css
+.block--1,
+.block--2,
+.block--3 {
+  background-color: yellowgreen;
+}
+```
+
+BAD example:
+```css
+.block--1 {
+  background-color: yellowgreen;
+}
+
+.block--2 {
+  background-color: yellowgreen;
+}
+
+.block--3 {
+  background-color: yellowgreen;
+}
+```
+
+3. [STYLE] - Don't set fixed container size. Let the content size dictate it.
+4. [TESTS] - Don't add vertical margin between rows of stars.
