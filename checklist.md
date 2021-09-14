@@ -7,7 +7,7 @@ elements. Each level of nesting, including text, contained inside the element,
 requires 2-space offset.
 
 GOOD example:
-```
+```html
 <div>
   <p>
     some text
@@ -15,11 +15,11 @@ GOOD example:
 </div>
 ```
 BAD example:
-```
+```html
 <div>
-<div>
+<p>
 some text
-</div>
+</p>
 </div>
 ```
 
@@ -29,7 +29,7 @@ line with 2-space indentation related to tag. Tag’s closing bracket should be
 on the same level as opening one.
 
 GOOD example:
-```
+```html
 <input
   type="text"
   name="surname"
@@ -38,19 +38,19 @@ GOOD example:
 >
 ```
 BAD example:
-```
+```html
 <input type="text" name="surname"
 id="surname" required>
 ```
 BAD example:
-```
+```html
 <input type="text"
   name="surname"
   id="surname"
   required>
 ```
 BAD example:
-```
+```html
 <input
 type="text"
 name="surname"
@@ -58,7 +58,7 @@ id="surname"
 required>
 ```
 Still BAD example:
-```
+```html
 <input
   type="text"
   name="surname"
@@ -71,7 +71,7 @@ valid as JavaScript object keys. It should not contain spaces, “-” or other
 special characters.
 
 GOOD example:
-```
+```html
 <input
   type="date"
   name="dateOfBirth"
@@ -80,7 +80,7 @@ GOOD example:
 >
 ```
 BAD example:
-```
+```html
 <input
   type="date"
   name="date of birth"
