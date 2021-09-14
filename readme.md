@@ -21,7 +21,7 @@ Create HTML page with the header using `flexbox` basing on [this mockup](https:/
 - the link with only `blue` color is an example of `:hover` styles. Every link in the row should have `blue` color on `:hover`.
 - add `data-qa="hover"` attribute to the 4th link for testing (`Ноутбуки и компьютеры`)
 ---
---> [CHECKLIST](https://github.com/mate-academy/layout_search-bar-airbnb/blob/master/checklist.md)
+--> [CHECKLIST](https://github.com/mate-academy/layout_moyo-header/blob/master/checklist.md)
 
 ### Tips & Hints
 - Check one more time if you added `data-qa="hover"` and `class="is-active"`
