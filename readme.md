@@ -15,7 +15,6 @@ You DON'T need to implement the card now, just the stars block.
 
 ![Stars](./reference/stars.png)
 ___
-
 - You can find star images in `images` folder
 - Reset browser's default `margin`
 - Implement 6 blocks with `stars` class
@@ -28,5 +27,12 @@ ___
   - Add images in CSS, instead of using the HTML "img" or "svg" tags
 - Each star in a block should have a class `stars__star` and no extra classes or inline styles
   - The star size is fixed (see in the design)
-  - The distance between the stars is also fixed 
+  - The distance between the stars is also fixed
   - Use `display: flex` for the `stars` block to avoid an issue with extra spaces between individual stars
+---
+--> [CHECKLIST](https://github.com/mate-academy/layout_stars/blob/master/checklist.md)
+
+## Tips & Hints
+- Check the design again. See the difference in size between star image and its
+container?
+- There`s no need to add vertical margins between rows of stars.
