@@ -60,4 +60,5 @@ BAD example:
 }
 ```
 
-3. [TESTS] - Don't add vertical margin between rows of stars.
+3. [STYLE] - Don't set fixed container size. Let the content size dictate it.
+4. [TESTS] - Don't add vertical margin between rows of stars.
