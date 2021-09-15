@@ -10,7 +10,7 @@ ___
 ___
 
 ## The task
-Implement the [`stars` block](https://www.figma.com/file/euXjY316CHKYkPRO1K0kjLsF/Moyo-Catalog?node-id=11325%3A2961) used in card and catalog.
+Implement the [`stars` block](https://www.figma.com/file/EIBkG1dy1jnK88YPO34Qir/Moyo-Catalog-updated) used in card and catalog.
 You DON'T need to implement the card now, just the stars block.
 
 ![Stars](./reference/stars.png)
