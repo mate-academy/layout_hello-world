@@ -23,17 +23,17 @@
     "@mate-academy/bemlint": "^0.1.1",
     "@mate-academy/eslint-config": "*",
     "@mate-academy/linthtml-config": "0.0.1",
-    "@mate-academy/scripts": "^0.9.3",
+    "@mate-academy/scripts": "^0.9.4",
     "@mate-academy/stylelint-config": "0.0.9",
     "backstopjs": "^5.0.1",
     "eslint": "^5.16.0",
-    "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-jest": "^22.4.1",
+    "eslint-plugin-node": "^8.0.1",
+    "jest": "^24.7.0",
     "node-sass": "^4.14.1",
     "parcel": "^1.12.4",
     "stylelint": "^13.5.0",
-    "stylelint-scss": "^3.17.2",
-    "jest": "^24.7.0"
+    "stylelint-scss": "^3.17.2"
   },
   "mateAcademy": {
     "projectType": "layout",
