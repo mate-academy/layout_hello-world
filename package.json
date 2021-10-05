@@ -36,7 +36,7 @@
     "jest": "^24.7.0"
   },
   "mateAcademy": {
-    "projectType": "javascript",
+    "projectType": "layout",
     "linters": {
       "bem": false
     }
