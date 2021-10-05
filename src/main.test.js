@@ -1,7 +1,9 @@
-/* eslint-disable no-undef */
 'use strict';
 
 const childProcess = require('child_process');
+const maxVersionOfNode = 15000;
+const minVersionOfNode = 14000;
+const maxVersionOfGit = 2311;
 
 describe('Environmental Check', () => {
   test('You should have Node.js of 14 version', () => {
@@ -9,8 +11,8 @@ describe('Environmental Check', () => {
 
     expect(
       (
-        version.replace(/[^0-9]/g, '') >= 14000
-        && version.replace(/[^0-9]/g, '') < 15000
+        Number(version.replace(/[^0-9]/g, '')) >= minVersionOfNode
+        && Number(version.replace(/[^0-9]/g, '')) < maxVersionOfNode
       )
     )
       .toBeTruthy();
@@ -19,7 +21,7 @@ describe('Environmental Check', () => {
   test('You should have Git of 2.31.1 version or newer', () => {
     const version = childProcess.execSync('git --version').toString();
 
-    expect((version.replace(/[^0-9]/g, '') >= 2311))
+    expect((version.replace(/[^0-9]/g, '') >= maxVersionOfGit))
       .toBeTruthy();
   });
 
