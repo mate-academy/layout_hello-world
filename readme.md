@@ -3,7 +3,7 @@
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
 
 - [DEMO LINK](https://Vitalii-Lytvyn01.github.io/layout_hello-world/)
-- [TEST REPORT LINK](https://Vitalii-Lytvyn01.github.io/layout_hello-world/backstop_data/html_report/)
+- [TEST REPORT LINK](https://Vitalii-Lytvyn01.github.io/layout_hello-world/backstop_data/html_report/index.html)
 
 > Follow [this instructions](https://github.com/mate-academy/layout_task-guideline#how-to-solve-the-layout-tasks-on-github)
 
