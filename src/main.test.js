@@ -3,24 +3,10 @@
 'use strict';
 
 const childProcess = require('child_process');
-const maxVersionOfNode = 150000;
-const minVersionOfNode = 140000;
+const maxVersionOfNode = 15000;
+const minVersionOfNode = 14000;
 const minVersionOfGitOnMac = 2311;
 const minVersionOfGitOnWindows = 23110;
-
-function getNodeVersion() {
-  const versionName = childProcess.execSync('node -v').toString();
-
-  const [, major, minor, patch] = versionName.match(/.*?(\d+)\.(\d+)\.(\d+).*/);
-  const version = [major, minor, patch]
-    .map(v => v.padStart(2, '0'))
-    .join('');
-
-  // eslint-disable-next-line no-console
-  console.log('version: ', version);
-
-  return Number(version);
-}
 
 describe('Environmental Check', () => {
   try {
@@ -29,12 +15,12 @@ describe('Environmental Check', () => {
     const allTasks = childProcess.execSync('tasklist').toString();
 
     test('You should have Node.js of 14 version', () => {
-      const version = getNodeVersion();
+      const version = childProcess.execSync('node -v').toString();
 
       expect(
         (
-          version >= minVersionOfNode
-          && version < maxVersionOfNode
+          Number(version.replace(/[^0-9]/g, '')) >= minVersionOfNode
+          && Number(version.replace(/[^0-9]/g, '')) < maxVersionOfNode
         )
       )
         .toBeTruthy();
@@ -97,12 +83,12 @@ describe('Environmental Check', () => {
       const allProgrammes = childProcess.execSync('dpkg -l').toString();
 
       test('You should have Node.js of 14 version', () => {
-        const version = getNodeVersion();
+        const version = childProcess.execSync('node -v').toString();
 
         expect(
           (
-            version >= minVersionOfNode
-            && version < maxVersionOfNode
+            Number(version.replace(/[^0-9]/g, '')) >= minVersionOfNode
+          && Number(version.replace(/[^0-9]/g, '')) < maxVersionOfNode
           )
         )
           .toBeTruthy();
@@ -131,12 +117,12 @@ describe('Environmental Check', () => {
       });
     } catch (error) {
       test('You should have Node.js of 14 version', () => {
-        const version = getNodeVersion();
+        const version = childProcess.execSync('node -v').toString();
 
         expect(
           (
-            version >= minVersionOfNode
-            && version < maxVersionOfNode
+            Number(version.replace(/[^0-9]/g, '')) >= minVersionOfNode
+          && Number(version.replace(/[^0-9]/g, '')) < maxVersionOfNode
           )
         )
           .toBeTruthy();
