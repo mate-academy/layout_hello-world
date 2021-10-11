@@ -1,7 +1,7 @@
 # Hello world
 Replace `<volodymyr-soltys97>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://github.com/volodymyr-soltys97/layout_hello-world)
-- [TEST REPORT LINK](https://github.com/volodymyr-soltys97/layout_hello-world/report/html_report/)
+- [DEMO LINK](https://volodymyr-soltys97.github.io/layout_hello-world/)
+- [TEST REPORT LINK](https://volodymyr-soltys97.github.io/layout_hello-world/report/html_report/)
 
 > Follow [this instructions](https://github.com/mate-academy/layout_task-guideline#how-to-solve-the-layout-tasks-on-github)
 ___
