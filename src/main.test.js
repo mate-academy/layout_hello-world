@@ -38,7 +38,7 @@ describe('Environmental Check', () => {
 
     try {
       listOfExtensions = childProcess.execSync(
-        'code --list-extensions'
+        'code --list-extensions --show-versions'
       ).toString();
     } catch (error) {
       listOfExtensions = null;
@@ -109,9 +109,9 @@ describe('Environmental Check', () => {
       .toContain('dbaeumer.vscode-eslint');
   });
 
-  test(`You should have LintHTML extension in Visual Studio Code`, () => {
+  test(`You should have LintHTML v.0.4.0 extension in VisualStudioCode`, () => {
     expect(listOfExtensions)
-      .toContain('kamikillerto.vscode-linthtml');
+      .toContain('kamikillerto.vscode-linthtml@0.4.0');
   });
 
   test(`You should have Stylelint extension in Visual Studio Code`, () => {
