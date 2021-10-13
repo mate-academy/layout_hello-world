@@ -30,11 +30,19 @@ describe('Environmental Check', () => {
   let listOfExtensions;
 
   beforeAll(() => {
-    nodeVersion = getNodeVersion();
+    try {
+      nodeVersion = getNodeVersion();
+    } catch (error) {
+      nodeVersion = null;
+    }
 
-    listOfExtensions = childProcess.execSync(
-      'code --list-extensions'
-    ).toString();
+    try {
+      listOfExtensions = childProcess.execSync(
+        'code --list-extensions'
+      ).toString();
+    } catch (error) {
+      listOfExtensions = null;
+    }
 
     try {
       childProcess.execSync('systeminfo');
@@ -62,15 +70,15 @@ describe('Environmental Check', () => {
   });
 
   test('You should have Git of 2.31.1 version or newer', () => {
-    const version = childProcess.execSync('git --version').toString();
+    const version = childProcess.execSync(
+      'git --version'
+    ).toString().replace(/[^0-9]/g, '');
 
     if (OS === 'Windows') {
-      expect((version.replace(/[^0-9]/g, '') >= minVersionOfGitOnWindows))
+      expect(version >= minVersionOfGitOnWindows)
         .toBeTruthy();
-    }
-
-    if (OS !== 'Windows') {
-      expect((version.replace(/[^0-9]/g, '') >= minVersionOfGitOnMacAndLinux))
+    } else {
+      expect(version >= minVersionOfGitOnMacAndLinux)
         .toBeTruthy();
     }
   });
