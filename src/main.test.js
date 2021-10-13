@@ -40,8 +40,6 @@ describe('Environmental Check', () => {
       listOfExtensions = childProcess.execSync(
         'code --list-extensions --show-versions'
       ).toString();
-      // eslint-disable-next-line no-console
-      console.log(listOfExtensions);
     } catch (error) {
       listOfExtensions = null;
     }
