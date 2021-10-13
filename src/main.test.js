@@ -5,7 +5,7 @@
 const childProcess = require('child_process');
 const maxVersionOfNode = 150000;
 const minVersionOfNode = 140000;
-const minVersionOfGitOnMac = 2311;
+const minVersionOfGitOnMacAndLinux = 2311;
 const minVersionOfGitOnWindows = 23110;
 
 function getNodeVersion() {
@@ -23,40 +23,106 @@ function getNodeVersion() {
 }
 
 describe('Environmental Check', () => {
-  try {
-    childProcess.execSync('systeminfo');
+  let OS;
+  let nodeVersion;
+  let allActiveProgrammes;
+  let allProgrammes;
+  let listOfExtensions;
 
-    const allTasks = childProcess.execSync('tasklist').toString();
+  beforeAll(() => {
+    try {
+      nodeVersion = getNodeVersion();
+    } catch (error) {
+      nodeVersion = null;
+    }
 
-    test('You should have Node.js of 14 version', () => {
-      const version = getNodeVersion();
+    try {
+      listOfExtensions = childProcess.execSync(
+        'code --list-extensions'
+      ).toString();
+    } catch (error) {
+      listOfExtensions = null;
+    }
 
-      expect(
-        (
-          version >= minVersionOfNode
-          && version < maxVersionOfNode
-        )
-      )
-        .toBeTruthy();
-    });
-
-    test('You should have Git of 2.31.1 version or newer', () => {
-      const version = childProcess.execSync('git --version').toString();
-
-      expect((version.replace(/[^0-9]/g, '') >= minVersionOfGitOnWindows))
-        .toBeTruthy();
-    });
-
-    test('You should have Bash Shell', () => {
-      const bashPath = childProcess.execSync('which bash').toString();
-
-      expect(!!bashPath)
-        .toBeTruthy();
-    });
-
-    test('You should have Google Chrome or Firefox', () => {
+    try {
+      childProcess.execSync('systeminfo');
+      OS = 'Windows';
+      allActiveProgrammes = childProcess.execSync('tasklist').toString();
+    } catch (error) {
       try {
-        if (!allTasks.includes('chrome.exe')) {
+        childProcess.execSync('lsb_release -a');
+        allProgrammes = childProcess.execSync('dpkg -l').toString();
+        OS = 'Linux';
+      } catch (e) {
+        OS = 'MacOS';
+      }
+    }
+  });
+
+  test('You should have Node.js of 14 version', () => {
+    expect(
+      (
+        nodeVersion >= minVersionOfNode
+          && nodeVersion < maxVersionOfNode
+      )
+    )
+      .toBeTruthy();
+  });
+
+  test('You should have Git of 2.31.1 version or newer', () => {
+    const version = childProcess.execSync(
+      'git --version'
+    ).toString().replace(/[^0-9]/g, '');
+
+    if (OS === 'Windows') {
+      expect(version >= minVersionOfGitOnWindows)
+        .toBeTruthy();
+    } else {
+      expect(version >= minVersionOfGitOnMacAndLinux)
+        .toBeTruthy();
+    }
+  });
+
+  test('You should have Bash Shell', () => {
+    const bashPath = childProcess.execSync('which bash').toString();
+
+    expect(!!bashPath)
+      .toBeTruthy();
+  });
+
+  test('You should have Visual Studio Code', () => {
+    const VSCodeVersion = childProcess.execSync(
+      'code -v'
+    ).toString();
+
+    expect(!!VSCodeVersion)
+      .toBeTruthy();
+  });
+
+  test(`You should have EditorConfig extension in Visual Studio Code`, () => {
+    expect(listOfExtensions)
+      .toContain('EditorConfig.EditorConfig');
+  });
+
+  test(`You should have ESLint extension in Visual Studio Code`, () => {
+    expect(listOfExtensions)
+      .toContain('dbaeumer.vscode-eslint');
+  });
+
+  test(`You should have LintHTML extension in Visual Studio Code`, () => {
+    expect(listOfExtensions)
+      .toContain('kamikillerto.vscode-linthtml');
+  });
+
+  test(`You should have Stylelint extension in Visual Studio Code`, () => {
+    expect(listOfExtensions)
+      .toContain('stylelint.vscode-stylelint');
+  });
+
+  test('You should have Google Chrome or Firefox', () => {
+    if (OS === 'Windows') {
+      try {
+        if (!allActiveProgrammes.includes('chrome.exe')) {
           childProcess.execSync('start chrome');
           childProcess.execSync('taskkill /im chrome.exe');
 
@@ -67,7 +133,7 @@ describe('Environmental Check', () => {
         expect(true)
           .toBeTruthy();
       } catch (error) {
-        if (!allTasks.includes('firefox.exe')) {
+        if (!allActiveProgrammes.includes('firefox.exe')) {
           childProcess.execSync('start firefox');
           childProcess.execSync('taskkill /im firefox.exe');
 
@@ -78,118 +144,26 @@ describe('Environmental Check', () => {
         expect(true)
           .toBeTruthy();
       }
-    });
-
-    if (allTasks.includes('Code.exe')) {
-      test('You should have ESLint in Visual Studio Code', () => {
-        const listOfExtensions = childProcess.execSync(
-          'code --list-extensions'
-        ).toString();
-
-        expect(listOfExtensions)
-          .toContain('dbaeumer.vscode-eslint');
-      });
     }
-  } catch (e) {
-    try {
-      childProcess.execSync('lsb_release -a');
 
-      const allProgrammes = childProcess.execSync('dpkg -l').toString();
+    if (OS === 'Linux') {
+      const isGoogleChromeInstaled = allProgrammes.includes('google-chrome');
+      const isFirefoxInstaled = allProgrammes.includes('firefox');
 
-      test('You should have Node.js of 14 version', () => {
-        const version = getNodeVersion();
-
-        expect(
-          (
-            version >= minVersionOfNode
-            && version < maxVersionOfNode
-          )
-        )
-          .toBeTruthy();
-      });
-
-      test('You should have Git of 2.31.1 version or newer', () => {
-        const version = childProcess.execSync('git --version').toString();
-
-        expect((version.replace(/[^0-9]/g, '') >= minVersionOfGitOnMac))
-          .toBeTruthy();
-      });
-
-      test('You should have Bash Shell', () => {
-        const bashPath = childProcess.execSync('which bash').toString();
-
-        expect(!!bashPath)
-          .toBeTruthy();
-      });
-
-      test('You should have Google Chrome or Firefox', () => {
-        const isGoogleChromeInstaled = allProgrammes.includes('google-chrome');
-        const isFirefoxInstaled = allProgrammes.includes('firefox');
-
-        expect(isGoogleChromeInstaled || isFirefoxInstaled)
-          .toBeTruthy();
-      });
-    } catch (error) {
-      test('You should have Node.js of 14 version', () => {
-        const version = getNodeVersion();
-
-        expect(
-          (
-            version >= minVersionOfNode
-            && version < maxVersionOfNode
-          )
-        )
-          .toBeTruthy();
-      });
-
-      test('You should have Git of 2.31.1 version or newer', () => {
-        const version = childProcess.execSync('git --version').toString();
-
-        expect((version.replace(/[^0-9]/g, '') >= minVersionOfGitOnMac))
-          .toBeTruthy();
-      });
-
-      test('You should have Bash Shell', () => {
-        const bashPath = childProcess.execSync('which bash').toString();
-
-        expect(!!bashPath)
-          .toBeTruthy();
-      });
-
-      test('You should have Visual Studio Code or WebStorm', () => {
-        const WebStormPath = childProcess.execSync(
-          'mdfind -name webstorm'
-        ).toString();
-        const VSCodePath = childProcess.execSync(
-          'mdfind -name vscode'
-        ).toString();
-
-        expect(!!WebStormPath || !!VSCodePath)
-          .toBeTruthy();
-      });
-
-      test('You should have Google Chrome or Firefox', () => {
-        const googleChromePath = childProcess.execSync(
-          'mdfind -name google chrome'
-        ).toString();
-        const firefoxPath = childProcess.execSync(
-          'mdfind -name firefox'
-        ).toString();
-
-        expect(!!googleChromePath || !!firefoxPath)
-          .toBeTruthy();
-      });
-
-      if (childProcess.execSync('mdfind -name vscode').toString()) {
-        test('You should have ESLint in Visual Studio Code', () => {
-          const listOfExtensions = childProcess.execSync(
-            'code --list-extensions'
-          ).toString();
-
-          expect(listOfExtensions)
-            .toContain('dbaeumer.vscode-eslint');
-        });
-      }
+      expect(isGoogleChromeInstaled || isFirefoxInstaled)
+        .toBeTruthy();
     }
-  }
+
+    if (OS === 'MacOS') {
+      const googleChromePath = childProcess.execSync(
+        'mdfind -name google chrome'
+      ).toString();
+      const firefoxPath = childProcess.execSync(
+        'mdfind -name firefox'
+      ).toString();
+
+      expect(!!googleChromePath || !!firefoxPath)
+        .toBeTruthy();
+    }
+  });
 });
