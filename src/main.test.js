@@ -3,39 +3,16 @@
 'use strict';
 
 const childProcess = require('child_process');
-const maxVersionOfNode = 150000;
-const minVersionOfNode = 140000;
 const minVersionOfGitOnMacAndLinux = 2311;
 const minVersionOfGitOnWindows = 23110;
 
-function getNodeVersion() {
-  const versionName = childProcess.execSync('node -v').toString();
-
-  const [, major, minor, patch] = versionName.match(/.*?(\d+)\.(\d+)\.(\d+).*/);
-  const version = [major, minor, patch]
-    .map(v => v.padStart(2, '0'))
-    .join('');
-
-  // eslint-disable-next-line no-console
-  console.log('version: ', version);
-
-  return Number(version);
-}
-
 describe('Environmental Check', () => {
   let OS;
-  let nodeVersion;
   let allActiveProgrammes;
   let allProgrammes;
   let listOfExtensions;
 
   beforeAll(() => {
-    try {
-      nodeVersion = getNodeVersion();
-    } catch (error) {
-      nodeVersion = null;
-    }
-
     try {
       listOfExtensions = childProcess.execSync(
         'code --list-extensions --show-versions'
@@ -60,12 +37,9 @@ describe('Environmental Check', () => {
   });
 
   test('You should have Node.js of 14 version', () => {
-    expect(
-      (
-        nodeVersion >= minVersionOfNode
-          && nodeVersion < maxVersionOfNode
-      )
-    )
+    const versionName = childProcess.execSync('node -v').toString();
+
+    expect(versionName.startsWith('v14.'))
       .toBeTruthy();
   });
 
