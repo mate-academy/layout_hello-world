@@ -8,7 +8,7 @@ elements. Each level of nesting, including text, contained inside the element,
 requires 2-space offset.
         <details>
           <summary>BAD examples</summary>
-            ![html-indentations-bad-example-1](https://mate-academy.github.io/fe-program/css/checklists/html-attributes/example-bad-1.png)
+            ![html-indentations-bad-example-1](https://mate-academy.github.io/fe-program/css/checklists/html-indentations/example-bad-1.png)
         </details>
         <details>
           <summary>GOOD example</summary>
