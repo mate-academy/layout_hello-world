@@ -33,7 +33,7 @@ describe the content of the tag.
 
 4. [CODE STYLE] - Keep your code line length below 80. It’s not only historical
 tradition, but also allows your code to fit into one standard screen without
-horizontal scroll.
+horizontal scroll. But do not break the line if it cannot be broken (ex., long links).
 
 
 5. [CODE STYLE] - Remember about correct indentation between parent and child
