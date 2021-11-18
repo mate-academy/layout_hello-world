@@ -38,7 +38,7 @@ horizontal scroll. But do not break the line if it cannot be broken (ex., long l
 
 5. [CODE STYLE] - Remember about correct indentation between parent and child
 elements. Each level of nesting, including text, contained inside the element,
-requires 2-space offset.
+requires 2-space offset. Also blank line shouldn't be between parent and child elements.
        <details>
          <summary>BAD examples</summary>
            ![html-indentations-bad-example-1](https://mate-academy.github.io/fe-program/css/checklists/html-indentations/example-bad-1.png)
