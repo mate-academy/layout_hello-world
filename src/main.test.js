@@ -85,20 +85,20 @@ describe('Environmental Check', () => {
     if (OS === 'Workflow') {
       expect(true)
         .toBeTruthy();
+    } else {
+      expect(listOfExtensions)
+        .toContain('EditorConfig.EditorConfig');
     }
-
-    expect(listOfExtensions)
-      .toContain('EditorConfig.EditorConfig');
   });
 
   test(`You should have ESLint extension in Visual Studio Code`, () => {
     if (OS === 'Workflow') {
       expect(true)
         .toBeTruthy();
+    } else {
+      expect(listOfExtensions)
+        .toContain('dbaeumer.vscode-eslint');
     }
-
-    expect(listOfExtensions)
-      .toContain('dbaeumer.vscode-eslint');
   });
 
   test(`
@@ -107,20 +107,20 @@ describe('Environmental Check', () => {
     if (OS === 'Workflow') {
       expect(true)
         .toBeTruthy();
+    } else {
+      expect(listOfExtensions)
+        .toContain('kamikillerto.vscode-linthtml@0.4.0');
     }
-
-    expect(listOfExtensions)
-      .toContain('kamikillerto.vscode-linthtml@0.4.0');
   });
 
   test(`You should have Stylelint extension in Visual Studio Code`, () => {
     if (OS === 'Workflow') {
       expect(true)
         .toBeTruthy();
+    } else {
+      expect(listOfExtensions)
+        .toContain('stylelint.vscode-stylelint');
     }
-
-    expect(listOfExtensions)
-      .toContain('stylelint.vscode-stylelint');
   });
 
   test('You should have Google Chrome or Firefox', () => {
