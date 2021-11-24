@@ -73,12 +73,17 @@ describe('Environmental Check', () => {
   });
 
   test('You should have Visual Studio Code', () => {
-    const VSCodeVersion = childProcess.execSync(
-      'code -v'
-    ).toString();
+    if (OS === 'Workflow') {
+      expect(true)
+        .toBeTruthy();
+    } else {
+      const VSCodeVersion = childProcess.execSync(
+        'code -v'
+      ).toString();
 
-    expect(!!VSCodeVersion)
-      .toBeTruthy();
+      expect(!!VSCodeVersion)
+        .toBeTruthy();
+    }
   });
 
   test(`You should have EditorConfig extension in Visual Studio Code`, () => {
