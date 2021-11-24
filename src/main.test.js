@@ -42,8 +42,13 @@ describe('Environmental Check', () => {
   });
 
   test('You should have Node.js of 14 version', () => {
-    expect(versionName.startsWith('v14.'))
-      .toBeTruthy();
+    if (OS === 'Workflow') {
+      expect(versionName.startsWith('v12.'))
+        .toBeTruthy();
+    } else {
+      expect(versionName.startsWith('v14.'))
+        .toBeTruthy();
+    }
   });
 
   test('You should have Git of 2.31.1 version or newer', () => {
