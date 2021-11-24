@@ -81,75 +81,93 @@ describe('Environmental Check', () => {
       .toBeTruthy();
   });
 
-  if (OS !== 'Workflow') {
-    test(`You should have EditorConfig extension in Visual Studio Code`, () => {
-      expect(listOfExtensions)
-        .toContain('EditorConfig.EditorConfig');
-    });
+  test(`You should have EditorConfig extension in Visual Studio Code`, () => {
+    if (OS === 'Workflow') {
+      expect(true)
+        .toBeTruthy();
+    }
 
-    test(`You should have ESLint extension in Visual Studio Code`, () => {
-      expect(listOfExtensions)
-        .toContain('dbaeumer.vscode-eslint');
-    });
+    expect(listOfExtensions)
+      .toContain('EditorConfig.EditorConfig');
+  });
 
-    test(`
+  test(`You should have ESLint extension in Visual Studio Code`, () => {
+    if (OS === 'Workflow') {
+      expect(true)
+        .toBeTruthy();
+    }
+
+    expect(listOfExtensions)
+      .toContain('dbaeumer.vscode-eslint');
+  });
+
+  test(`
       You should have LintHTML v.0.4.0 extension in VisualStudioCode
     `, () => {
-      expect(listOfExtensions)
-        .toContain('kamikillerto.vscode-linthtml@0.4.0');
-    });
+    if (OS === 'Workflow') {
+      expect(true)
+        .toBeTruthy();
+    }
 
-    test(`You should have Stylelint extension in Visual Studio Code`, () => {
-      expect(listOfExtensions)
-        .toContain('stylelint.vscode-stylelint');
-    });
+    expect(listOfExtensions)
+      .toContain('kamikillerto.vscode-linthtml@0.4.0');
+  });
 
-    test('You should have Google Chrome or Firefox', () => {
-      if (OS === 'Windows') {
-        try {
-          if (!allActiveProgrammes.includes('chrome.exe')) {
-            childProcess.execSync('start chrome');
-            childProcess.execSync('taskkill /im chrome.exe');
+  test(`You should have Stylelint extension in Visual Studio Code`, () => {
+    if (OS === 'Workflow') {
+      expect(true)
+        .toBeTruthy();
+    }
 
-            expect(true)
-              .toBeTruthy();
-          }
+    expect(listOfExtensions)
+      .toContain('stylelint.vscode-stylelint');
+  });
 
-          expect(true)
-            .toBeTruthy();
-        } catch (error) {
-          if (!allActiveProgrammes.includes('firefox.exe')) {
-            childProcess.execSync('start firefox');
-            childProcess.execSync('taskkill /im firefox.exe');
-
-            expect(true)
-              .toBeTruthy();
-          }
+  test('You should have Google Chrome or Firefox', () => {
+    if (OS === 'Windows') {
+      try {
+        if (!allActiveProgrammes.includes('chrome.exe')) {
+          childProcess.execSync('start chrome');
+          childProcess.execSync('taskkill /im chrome.exe');
 
           expect(true)
             .toBeTruthy();
         }
-      }
 
-      if (OS === 'Linux') {
-        const isGoogleChromeInstaled = allProgrammes.includes('google-chrome');
-        const isFirefoxInstaled = allProgrammes.includes('firefox');
+        expect(true)
+          .toBeTruthy();
+      } catch (error) {
+        if (!allActiveProgrammes.includes('firefox.exe')) {
+          childProcess.execSync('start firefox');
+          childProcess.execSync('taskkill /im firefox.exe');
 
-        expect(isGoogleChromeInstaled || isFirefoxInstaled)
+          expect(true)
+            .toBeTruthy();
+        }
+
+        expect(true)
           .toBeTruthy();
       }
+    }
 
-      if (OS === 'MacOS') {
-        const googleChromePath = childProcess.execSync(
-          'mdfind -name google chrome'
-        ).toString();
-        const firefoxPath = childProcess.execSync(
-          'mdfind -name firefox'
-        ).toString();
+    if (OS === 'Linux') {
+      const isGoogleChromeInstaled = allProgrammes.includes('google-chrome');
+      const isFirefoxInstaled = allProgrammes.includes('firefox');
 
-        expect(!!googleChromePath || !!firefoxPath)
-          .toBeTruthy();
-      }
-    });
-  };
+      expect(isGoogleChromeInstaled || isFirefoxInstaled)
+        .toBeTruthy();
+    }
+
+    if (OS === 'MacOS') {
+      const googleChromePath = childProcess.execSync(
+        'mdfind -name google chrome'
+      ).toString();
+      const firefoxPath = childProcess.execSync(
+        'mdfind -name firefox'
+      ).toString();
+
+      expect(!!googleChromePath || !!firefoxPath)
+        .toBeTruthy();
+    }
+  });
 });
