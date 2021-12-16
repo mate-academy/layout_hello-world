@@ -6,7 +6,7 @@ Replace `<your_account>` with your Github username and copy the links to Pull Re
 > Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
 ___
 
-## ❗️❗️❗️ DON'T FORGET TO PROOFREAD YOUR CODE WITH [CHECKLIST](./checklist.md) BEFORE SENDING YOUR PULL REQUEST❗️❗️❗️
+## ❗️❗️❗️ DON'T FORGET TO PROOFREAD YOUR CODE WITH [CHECKLIST](https://github.com/mate-academy/layout_html-form/blob/master/checklist.md) BEFORE SENDING YOUR PULL REQUEST❗️❗️❗️
 
 ## The task:
 Create HTML page with form. On form submit send form data to `https://mate-academy-form-lesson.herokuapp.com/create-application`
@@ -47,7 +47,7 @@ Create HTML page with form. On form submit send form data to `https://mate-acade
 - Vertical distance between blocks with inputs should be `20px`
 - Any other styles should be browser default
 
---> Don't forget to proofread your code using [CHECKLIST](./checklist.md)
+--> Don't forget to proofread your code using [CHECKLIST](https://github.com/mate-academy/layout_html-form/blob/master/checklist.md)
 
 ## Tips & Hints
 1. You can group different input sections with [fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) tag
