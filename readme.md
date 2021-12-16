@@ -5,6 +5,8 @@ Replace `<your_account>` with your Github username and copy the links to Pull Re
 
 > Follow [these instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
 
+## ❗️❗️❗️ DON'T FORGET TO PROOFREAD YOUR CODE WITH [CHECKLIST](./checklist.md) BEFORE SENDING YOUR PULL REQUEST❗️❗️❗️
+
 ## The task
 Create HTML page with the header using `flexbox` basing on [this mockup](https://www.figma.com/file/KAV1NnDp7hgQtPnaD6XdOcnG/Moyo-Header?node-id=0%3A1).
 
