@@ -3,7 +3,7 @@ Replace `<your_account>` with your Github username and copy the links to Pull Re
 - [DEMO LINK](https://<your_account>.github.io/layout_html-form/)
 - [TEST REPORT LINK](https://<your_account>.github.io/layout_html-form/report/html_report/)
 
-> Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
+> Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github){:target="_blank"}
 ___
 
 ## The task:
