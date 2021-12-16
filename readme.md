@@ -6,7 +6,7 @@ Replace `<your_account>` with your Github username and copy the links to Pull Re
 > Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
 ___
 
-## !!! DON'T FORGET TO PROOFREAD YOUR CODE WITH CHECKLIST [CHECKLIST](./checklist.md)☝️!!!
+## ❗️❗️⚠️ DON'T FORGET TO PROOFREAD YOUR CODE WITH CHECKLIST [CHECKLIST](./checklist.md)⚠️❗️❗️
 
 ## The task:
 Create HTML page with form. On form submit send form data to `https://mate-academy-form-lesson.herokuapp.com/create-application`
