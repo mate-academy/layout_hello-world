@@ -9,6 +9,8 @@ ___
 > Disable `Multiplayer Cursors` in figma to hide other cursors ([Learn how](https://mate-academy.github.io/layout_task-guideline/figma.html#multiplayer-cursors))
 ___
 
+## ❗️❗️❗️ DON'T FORGET TO PROOFREAD YOUR CODE WITH [CHECKLIST](https://github.com/mate-academy/layout_stars/blob/master/checklist.md) BEFORE SENDING YOUR PULL REQUEST❗️❗️❗️
+
 ## The task
 Implement the [`stars` block](https://www.figma.com/file/EIBkG1dy1jnK88YPO34Qir/Moyo-Catalog-updated) used in card and catalog.
 You DON'T need to implement the card now, just the stars block.
