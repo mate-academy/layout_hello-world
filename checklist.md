@@ -18,7 +18,7 @@ requires 2-space offset.
 
 
 3. [CODE STYLE] - If the HTML-element has long attribute values or number of
-attributes is more than 3 - start each one, including the first, on the new
+attributes is more than 2 - start each one, including the first, on the new
 line with 2-space indentation related to tag. Tag’s closing bracket should be
 on the same level as opening one.
         <details>
