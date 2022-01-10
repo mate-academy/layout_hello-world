@@ -9,6 +9,4 @@ Replace `<your_account>` with your Github username and copy the links to Pull Re
 ___
 
 ## The task
-## The task
-## The task
 Add the basic page markup and the text `Hello, world!` into the body.
