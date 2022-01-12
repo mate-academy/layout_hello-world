@@ -16,7 +16,7 @@ describe('Environmental Check', () => {
   beforeAll(() => {
     try {
       listOfExtensions = childProcess.execSync(
-        'code --list-extensions --show-versions'
+        'code --list-extensions --show-versions',
       ).toString();
     } catch (error) {
       listOfExtensions = null;
@@ -53,7 +53,7 @@ describe('Environmental Check', () => {
 
   test('You should have Git of 2.31.1 version or newer', () => {
     const version = childProcess.execSync(
-      'git --version'
+      'git --version',
     ).toString().replace(/[^0-9]/g, '');
 
     if (OS === 'Windows') {
@@ -78,7 +78,7 @@ describe('Environmental Check', () => {
         .toBeTruthy();
     } else {
       const VSCodeVersion = childProcess.execSync(
-        'code -v'
+        'code -v',
       ).toString();
 
       expect(!!VSCodeVersion)
@@ -165,10 +165,10 @@ describe('Environmental Check', () => {
 
     if (OS === 'MacOS') {
       const googleChromePath = childProcess.execSync(
-        'mdfind -name google chrome'
+        'mdfind -name google chrome',
       ).toString();
       const firefoxPath = childProcess.execSync(
-        'mdfind -name firefox'
+        'mdfind -name firefox',
       ).toString();
 
       expect(!!googleChromePath || !!firefoxPath)
