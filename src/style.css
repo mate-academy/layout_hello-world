@@ -1,1 +1,15 @@
-/* styles go here */
+.form-field {
+  display: block;
+  padding-top: 10px;
+}
+
+.personalInformation,
+.registration,
+.interestingFact,
+.addInfo {
+  margin-top: 20px;
+}
+
+.button {
+  margin-top: 20px;
+}
