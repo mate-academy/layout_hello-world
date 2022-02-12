@@ -7,5 +7,4 @@ Replace `MAIK-01` with your Github username and copy the links to Pull Request d
 ___
 
 ## The task 
-Add the basic page markup and the text `Hello, world!` into the body.
-# MAIK-01
+Add the basic page markup and the text `Hello, world!` into the body
