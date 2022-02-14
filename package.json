@@ -41,5 +41,7 @@
       "bem": false
     }
   },
-  "dependencies": {}
+  "dependencies": {
+    "trim-newlines": "^4.0.2"
+  }
 }
