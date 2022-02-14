@@ -41,5 +41,13 @@
       "bem": false
     }
   },
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oleksandr-haidysh/layout_hello-world.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oleksandr-haidysh/layout_hello-world/issues"
+  },
+  "homepage": "https://github.com/oleksandr-haidysh/layout_hello-world#readme"
 }
