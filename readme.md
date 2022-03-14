@@ -1,5 +1,5 @@
 # Hello world
-Replace `efdalyalcin` with your Github username and copy the links to Pull Request description:
+Replace `<your_account>` with your Github username and copy the links to Pull Request description:
 - [DEMO LINK](https://efdalyalcin.github.io/layout_hello-world/)
 - [TEST REPORT LINK](https://efdalyalcin.github.io/layout_hello-world/report/html_report/)
 
