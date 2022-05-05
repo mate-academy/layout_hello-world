@@ -34,7 +34,7 @@ BAD example:
 </ul>
 ```
 
-2. [CODE STYLE] - Combine selectors that have same styles using `,`
+2. [CODE STYLE] - If several selectors MUST always have the same styles, group them using `,` to prevent accidental out ot sync in future
 
 GOOD example:
 ```css
