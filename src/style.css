@@ -1,1 +1,17 @@
-/* styles go here */
+.formField {
+  display: block;
+  margin: 10px 0;
+}
+
+.formField:last-child {
+  margin: 0;
+}
+
+.radioButton {
+  display: inline;
+}
+
+.group {
+  margin: 20px 0;
+}
+
