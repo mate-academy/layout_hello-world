@@ -13,5 +13,4 @@ backstop_data
 dist
 .cache
 package-lock.json
-.linthtmlrc.json
 
