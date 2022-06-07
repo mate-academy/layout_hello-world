@@ -63,14 +63,16 @@ and
 8. [LAYOUT] - Logo should be a link to the main page of the website, but not
 part of navigation menu
 
+9. [CODE KNOWLEDGE] - Don't use `*` selector for zeroing out your margins or paddings. It's still inefficient for browser to read your web document
 
-9. [TESTS] - Don't forget to add correct style on `:hover`
+
+10. [TESTS] - Don't forget to add correct style on `:hover`
 
 
-10. [TESTS] - Remember that links should have `cursor: pointer` and clickable
+11. [TESTS] - Remember that links should have `cursor: pointer` and clickable
 zone on 100% of header height
 
 
-11. [TESTS] - Check the [mockup](https://www.figma.com/file/KAV1NnDp7hgQtPnaD6XdOcnG/Moyo-Header?node-id=0%3A1)
+12. [TESTS] - Check the [mockup](https://www.figma.com/file/KAV1NnDp7hgQtPnaD6XdOcnG/Moyo-Header?node-id=0%3A1)
 again and see the distance between `О` in `ВИДЕО` to right screen side. Link has
 no margin on the right.
