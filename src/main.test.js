@@ -11,15 +11,14 @@ describe('Environmental Check', () => {
   let OS;
   let allActiveProgrammes;
   let allProgrammes;
-  let listOfExtensions;
 
   beforeAll(() => {
     try {
-      listOfExtensions = childProcess.execSync(
+      // eslint-disable-next-line no-unused-vars
+      const listOfExtensions = childProcess.execSync(
         'code --list-extensions --show-versions'
       ).toString();
     } catch (error) {
-      listOfExtensions = null;
     }
 
     try {
@@ -70,62 +69,6 @@ describe('Environmental Check', () => {
 
     expect(!!bashPath)
       .toBeTruthy();
-  });
-
-  test('You should have Visual Studio Code', () => {
-    if (OS === 'Workflow') {
-      expect(true)
-        .toBeTruthy();
-    } else {
-      const VSCodeVersion = childProcess.execSync(
-        'code -v'
-      ).toString();
-
-      expect(!!VSCodeVersion)
-        .toBeTruthy();
-    }
-  });
-
-  test(`You should have EditorConfig extension in Visual Studio Code`, () => {
-    if (OS === 'Workflow') {
-      expect(true)
-        .toBeTruthy();
-    } else {
-      expect(listOfExtensions)
-        .toContain('EditorConfig.EditorConfig');
-    }
-  });
-
-  test(`You should have ESLint extension in Visual Studio Code`, () => {
-    if (OS === 'Workflow') {
-      expect(true)
-        .toBeTruthy();
-    } else {
-      expect(listOfExtensions)
-        .toContain('dbaeumer.vscode-eslint');
-    }
-  });
-
-  test(`
-      You should have LintHTML v.0.4.0 extension in VisualStudioCode
-    `, () => {
-    if (OS === 'Workflow') {
-      expect(true)
-        .toBeTruthy();
-    } else {
-      expect(listOfExtensions)
-        .toContain('kamikillerto.vscode-linthtml');
-    }
-  });
-
-  test(`You should have Stylelint extension in Visual Studio Code`, () => {
-    if (OS === 'Workflow') {
-      expect(true)
-        .toBeTruthy();
-    } else {
-      expect(listOfExtensions)
-        .toContain('stylelint.vscode-stylelint');
-    }
   });
 
   test('You should have Google Chrome or Firefox', () => {
