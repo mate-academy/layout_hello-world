@@ -9,8 +9,8 @@ const versionName = childProcess.execSync('node -v').toString();
 
 describe('Environmental Check', () => {
   let OS;
-  let allActiveProgrammes;
-  let allProgrammes;
+  // let allActiveProgrammes;
+  // let allProgrammes;
   let listOfExtensions;
 
   beforeAll(() => {
@@ -128,51 +128,51 @@ describe('Environmental Check', () => {
     }
   });
 
-  test('You should have Google Chrome or Firefox', () => {
-    if (OS === 'Windows') {
-      try {
-        if (!allActiveProgrammes.includes('chrome.exe')) {
-          childProcess.execSync('start chrome');
-          childProcess.execSync('taskkill /im chrome.exe');
+  // test('You should have Google Chrome or Firefox', () => {
+  //   if (OS === 'Windows') {
+  //     try {
+  //       if (!allActiveProgrammes.includes('chrome.exe')) {
+  //         childProcess.execSync('start chrome');
+  //         childProcess.execSync('taskkill /im chrome.exe');
 
-          expect(true)
-            .toBeTruthy();
-        }
+  //         expect(true)
+  //           .toBeTruthy();
+  //       }
 
-        expect(true)
-          .toBeTruthy();
-      } catch (error) {
-        if (!allActiveProgrammes.includes('firefox.exe')) {
-          childProcess.execSync('start firefox');
-          childProcess.execSync('taskkill /im firefox.exe');
+  //       expect(true)
+  //         .toBeTruthy();
+  //     } catch (error) {
+  //       if (!allActiveProgrammes.includes('firefox.exe')) {
+  //         childProcess.execSync('start firefox');
+  //         childProcess.execSync('taskkill /im firefox.exe');
 
-          expect(true)
-            .toBeTruthy();
-        }
+  //         expect(true)
+  //           .toBeTruthy();
+  //       }
 
-        expect(true)
-          .toBeTruthy();
-      }
-    }
+  //       expect(true)
+  //         .toBeTruthy();
+  //     }
+  //   }
 
-    if (OS === 'Linux') {
-      const isGoogleChromeInstaled = allProgrammes.includes('google-chrome');
-      const isFirefoxInstaled = allProgrammes.includes('firefox');
+  //   if (OS === 'Linux') {
+  //     const isGoogleChromeInstaled = allProgrammes.includes('google-chrome');
+  //     const isFirefoxInstaled = allProgrammes.includes('firefox');
 
-      expect(isGoogleChromeInstaled || isFirefoxInstaled)
-        .toBeTruthy();
-    }
+  //     expect(isGoogleChromeInstaled || isFirefoxInstaled)
+  //       .toBeTruthy();
+  //   }
 
-    if (OS === 'MacOS') {
-      const googleChromePath = childProcess.execSync(
-        'mdfind -name google chrome'
-      ).toString();
-      const firefoxPath = childProcess.execSync(
-        'mdfind -name firefox'
-      ).toString();
+  //   if (OS === 'MacOS') {
+  //     const googleChromePath = childProcess.execSync(
+  //       'mdfind -name google chrome'
+  //     ).toString();
+  //     const firefoxPath = childProcess.execSync(
+  //       'mdfind -name firefox'
+  //     ).toString();
 
-      expect(!!googleChromePath || !!firefoxPath)
-        .toBeTruthy();
-    }
-  });
+  //     expect(!!googleChromePath || !!firefoxPath)
+  //       .toBeTruthy();
+  //   }
+  // });
 });
