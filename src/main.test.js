@@ -147,14 +147,14 @@ describe('Environmental Check', () => {
   });
 
   if (OS === 'Workflow') {
-    test(`You should deploy your site on GitHub pages`, () => {
+    test(`You should deploy your site to GitHub pages`, () => {
       const demoLinkBody = getSiteBody('[DEMO LINK]', 'world/');
 
       expect(demoLinkBody)
         .toContain('Hello, world!');
     });
 
-    test(`You should deploy test page on GitHub pages`, () => {
+    test(`You should deploy test page to GitHub pages`, () => {
       const testLinkBody = getSiteBody('[TEST REPORT LINK]', '_report/');
 
       expect(testLinkBody)
