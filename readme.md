@@ -20,7 +20,7 @@ ___
 - You can find star images in `images` folder
 - Reset browser's default `margin`
 - Implement 6 blocks with `stars` class
-  - The first should have `stars--0` class
+  - The first should not have extra classes
   - The next 5 blocks should have an extra class `stars--1`, `stars--2` ... `stars--5` (one extra class per block)
 - Each block should have exactly 5 stars styled as in the card design
 - The number of active (yellow) stars should be different for all 6 blocks depending on modifier class
