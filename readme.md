@@ -20,11 +20,10 @@ ___
 - You can find star images in `images` folder
 - Reset browser's default `margin`
 - Implement 6 blocks with `stars` class
-  - The first should not have extra classes
-  - The next 5 blocks should have an extra class `stars--1`, `stars--2` ... `stars--5` (one extra class per block)
+  - Each block should have an extra class `stars--0`, `stars--1`, `stars--2` ... `stars--5` (one extra class per block)
 - Each block should have exactly 5 stars styled as in the card design
 - The number of active (yellow) stars should be different for all 6 blocks depending on modifier class
-  - The first block (with just `stars` class) don't have active stars
+  - The first block (with `stars--0` modifier) don't have active stars
   - The other 5 blocks have exactly N fisrt stars active where N is a numbers in an additional css class (modifier) `stars--N`
   - Add stars as background-images, not as "img" or "svg" tags
 - Each star in a block should have a class `stars__star` and no extra classes or inline styles
