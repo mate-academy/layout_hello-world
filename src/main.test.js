@@ -146,21 +146,29 @@ describe('Environmental Check', () => {
     }
   });
 
-  if (OS === 'Workflow') {
-    test(`You should deploy your site to GitHub pages`, () => {
+  test(`You should deploy your site to GitHub pages`, () => {
+    if (OS === 'Workflow') {
       const demoLinkBody = getSiteBody('[DEMO LINK]', 'world/');
 
       expect(demoLinkBody)
         .toContain('Hello, world!');
-    });
+    }
 
-    test(`You should deploy test page to GitHub pages`, () => {
+    expect(true)
+      .toBeTruthy();
+  });
+
+  test(`You should deploy test page to GitHub pages`, () => {
+    if (OS === 'Workflow') {
       const testLinkBody = getSiteBody('[TEST REPORT LINK]', '_report/');
 
       expect(testLinkBody)
         .toContain('BackstopJS Report');
-    });
-  }
+    }
+
+    expect(true)
+      .toBeTruthy();
+  });
 
   test('You should have Google Chrome or Firefox', () => {
     if (OS === 'Windows') {
