@@ -51,8 +51,6 @@ describe('Environmental Check', () => {
         allProgrammes = childProcess.execSync('dpkg -l').toString();
         OS = 'Linux';
 
-        console.log(allProgrammes);
-
         if (versionName.startsWith('v12.')) {
           OS = 'Workflow';
         }
