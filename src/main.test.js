@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable no-useless-escape */
 /* eslint-disable no-undef */
 'use strict';
@@ -50,6 +51,8 @@ describe('Environmental Check', () => {
         allProgrammes = childProcess.execSync('dpkg -l').toString();
         OS = 'Linux';
 
+        console.log(allProgrammes);
+
         if (versionName.startsWith('v12.')) {
           OS = 'Workflow';
         }
@@ -60,6 +63,8 @@ describe('Environmental Check', () => {
   });
 
   test('You should have Node.js of 14 version', () => {
+    console.log(OS);
+
     if (OS === 'Workflow') {
       expect(versionName.startsWith('v12.'))
         .toBeTruthy();
