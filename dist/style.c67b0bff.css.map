@@ -1,1 +1,0 @@
-{"version":3,"sources":["style.css"],"names":[],"mappings":"AACA,KACE,qBAAsB,CACtB,UACF,CAEA,GACE,WACF","file":"style.c67b0bff.css","sourceRoot":"..\\src","sourcesContent":["/* styles go here */\nbody {\n  background-color: #ddd;\n  color: #000;\n}\n\nh1 {\n  color: green;\n}\n"]}
