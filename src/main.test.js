@@ -214,7 +214,7 @@ describe('Environmental Check', () => {
       ).toString();
 
       expect(!!googleChromePath || !!firefoxPath)
-        .toBeTruthy();
+        .toBeTruthy()
     }
   });
 });
