@@ -45,5 +45,5 @@
   "line-end-style": "crlf",
   "attr-new-line": 2,
   "attr-name-style": "dash",
-  "attr-no-unsafe-char": true
+  "attr-no-unsafe-char": true 
 }
