@@ -12,3 +12,7 @@ node_modules
 backstop_data
 dist
 .cache
+
+#extra files
+package-lock.json
+package.json
