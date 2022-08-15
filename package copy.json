@@ -6,7 +6,7 @@
   "scripts": {
     "init": "mate-scripts init",
     "start": "mate-scripts start",
-    "lint": "npx linthtml 'src/**/*.html'",
+    "lint": "mate-scripts lint",
     "test:only": "mate-scripts test",
     "build": "mate-scripts build",
     "deploy": "mate-scripts deploy",
