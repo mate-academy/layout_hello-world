@@ -21,6 +21,7 @@
     "@linthtml/linthtml": "^0.8.3",
     "@mate-academy/backstop-config": "^1.0.0",
     "@mate-academy/bemlint": "^0.1.1",
+    "@mate-academy/html-lint": "^0.1.0",
     "@mate-academy/eslint-config": "*",
     "@mate-academy/linthtml-config": "0.0.2",
     "@mate-academy/scripts": "^0.9.1",
@@ -37,7 +38,8 @@
   "mateAcademy": {
     "projectType": "layout",
     "linters": {
-      "bem": false
+      "bem": false,
+      "htmlLint": true
     }
   },
   "dependencies": {}
