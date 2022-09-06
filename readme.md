@@ -1,8 +1,8 @@
 # Hello world
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://07Spirit.github.io/layout_hello-world/)
+- [DEMO LINK](https://07Spirit.github.io/layout_hello-world/src/)
 
-- [TEST REPORT LINK](https://07Spirit.github.io/layout_hello-world/backstop_data/report/html_report/)
+- [TEST REPORT LINK](https://07Spirit.github.io/layout_hello-world/backstop_data/html_report/index.html)
 
 > Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
 ___
