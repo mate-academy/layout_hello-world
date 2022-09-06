@@ -6,12 +6,13 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
         node-version: [12.x]
+
+    name: Tests <Node.js ${{ matrix.node-version }}>
 
     steps:
     - uses: actions/checkout@v2
@@ -20,7 +21,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install
-    - run: npm test
+    - run: npm run test:only
     - name: Upload HTML report(backstop data)
       if: ${{ always() }}
       uses: actions/upload-artifact@v2
