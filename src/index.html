@@ -9,7 +9,224 @@
   </head>
 
   <body>
-    Hello, world!
+    <form
+    action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    method="post"
+    >
+
+
+      <fieldset>
+        <legend>
+          Personal information
+        </legend>
+        <div>
+          Surname:
+          <input
+            type="text"
+            name="surname"
+          >
+        </div>
+        <div>
+          Name:
+          <input
+            type="text"
+            name="name"
+          >
+        </div>
+        <div>
+          <label
+            for="tentacles">
+            How old are You?
+          </label>
+          <input
+            type="number"
+            id="tentacles"
+            name="tentacles"
+            min="1"
+            max="150"
+            value="12"
+           >
+        </div>
+        <div>
+          <label
+            for="start"
+          >
+            Full date of birth:
+          </label>
+          <input
+            type="date"
+            id="start"
+            name="trip-start"
+            min="1900-01-01"
+            max="2022-01-01"
+          >
+        </div>
+        <div>
+          <label
+            for="bet">
+            I accept the term of the argeement
+          </label>
+          <input
+            type="checkbox"
+             name="remember"
+             id="bet"
+          >
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+         Registration
+        </legend>
+        <div>
+          <label
+            for="email">
+            E-mail:
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            multiple
+            placeholder="email@example.com"
+            size="30"
+
+           >
+        </div>
+        <div>
+          <label
+            for="pass"
+          >
+            Password:
+          </label>
+          <input
+            type="password"
+            id="pass"
+            name="password"
+            minlength="5"
+            maxlength="30"
+            required
+          >
+        </div>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          An interesting fact about you!
+        </legend>
+        <div>
+          Do you love cats ?
+
+          <input
+          type="radio"
+          name="yes"
+          id="cats"
+          >
+          <label
+            for="cats"
+          >
+            Yes
+          </label>
+          <input
+          type="radio"
+          name="no"
+          id="cats1"
+          >
+          <label
+            for="cats1"
+          >
+            No
+          </label>
+        </div>
+        <div>
+          What is you favorite color?
+          <input
+            type="color"
+            name="color"
+            value="#000000"
+          >
+        </div>
+        <div>
+          What time do you go to bed?
+          <input
+            type="time"
+            name="appt"
+            placeholder="--:--:-- --"
+          >
+        </div>
+        <div>
+          What are your favorite brand of cars?
+          <select
+            name="car"
+            id="car"
+          >
+            <option
+             value="BMW"
+             >
+             BMW
+            </option>
+            <option
+            value="Audi"
+            >
+            Audi
+            </option>
+            <option
+            value="Lada"
+            >
+            Lada
+            </option>
+          </select>
+        </div>
+        <div>
+          <label for="vol">
+            How do you rate our work?
+          </label>
+          <input
+            type="range"
+            name="range"
+          >
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          Additional info:
+        </legend>
+        <div>
+          Comments:
+          <textarea
+            name="feedback"
+            id="feedback"
+            cols="30"
+            rows="10"
+          >
+          </textarea>
+        </div>
+        <div>
+          Would you recommend us?
+          <select
+            name="us"
+            id="us"
+          >
+            <option
+             value="yes"
+             >
+             yes
+            </option>
+            <option
+            value="no"
+            >
+            no
+            </option>
+          </select>
+        </div>
+      </fieldset>
+      <button>
+        Submit
+      </button>
+
+    </form>
   </body>
 
 </html>
