@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
     <title>Document</title>
   </head>
 
@@ -15,25 +16,25 @@
     >
 
 
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>
           Personal information
         </legend>
-        <div>
+        <div class="div">
           Surname:
           <input
             type="text"
             name="surname"
           >
         </div>
-        <div>
+        <div class="div">
           Name:
           <input
             type="text"
             name="name"
           >
         </div>
-        <div>
+        <div class="div">
           <label
             for="tentacles">
             How old are You?
@@ -47,7 +48,7 @@
             value="12"
            >
         </div>
-        <div>
+        <div class="div">
           <label
             for="start"
           >
@@ -61,7 +62,7 @@
             max="2022-01-01"
           >
         </div>
-        <div>
+        <div class="div">
           <label
             for="bet">
             I accept the term of the argeement
@@ -74,11 +75,11 @@
         </div>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>
          Registration
         </legend>
-        <div>
+        <div class="div">
           <label
             for="email">
             E-mail:
@@ -90,10 +91,9 @@
             multiple
             placeholder="email@example.com"
             size="30"
-
-           >
+         >
         </div>
-        <div>
+        <div class="div">
           <label
             for="pass"
           >
@@ -111,11 +111,11 @@
 
       </fieldset>
 
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>
           An interesting fact about you!
         </legend>
-        <div>
+        <div class="div">
           Do you love cats ?
 
           <input
@@ -139,7 +139,7 @@
             No
           </label>
         </div>
-        <div>
+        <div class="div">
           What is you favorite color?
           <input
             type="color"
@@ -147,7 +147,7 @@
             value="#000000"
           >
         </div>
-        <div>
+        <div class="div">
           What time do you go to bed?
           <input
             type="time"
@@ -155,7 +155,7 @@
             placeholder="--:--:-- --"
           >
         </div>
-        <div>
+        <div class="div">
           What are your favorite brand of cars?
           <select
             name="car"
@@ -178,8 +178,9 @@
             </option>
           </select>
         </div>
-        <div>
-          <label for="vol">
+        <div class="div">
+          <label
+            for="vol">
             How do you rate our work?
           </label>
           <input
@@ -189,11 +190,11 @@
         </div>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>
           Additional info:
         </legend>
-        <div>
+        <div class="div">
           Comments:
           <textarea
             name="feedback"
@@ -203,7 +204,7 @@
           >
           </textarea>
         </div>
-        <div>
+        <div class="div">
           Would you recommend us?
           <select
             name="us"
@@ -225,8 +226,6 @@
       <button>
         Submit
       </button>
-
     </form>
   </body>
-
 </html>
