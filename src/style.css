@@ -1,1 +1,50 @@
-/* styles go here */
+.formFild {
+
+  display: block;
+
+  margin: 10px;
+
+}
+
+.personalInf {
+
+  border: 1px solid;
+ 
+  margin: 20px 0;
+
+}
+
+.registr {
+
+  border: 1px solid;
+
+  margin: 20px 0;
+}
+
+.theFacts {
+
+  border: 1px solid;
+
+  margin: 20px 0;
+}
+
+.additionalInfo {
+
+  border: 1px solid;
+
+  margin: 20px 0;
+}
+
+.info,
+.facts,
+.addInfo,
+.blockRegistr {
+
+  margin-left: 10px;
+
+}
+
+#subInput {
+
+  border-radius: 8px;
+}
