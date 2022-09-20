@@ -4,10 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
   </head>
 
   <body>
-    Hello, world!
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    >
+      <fieldset class="personalInf">
+        <legend class="info">Personal information</legend>
+        <label for="surnameInput" class="formFild"
+          >Surname:<input type="text" id="surnameInput">
+        </label>
+        <label for="nameInput" class="formFild">
+          Name: <input type="text" id="nameInput" autocomplete="off">
+        </label>
+        <label for="numberInput" class="formFild"
+          >How old are you?:
+          <input type="number" 
+                 id="numberInput" 
+                 max="100" 
+                 min="1" 
+                 value="12"
+                >
+        </label>
+        <label for="dateInput" class="formFild"
+          >Full date of birth: <input type="date" id="dateInput">
+        </label>
+        <label for="consentInput" class="formFild">
+          I accept the term of the agreement:
+          <input type="checkbox" id="consentInput" required>
+        </label>
+      </fieldset>
+
+      <fieldset class="registr">
+        <legend>Registration</legend>
+        <label for="emailInput" class="formFild">
+          Your email:
+          <input type="email" id="emailInput" value="email@example.com">
+        </label>
+        <label for="passInput" class="formFild">
+          Password:
+          <input type="password" id="passInput" minlength="4">
+        </label>
+      </fieldset>
+
+      <fieldset class="theFacts">
+        <legend>An interesting fact about you!</legend>
+        <label for="loveCats" class="formFild">
+          Do you love cats?
+          <input type="radio" name="isCatsLoved" id="loveCats">Yes
+          <input type="radio" name="isCatsLoved">No
+        </label>
+        <label for="favColor" class="formFild">
+          What is your favorite color?
+          <input type="color" name="favoriteColor" id="favColor">
+        </label>
+        <label for="timeToSleep" class="formFild">
+          What time do you go to bed?
+          <input type="time" id="timeToSleep">
+        </label>
+        <label for="favBrandOfCar" class="formFild">
+          What are your favorite brand of car?
+          <select id="favBrandOfCar">
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
+          </select>
+        </label>
+        <label for="rating" class="formFild">
+          How do you rate our work?
+          <input type="range" id="rating">
+        </label>
+      </fieldset>
+
+      <fieldset class="additionalInfo">
+        <legend>Additional info:</legend>
+        <div class="addInfo">
+          <label for="comm"></label>
+          Comments:
+          <textarea
+            type="text"
+            height="100px"
+            id="comm"
+            maxlength="100"
+            autocomplete="off"
+          >
+          </textarea>
+        </div>
+        <label for="choise" class="formFild">
+          Would you recommend us?
+          <select>
+            <option value="true">yes</option>
+            <option value="false">no</option>
+          </select>
+        </label>
+      </fieldset>
+      <label for="subInput">
+        <input type="submit" id="subInput">
+      </label>
+    </form>
   </body>
 </html>
