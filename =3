@@ -1,0 +1,9 @@
++ @octokit/plugin-request-log@1.0.4
++ @octokit/core@4.0.5
+added 10 packages from 6 contributors, updated 9 packages, moved 8 packages and audited 1852 packages in 31.643s
+
+101 packages are looking for funding
+  run `npm fund` for details
+
+found 243 vulnerabilities (3 low, 94 moderate, 124 high, 22 critical)
+  run `npm audit fix` to fix them, or `npm audit` for details
