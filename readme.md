@@ -1,5 +1,4 @@
 # Hello world
-Replace `andreyolin` with your Github username and copy the links to Pull Request description:
 - [DEMO LINK](https://andreyolin.github.io/layout_hello-world/)
 - [TEST REPORT LINK](https://andreyolin.github.io/layout_hello-world/report/html_report/)
 
