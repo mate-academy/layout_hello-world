@@ -1,7 +1,7 @@
 - make sure all links work and test is present
-- make sure there is an empty line at the end of the file ([find out why](https://evanhahn.com/newline-necessary-at-the-end-of-javascript-files/))
+- make sure there is an empty line at the end of the file ([find out why](https://evanhahn.com/newline-necessary-at-the-end-of-javascript-fnpmiles/))
 - elements of type block (e.g. `div`) are already 100% wide, there is no need to write this in styles
-- after you open the tag, you have to add at least one more level of indentation before you close this tag 
+- after you open the tag, you have to add at least one more level of indentation before you close this tag
 
  GOOD example:
 ```
