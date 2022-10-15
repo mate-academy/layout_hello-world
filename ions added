@@ -1,0 +1,146 @@
+* [31m7a645be[m -[33m (HEAD -> develop)[m extensions added [32m(89 seconds ago)[1;34m<Nikoramo>[m
+* [31m0984fe6[m -[33m (origin/develop)[m added greeting [32m(33 minutes ago)[1;34m<Nikoramo>[m
+* [31ma956159[m -[33m (origin/master, origin/HEAD, master)[m small fix test [32m(3 months ago)[1;34m<Danylo Onishchuk>[m
+*   [31mbc40dd1[m -[33m[m Merge pull request #2024 from mate-academy/add-test-for-check-deployment [32m(3 months ago)[1;34m<Danylo Onishchuk>[m
+[32m|[m[33m\[m  
+[32m|[m * [31m68947a5[m -[33m[m fix typo [32m(3 months ago)[1;34m<Danylo Onishchuk>[m
+[32m|[m * [31mbc2d6d0[m -[33m[m add test [32m(3 months ago)[1;34m<Danylo Onishchuk>[m
+[32m|[m[32m/[m  
+* [31m5684936[m -[33m[m update linthtml [32m(10 months ago)[1;34m<mgrinko>[m
+* [31md8a430b[m -[33m[m Update readme.md [32m(10 months ago)[1;34m<Misha Grinko>[m
+* [31mf2206ce[m -[33m[m ".linthtmlrc.json" now extended from "@mate-academy/linthtml" package, versions updated (#1202) [32m(10 months ago)[1;34m<OleksiiBlezniuk>[m
+*   [31ma9842af[m -[33m[m Merge pull request #1182 from danylo-onishchuk/developer-test [32m(11 months ago)[1;34m<Danylo Onishchuk>[m
+[34m|[m[35m\[m  
+[34m|[m * [31m41207e4[m -[33m[m delete code [32m(11 months ago)[1;34m<Danylo Onishchuk>[m
+[34m|[m * [31mffe0e83[m -[33m[m fix test3 [32m(11 months ago)[1;34m<Danylo Onishchuk>[m
+[34m|[m * [31m67b36c3[m -[33m[m fix test2 [32m(11 months ago)[1;34m<Danylo Onishchuk>[m
+[34m|[m * [31m84b9a12[m -[33m[m fix test1 [32m(11 months ago)[1;34m<Danylo Onishchuk>[m
+[34m|[m * [31mdcf0d5d[m -[33m[m fix test [32m(11 months ago)[1;34m<Danylo Onishchuk>[m
+[34m|[m * [31mf43a43b[m -[33m[m add [32m(11 months ago)[1;34m<Danylo Onishchuk>[m
+[34m|[m * [31m494500c[m -[33m[m test [32m(11 months ago)[1;34m<Danylo Onishchuk>[m
+[34m|[m[34m/[m  
+*   [31m7ab6c7e[m -[33m[m Merge pull request #1181 from mate-academy/mate-scripts-update [32m(11 months ago)[1;34m<Danylo Onishchuk>[m
+[36m|[m[1;31m\[m  
+[36m|[m * [31mde610fb[m -[33m[m Add version of backstop-config [32m(11 months ago)[1;34m<Danylo Onishchuk>[m
+[36m|[m[36m/[m  
+*   [31m9019370[m -[33m[m Merge pull request #1178 from mate-academy/mate-scripts-update [32m(11 months ago)[1;34m<Ihor Karpyn>[m
+[1;32m|[m[1;33m\[m  
+[1;32m|[m * [31m88ed855[m -[33m[m Add jest in package in devDependencies [32m(11 months ago)[1;34m<Danylo Onishchuk>[m
+[1;32m|[m[1;32m/[m  
+*   [31m17db966[m -[33m[m Merge pull request #1124 from mate-academy/delete-uneccesary-function-from-env-tests [32m(1 year ago)[1;34m<Danylo Onishchuk>[m
+[1;34m|[m[1;35m\[m  
+[1;34m|[m * [31m5532cb0[m -[33m[m fix error [32m(1 year ago)[1;34m<Danylo Onishchuk>[m
+[1;34m|[m * [31m8bedde1[m -[33m[m delete function and refactoring tests [32m(1 year ago)[1;34m<Danylo Onishchuk>[m
+[1;34m|[m[1;34m/[m  
+*   [31mc632099[m -[33m[m Merge pull request #1123 from mate-academy/add-ver-of-extension [32m(1 year ago)[1;34m<Danylo Onishchuk>[m
+[1;36m|[m[31m\[m  
+[1;36m|[m * [31mb568582[m -[33m[m fix console [32m(1 year ago)[1;34m<Danylo Onishchuk>[m
+[1;36m|[m * [31mcb02ef1[m -[33m[m add ver [32m(1 year ago)[1;34m<Danylo Onishchuk>[m
+[1;36m|[m[1;36m/[m  
+*   [31md56776c[m -[33m[m Merge pull request #1122 from mate-academy/refactoring-of-Environmental-tests [32m(1 year ago)[1;34m<Danylo Onishchuk>[m
+[32m|[m[33m\[m  
+[32m|[m * [31m78f2a66[m -[33m[m fix unsafe zone [32m(1 year ago)[1;34m<Danylo Onishchuk>[m
+[32m|[m * [31m21f4a90[m -[33m[m fix tests [32m(1 year ago)[1;34m<Danylo Onishchuk>[m
+[32m|[m[32m/[m  
+* [31m9c8bcc4[m -[33m[m Fix node version test (#1072) [32m(1 year ago)[1;34m<Yurii Holiuk>[m
+*   [31m218eb32[m -[33m[m Merge pull request #1071 from mate-academy/win-test [32m(1 year ago)[1;34m<Danylo Onishchuk>[m
+[34m|[m[35m\[m  
+[34m|[m * [31ma256eb6[m -[33m[m ver of scripts [32m(1 year ago)[1;34m<danylo>[m
+[34m|[m * [31medb48b1[m -[33m[m add linux tests [32m(1 year ago)[1;34m<danylo>[m
+[34m|[m * [31m3c834da[m -[33m[m add windows tests1 [32m(1 year ago)[1;34m<Onishchuk>[m
+[34m|[m * [31mdf97cfa[m -[33m[m add windows tests [32m(1 year ago)[1;34m<Onishchuk>[m
+[34m|[m * [31m8303416[m -[33m[m fds [32m(1 year ago)[1;34m<Onishchuk>[m
+[34m|[m[34m/[m  
+*   [31m5d6c554[m -[33m[m Merge pull request #1069 from mate-academy/hot-fix-test-file [32m(1 year ago)[1;34m<Danylo Onishchuk>[m
+[36m|[m[1;31m\[m  
+[36m|[m * [31m10be751[m -[33m[m disable no-undef linter rule [32m(1 year ago)[1;34m<volodymyrpavlenko>[m
+[36m|[m[36m/[m  
+*   [31mf71c858[m -[33m[m Merge pull request #1068 from mate-academy/develop [32m(1 year ago)[1;34m<solaryasha>[m
+[1;32m|[m[1;33m\[m  
+[1;32m|[m * [31m54f69b8[m -[33m[m return [32m(1 year ago)[1;34m<Danylo Onishchuk>[m
+[1;32m|[m * [31m7c02e96[m -[33m[m fix linter and tests [32m(1 year ago)[1;34m<Danylo Onishchuk>[m
+[1;32m|[m * [31mb9bda00[m -[33m[m add test, change version of mate scripts [32m(1 year ago)[1;34m<Danylo Onishchuk>[m
+[1;32m|[m[1;32m/[m  
+*   [31ma512056[m -[33m[m Merge pull request #1058 from mate-academy/update-mate-scripts-version [32m(1 year, 1 month ago)[1;34m<solaryasha>[m
+[1;34m|[m[1;35m\[m  
+[1;34m|[m * [31m98aabfe[m -[33m[m update version of @mate-academy/scripts [32m(1 year, 1 month ago)[1;34m<volodymyrpavlenko>[m
+[1;34m|[m[1;34m/[m  
+* [31m42d790d[m -[33m[m Update readme.md [32m(1 year, 7 months ago)[1;34m<Misha Grinko>[m
+* [31m02ad661[m -[33m[m Update readme.md [32m(1 year, 7 months ago)[1;34m<Misha Grinko>[m
+* [31m8fe1632[m -[33m[m Update readme.md [32m(1 year, 7 months ago)[1;34m<Misha Grinko>[m
+* [31m450f75a[m -[33m[m Update readme.md [32m(1 year, 7 months ago)[1;34m<Misha Grinko>[m
+* [31m40eda23[m -[33m[m Update readme.md [32m(1 year, 7 months ago)[1;34m<Misha Grinko>[m
+*   [31mc72cf0c[m -[33m[m Merge pull request #779 from mate-academy/mate-scripts-update [32m(1 year, 7 months ago)[1;34m<Vladimir>[m
+[1;36m|[m[31m\[m  
+[1;36m|[m * [31m34cb32a[m -[33m[m update @mate-academy/bemlint [32m(1 year, 7 months ago)[1;34m<Vladimir-Beliy>[m
+[1;36m|[m[1;36m/[m  
+*   [31m207f913[m -[33m[m Merge pull request #772 from mate-academy/mate-scripts-update [32m(1 year, 7 months ago)[1;34m<Vladimir>[m
+[32m|[m[33m\[m  
+[32m|[m * [31mb942acc[m -[33m[m update @mate-academy/scripts to 0.8.0 [32m(1 year, 7 months ago)[1;34m<Vladimir-Beliy>[m
+[32m|[m[32m/[m  
+*   [31mf30dd71[m -[33m[m Merge pull request #766 from mate-academy/mate-scripts-update [32m(1 year, 7 months ago)[1;34m<Vladimir>[m
+[34m|[m[35m\[m  
+[34m|[m * [31m34fc4a3[m -[33m[m update @mate-academy/scripts to 0.8.0 [32m(1 year, 7 months ago)[1;34m<Vladimir-Beliy>[m
+[34m|[m[34m/[m  
+* [31m7f8cd51[m -[33m[m Update checklist.md [32m(2 years, 4 months ago)[1;34m<Holovko Iryna>[m
+* [31mc8475d6[m -[33m[m Update checklist.md [32m(2 years, 4 months ago)[1;34m<Holovko Iryna>[m
+* [31m69bbd95[m -[33m[m Create checklist.md [32m(2 years, 4 months ago)[1;34m<Holovko Iryna>[m
+*   [31mfd6ba43[m -[33m[m Merge pull request #486 from mgrinko/fix [32m(2 years, 4 months ago)[1;34m<Misha Grinko>[m
+[36m|[m[1;31m\[m  
+[36m|[m * [31m11258da[m -[33m[m config fix [32m(2 years, 4 months ago)[1;34m<mgrinko>[m
+[36m|[m[36m/[m  
+* [31m68c1895[m -[33m[m Create deploy.sh [32m(2 years, 4 months ago)[1;34m<Misha Grinko>[m
+* [31m8ccbba1[m -[33m[m Errors were fixed [32m(2 years, 4 months ago)[1;34m<mgrinko>[m
+* [31mf08bf41[m -[33m[m Delete package-lock.json [32m(2 years, 4 months ago)[1;34m<Misha Grinko>[m
+*   [31mebb9417[m -[33m[m Merge pull request #448 from mate-academy/mate-scripts-update [32m(2 years, 5 months ago)[1;34m<Yurii Holiuk>[m
+[1;32m|[m[1;33m\[m  
+[1;32m|[m * [31m23245cb[m -[33m[m remove unneeded browser-sync [32m(2 years, 5 months ago)[1;34m<Yurii Holiuk>[m
+[1;32m|[m[1;32m/[m  
+*   [31m7caafcd[m -[33m[m Merge pull request #447 from mate-academy/mate-scripts-update [32m(2 years, 5 months ago)[1;34m<Yurii Holiuk>[m
+[1;34m|[m[1;35m\[m  
+[1;34m|[m * [31mf92fa5e[m -[33m[m fix npm vulnerabilities(npm audit fix --force) [32m(2 years, 5 months ago)[1;34m<Yurii Holiuk>[m
+[1;34m|[m[1;34m/[m  
+* [31m3faedf2[m -[33m[m upgrade to @mate-academy/scripts (#446) [32m(2 years, 5 months ago)[1;34m<Yurii Holiuk>[m
+* [31m74ed63f[m -[33m[m update 0.1.7 (#445) [32m(2 years, 5 months ago)[1;34m<Yurii Holiuk>[m
+* [31maae1b0d[m -[33m[m update 0.1.5 (#444) [32m(2 years, 5 months ago)[1;34m<Yurii Holiuk>[m
+* [31mb10bff2[m -[33m[m migrate to mate-scripts (#443) [32m(2 years, 5 months ago)[1;34m<Yurii Holiuk>[m
+* [31m2557026[m -[33m[m Update test.yml [32m(2 years, 5 months ago)[1;34m<Yurii Holiuk>[m
+* [31m6533017[m -[33m[m Create test.yml [32m(2 years, 5 months ago)[1;34m<Yurii Holiuk>[m
+* [31m18d2082[m -[33m[m Update package.json [32m(2 years, 10 months ago)[1;34m<Yurii Holiuk>[m
+* [31m2142e42[m -[33m[m Deploy was fixed [32m(3 years ago)[1;34m<mgrinko>[m
+*   [31md42433d[m -[33m[m Merge pull request #252 from mate-academy/simple-dev [32m(3 years ago)[1;34m<Misha Grinko>[m
+[1;36m|[m[31m\[m  
+[1;36m|[m * [31m7b6e3eb[m -[33m[m Task description was updated [32m(3 years ago)[1;34m<mgrinko>[m
+[1;36m|[m * [31m5439f0e[m -[33m[m .gitignore was restored [32m(3 years ago)[1;34m<mgrinko>[m
+[1;36m|[m * [31mfb81a08[m -[33m[m Simple development [32m(3 years ago)[1;34m<mgrinko>[m
+[1;36m|[m[1;36m/[m  
+*   [31me014608[m -[33m[m Merge pull request #199 from mate-academy/backstopConfig [32m(3 years, 3 months ago)[1;34m<Остап П'ятковський>[m
+[32m|[m[33m\[m  
+[32m|[m * [31m4c5ddc5[m -[33m[m fixed code after Vadim comments [32m(3 years, 3 months ago)[1;34m<gestap>[m
+[32m|[m * [31mbcdfef5[m -[33m[m rewritten code after review [32m(3 years, 3 months ago)[1;34m<gestap>[m
+[32m|[m * [31mf0e1e2b[m -[33m[m Connected module with backstopConfig file. [32m(3 years, 3 months ago)[1;34m<gestap>[m
+[32m|[m[32m/[m  
+* [31m955dc36[m -[33m[m fix backstopConfig [32m(3 years, 5 months ago)[1;34m<gestap>[m
+*   [31m5ea19a8[m -[33m[m Merge pull request #87 from gestap/patch-1 [32m(3 years, 5 months ago)[1;34m<Остап П'ятковський>[m
+[34m|[m[35m\[m  
+[34m|[m * [31mf1e2980[m -[33m[m updated url [32m(3 years, 5 months ago)[1;34m<Остап П'ятковський>[m
+[34m|[m[34m/[m  
+* [31m049c36d[m -[33m[m changed link to guideline, added ma-htmllint [32m(3 years, 6 months ago)[1;34m<Vadim Ilchenko>[m
+* [31m626fac4[m -[33m[m Update .gitignore [32m(3 years, 6 months ago)[1;34m<Vadim Ilchenko>[m
+* [31m917e26e[m -[33m[m Update package.json [32m(3 years, 6 months ago)[1;34m<Vadim Ilchenko>[m
+* [31mf9491f9[m -[33m[m Delete package-lock.json [32m(3 years, 6 months ago)[1;34m<Vadim Ilchenko>[m
+* [31me7ee862[m -[33m[m Add dummy links to Demo and Test report. [32m(3 years, 6 months ago)[1;34m<Roman Apostol>[m
+* [31m6e25137[m -[33m[m removed link to reference screenshots, updated formatting [32m(3 years, 6 months ago)[1;34m<Vadim Ilchenko>[m
+* [31mbcf401f[m -[33m[m updated gitignore, removed reference screenshots [32m(3 years, 6 months ago)[1;34m<Vadim Ilchenko>[m
+* [31ma204d5a[m -[33m[m added dot before `DS_Store` in `.gitignore` [32m(3 years, 6 months ago)[1;34m<Vadim Ilchenko>[m
+* [31m6cb6ef5[m -[33m[m added option to disable cache in `http-server` [32m(3 years, 6 months ago)[1;34m<Vadim Ilchenko>[m
+*   [31m2a47159[m -[33m[m Merge pull request #7 from mate-academy/task [32m(3 years, 6 months ago)[1;34m<Vadim Ilchenko>[m
+[36m|[m[1;31m\[m  
+[36m|[m * [31m78ceb41[m -[33m[m removed docker from workflow [32m(3 years, 6 months ago)[1;34m<Vadim Ilchenko>[m
+* [1;31m|[m [31med77e94[m -[33m[m Update readme.md [32m(3 years, 6 months ago)[1;34m<Danylo Mysak>[m
+* [1;31m|[m [31m295c715[m -[33m[m Merge pull request #1 from mate-academy/task [32m(3 years, 6 months ago)[1;34m<Vadim Ilchenko>[m
+[1;32m|[m[1;31m\[m[1;31m|[m 
+[1;32m|[m * [31m306891d[m -[33m[m added description [32m(3 years, 6 months ago)[1;34m<Vadim Ilchenko>[m
+[1;32m|[m * [31m4753b48[m -[33m[m implemented task & tests [32m(3 years, 6 months ago)[1;34m<Vadim Ilchenko>[m
+[1;32m|[m[1;32m/[m  
+* [31mcfe44ea[m -[33m[m initial commit [32m(3 years, 6 months ago)[1;34m<Vadim Ilchenko>[m
