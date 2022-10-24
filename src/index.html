@@ -7,6 +7,124 @@
     <title>Document</title>
   </head>
   <body>
-    Hello, world!
+    <fieldset class="personal">
+      <legend>Personal information.</legend>
+      <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post"></form>
+      <label class="surname">
+          Surname:
+        <input type="text" name="surname" 
+        autocomplete="off">
+      </label>
+      <div>
+        <label class="name">
+          Name:
+          <input type="text" name="name" 
+          autocomplete="off">
+        </label>
+      </div>
+      <div>
+        <label class="age">
+          How old are you?
+          <input 
+            type="number" 
+            name="age" 
+            min="1" 
+            max="100" 
+            value="12"
+          >
+        </label>
+      </div>
+        
+      <div>
+        <label class="dob">
+          Full date of birth:
+          <input type="date" name="date of birth">
+        </label>
+      </div>
+      <label>
+        <input type="checkbox" name="terms" 
+        id="box" required>
+        <label for="box">I accept the term of the agreement</label>
+      </label>
+    </fieldset>
+
+    <fieldset class="register">
+      <legend>Registration</legend>
+      <div>E-mail:<input type="email" name="mail" 
+      required placeholder="email@example.com">
+      </div>
+      <div>Pasword:<input type="password" name="pasword" 
+      pattern="\w+" required 
+      minlength="8" maxlength="16">
+      </div>
+    </fieldset>
+    
+    
+    <fieldset class="fact">
+      <legend>An interesting fact about you.</legend>
+      <div>
+          Do you love cats?
+        <label>
+          <input type="radio" name="cats" 
+          value="Yes">
+        Yes
+        </label>
+          
+        <label>
+          <input type="radio" name="cats" 
+          value="No">
+          No
+        </label>
+      </div>
+      <div class="color">
+        <h2>What is your favorite color?</h2>
+        <input type="color" name="color" 
+        id="color">
+      </div>
+
+      <div class="sleep">
+        <h2>What time do you go to bed?</h2>
+        <input type="time" name="time">
+      </div>
+
+      <div>
+        <h2>What are your favotite brands of cars?</h2>
+        <select name="cars" multiple>
+          <option value="Audi">Audi</option>
+          <option value="BMW">BMW</option>
+          <option value="Mazda">Mazda</option>
+          <option value="Toyota">Toyota</option>
+          <option value="Bentley">Bentley</option>
+          <option value="Merc">Merc</option>
+        </select>
+      </div>
+
+      <div class="rate">
+        <h2>How do you rate our work?</h2>
+        <input type="range" name="rate">
+
+      </div>
+    </fieldset>
+
+    <fieldset name="info">
+      <legend>Additional info:</legend>
+      <label class="feedback">
+              Comments:
+        <textarea name="feedback"></textarea>
+      </label>
+      
+      <div>
+        <label class="feedback">
+              Would you recommend us?
+          <select name="feedback">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </label>
+      </div>
+    </fieldset>  
+    <footer class="foot">
+      <button type="submit">Submit</button>
+    </footer> 
   </body>
 </html>

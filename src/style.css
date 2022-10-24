@@ -1,1 +1,25 @@
-/* styles go here */
+body {
+  margin: 0;
+  margin-bottom: 100px;
+  padding: 20px;
+}
+  
+.personal {
+  margin-bottom: 20px;
+}
+  
+.register {
+  margin-bottom: 20px;
+}
+  
+.fact {
+  margin-bottom: 20px;
+}
+  
+.foot {
+  margin-top: 20px;
+}
+  
+input {
+  margin-top: 10px;
+}
