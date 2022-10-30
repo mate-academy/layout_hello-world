@@ -5,9 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    Hello, world!
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    method="post">
+      <fieldset>
+        <legend>Personal information</legend>
+        <label for="surname" class="surname">
+          Surname:
+        </label>
+        <input
+        id="surname"
+        type="text"
+        name="surname"
+        required>
+
+        <label for="name" class="name">
+          Name:
+        </label>
+        <input
+        id="name"
+        type="text"
+        name="name"
+        required>
+
+        <label for="age" class="age">
+          How old are You?:
+        </label>
+        <input
+        id="age"
+        type="number"
+        name="age"
+        min="1"
+        max="100"
+        value="12"
+        required>
+
+        <label for="dateOfBirth" class="dateOfBirth">
+          Full date of birth:
+        </label>
+        <input
+        id="dateOfBirth"
+        type="date"
+        name="dateOfBirth"
+        placeholder="mm/dd/yyyy"
+        required>
+
+
+        <label for="acceptTerms" class="acceptTerms">
+          I accept the term of agreement:
+        </label>
+        <input
+        id="acceptTerms"
+        type="checkbox"
+        name="acceptTerms"
+        required>
+      </fieldset>
+
+      <fieldset>
+
+      </fieldset>
+    </form>
   </body>
 
 </html>
