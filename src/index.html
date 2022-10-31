@@ -64,7 +64,53 @@
       </fieldset>
 
       <fieldset>
+        <legend>Registration</legend>
+        <label for="email"
+        class="email">
+          E-mail:
+        </label>
+        <input
+        id="email"
+        type="email"
+        name="email"
+        placeholder="email@example.com"
+        required>
 
+        <label for="password" class="password">
+        Password:
+        </label>
+        <input id="password"
+        type="password"
+        name="password"
+        minlength="8"
+        maxlength="16"
+        required>
+      </fieldset>
+
+      <fieldset>
+        <legend>An interesting fact about you!</legend>
+        Do you love cats?
+        <label for="cats" class="cats">
+          <input id="catsYes"
+          type="radio"
+          name="cats"
+          value="Yes">
+          Yes
+        </label>
+        <label for="cats" class="cats">
+          <input id="catsNo"
+          type="radio"
+          name="cats"
+          value="No">
+          No
+        </label>
+
+        <label for="favoriteColor" class="favoriteColor">
+        What is your favorite color?
+          <input id="color"
+          type="color"
+          name="color">
+        </label>
       </fieldset>
     </form>
   </body>
