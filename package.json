@@ -18,7 +18,7 @@
   "author": "Mate Academy",
   "license": "GPL-3.0",
   "devDependencies": {
-    "@linthtml/linthtml": "^0.8.3",
+    "@linthtml/linthtml": "^0.8.8",
     "@mate-academy/backstop-config": "^1.0.0",
     "@mate-academy/bemlint": "^0.1.1",
     "@mate-academy/eslint-config": "*",
