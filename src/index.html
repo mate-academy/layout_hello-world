@@ -9,50 +9,57 @@
   </head>
   <body>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>
         Personal information
         </legend>
         <div>
           Surname:
-          <input type="text" name="Surname">
+          <input type="text" name="Surname"
+          autocomplete="off"
+          required>
         </div>
         <div>
           Name:
-          <input type="text" name="Name">
+          <input type="text" name="Name"
+          autocomplete="off">
         </div>
         <div>
           How old are you?
-          <input type="text"
+          <input type="number"
           value="12"
-          name="age">
+          name="age"
+          min="1"
+          max="100">
         </div>
         <div>
           Full date of birth:
-          <input type="text"
-          placeholder="mm/dd/yyyy"
-          name="birth">
+          <input type="date"
+          name="birth"
+          autocomplete="off">
         </div>
         <div>
           I accept the term of the agreement
           <input type="checkbox" name="term">
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Registration</legend>
         <div>
           E-mail:
           <input type="email"
           placeholder="email@example.com"
-          name="email">
+          name="email"
+          autocomplete="off">
         </div>
         <div>
           Password:
           <input type="password"
-          name="Password">
+          name="Password"
+          autocomplete="off">
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
         <div>
           Do you love cats?
@@ -82,16 +89,19 @@
           name="time">
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="C">
         <legend>Additional info:</legend>
         <div>
           Comments:
-          <textarea name="Comments" id="com"
-          cols="30" rows="3"></textarea>
+          <textarea minlength="10" maxlength="300"
+           name="Comments" id="com"
+          cols="30" rows="3"
+          autocomplete="off"></textarea>
         </div>
         <div>
           Would you recommend us?
-          <select name="recommend" id="rec">
+          <select name="recommend" id="rec"
+          autocomplete="off">
             <option value="yes">Yes</option>
             <option value="no">No</option>
           </select>
