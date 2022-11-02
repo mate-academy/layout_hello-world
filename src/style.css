@@ -1,1 +1,12 @@
 /* styles go here */
+/* .container {
+  border: 1px solid black;
+} */
+
+div {
+  margin-bottom: 10px;
+}
+
+.fieldset {
+  margin-bottom: 20px;
+}
