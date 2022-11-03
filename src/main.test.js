@@ -162,8 +162,7 @@ describe('Environmental Check', () => {
     if (OS === 'Workflow') {
       const testLinkBody = getSiteBody('[TEST REPORT LINK]', '_report/');
 
-      expect(testLinkBody)
-        .toContain('BackstopJS Report');
+      expect(testLinkBody).toContain('BackstopJS Report');
     }
 
     expect(true)
