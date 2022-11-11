@@ -1,0 +1,22 @@
+.form_field {
+  display: block;
+  margin-top: 10px;
+}
+
+.form {
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px solid gray;
+}
+
+.content {
+  position: absolute;
+  margin-top: -20px;
+  font-size: 15px;
+  font-weight: normal;
+  background-color: white;
+}
+
+.button_form {
+  margin-top: 20px;
+}
