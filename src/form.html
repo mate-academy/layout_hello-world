@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+  </head>
+  <body>
+    <form 
+    action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
+    method="post" 
+    autocomplete="off"
+    >
+
+      <fieldset class="group">
+        <legend>Personal information</legend>
+
+        <label class="form-field">
+          Surname:
+          
+          <input 
+          type="text" 
+          name="surname" 
+          required
+          >
+        </label>
+
+        <label class="form-field">
+          Name:
+          
+          <input 
+          type="text" 
+          name="name" 
+          required
+          >
+        </label>
+
+        <label class="form-field">
+          How old are You?
+          
+          <input 
+          type="number" 
+          name="age" 
+          value="12" 
+          min="1" 
+          max="100" 
+          required
+          >
+        </label>
+
+        <label class="form-field">
+          Full date of birth:
+          
+          <input 
+          type="date" 
+          name="birthday" 
+          required
+          >
+        </label>
+
+        <label class="form-field">
+          I accept the term of the agreement
+          
+          <input 
+          type="checkbox" 
+          name="terms" 
+          required
+          >
+        </label>
+      </fieldset>
+
+      <fieldset class="group">
+        <legend>Registration</legend>
+
+        <label class="form-field">
+          E-mail
+          
+          <input 
+          type="email" 
+          placeholder="email@example.com" 
+          required
+          >
+        </label>
+
+        <label class="form-field">
+          Password
+          
+          <input 
+          type="password" 
+          required minlength="5"
+          maxlength="30"
+          >
+        </label>
+      </fieldset>
+
+      <fieldset class="group">
+        <legend>An interesting fact about you!</legend>
+
+        <div class="form-field">
+          Do you love cats?
+
+          <label>
+            <input 
+            type="radio" 
+            name="cats" 
+            value="y"
+            >
+            Yes
+          </label>
+
+          <label>
+            <input 
+            type="radio" 
+            name="cats" 
+            value="n"
+            >
+            No
+          </label>
+        </div>
+
+        <label class="form-field">
+          What is your favorite color?
+          
+          <input type="color" name="color">
+        </label>
+
+        <label class="form-field">
+          What time do you go to bed?
+          
+          <input type="time" name="time">
+        </label>
+
+        <label class="form-field">
+          What are you favorite of cars?
+        </label>l
+
+          <select name="cars" multiple>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+          </lable>
+
+          <label class="form-field">
+            How do you rate our work?
+            
+            <input 
+            type="range" 
+            name="rate" 
+            value="0" 
+            min="0" 
+            max="10"
+            >
+          </label>
+      </fieldset>
+
+      <fieldset class="group">
+        <legend>Additional info</legend>
+
+        <label class="form-field">
+          Comments:
+          
+          <textarea name="comments"></textarea>
+        </label>
+
+        <label class="form-field">
+          Would you recommend us?
+
+          <select name="recommend">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <button type="submit">
+        Submit
+      </button>
+    </form>
+
+  </body>
+</html>
