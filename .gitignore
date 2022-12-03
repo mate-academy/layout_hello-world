@@ -4,6 +4,9 @@
 
 # Node
 node_modules
+.linthtmlrc.json
+package.json
+readme.md
 
 # MacOS
 .DS_Store
