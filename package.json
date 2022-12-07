@@ -41,5 +41,7 @@
       "bem": false
     }
   },
-  "dependencies": {}
+  "dependencies": {
+    "core-js": "^3.26.1"
+  }
 }
