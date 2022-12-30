@@ -41,5 +41,7 @@
       "bem": false
     }
   },
-  "dependencies": {}
+  "dependencies": {
+    "env": "0.0.2"
+  }
 }
