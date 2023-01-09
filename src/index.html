@@ -7,6 +7,34 @@
     <title>Document</title>
   </head>
   <body>
-    <p>Test</p>
+    <form action="#" method="post">
+      <label class="form-field">
+        Username:
+        <input type="text" name="username">
+      </label>
+
+      <label class="form-field">
+        Email:
+        <input type="email"
+        name="email"
+        required>
+      </label>
+
+      <label class="form-field">
+        Password:
+        <input type="password"
+        name="password"
+        minlength="5"
+        maxlength="10"
+        pattern="\d+">
+      </label>
+
+      <label class="form-field">
+        I agree with terms and conditions
+        <input type="checkbox"
+        name="terms"
+        required>
+      </label>
+    </form>
   </body>
 </html>
