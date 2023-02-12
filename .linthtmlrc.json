@@ -1,7 +1,5 @@
 {
   "attr-bans": [
-    "extends",
-    "@mate-academy/linthtml-config",
     "align",
     "background",
     "bgcolor",
