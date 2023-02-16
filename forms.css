@@ -1,0 +1,45 @@
+.form-field {
+    display: block;
+    border: 3px solid black;
+    margin: 10px 0;
+}
+
+.field {
+    margin: 0 5px;
+}
+
+.form-legend {
+    margin: 20px 0;
+}
+
+.form-label {
+    display: block;
+    margin: 10px 10px;
+}
+
+.field ::placeholder {
+    color: darkslateblue;
+}
+
+.field:focus {
+    background-color: aqua;
+}    
+  
+.field:invalid {
+    border: 2px solid darkred;
+} 
+
+.form-checkbox {
+    margin: 10px 10px;
+}
+
+.field:checked ~ .form-checkbox {
+    color: green;
+}
+
+.form-button {
+    background-color: rgb(53, 178, 53);
+    font-size: 18px;
+    margin: 10px;
+}
+
