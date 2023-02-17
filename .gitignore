@@ -12,3 +12,7 @@ node_modules
 backstop_data
 dist
 .cache
+
+# failes not commit
+.linthtmlrc.json
+package.json
