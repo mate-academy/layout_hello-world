@@ -1,1 +1,13 @@
-/* styles go here */
+.wrapper {
+  margin-bottom: 20px;
+  /* padding-bottom: 10px; */
+}
+
+.inputs {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.inputs:last-child {
+  margin-bottom: 0;
+}
