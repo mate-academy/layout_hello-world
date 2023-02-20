@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form action="http://localhost:3000/api" method="post">
+
+      <fieldset class="fieldset_form">
+        <legend>Personal information</legend>
+
+        <label class="form-field">
+          Surname:
+          <input
+            type="text"
+            name="surname"
+            autocomplete="off">
+        </label>
+
+        <label class="form-field">
+          Name:
+          <input
+            type="text"
+            name="name"
+            autocomplete="off">
+        </label>
+
+        <label class="form-field">
+          How old are You?:
+          <input
+            type="number"
+            name="age"
+            value="12"
+            min="1"
+            max="100">
+        </label>
+
+        <label class="form-field">
+          Full date of birth:
+          <input type="date" name="birthDate">
+        </label>
+
+        <label class="form-field">
+          I accept the term of the agreement
+          <input type="checkbox" name="terms">
+        </label>
+      </fieldset>
+
+      <fieldset class="fieldset_form">
+        <legend>Registration</legend>
+
+        <label class="form-field">
+          E-mail:
+          <input
+            type="email"
+            name="e-mail"
+            placeholder="email@example.com"
+            autocomplete="off"
+            required>
+        </label>
+
+        <label class="form-field">
+          Password:
+          <input
+            type="password"
+            name="password"
+            minlength="5"
+            maxlength="15"
+            autocomplete="off">
+        </label>
+      </fieldset>
+
+      <fieldset class="fieldset_form">
+        <legend>An interesting fact about you!</legend>
+
+        <label class="form-field">
+          Do you love cats?
+
+          <label>
+            <input
+              type="radio"
+              name="cats"
+              value="Y">
+            Yes
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="cats"
+              value="N">
+            No
+          </label>
+        </label>
+
+        <label class="form-field">
+          What is your favorite color?
+          <input type="color" name="color">
+        </label>
+
+        <label class="form-field">
+          What time do you go to bed?
+          <input type="time" name="timeToBed">
+        </label>
+
+        <label class="form-field">
+          What are your favorite brand of cars?
+
+          <select name="cars" multiple>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+
+        </label>
+
+        <label class="form-field">
+          How do you rate our work?
+          <input type="range" name="range">
+        </label>
+      </fieldset>
+
+      <fieldset class="fieldset_form">
+        <legend>Additional info:</legend>
+
+        <label class="form-field">
+          Comments:
+          <textarea
+            name="feedback"
+            cols="20"
+            rows="2"
+            autocomplete="off"
+         ></textarea>
+        </label>
+
+        <label class="form-field no_margin">
+          Would you recommend us?
+          <select name="recommendation">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <label class="fieldset">
+        <button type="submit">Submit</button>
+      </label>
+
+    </form>
+  </body>
+</html>
+
