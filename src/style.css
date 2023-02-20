@@ -7,3 +7,7 @@
 .fieldset_form {
   margin-bottom: 20px;
 }
+
+.no_margin {
+  margin-bottom: 0;
+}
