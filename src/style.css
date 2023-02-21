@@ -1,1 +1,9 @@
-/* styles go here */
+label {
+  display: block;
+  margin: 10px;
+}
+
+.information {
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
