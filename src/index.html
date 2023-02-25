@@ -11,7 +11,75 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form action="#" method="post">
+      <fieldset class="form-field">
+        <legend>Personal information</legend>
+        <label class="field">
+            Surname:
+          <input type="text" autocomplete="off">
+        </label>
+        <label class="field">
+            Name:
+          <input type="text" autocomplete="off">
+        </label>
+        <label class="field">
+            How old are You?
+          <input 
+          type="number" 
+          name="how old are you" 
+          placeholder="Your Age" 
+          value="12" 
+          min="1" 
+          max="100"
+            >
+        </label>
+        <label class="field">
+          Full date of birth:
+          <input type="date">
+        </label>
+        <label class="field">
+          I accept the term of the agreement
+          <input type="checkbox" checked>
+        </label>
+
+      </fieldset>
+
+      <fieldset class="form-field">
+        <legend>Registration</legend>
+        <label class="field">
+          E-mail:
+          <input type="email" placeholder="email@example.com">
+        </label>
+        <label class="field">
+          Password:
+          <input 
+          type="password" 
+          required
+          minlength="6"
+          maxlength="32" 
+          >
+        </label>
+        
+      </fieldset>
+
+      <fieldset class="form-field">
+        <legend>An interesting fact about you!</legend>
+        <div class="field">
+          Do you love cats?
+          <label>
+            <input type="radio" name="cats">
+            Yes
+          </label>
+          <label>
+            <input type="radio" name="cats">
+            No
+          </label>
+        </div>
+        
+      </fieldset>
+      
+      <button type="submit">Submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
