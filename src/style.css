@@ -7,3 +7,8 @@
 .form-field {
   margin-bottom: 20px;
 }
+
+.animal {
+  display: inline-block;
+  margin-bottom: 10px;
+}
