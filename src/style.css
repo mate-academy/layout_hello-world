@@ -1,1 +1,15 @@
-/* styles go here */
+.form-field {
+  display: block;
+}
+
+.border {
+  display: block;
+  border: 1px solid black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.inpt-space {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

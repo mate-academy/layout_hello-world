@@ -4,9 +4,142 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
   </head>
   <body>
-    Hello, world!
+    <form
+     action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+     method="post"
+    >
+      <div class="border">
+        Personal information
+        <label class="form-field">
+          Surname:
+          <input class="inpt-space" type="text"
+          name="surname"
+          id="surname"
+          required>
+        </label>
+        <label class="form-field">
+          Name:
+          <input class="inpt-space" type="text"
+          name="name"
+          id="name"
+          required>
+        </label>
+        <label class="form-field">
+          How old are You?
+          <input class="inpt-space" type="number"
+            id="old"
+            min="1"
+            max="100"
+            value="12"
+            required>
+        </label>
+        <label class="form-field">
+          Full date of birth:
+          <input class="inpt-space" type="date"
+          name="date">
+          <label class="form-field"
+          required>
+            I accept the term of the agreement
+            <input class="inpt-space" type="checkbox"
+            name="agreement"
+            id="agree"
+            required>
+          </label>
+        </label>
+      </div>
+      <div class="border">
+        Registration
+        <label class="form-field">
+          E-mail:
+          <input class="inpt-space" type="email"
+          name="email"
+          id="email"
+          placeholder="email@example.com"
+          required>
+        </label>
+        <label class="form-field"
+        required>
+          Password:
+          <input class="inpt-space" type="password"
+          name="password"
+          id="password"
+          required
+          minlength="5"
+          maxlength="20">
+        </label>
+      </div>
+      <div class="border">
+        An interesting fact about you!
+        <label>
+          <p>Do you love cats?</p>
+          <input class="inpt-space" type="radio"
+          name="Yes"
+          id="y"
+          value="yes">
+          Yes
+        </label>
+        <label>
+          <input class="inpt-space" type="radio"
+          name="No"
+          id="n"
+          value="no">
+          No
+        </label>
+        <label class="form-field">
+          What is your favorite color?
+          <input class="inpt-space" type="color"
+          value="#000"
+          id="color">
+        </label>
+        <label class="form-field">
+          What time do you go to bad?
+          <input class="inpt-space" type="time"
+          id="time"
+          name="time">
+        </label>
+        <label class="form-field">
+          What are your favorite brand of cars?
+          <select class="inpt-space" multiple>
+            <option></option>
+            <option>BMW</option>
+            <option>Audi</option>
+            <option>Lada</option>
+          </select>
+        </label>
+        <label class="form-field">
+          How do you rate our work?
+          <input class="inpt-space" type="range"
+          name="rate"
+          id="range"
+          min="0"
+          max="10"
+          value="0">
+        </label>
+      </div>
+      <div class="border">
+        Additional info:
+        <label class="form-field">
+          Comments
+          <textarea class="inpt-space" name="comments"
+          id="comments"
+          autocomplete="off"
+          cols="18"
+          rows="2"
+        ></textarea>
+        </label>
+        <label class="form-field">
+          Would you recommend us?
+          <select class="inpt-space">
+            <option>yes</option>
+            <option>no</option>
+          </select>
+        </label>
+      </div>
+      <button class="inpt-space" type="submit">Submit</button>
+    </form>
   </body>
 </html>
