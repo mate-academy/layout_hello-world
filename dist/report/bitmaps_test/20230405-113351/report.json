@@ -4,7 +4,7 @@
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\Entire_document.png",
-        "test": "..\\bitmaps_test\\20230405-103522\\Entire_document.png",
+        "test": "..\\bitmaps_test\\20230405-113351\\Entire_document.png",
         "selector": "document",
         "fileName": "Entire_document.png",
         "label": "Entire document",
