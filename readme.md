@@ -1,8 +1,8 @@
 # Hello world
 
-Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://<your_account>.github.io/layout_hello-world/)
-- [TEST REPORT LINK](https://<your_account>.github.io/layout_hello-world/report/html_report/)
+Replace `<MarynaKatran>` with your Github username and copy the links to Pull Request description:
+- [DEMO LINK](https://<MarynaKatran>.github.io/layout_hello-world/)
+- [TEST REPORT LINK](https://<MarynaKatran>.github.io/layout_hello-world/report/html_report/)
 
 > Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
 ___
@@ -16,7 +16,7 @@ Add the basic page markup and the text `Hello, world!` into the body.
 Make sure that `<head>` and `<body>` have indentation of 2 spaces.
 
 ## Tests
-
+n
 Make sure that you installed all the required VSCode extensions:
 
 - ESLint (last version)
