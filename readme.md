@@ -3,7 +3,7 @@
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
 - [DEMO LINK](https://AlexKherson/github.io/layout_hello-world/)
 
-- [TEST REPORT LINK](https://github.com/AlexKherson/layout_hello-world/report/html_report/)
+- [TEST REPORT LINK](https://AlexKherson/github.io/layout_hello-world/report/html_report/)
 
 > Follow [this instructions](https://github.com/AlexKherson/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
 ___
