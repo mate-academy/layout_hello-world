@@ -1,8 +1,8 @@
 # Hello world
 
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://github.com/AnnaRomaniuk2023/layout_hello-world)
-- [TEST REPORT LINK](https://AnnaRomaniuk2023.github.io/layout_hello-world/report/html_report/)
+- [DEMO LINK](https://AnnaRomaniuk2023.github.io/layout_hello-world/)
+- [TEST REPORT LINK]https://AnnaRomaniuk2023.github.io/layout_hello-world/report/html_report/
 
 > Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
 ___
@@ -26,4 +26,3 @@ Make sure that you installed all the required VSCode extensions:
 
 
 [def]: https://<AnnaRomaniuk2023>.github.io/layout_hello-world/report/html_report/
-[def2]: https://AnnaRomaniuk2023.github.io/layout_hello-world/
