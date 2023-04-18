@@ -1,8 +1,8 @@
 # Hello world
 
 Replace `RoksolanaTylipska` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
-- [TEST REPORT LINK](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
+- [DEMO LINK](https://github.com/RoksolanaTylipska/layout_hello-world)
+- [TEST REPORT LINK](https://github.com/RoksolanaTylipska/layout_hello-world)
 
 > Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
 ___
