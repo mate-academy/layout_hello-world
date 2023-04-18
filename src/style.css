@@ -1,1 +1,12 @@
 /* styles go here */
+input {
+  margin-top: 10px;
+}
+
+.fieldset {
+  margin: 10px;
+}
+
+.submit {
+  margin-left: 10px;
+}
