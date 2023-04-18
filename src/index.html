@@ -12,24 +12,26 @@
     action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
       <fieldset class="fieldset">
         <legend>Personal information</legend>
-        <div class="form-field">
+        <div class="formField">
           <label for="Surname">Surname:</label>
           <input
           type="text"
           name="Surname"
           id="Surname"
-          autocomplete="off">
+          autocomplete="off"
+          >
         </div>
-        <div class="form-field">
+        <div class="formField">
           <label for="Name">Name:</label>
           <input
           type="text"
           name="Name"
           id="Name"
           autocomplete="off"
-          required>
+          required
+          >
         </div>
-        <div class="form-field">
+        <div class="formField">
           <label for="age">How old are you?:</label>
           <input
           type="number"
@@ -37,21 +39,24 @@
           id="age"
           min="1"
           max="100"
-          value="12">
+          value="12"
+          >
         </div>
-        <div class="form-field">
-          <label for="birth-date">Full date of birth:</label>
+        <div class="formField">
+          <label for="dateOfBirth">Full date of birth:</label>
           <input
           type="date"
-          name="birth-date"
-          id="birth-date">
+          name="dateOfBirth"
+          id="dateOfBirth"
+          >
         </div>
-        <div class="form-field">
+        <div class="formField">
           <label for="terms">I accept the term of the agreement:</label>
           <input
           type="checkbox"
           name="terms"
-          id="terms">
+          id="terms"
+          >
         </div>
       </fieldset>
       <fieldset class="fieldset">
@@ -64,53 +69,59 @@
           id="email"
           placeholder="email@example.com">
         </div>
-        <div class="form-field">
+        <div class="formField">
           <label for="Password">Password:</label>
           <input
           type="password"
           name="password"
           id="password"
           minlength="6"
-          maxlength="32">
+          maxlength="32"
+          >
         </div>
       </fieldset>
       <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
-        <div class="form-field">
+        <div class="formField">
           Do you love cats?
           <label for="cats">
             <input
             type="radio"
-            name="cats">
+            name="cats"
+            >
             Yes
           </label>
           <label for="cats">
             <input
             type="radio"
-            name="cats">
+            name="cats"
+            >
             No
           </label>
         </div>
-        <div class="form-field">
+        <div class="formField">
           <label for="color">What is your favorite color?</label>
           <input
           type="color"
           name="color"
-          id="color">
+          id="color"
+          >
         </div>
-        <div class="form-field">
+        <div class="formField">
           <label for="time">What time do you go to bed?</label>
           <input
           type="time"
           name="time"
-          id="time">
+          id="time"
+          >
         </div>
-        <div class="form-field">
+        <div class="formField">
           <label for="cars">What are your favorite brand of cars?
             <select
             name="cars"
             id="cars"
-            multiple>
+            multiple
+            >
               <option value="BMW">BMW</option>
               <option value="Audi">Audi</option>
               <option value="Lada">Lada</option>
@@ -118,14 +129,15 @@
           </label>
 
         </div>
-        <div class="form-field">
+        <div class="formField">
           <label for="rate">How do you rate our work?</label>
           <input
           type="range"
           name="rate"
           id="rate"
           min="0"
-          max="10">
+          max="10"
+          >
         </div>
       </fieldset>
       <fieldset class="fieldset">
@@ -140,7 +152,7 @@
            ></textarea>
           </label>
         </div>
-        <div class="form-field">
+        <div class="formField">
           <label for="recommend">What are your favorite brand of cars?
             <select
             name="recommend"
