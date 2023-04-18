@@ -2,7 +2,6 @@
 
 Replace `RoksolanaTylipska` with your Github username and copy the links to Pull Request description:
 
-
 > Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
 ___
 
