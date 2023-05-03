@@ -25,4 +25,4 @@ Make sure that you installed all the required VSCode extensions:
 - LintHTML (last version)
 
 
-[def]: https://<vasylyna_ryznar.github.io/layout_hello-world/report/html_report/
+
