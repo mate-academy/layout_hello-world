@@ -2,10 +2,28 @@
 /* eslint-disable no-undef */
 'use strict';
 
+const fs = require('fs');
 const childProcess = require('child_process');
 const minVersionOfGitOnMacAndLinux = 2311;
 const minVersionOfGitOnWindows = 23110;
 const versionName = childProcess.execSync('node -v').toString();
+
+const getSiteBody = (startWord, finishWord) => {
+  const fileContent = fs.readFileSync('readme.md', 'utf8');
+  const firstIndex = fileContent.indexOf(startWord);
+  const lastIndex = fileContent.indexOf(finishWord);
+
+  const url = fileContent.substring(
+    firstIndex + startWord.length + 1,
+    lastIndex + finishWord.length,
+  );
+
+  const siteBody = childProcess.execSync(
+    `curl ${url}`
+  ).toString();
+
+  return siteBody;
+};
 
 describe('Environmental Check', () => {
   let OS;
@@ -126,6 +144,30 @@ describe('Environmental Check', () => {
       expect(listOfExtensions)
         .toContain('stylelint.vscode-stylelint');
     }
+  });
+
+  test(`You should deploy your site to GitHub pages`, () => {
+    if (OS === 'Workflow') {
+      const demoLinkBody = getSiteBody('[DEMO LINK]', 'world/');
+
+      expect(demoLinkBody)
+        .toContain('Hello, world!');
+    }
+
+    expect(true)
+      .toBeTruthy();
+  });
+
+  test(`You should deploy test page to GitHub pages`, () => {
+    if (OS === 'Workflow') {
+      const testLinkBody = getSiteBody('[TEST REPORT LINK]', '_report/');
+
+      expect(testLinkBody)
+        .toContain('BackstopJS Report');
+    }
+
+    expect(true)
+      .toBeTruthy();
   });
 
   test('You should have Google Chrome or Firefox', () => {
