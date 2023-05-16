@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form
+    action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    method="post"
+    name="test-form"
+    autocomplete="off">
+      <fieldset>
+        <legend> Personal information</legend>
+        <div>
+          <label>
+            Surname:
+            <input type="text" name="surname">
+          </label>
+        </div>
+        <div>
+          <label>
+            Name:
+            <input type="text" name="name">
+          </label>
+        </div>
+        <div>
+          <label>
+            How old are you?
+            <input
+            type="number"
+            name="age"
+            min="1"
+            max="100"
+            value="12">
+          </label>
+        </div>
+        <div>
+          <label>
+            Full date of birth:
+            <input type="date" name="birthday">
+          </label>
+        </div>
+        <div>
+          <label>
+            I accept the term of the agreement
+            <input type="checkbox" name="agreement">
+          </label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Registration</legend>
+        <div>
+          <label>
+          E-mail:
+            <input
+            type="email"
+            name="email"
+            placeholder="email@example.com"
+            required>
+          </label>
+        </div>
+        <div>
+          <label>
+            Password:
+            <input
+            type="password"
+            name="password"
+            required
+            minlength="6"
+            maxlength="20">
+          </label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>An interesting fact about you!</legend>
+        Do you love cats?
+        <div>
+          <label>
+            <input
+            type="radio"
+            value="yes"
+            name="cats">
+            Yes
+          </label>
+        </div>
+        <div>
+          <label>
+            <input
+            type="radio"
+            value="no"
+            name="cats">
+            No
+          </label>
+        </div>
+        <div>
+          <label>
+            What is your favourite color?
+            <input type="color" name="fav-color">
+          </label>
+        </div>
+        <div>
+          <label>
+            What time do you go to bed?
+            <input type="time" name="bedtime">
+          </label>
+        </div>
+        <div>
+          <label>
+            What are your favorite brand of cars?
+            <textarea
+            name="favcar"
+            cols="4"
+            rows="3"
+            maxlength="100"
+          ></textarea>
+          </label>
+        </div>
+        <div>
+          <label>
+            How do you rate our work?
+            <input type="range" name="rate">
+          </label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Additional info:</legend>
+        <div>
+          <label>
+            Comments:
+            <textarea
+            name="Comments"
+            cols="16"
+            rows="3"
+          ></textarea>
+          </label>
+        </div>
+        <div>
+          <label>
+            Would you recommend us?
+            <select name="recommend" multiple>
+              <option value="yes">yes</option>
+              <option value="no">no</option>
+            </select>
+          </label>
+        </div>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+
+  </body>
+</html>
