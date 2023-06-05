@@ -1,1 +1,5 @@
 /* styles go here */
+body {
+  background-color: yellow;
+  text-size-adjust: 20px;
+}
