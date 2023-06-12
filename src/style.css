@@ -1,1 +1,10 @@
-/* styles go here */
+.text1 {
+  color: rgb(255, 0, 212);
+}
+
+.text2 {
+  color: rgb(255, 0, 212);
+  font-size: 24px;
+  font-style: bold;
+
+}
