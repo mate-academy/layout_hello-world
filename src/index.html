@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+  </head>
+  <body>
+    <form
+    action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    method="post"
+    autocomplete="off">
+
+      <fieldset class="inputBlock">
+        <h2 class="section-title">Personal information</h2>
+
+        <div class="form-field">
+          <label for="surname" class="input"  >Surname</label>
+          <input
+            type="text"
+            name="surname"
+            autocomplete="off">
+        </div>
+
+        <div class="form-field">
+          <label for="name" class="input" >Name</label>
+          <input
+           type="text"
+           name="name"
+           autocomplete="off">
+        </div>
+
+        <div class="form-field">
+          <label
+          for="age"
+          name="name"
+          class="input">How old are you</label>
+          <input
+          type="number"
+          min="1"
+          max="100"
+          name="age"
+          value="12">
+        </div>
+
+        <div class="form-field">
+          <label for="dob" class="input">Full date of birth</label>
+          <input type="date" name="dob">
+        </div>
+
+        <div class="form-field">
+          <label for="accept-terms" class="input" >I accept the terms of agreement</label>
+          <input
+          type="checkbox"
+          name="accept-terms"
+          required>
+        </div>
+
+      </fieldset>
+
+      <fieldset class="inputBlock">
+        <h2 class="section-title">Registration</h2>
+
+        <div class="form-field">
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            class="input"
+            name="email"
+            placeholder="email@example.com">
+        </div>
+
+        <div class="form-field">
+          <label for="password" class="input">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="input">
+        </div>
+
+      </fieldset>
+
+      <fieldset class="inputBlock">
+        <h2 class="section-title">An interesting fact about you!</h2>
+
+        <div class="form-field">
+          <label for="cats" class="input">Do you love cats?</label>
+          <input
+          name="cats"
+          type="radio"
+          id="yes-cats"
+          value="cats">
+          <label for="cats">Yes</label>
+          <input
+          name="cats"
+          type="radio"
+          id="no-cats"
+          value="no-cats">
+          <label for="cats">No</label>
+        </div>
+
+        <div class="form-field">
+          <label for="fav-colour" class="input">What is you favourite colour?</label>
+          <input type="color" name="fav-colour">
+        </div>
+
+        <div class="form-field">
+          <label for="bedtime" class="input">What time do you go to bed</label>
+          <input type="time" name="bedtime">
+        </div>
+
+        <div class="form-field">
+          <label for="car" class="input">What is you favoiurite brand of car</label>
+          <select
+           name="car"
+           id="cars"
+           class="input">
+            <option value="vw">volkswagen</option>
+            <option value="ford">Ford</option>
+            <option value="fiat">Fiat</option>
+            <option value="citroen">Citroen</option>
+            <option value="kia">Kia</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="work-rating" class="input">How do you rate our work</label>
+          <input
+          type="range"
+          min="0"
+          max="10"
+          name="work-rating">
+        </div>
+      </fieldset>
+
+      <fieldset class="inputBlock">
+        <h2>Additional information</h2>
+
+        <div class="form-field">
+          <label for="comments" class="input">Comments:</label>
+          <textarea
+          name="comments"
+          id="comments"
+          cols="30"
+          rows="10"
+          autocomplete="off"
+          minlength="30"
+          maxlength="500"></textarea>
+        </div>
+
+        <div class="form-field">
+          <label for="recommend" class="input">Would you recommend us</label>
+          <select name="recommend" id="recommend">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+      </fieldset>
+
+
+      <div class="form-field">
+        <input
+        type="submit"
+        value="submit"
+        class="input">
+      </div>
+
+    </form>
+  </body>
+</html>

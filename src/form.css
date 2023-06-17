@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+}
+
+.inputBlock {
+  margin-top: 20px;
+}
+
+.input {
+  display: inline-block;
+  margin-top: 10px;
+}
