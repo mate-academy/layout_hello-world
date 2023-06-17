@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title> Avada_Kedavra</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <header>
+    </header>
+
+    <main>
+      <div class="container_1">
+        <span class="title_style">
+          Personal information
+        </span>  <br>
+        <label>
+          Surname:
+          <input 
+            type="text" 
+            class="input-style" 
+            required
+          >
+        </label> <br>
+      
+        <label>
+          Name: 
+          <input 
+            type="text" 
+            class="input-style" 
+            required
+          >
+        </label> <br>
+      
+        <label>
+          How old are You? 
+          <input 
+            type="number" 
+            value="12"
+            min="1"
+            max="100"
+            class="input-style" 
+            required
+          >
+        </label> <br>
+      
+        <label>
+          Full date of birth: 
+          <input 
+            type="date" 
+            class="input-style" 
+            required
+          >
+        </label> <br>
+      
+        <label>
+          I accept the term of the agreement: 
+          <input 
+            type="checkbox" 
+            class="input-style" 
+            required
+          >
+        </label>
+      </div>
+
+      <div class="container_2">
+        <span class="title_style">
+          Registration
+        </span> <br>
+        <label>
+          E-mail: 
+          <input 
+            type="email"
+            class="input-style"
+            placeholder="email@example.com"
+            minlength="5"
+            maxlength="25"
+            required
+          > 
+        </label> <br>
+
+        <label>
+        Password: <input 
+          type="password"
+          class="input-style"
+          minlength="5"
+          maxlength="25"
+          required
+          >     
+        </label> <br>
+      </div>
+
+      <div class="container_3">
+        <span class="title_style">
+          An intresting fact about you!
+        </span> <br>
+        <label>
+          Do you love cats?
+          <input 
+            type="radio" 
+            name="cats" 
+            class="input-style"
+          > Yes
+          <input 
+            type="radio" 
+            name="cats" 
+            class="input-style"
+          > No <br>
+          <label>
+          What is your favorite color? 
+            <input 
+            type="color"
+            class="input-style"
+          > 
+          </label><br>
+
+          <label>
+            What time do your go to bed? 
+            <input
+            type="time"
+            class="input-style"
+            required
+            > 
+          </label> <br>
+        </label>
+
+        <label>
+          What are you favorite brand of cars? 
+          <select 
+            name="cars" 
+            id="cars" 
+            size="3">
+            <option value="BMW">
+              BMW
+            </option>
+
+            <option value="Audi">
+              Audi
+            </option>
+
+            <option value="Lada">
+              Lada
+            </option>
+          </select> <br>
+        </label>
+
+        <label>
+         How do you rate our work? 
+          <input 
+              type="range"
+              class="input-style"
+          >
+        </label>
+      </div>
+
+      <div class="container_4">
+        <span class="title_style">
+          Additional info:
+        </span> <br> 
+        <label>
+          Comments:
+          <textarea 
+            name="textarea" 
+            cols="20" 
+            rows="5"
+            autocomplete="off"
+          >
+          </textarea>  <br>
+        </label>
+
+        <label>
+          Would you recomend us?
+          <select name="yes/no">
+            <option value="yes">
+              yes
+            </option>
+
+            <option value="no">
+              no
+            </option>
+          </select>
+        </label>
+      </div>
+
+      <label > 
+        <input 
+          type="submit"
+          class="input-style"
+        > 
+      </label>
+
+    </main>
+
+    <footer>
+    </footer>
+
+  </body>
+</html>

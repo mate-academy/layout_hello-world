@@ -1,1 +1,39 @@
 /* styles go here */
+.container_1 {
+  border: 1px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.container_2 {
+  border: 1px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.container_3 {
+  border: 1px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.container_4 {
+  border: 1px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.input-style {
+  margin: 5px;
+  padding-top: 10px;
+}
+
+.title_style {
+  background-color: white;
+  position: relative;
+  bottom: 20px;
+}
