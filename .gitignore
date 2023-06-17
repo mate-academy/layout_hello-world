@@ -12,3 +12,7 @@ node_modules
 backstop_data
 dist
 .cache
+# Other
+package-lock.json
+.linthtmlrc.json
+package.json
