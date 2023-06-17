@@ -1,0 +1,75 @@
+.button {
+  display: inline-block;
+
+  width: 220px;
+  padding: 16px 23px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center;
+  text-decoration: none;
+  background-color: $colorGold;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  color: $colorText;
+
+  border: 1px solid $colorGold;
+  border-radius: 50px;
+
+  transition: all $transition;
+
+  &:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &__white {
+    display: inline-block;
+
+    width: 220px;
+    padding: 16px 23px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    text-decoration: none;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #fff;
+
+    border: 1px solid #cda861;
+    border-radius: 50px;
+
+    transition: all $transition;
+
+    &:hover {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+    &__black {
+      display: inline-block;
+
+      width: 220px;
+      padding: 16px 23px;
+
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 27px;
+      text-decoration: none;
+      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      color: $colorText;
+
+      border: 1px solid $colorGold;
+      border-radius: 50px;
+
+      transition: all $transition;
+
+      &:hover {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+  }
+}

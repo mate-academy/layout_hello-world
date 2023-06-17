@@ -1,0 +1,46 @@
+.product {
+  text-align: center;
+
+  padding: 80px 0;
+
+  &__title {
+    margin: 0 auto;
+  }
+
+  &__text {
+    margin: 20px 0 30px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: $colorText;
+    opacity: 0.8;
+  }
+
+  &__slider {
+    max-width: 1513px;
+    margin: 0 auto;
+
+    position: relative;
+
+    &-item {
+      min-height: 410px;
+      width: 257px;
+
+      padding-top: 38px;
+      margin: 0 auto;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      transition: transform $transition;
+
+      &:hover {
+        transform: scale(0.98);
+      }
+    }
+  }
+}

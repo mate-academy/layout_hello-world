@@ -1,0 +1,144 @@
+.header {
+  background: url(../img/header/bg.jpg), no-repeat, center, cover;
+
+  height: 1080px;
+  max-width: 1920px;
+
+  margin: 0 auto;
+  padding-top: 20px;
+
+  &__bar {
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+
+    &-left {
+      width: 540px;
+      position: relative;
+
+      &--phone {
+        padding-left: 40px;
+
+        text-decoration: none;
+        color: $colorText;
+
+        &::before {
+          content: '';
+          background-image: url(../img/header/headphone.png);
+
+          width: 30px;
+          height: 30px;
+
+          position: absolute;
+          left: 0;
+          top: -2px;
+        }
+      }
+
+      &--text {
+        margin-left: 60px;
+
+        text-decoration: none;
+        font-style: italic;
+        color: $colorText;
+
+        transition: color $transition;
+
+        &:hover {
+          color: $colorGold;
+        }
+      }
+
+    }
+
+    &-right {
+      width: 460px;
+
+      &--button {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 30px;
+
+    &-left {
+      display: flex;
+      align-items: center;
+
+      min-width: 1050px;
+
+
+      &--logo {
+        display: flex;
+      }
+
+      &--nav {
+        margin-left: 45px;
+      }
+    }
+
+    &-right {
+      min-width: 120px;
+
+      &--search {
+        transition: transform $transition;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+
+      &--shop {
+        margin-left: 40px;
+
+        transition: transform $transition;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  &__title {
+    margin-top: 190px;
+
+    &-text {
+      margin: 0;
+
+      max-width: 660px;
+
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 76px;
+      line-height: 93px;
+      color: $colorText;
+
+      &--borber {
+        text-decoration-line: underline;
+        color: $colorGold;
+      }
+    }
+
+    &-paragraph {
+      margin: 30px 0 60px;
+      max-width: 490px;
+
+      color: $colorText;
+      opacity: 0.6;
+      font-size: 22px;
+      line-height: 26px;
+    }
+  }
+}

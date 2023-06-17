@@ -1,0 +1,30 @@
+.menu {
+  &__item {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__link {
+    margin-right: 50px;
+    padding-bottom: 10px;
+
+    text-decoration: none;
+    color: $colorText;
+    opacity: 0.6;
+
+    transition: all $transition;
+
+    &:hover {
+      width: 100%;
+
+      opacity: 1;
+      border-bottom: 3px solid $colorGold;
+    }
+  }
+
+  &__list {
+    display: inline-block;
+  }
+}

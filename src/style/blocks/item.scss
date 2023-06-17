@@ -1,0 +1,64 @@
+.item {
+
+  &__name {
+    position: relative;
+
+    width: 257px;
+    height: 149px;
+
+    background-color: #f2f1f1;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: $colorText;
+
+    transition: background-color $transition;
+
+    &:hover {
+      background-color: $colorGold;
+    }
+  }
+
+  &__photo {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -25%;
+  }
+
+  &__title {
+    margin: 0;
+    padding-top: 106px;
+
+  }
+
+  &__price {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    color: $colorText;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: $colorText;
+    opacity: 0.8;
+  }
+
+  &__button {
+    transition: all $transition;
+
+    &:hover {
+      background-color: $colorGold;
+      color: $colorText;
+      border: 1px solid $colorGold;
+    }
+  }
+}

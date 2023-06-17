@@ -1,0 +1,111 @@
+.footer {
+  background-color: $colorGold;
+  max-width: 1920px;
+
+  margin: 0 auto;
+  padding: 80px 0 137px;
+
+  position: relative;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-right {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      width: 453px;
+      height: 238px;
+    }
+  }
+
+  &__title {
+    width: 607px;
+    height: 254px;
+
+    &-logo {
+      display: flex;
+    }
+
+    &-text {
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 26px;
+      color: $colorText;
+
+      margin: 20px 0 0;
+    }
+
+    &-icon {
+      display: flex;
+      justify-content: space-between;
+
+      margin-top: 20px;
+
+      width: 265px;
+      height: 40px;
+
+      cursor: pointer;
+    }
+  }
+
+  &__menu {
+
+    &-title {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 32px;
+      color: $colorText;
+      border-bottom: 2px solid #fff;
+
+      padding-bottom: 5px;
+      margin: 0;
+    }
+
+    &-link {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 27px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $colorText;
+      cursor: pointer;
+    }
+
+    &-item {
+      margin: 25px 0 0;
+      padding-left: 20px;
+    }
+
+    &-list {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__finish {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $colorText;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    height: 58px;
+
+    &-text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      color: $colorGold;
+      text-align: center;
+    }
+  }
+}

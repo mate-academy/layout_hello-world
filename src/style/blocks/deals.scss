@@ -1,0 +1,33 @@
+.deals {
+  padding: 80px 0;
+
+  &__bgimg {
+    margin: 0 80px;
+
+    text-align: center;
+    background: url(../img/deals/img.png), center, no-repeat;
+
+    min-height: 767px;
+  }
+
+  &__title {
+    margin: 0 auto 34px;
+    padding-top: 60px;
+
+    border: none;
+  }
+
+  &__timer {
+    margin: 0 auto 34px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 500px;
+
+    &-wrapper {
+      text-align: center;
+    }
+  }
+}

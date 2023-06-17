@@ -1,0 +1,128 @@
+.people {
+  background-color: #f5eee1;
+  position: relative;
+
+  max-width: 1920px;
+
+  padding-bottom: 80px;
+  margin: 0 auto;
+
+  &__bgd{
+    background-image: url(../img/people/dot.png);
+
+    width: 148px;
+    height: 110px;
+
+    position: absolute;
+    left: 20px;
+    top: 0;
+  }
+
+  &__title{
+    padding-top: 80px;
+    margin: 0 auto;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 80px;
+  }
+
+  &__card {
+    height: 345px;
+    width: 540px;
+
+    text-align: center;
+    background-color: #f8f7f7;
+    box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+
+    position: relative;
+    z-index: 2;
+
+    transition: transform $transition;
+
+    &:hover {
+      transform: scale(1.01);
+    }
+
+    &-photo1 {
+      background: url(../img/people/img1.png), center, cover;
+
+      width: 108px;
+      height: 108px;
+
+      position: absolute;
+      left: 216px;
+      top: -50px;
+    }
+
+    &-photo2 {
+      background: url(../img/people/img2.png), center, cover;
+
+      width: 108px;
+      height: 108px;
+
+      position: absolute;
+      left: 216px;
+      top: -50px;
+    }
+
+    &-photo3 {
+      background: url(../img/people/img3.png), center, cover;
+
+      width: 108px;
+      height: 108px;
+
+      position: absolute;
+      left: 216px;
+      top: -50px;
+    }
+
+    &-text {
+      margin: 108px auto 50px;
+      width: 498px;
+
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: 0.09em;
+      color: $colorText;
+      opacity: 0.8;
+    }
+
+    &-name {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 26px;
+      letter-spacing: 0.09em;
+      color: #000;
+    }
+
+    &-work {
+      margin-top: 4px;
+
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+      letter-spacing: 0.09em;
+      color: #000;
+    }
+  }
+
+  &__arrow {
+    background-image: url(../img/people/arrow.png);
+    background-repeat: no-repeat;
+
+    height: 289px;
+    width: 1856px;
+
+    position: absolute;
+    right: -105px;
+    bottom: 105px;
+    z-index: 1;
+  }
+}

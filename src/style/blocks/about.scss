@@ -1,0 +1,61 @@
+.about {
+  padding: 80px 40px;
+
+  &__content {
+    max-width: 1600px;
+    height: 600px;
+
+    margin: 0 auto;
+
+    background: rgba(205, 168, 97, 0.1);
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &-decor {
+      position: absolute;
+      bottom: -80px;
+      left: -95px;
+    }
+
+    &-room {
+      margin: 16px 70px;
+    }
+  }
+
+  &__title {
+    position: relative;
+    max-width: 514px;
+
+    &-slogan {
+      margin:20px 0 30px;
+
+
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 76px;
+      line-height: 93px;
+      text-transform: uppercase;
+      color: $colorText;
+    }
+
+    &-text {
+      margin: 0 0 24px;
+
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 26px;
+      color: $colorText;
+      opacity: 0.8;
+    }
+
+    &-chair {
+      position: absolute;
+      right: -270px;
+      bottom: -25px;
+    }
+  }
+}

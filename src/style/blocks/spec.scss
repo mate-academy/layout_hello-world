@@ -1,0 +1,84 @@
+.spec {
+  text-align: center;
+
+  padding: 42px 0 80px;
+
+  &__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 1680px;
+    height: 309px;
+
+    background: rgba(205, 168, 97, 0.19);
+    border-radius: 30px;
+  }
+
+  &__bgimg {
+    background-image: url(../img/spec/sofa.png);
+
+    width: 956px;
+    height: 415px;
+
+    margin: 0 auto;
+
+    position: relative;
+    z-index: 1;
+    bottom: -38px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 1032px;
+    min-height: 70px;
+  }
+
+  &__img {
+    width: 94px;
+    height: 67px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    &-truck {
+      background-image: url(../img/spec/truck.svg);
+    }
+
+    &-headphone {
+      background-image: url(../img/spec/call.png);
+    }
+
+    &-hand {
+      background-image: url(../img/spec/money.png);
+    }
+
+    &-descr {
+      margin-left: 20px;
+
+      text-align: left;
+    }
+
+    &-title {
+      font-size: 20px;
+      line-height: 23px;
+      color: #000;
+
+      margin-bottom: 8px;
+    }
+
+    &-text {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #000;
+    }
+  }
+}

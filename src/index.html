@@ -1,17 +1,500 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sofa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./style/main.scss">
+
   </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="container">
+        <div class="header__bar">
+          <div class="header__bar-left">
+            <a
+              href="tel:+919986546583"
+              class="header__bar-left--phone"
+            >
+              +91998 654 6583
+            </a>
 
-  <body>
-    <div>
-      Hello, world!
-    </div>
+            <a
+              href="#"
+              class="header__bar-left--text"
+            >
+              Welcome you Benco store!
+            </a>
+          </div>
+          <div class="header__top-right">
+            <a
+              href="#"
+              class="
+                header__bar-right--button
+                button__white"
+            >
+              Currency: USD
+            </a>
+            <a
+              href="#"
+              class="
+                header__bar-right--button
+                button"
+            >
+              My Account
+            </a>
+          </div>
+        </div>
+        <div class="header__menu">
+
+          <div class="header__menu-left">
+            <a href="#" class="header__menu-left--logo">
+              <img src="./img/header/logo.png" alt="logo">
+            </a>
+
+            <nav class="header__menu-left--nav menu">
+              <ul class="menu__item">
+                <a href="#" class="menu__link">
+                  <li class="menu__list">Home</li>
+                </a>
+                <a href="#shop" class="menu__link">
+                  <li class="menu__list">Shop</li>
+                </a>
+
+                <a href="#people" class="menu__link">
+                  <li class="menu__list">Blog</li>
+                </a>
+
+                <a href="#about-us" class="menu__link">
+                  <li class="menu__list">About us</li>
+                </a>
+
+                <a href="#product" class="menu__link">
+                  <li class="menu__list">Product</li>
+                </a>
+
+                <a href="#" class="menu__link">
+                  <li class="menu__list">Pages</li>
+                </a>
+
+                <a href="#contact-us" class="menu__link">
+                  <li class="menu__list">Contact us</li>
+                </a>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="header__menu-right">
+            <a href="#">
+              <img
+                src="./img/header/search.png"
+                alt="search"
+                class="header__menu-right--search"
+              >
+            </a>
+            <a href="#">
+              <img
+                src="./img/header/shopping-cart.png"
+                alt="shopping-cart"
+                class="header__menu-right--shop"
+              >
+            </a>
+          </div>
+        </div>
+        <div class="header__title">
+          <h1 class="header__title-text">Simple Furniture with
+            <span class="header__title-text--borber">high-end</span> quality
+          </h1>
+
+          <p class="header__title-paragraph">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          </p>
+
+          <a href="#" class="header__title-button button">Shop Now</a>
+        </div>
+
+      </div>
+    </header>
+
+    <section class="about" id="about-us">
+      <div class="container">
+        <div class="about__content">
+          <img src="./img/about/Group.png" alt="decor foto" class="about__content-decor">
+          <img src="./img/about/home.png" alt="foto room" class="about__content-room">
+
+          <div class="about__title">
+            <h2 class="section__title">About us</h2>
+            <div class="about__title-slogan">
+              Furniture of art.
+            </div>
+            <p class="about__title-text">
+              Lorem Ipsum is simply dummy text of the printing anLorem Ipsum is simply dummy text of the printing and typesetting industry.d typesetting industry.
+            </p>
+
+            <a href="#" class="about__title-button button">
+              Shop Now
+            </a>
+            <img src="./img/about/chair.png" alt="foto chair" class="about__title-chair">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product" id="product">
+      <div class="container">
+
+        <h2 class="section__title product__title"
+        >
+          What product we sell
+        </h2>
+
+        <div class="product__text"
+        >
+          Find our best products faster, better and qualitier  product’s choices from us.
+        </div>
+        <div class="product__slider">
+          <div>
+            <div class="product__slider-item item">
+              <a href="#" class="item__name">
+                <img src="./img/product/img1.png" alt="Couch Cartoon" class="item__photo">
+                <h3 class="item__title">Couch Cartoon</h3>
+              </a>
+              <img src="./img/product/rate.png" alt="stars" class="item__stars">
+              <div class="item__price">
+                $<span>159</span>
+              </div>
+              <div class="item__text">Lorem Iipsum is simple and dumy text.</div>
+              <a href="#" class="item__button button__black">Add to Cart</a>
+            </div>
+          </div>
+          <div>
+            <div class="product__slider-item item">
+              <a href="#" class="item__name">
+                <img src="./img/product/img2.png" alt="Cuero Chair" class="item__photo">
+                <h3 class="item__title">Cuero Chair</h3>
+              </a>
+              <img src="./img/product/3stars.png" alt="stars" class="item__stars">
+              <div class="item__price">
+                $<span>199</span>
+              </div>
+              <div class="item__text">Lorem Iipsum is simple and dumy text.</div>
+              <a href="#" class="item__button button__black">Add to Cart</a>
+            </div>
+          </div>
+          <div>
+            <div class="product__slider-item item">
+              <a href="#" class="item__name">
+                <img src="./img/product/img3.png" alt="Bedroom Bed" class="item__photo">
+                <h3 class="item__title">Bedroom Bed</h3>
+              </a>
+              <img src="./img/product/rate.png" alt="stars" class="item__stars">
+              <div class="item__price">
+                $<span>359</span>
+              </div>
+              <div class="item__text">Lorem Iipsum is simple and dumy text.</div>
+              <a href="#" class="item__button button__black">Add to Cart</a>
+            </div>
+          </div>
+          <div>
+            <div class="product__slider-item item">
+              <a href="#" class="item__name">
+                <img src="./img/product/img4.png" alt="Outdoor Table" class="item__photo">
+                <h3 class="item__title">Outdoor Table</h3>
+              </a>
+              <img src="./img/product/rate.png" alt="stars" class="item__stars">
+              <div class="item__price">
+                $<span>99</span>
+              </div>
+              <div class="item__text">Lorem Iipsum is simple and dumy text.</div>
+              <a href="#" class="item__button button__black">Add to Cart</a>
+            </div>
+          </div>
+          <div>
+            <div class="product__slider-item item">
+              <a href="#" class="item__name">
+                <img src="./img/product/img5.png" alt="Wooden Drawer" class="item__photo">
+                <h3 class="item__title">Wooden Drawer</h3>
+              </a>
+              <img src="./img/product/rate.png" alt="stars" class="item__stars">
+              <div class="item__price">
+                $<span>299</span>
+              </div>
+              <div class="item__text">Lorem Iipsum is simple and dumy text.</div>
+              <a href="#" class="item__button button__black">Add to Cart</a>
+            </div>
+          </div>
+          <div>
+            <div class="product__slider-item item">
+              <a href="#" class="item__name">
+                <img src="./img/product/img1.png" alt="Couch Cartoon" class="item__photo">
+                <h3 class="item__title">Couch Cartoon</h3>
+              </a>
+              <img src="./img/product/rate.png" alt="stars" class="item__stars">
+              <div class="item__price">
+                $<span>159</span>
+              </div>
+              <div class="item__text">Lorem Iipsum is simple and dumy text.</div>
+              <a href="#" class="item__button button__black">Add to Cart</a>
+            </div>
+          </div>
+          <div>
+            <div class="product__slider-item item">
+              <a href="#" class="item__name">
+                <img src="./img/product/img2.png" alt="Cuero Chair" class="item__photo">
+                <h3 class="item__title">Cuero Chair</h3>
+              </a>
+              <img src="./img/product/3stars.png" alt="stars" class="item__stars">
+              <div class="item__price">
+                $<span>199</span>
+              </div>
+              <div class="item__text">Lorem Iipsum is simple and dumy text.</div>
+              <a href="#" class="item__button button__black">Add to Cart</a>
+            </div>
+          </div>
+          <div>
+            <div class="product__slider-item item">
+              <a href="#" class="item__name">
+                <img src="./img/product/img3.png" alt="Bedroom Bed" class="item__photo">
+                <h3 class="item__title">Bedroom Bed</h3>
+              </a>
+              <img src="./img/product/rate.png" alt="stars" class="item__stars">
+              <div class="item__price">
+                $<span>359</span>
+              </div>
+              <div class="item__text">Lorem Iipsum is simple and dumy text.</div>
+              <a href="#" class="item__button button__black">Add to Cart</a>
+            </div>
+          </div>
+          <div>
+            <div class="product__slider-item item">
+              <a href="#" class="item__name">
+                <img src="./img/product/img4.png" alt="Outdoor Table" class="item__photo">
+                <h3 class="item__title">Outdoor Table</h3>
+              </a>
+              <img src="./img/product/rate.png" alt="stars" class="item__stars">
+              <div class="item__price">
+                $<span>99</span>
+              </div>
+              <div class="item__text">Lorem Iipsum is simple and dumy text.</div>
+              <a href="#" class="item__button button__black">Add to Cart</a>
+            </div>
+          </div>
+          <div>
+            <div class="product__slider-item item">
+              <a href="#" class="item__name">
+                <img src="./img/product/img5.png" alt="Wooden Drawer" class="item__photo">
+                <h3 class="item__title">Wooden Drawer</h3>
+              </a>
+              <img src="./img/product/rate.png" alt="stars" class="item__stars">
+              <div class="item__price">
+                $<span>299</span>
+              </div>
+              <div class="item__text">Lorem Iipsum is simple and dumy text.</div>
+              <a href="#" class="item__button button__black">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="deals" id="shop">
+      <div class="container">
+        <div class="deals__bgimg">
+          <h2 class="section__title deals__title">Special deals for this week</h2>
+
+          <div class="deals__timer">
+            <div class="deals__timer-wrapper timer">
+              <div class="timer__days timer__item">220</div>
+              <div class="timer__item-text">Days</div>
+            </div>
+
+            <div class="deals__timer-wrapper timer">
+              <div class="timer__hours timer__item">8</div>
+              <div class="timer__item-text">Hours</div>
+            </div>
+
+            <div class="deals__timer-wrapper timer">
+              <div class="timer__minutes timer__item">45</div>
+              <div class="timer__item-text">Minutes</div>
+            </div>
+
+            <div class="deals__timer-wrapper timer">
+              <div class="timer__seconds timer__item">50</div>
+              <div class="timer__item-text">Seconds</div>
+            </div>
+          </div>
+
+          <a href="#" class="deals__button button">Shop Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="spec" id="contact-us">
+      <div class="container">
+        <div class="spec__bgimg"></div>
+        <div class="spec__content">
+          <div class="spec__items">
+
+            <div class="spec__item">
+              <div class="spec__item-truck spec__img"></div>
+              <div class="spec__item-descr">
+                <div class="spec__item-title">Free Shipping</div>
+                <div class="spec__item-text">Orders over $100</div>
+              </div>
+            </div>
+
+            <div class="spec__item">
+              <div class="spec__item-headphone spec__img"></div>
+              <div class="spec__item-descr">
+                <div class="spec__item-title">24/7 Support</div>
+                <div class="spec__item-text">Quick support</div>
+              </div>
+            </div>
+
+            <div class="spec__item">
+              <div class="spec__item-hand spec__img"></div>
+              <div class="spec__item-descr">
+                <div class="spec__item-title">10-Day Returns</div>
+                <div class="spec__item-text">Shop with confidence</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="people" id="people">
+      <div class="container">
+        <div class="people__bgd"></div>
+        <h2 class="section__title people__title">Whats people say's</h2>
+        <div class="people__content">
+          <div class="people__card">
+            <div class="people__card-photo1"></div>
+            <p class="people__card-text">"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings”. </p>
+            <div class="people__card-name">Jessica Robert</div>
+            <div class="people__card-work">Co-founder</div>
+          </div>
+          <div class="people__card">
+            <div class="people__card-photo2"></div>
+            <p class="people__card-text">"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings”. </p>
+            <div class="people__card-name">Rocky Pere</div>
+            <div class="people__card-work">founder</div>
+          </div>
+          <div class="people__card">
+            <div class="people__card-photo3"></div>
+            <p class="people__card-text">"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings”. </p>
+            <div class="people__card-name">Albert Amansan</div>
+            <div class="people__card-work">Co-founder</div>
+          </div>
+        </div>
+        <div class="people__arrow"></div>
+      </div>
+    </section>
+
+    <section class="sub">
+      <div class="container">
+        <div class="sub__arrow"></div>
+        <div class="sub__bgimg">
+          <h2 class="section__title sub__title"> Subscribe us for trending works</h2>
+          <div class="sub__text">Stay  up to date with our new and trending works !!!</div>
+          <form action="#" class="sub__form">
+            <div class="sub__form-wrapper">
+              <label>
+                <input
+                    type="email"
+                    placeholder="Enter your email address"
+                    class="sub__form-email"
+                    required
+                >
+                <input
+                  type="submit"
+                  class="sub__form-submit button"
+                  value="subscribe"
+                >
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="sub__point"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__content-left">
+            <div class="footer__title">
+              <a href="#" class="footer__title-logo">
+                <img src="./img/header/logo.png" alt="logo">
+              </a>
+
+              <p class="footer__title-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedo
+                eiusmod tempor incdididunt ut labore et dolore magna aliqua.
+                Ut enim ad minzim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+
+              <a class="footer__title-icon">
+                <img src="./img/footer/fb.png" alt="icon facebook">
+                <img src="./img/footer/insta.png" alt="icon instagram">
+                <img src="./img/footer/linkedin.png" alt="icon linkedin">
+                <img src="./img/footer/twitter.png" alt="icon twitter">
+                <img src="./img/footer/google.png" alt="icon google">
+                <img src="./img/footer/pinterest.png" alt="icon pinterest">
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__content-right">
+            <div class="footer__menu">
+              <h4 class="footer__menu-title">Quick Links</h4>
+              <ul class="footer__menu-item">
+                <a href="#" class="footer__menu-link">
+                  <li class="footer__menu-list">Home</li>
+                </a>
+                <a href="#about-us" class="footer__menu-link">
+                  <li class="footer__menu-list">About us</li>
+                </a>
+                <a href="#people" class="footer__menu-link">
+                  <li class="footer__menu-list">Blog</li>
+                </a>
+                <a href="#product" class="footer__menu-link">
+                  <li class="footer__menu-list">Products</li>
+                </a>
+              </ul>
+            </div>
+
+            <div class="footer__menu">
+              <h4 class="footer__menu-title">Support</h4>
+              <ul class="footer__menu-item">
+                <a href="#contact-us" class="footer__menu-link">
+                  <li class="footer__menu-list">Help</li>
+                </a>
+                <a href="#contact-us" class="footer__menu-link">
+                  <li class="footer__menu-list">Contact</li>
+                </a>
+                <a href="#contact-us" class="footer__menu-link">
+                  <li class="footer__menu-list">Policy</li>
+                </a>
+                <a href="#contact-us" class="footer__menu-link">
+                  <li class="footer__menu-list">Service</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__finish">
+          <div class="footer__finish-text">&copy; Copyright All Rights Reserved</div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./main.js"></script>
   </body>
-
 </html>

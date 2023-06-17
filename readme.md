@@ -1,25 +1,5 @@
-# Hello world
+I have created a web page based on a layout https://www.figma.com/file/yqYAeSxmpvXv0mFKl1Xqyu/maket?type=design&node-id=3-3&t=B66PJpDzavzcqEZc-0;
 
-Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://volodymyrsar.github.io/layout_hello-world/)
-- [TEST REPORT LINK](https://volodymyrsar.github.io/layout_hello-world/report/html_report/)
+This maket only for desktop.
 
-> Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
-___
-
-## The task
-
-Add the basic page markup and the text `Hello, world!` into the body.
-
-## Linter
-
-Make sure that `<head>` and `<body>` have indentation of 2 spaces.
-
-## Tests
-
-Make sure that you installed all the required VSCode extensions:
-
-- ESLint (last version)
-- EditorConfig (last version)
-- StyleLint (last version)
-- LintHTML (last version)
+I used: BEM, Sass, slick js.

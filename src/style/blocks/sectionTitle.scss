@@ -1,0 +1,14 @@
+.section__title {
+  max-width: max-content;
+
+  margin: 0;
+  padding-bottom: 10px;
+
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  border-bottom: 2px solid $colorGold;
+  color: $colorText;
+}
