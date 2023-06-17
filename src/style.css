@@ -1,1 +1,13 @@
 /* styles go here */
+.form-field {
+  margin: 10px;
+}
+
+.forms {
+  margin: 20px;
+}
+
+.btn {
+  margin: 0 20px;
+  border-radius: 5px;
+}
