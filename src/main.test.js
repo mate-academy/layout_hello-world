@@ -131,8 +131,7 @@ describe('Environmental Check', () => {
       expect(true)
         .toBeTruthy();
     } else {
-      expect(listOfExtensions)
-        .toContain('kamikillerto.vscode-linthtml');
+      expect(listOfExtensions).toContain('kamikillerto.vscode-linthtml');
     }
   });
 
