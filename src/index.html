@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css"
+      rel="stylesheet"
+      type="text/css">
+  </head>
+
+  <body>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal information</legend>
+        <div class="form-field">
+          <label for="surname">Surname:</label>
+          <input type="text"
+            name="surname"
+            id="surname"
+            required
+            minlength="100"
+            maxlength="1000">
+        </div>
+        <div class="form-field">
+          <label for="name">Name:</label>
+          <input type="text"
+            name="name"
+            id="name"
+            required>
+        </div>
+        <div class="form-field">
+          <label for="howOldAreYou">How old are you?</label>
+          <input type="number"
+            name="howOldAreYou"
+            id="howOldAreYou"
+            value="12"
+            min="1"
+            max="100">
+        </div>
+        <div>
+          <label for="dateOfBirth">Full date of birth:</label>
+          <input type="date"
+            name="dateOfBirth"
+            id="dateOfBirth">
+        </div>
+        <div>
+          <label for="chbx">I accept the term of the agreement</label>
+          <input type="checkbox"
+            id="chbx"
+            name="accept"
+            value="Yes">
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Registration</legend>
+        <div class="form-field">
+          <label for="email">E-mail:</label>
+          <input type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="email@example.com">
+        </div>
+        <div class="form-field">
+          <label for="password">Password:</label>
+          <input type="password"
+            id="password"
+            name="password"
+            required>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>An interesting fact about you!</legend>
+        <div class="form-field">
+          <label for="radio">Do you love cats?</label>
+          <input type="radio"
+            name="radio">
+          Yes
+          <input type="radio"
+            name="radio">
+          No
+        </div>
+        <div class="form-field">
+          <label for="color">What is your favorite color?</label>
+          <input type="color"
+            id="color"
+            name="color">
+        </div>
+        <div class="form-field">
+          <label for="goBed">What time do you go to bed?</label>
+          <input type="time"
+            id="goBed"
+            name="name"
+            step="2">
+        </div>
+        <div class="form-field">
+          <label for="brandOfCars">What are your favorite brand of cars</label>
+          <select name="brandOfCars" multiple>
+            <option value="BMW">BMV</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="rateWork">How do you rate our work?</label>
+          <input type="range"
+            id="rateWork"
+            name="rateWork"
+            min="0"
+            max="100"
+            value="0">
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Additional info:</legend>
+        <div class="form-field">
+          <label for="comments">Comments:</label>
+          <textarea name="comments"
+            autocomplete="off">
+          </textarea>
+        </div>
+        <div class="form-field">
+          <label for="recom">Would you recommend us?</label>
+          <select name="recom">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+      </fieldset>
+    </form>
+    <button type="submit">Submit</button>
+  </body>
+
+</html>
