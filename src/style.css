@@ -1,1 +1,4 @@
-/* styles go here */
+p {
+  font-size: medium;
+  color: black;
+}
