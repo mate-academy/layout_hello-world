@@ -41,5 +41,7 @@
       "bem": false
     }
   },
-  "dependencies": {}
+  "dependencies": {
+    "puppeteer": "^20.8.1"
+  }
 }
