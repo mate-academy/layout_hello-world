@@ -1,1 +1,123 @@
-/* styles go here */
+
+.image {
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  left: 50px;
+}
+
+.header {
+  width: 1200px;
+  height: 60px;
+  top: -95px;
+  left: -60px;
+}
+
+.nav_list:hover {
+  color: blue;
+}
+
+.is-active:hover {
+  color: #00acdc;
+  text-decoration: underline;
+  width: 37px;
+  height: 15px;
+  top: 23px;
+  left: 510px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  text-align: left;
+}
+
+.link1 {
+  width: 58px;
+  height: 15px;
+  top: 23px;
+  left: 566px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  text-align: left;
+  color: #000;
+}
+
+.link2 {
+  width: 88px;
+  height: 15px;
+  top: 22px;
+  left: 644px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  text-align: left;
+  color: #000;
+}
+
+.link3 {
+  width: 138px;
+  height: 15px;
+  top: 22px;
+  left: 752px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  text-align: left;
+  color: #00acdc;
+}
+
+.link4 {
+  width: 54px;
+  height: 15px;
+  top: 22px;
+  left: 910px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  text-align: left;
+  color: #000;
+}
+
+.link5 {
+  width: 51px;
+  height: 15px;
+  top: 22px;
+  left: 984px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  text-align: left;
+  color: #000;
+}
+
+.link6 {
+  width: 40px;
+  height: 15px;
+  top: 22px;
+  left: 1055px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  text-align: left;
+  color: #000;
+}
+
+.link7 {
+  width: 35px;
+  height: 15px;
+  top: 22px;
+  left: 1115px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  text-align: left;
+  color: #000;
+}
