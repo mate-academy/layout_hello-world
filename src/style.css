@@ -1,1 +1,9 @@
 /* styles go here */
+.form {
+  display: block;
+  margin: 10px 0;
+}
+
+.field {
+  margin: 20px 0;
+}
