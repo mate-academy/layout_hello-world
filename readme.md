@@ -1,6 +1,6 @@
 # Hello world
 
-Replace `<your_account>` with your Github username and copy the links to Pull Request description:
+Replace `Ivan-Kyznetsov` with your Github username and copy the links to Pull Request description:
 - [DEMO LINK](https://Ivan-Kyznetsov.github.io/layout_hello-world/)
 - [TEST REPORT LINK](https://Ivan-Kyznetsov.github.io/layout_hello-world/report/html_report/)
 
