@@ -1,1 +1,46 @@
-/* styles go here */
+.container {
+  height: 60px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.container-2 {
+  gap: 20px;
+  display: flex;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+img {
+  margin-left: 50px;
+
+}
+
+.blue {
+  color: #00acdc;
+}
+
+p {
+  color: #000;
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+body {
+  background-color: gray;
+}
+
+.rectangle {
+  background-color: #00acdc;
+  height: 4px;
+  width: 37px;
+  position: absolute;
+  bottom: 0px;
+  border-radius: 8px;
+}
