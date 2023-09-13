@@ -1,1 +1,8 @@
 /* styles go here */
+body {
+  margin: 8px;
+}
+
+p {
+  margin: 0;
+}
