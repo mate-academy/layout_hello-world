@@ -1,4 +1,4 @@
-- [ ] Code style follows rules, described in the [Code Style Rules](https://github.com/mate-academy/layout_task-guideline/blob/master/html-css-code-style-rules.md)
+- [ ] Code style follows rules, described in the [Code Style Rules](https://mate-academy.github.io/layout_task-guideline/html-css-code-style-rules)
 - [ ] All the requirements described in the [Readme](readme.md) are implemented in the code
 - [ ] All the Tips & Hints described in the [Readme](readme.md) are taken into account
 - [ ] Repeatable values of CSS properties have been put into variables
