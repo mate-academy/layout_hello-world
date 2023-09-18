@@ -1,6 +1,6 @@
-- [ ] Code style follows rules, described in the [Code Style Rules](https://github.com/mate-academy/layout_moyo-header/blob/master/code-style-rules.md)
-- [ ] All the requirements described in the [Readme](https://github.com/mate-academy/layout_moyo-header/blob/master/readme.md) are implemented in the code
-- [ ] All the Tips & Hints described in the [Readme](https://github.com/mate-academy/layout_moyo-header/blob/master/readme.md) are taken into account
+- [ ] Code style follows rules, described in the [Code Style Rules](https://github.com/mate-academy/layout_task-guideline/blob/master/html-css-code-style-rules.md)
+- [ ] All the requirements described in the [Readme](readme.md) are implemented in the code
+- [ ] All the Tips & Hints described in the [Readme](readme.md) are taken into account
 - [ ] Repeatable values of CSS properties have been put into variables
 - [ ] Paddings are used to determine height of header
 - [ ] Pseudo-elements are used to create blue line under selected tab
