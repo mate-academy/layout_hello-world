@@ -1,4 +1,4 @@
-/* eslint-disable no-useless-escape */
+/* eslint-disable no-useless-escape  */
 /* eslint-disable no-undef */
 'use strict';
 
