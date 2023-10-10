@@ -11,14 +11,13 @@ Create HTML page with the header using `flexbox` basing on [this mockup](https:/
 The page should match the design Pixel Perfect: all the sizes, colors and distanced MUST be the same as on the design.
 
 ### Requirements:
-- use semantic tags: `<header>`, `<img>`, `<nav>`, `<ul>`, `<li>` and `<a>`
-- use images from [src/images](src/images)
 - reset browser default margins.
-- Use [Roboto font](https://fonts.google.com/specimen/Roboto)
+- use [Roboto font](https://fonts.google.com/specimen/Roboto)
+- use semantic tags: `<header>`, `<img>`, `<nav>`, `<ul>`, `<li>` and `<a>`
 - the header should stretch the full page width
 - the height should be set for nav links (not the header), take it from the design.
 - header content should be vertically centered.
-- Logo should also be a link with an image inside. But it should not be a part of the `<nav>`.
+- Logo should also be a link with an image inside (from [src/images](src/images)). But it should not be a part of the `<nav>`.
 - ❗️ the blue link with a line below should have a class `is-active` in addition to any other classes you add.
 - link color should be changed on `:hover`
 - ❗️ add `data-qa="hover"` attribute to the 4th link for testing (`Laptops & computers`)
