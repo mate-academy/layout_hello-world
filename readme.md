@@ -1,14 +1,9 @@
 # Moyo header
-Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://<your_account>.github.io/layout_moyo-header/)
-- [TEST REPORT LINK](https://<your_account>.github.io/layout_moyo-header/report/html_report/)
-
-> Follow [these instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
-
-## The task
-Create HTML page with the header using `flexbox` basing on [this mockup](https://www.figma.com/file/1sog2rmfyCjnVxkeZ3ptnc/MOYO-%2F-Header?node-id=0%3A1).
+Create HTML page with the header using `flexbox` based on the [Figma Mockup](https://www.figma.com/file/1sog2rmfyCjnVxkeZ3ptnc/MOYO-%2F-Header?node-id=0%3A1).
 
 The page should match the design Pixel Perfect: all the sizes, colors and distanced MUST be the same as on the design.
+
+> Here are the [Layout Tasks Instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
 
 ## Requirements:
 - reset browser default margins.
@@ -28,6 +23,11 @@ The page should match the design Pixel Perfect: all the sizes, colors and distan
 - Nav Links should not have any padding, but have text centered
 
 ## Checklist
+❗️ Replace `<your_account>` with your Github username and copy the links to `Pull Request` description:
+
+- [DEMO LINK](https://<your_account>.github.io/layout_moyo-header/)
+- [TEST REPORT LINK](https://<your_account>.github.io/layout_moyo-header/report/html_report/)
+
 ❗️ Copy this `Checklist` to the `Pull Request` description after links, and put `[x]` after you checked the point.
 
 - [ ] Header height is set in 1 place (for the links)
