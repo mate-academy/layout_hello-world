@@ -10,7 +10,7 @@ Create HTML page with the header using `flexbox` basing on [this mockup](https:/
 
 The page should match the design Pixel Perfect: all the sizes, colors and distanced MUST be the same as on the design.
 
-### Requirements:
+## Requirements:
 - reset browser default margins.
 - use [Roboto font](https://fonts.google.com/specimen/Roboto)
 - use semantic tags: `<header>`, `<img>`, `<nav>`, `<ul>`, `<li>` and `<a>`
@@ -19,22 +19,20 @@ The page should match the design Pixel Perfect: all the sizes, colors and distan
 - header content should be vertically centered.
 - Logo should also be a link with an image inside (from [src/images](src/images)). But it should not be a part of the `<nav>`.
 - ❗️ the blue link with a line below should have a class `is-active` in addition to any other classes you add.
-- link color should be changed on `:hover`
 - ❗️ add `data-qa="hover"` attribute to the 4th link for testing (`Laptops & computers`)
+- link color should be changed on `:hover`
 - Use the `::after` and position it relative to a link with `is-active` class
-
-### Tips & Hints
-- Check one more time if you added `data-qa="hover"` and `class="is-active"` required for tests
-- Don't use `gap` property for indents. It's not supported in tests, use `margin` instead.
+- Don't use flex `gap` property for indents. It's not supported in tests, use `margin` instead.
 - There should not be margins before the first and after the last list items
-- Use `2 spaces` for indentation in your file (not a `tab` character).
-- Don't just copy all styles from Figma. Think, which of them are relevant.
-Uneven sizes (e.g. `line-height: 14.6px`) are definitely useless.
+- Don't just copy all styles from Figma. Think, which of them are relevant. Uneven sizes (e.g. `line-height: 14.6px`) are definitely useless.
 - Nav Links should not have any padding, but have text centered
-- Uppercase letters for `nav__list` are made with styles, not hardcoded into
-html (you should have usual text with first uppercase letter in html)
-- Don't set height for `header` explicitly. Let the content (links) dictate it.
 
-
-## ❗️❗️❗️ DON'T FORGET TO PROOFREAD YOUR CODE WITH [CHECKLIST](https://github.com/mate-academy/layout_moyo-header/blob/master/checklist.md) BEFORE SENDING YOUR PULL REQUEST❗️❗️❗️
+## Checklist
+- [ ] Header height is set in 1 place (for the links)
+- [ ] Content is vertically centered (for any header height)
+- [ ] CSS is used to show all letters in Uppercase (don't type them in HTML)
+- [ ] Logo is an image wrapped with a link
+- [ ] **CSS Variable** is used for a blue color
+- [ ] Pseudo-element is used for a blue line below the active link
+- [ ] Code follows all the [Code Style Rules ❗️](cheklist.md)
 
