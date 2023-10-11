@@ -8,7 +8,7 @@
 <details>
   <summary>Remember about correct indentation between parent and child elements</summary>
 
-  - Each level of nesting, including text, contained inside the element, requires 2-space offset. 
+  > Each level of nesting, including text, contained inside the element, requires 2-space offset. 
   Also blank line shouldn't be between parent and child elements.
 
   GOOD example
