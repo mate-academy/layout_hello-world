@@ -121,7 +121,7 @@
   > It is just easier to read such lines
 </details>
 
-## Semantic
+## HTML Content
 
 <details>
   <summary>Use semantic tags where possible</summary>
