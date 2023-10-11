@@ -237,7 +237,7 @@
 </details>
 
 <details>
-  <summary>Don't fix container size (if there is not such requirement)</summary>
+  <summary>Don't fix container size (if there is no such a requirement)</summary>
 
   > Let the content size dictate it. To avoid overflow or accidental scroll bar
 </details>
