@@ -28,6 +28,8 @@ The page should match the design Pixel Perfect: all the sizes, colors and distan
 - Nav Links should not have any padding, but have text centered
 
 ## Checklist
+Copy this `Checklist` to the `Pull Request` description after links, and put `[x]` after you checked the point.
+
 - [ ] Header height is set in 1 place (for the links)
 - [ ] Content is vertically centered (for any header height)
 - [ ] CSS is used to show all letters in Uppercase (don't type them in HTML)
