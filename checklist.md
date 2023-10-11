@@ -152,6 +152,18 @@
 <details>
   <summary>Class names represent the meaning of the content (not the styles or tag names)</summary>
 
+  GOOD example
+  ```html
+  <nav class="nav">
+    <ul class="nav__list">
+      ...
+      <li class="nav__item">
+        <a href="#apple" class="nav__link">Apple</a>
+      </li>
+    </ul>
+  </nav>
+  ```
+
   BAD example
   ```html
   <nav class="no-padding">
