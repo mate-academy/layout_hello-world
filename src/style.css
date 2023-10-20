@@ -24,7 +24,7 @@ a:hover {
   color: #00acdc;
 }
 
-header .logo a {
+.logo a {
   display: flex;
   align-items: center;
   position: relative;
