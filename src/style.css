@@ -1,16 +1,21 @@
 body {
+  width: 1200px;
+  height: 60px;
   margin: 0;
   font-family: Roboto, sans-serif;
-  font-weight: bold;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 header {
-  width: 100%;
   background-color: #fff;
-  padding: 20px 0;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+
 }
 
 header a {
@@ -28,10 +33,11 @@ a:hover {
   display: flex;
   align-items: center;
   position: relative;
-  height: 30px;
-  width: 30px;
-  left: 50px;
-  top: 5px;
+  height: 40px;
+  width: 40px;
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-bottom: 10px;
 }
 
 nav {
@@ -46,7 +52,7 @@ ul {
 
 li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 10px;
 
 }
 
@@ -54,7 +60,7 @@ a.is-active::after {
   content: "";
   display: block;
   position: relative;
-  bottom: -10px;
+  bottom: -22px;
   border-bottom: 4px solid #00acdc;
   border-radius: 20px;
 }
