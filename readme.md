@@ -11,7 +11,7 @@ ___
 
 Add the basic page markup and the text `Hello, world!` into the body.
 
-## Linter
+## Linter 
 
 Make sure that `<head>` and `<body>` have indentation of 2 spaces.
 
