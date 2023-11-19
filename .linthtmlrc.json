@@ -21,7 +21,7 @@
   "id-no-dup": true,
   "img-req-src": true,
   "img-req-alt": "allownull",
-  "indent-width": 2,
+  "indent-width": 0,
   "indent-style": "spaces",
   "indent-width-cont": true,
   "input-radio-req-name": true,
@@ -47,3 +47,4 @@
   "attr-name-style": "dash",
   "attr-no-unsafe-char": true
 }
+
