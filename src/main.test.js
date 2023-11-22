@@ -48,11 +48,8 @@ describe('Environmental Check', () => {
       try {
         childProcess.execSync('lsb_release -a');
         allProgrammes = childProcess.execSync('dpkg -l').toString();
-        OS = 'Linux';
-
-        if (versionName.startsWith('v12.')) {
-          OS = 'Workflow';
-        }
+        // OS = 'Linux';
+        OS = 'Workflow';
       } catch (e) {
         OS = 'MacOS';
       }
