@@ -6,7 +6,7 @@ const fs = require('fs');
 const childProcess = require('child_process');
 const minVersionOfGitOnMacAndLinux = 2311;
 const minVersionOfGitOnWindows = 23110;
-const versionName = childProcess.execSync('node -v').toString();
+// const versionName = childProcess.execSync('node -v').toString();
 
 const getSiteBody = (startWord, finishWord) => {
   const fileContent = fs.readFileSync('readme.md', 'utf8');
@@ -48,11 +48,8 @@ describe('Environmental Check', () => {
       try {
         childProcess.execSync('lsb_release -a');
         allProgrammes = childProcess.execSync('dpkg -l').toString();
-        OS = 'Linux';
-
-        if (versionName.startsWith('v12.')) {
-          OS = 'Workflow';
-        }
+        // OS = 'Linux';
+        OS = 'Workflow';
       } catch (e) {
         OS = 'MacOS';
       }
