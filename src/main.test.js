@@ -1,9 +1,9 @@
 /* eslint-disable no-useless-escape */
 /* eslint-disable no-undef */
-'use strict';
 
 const fs = require('fs');
 const childProcess = require('child_process');
+
 const minVersionOfGitOnMacAndLinux = 2311;
 const minVersionOfGitOnWindows = 23110;
 // const versionName = childProcess.execSync('node -v').toString();
@@ -91,7 +91,7 @@ describe('Environmental Check', () => {
     }
   });
 
-  test(`You should have EditorConfig extension in Visual Studio Code`, () => {
+  test('You should have EditorConfig extension in Visual Studio Code', () => {
     if (OS === 'Workflow') {
       expect(true)
         .toBeTruthy();
@@ -101,7 +101,7 @@ describe('Environmental Check', () => {
     }
   });
 
-  test(`You should have ESLint extension in Visual Studio Code`, () => {
+  test('You should have ESLint extension in Visual Studio Code', () => {
     if (OS === 'Workflow') {
       expect(true)
         .toBeTruthy();
@@ -123,7 +123,7 @@ describe('Environmental Check', () => {
     }
   });
 
-  test(`You should have Stylelint extension in Visual Studio Code`, () => {
+  test('You should have Stylelint extension in Visual Studio Code', () => {
     if (OS === 'Workflow') {
       expect(true)
         .toBeTruthy();
@@ -133,7 +133,7 @@ describe('Environmental Check', () => {
     }
   });
 
-  test(`You should deploy your site to GitHub pages`, () => {
+  test('You should deploy your site to GitHub pages', () => {
     if (OS === 'Workflow') {
       const demoLinkBody = getSiteBody('[DEMO LINK]', 'world/');
 
@@ -145,7 +145,7 @@ describe('Environmental Check', () => {
       .toBeTruthy();
   });
 
-  test(`You should deploy test page to GitHub pages`, () => {
+  test('You should deploy test page to GitHub pages', () => {
     if (OS === 'Workflow') {
       const testLinkBody = getSiteBody('[TEST REPORT LINK]', '_report/');
 
