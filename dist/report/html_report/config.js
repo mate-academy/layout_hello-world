@@ -4,7 +4,7 @@ report({
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\Entire_document.png",
-        "test": "..\\bitmaps_test\\20240122-161121\\Entire_document.png",
+        "test": "..\\bitmaps_test\\20240122-163251\\Entire_document.png",
         "selector": "document",
         "fileName": "Entire_document.png",
         "label": "Entire document",
@@ -20,7 +20,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00"
+          "rawMisMatchPercentage": 0.29,
+          "misMatchPercentage": "0.29",
+          "analysisTime": 5
         }
       },
       "status": "pass"
