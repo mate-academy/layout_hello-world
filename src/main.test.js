@@ -111,15 +111,13 @@ describe('Environmental Check', () => {
     }
   });
 
-  test(`
-      You should have LintHTML v.0.4.0 extension in VisualStudioCode
-    `, () => {
+  test(`You should have HTMLHint instead of the deprecated LintHTML extension in VisualStudioCode`, () => {
     if (OS === 'Workflow') {
       expect(true)
         .toBeTruthy();
     } else {
       expect(listOfExtensions)
-        .toContain('kamikillerto.vscode-linthtml');
+        .toContain('HTMLHint.vscode-htmlhint');
     }
   });
 
