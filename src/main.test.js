@@ -118,7 +118,7 @@ describe('Environmental Check', () => {
       expect(true)
         .toBeTruthy();
     } else {
-      expect(listofextensions)
+      expect(listOfExtensions)
         .toContain('kamikillerto.vscode-linthtml');
     }
   });
@@ -128,7 +128,7 @@ describe('Environmental Check', () => {
       expect(true)
         .toBeTruthy();
     } else {
-      expect(listofextensions)
+      expect(listOfExtensions)
         .toContain('stylelint.vscode-stylelint');
     }
   });
