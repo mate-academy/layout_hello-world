@@ -96,8 +96,8 @@ describe('Environmental Check', () => {
       expect(true)
         .toBeTruthy();
     } else {
-      expect(listOfExtensions.toLowerCase())
-        .toContain('editorconfig.editorconfig'.toLowerCase());
+      expect(listOfExtensions)
+        .toContain('editorConfig.editorConfig'.toLowerCase());
     }
   });
 
