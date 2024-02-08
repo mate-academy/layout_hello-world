@@ -97,7 +97,7 @@ describe('Environmental Check', () => {
         .toBeTruthy();
     } else {
       expect(listOfExtensions)
-        .toContain('EditorConfig.EditorConfig');
+        .toContain('editorconfig.editorconfig@0.16.4');
     }
   });
 
