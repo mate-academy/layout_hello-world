@@ -4,7 +4,7 @@
   "description": "Hello World",
   "scripts": {
     "init": "mate-scripts init",
-    "start": "mate-scripts st'art",
+    "start": "mate-scripts start",
     "lint": "mate-scripts lint",
     "test:only": "mate-scripts test",
     "build": "mate-scripts build",
