@@ -97,7 +97,7 @@ describe('Environmental Check', () => {
         .toBeTruthy();
     } else {
       expect(listOfExtensions)
-        .toContain('editorconfig.editorconfig');
+        .toContain('EditorConfig.EditorConfig');
     }
   });
 
