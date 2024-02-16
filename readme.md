@@ -9,7 +9,7 @@ ___
 
 ## The task
 
-Addlll the basic page markup and the text `Hello, world!` into the body.
+Add the basic page markup and the text `Hello, world!` into the body.
 
 ## Linter
 
