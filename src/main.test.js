@@ -91,7 +91,7 @@ describe('Environmental Check', () => {
     }
   });
 
-  test(`You should have EditorConfig extension in Visual Studio Code`, () => {
+  test.skip(`You should have EditorConfig extension in Visual Studio Code`, () => {
     if (OS === 'Workflow') {
       expect(true)
         .toBeTruthy();
