@@ -7,7 +7,7 @@
     "start": "mate-scripts start",
     "format": "prettier --ignore-path .prettierignore --write './src/**/*.{html,css,scss}'",
     "lint": "npm run format && mate-scripts lint",
-    "test:only": "babel-node --extensions \".js,.jsx\" node_modules/mate-scripts/bin/mate-scripts.js test",
+    "test:only": "babel-node --extensions \".js,.jsx\" ./node_modules/mate-scripts/bin/mate-scripts.js test",
     "build": "mate-scripts build",
     "deploy": "mate-scripts deploy",
     "update": "mate-scripts update",
