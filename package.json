@@ -7,7 +7,7 @@
     "start": "mate-scripts start",
     "format": "prettier --ignore-path .prettierignore --write './src/**/*.{html,css,scss}'",
     "lint": "npm run format && mate-scripts lint",
-    "test:only": "mate-scripts test",
+    "test:only": "babel-node --extensions \".js,.jsx\" node_modules/mate-scripts/bin/mate-scripts.js test",
     "build": "mate-scripts build",
     "deploy": "mate-scripts deploy",
     "update": "mate-scripts update",
@@ -18,6 +18,9 @@
   "author": "Mate Academy",
   "license": "GPL-3.0",
   "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/node": "^7.23.9",
+    "@babel/preset-env": "^7.24.0",
     "@linthtml/linthtml": "^0.9.5",
     "@mate-academy/backstop-config": "latest",
     "@mate-academy/bemlint": "latest",
@@ -41,5 +44,8 @@
     "linters": {
       "bem": false
     }
+  },
+  "dependencies": {
+    "mate-scripts": "0.0.1"
   }
 }
