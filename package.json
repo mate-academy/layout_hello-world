@@ -40,5 +40,8 @@
     "linters": {
       "bem": false
     }
+  },
+  "dependencies": {
+    "crypto": "^1.0.1"
   }
 }
