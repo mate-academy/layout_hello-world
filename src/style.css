@@ -1,1 +1,67 @@
 /* styles go here */
+
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.navbar  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: 60px;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    padding-right: 50px;
+    line-height: 50%;
+}
+
+a {
+    cursor: pointer;
+    color: #000;
+    text-transform: uppercase;
+    
+}
+
+.navbar-menu li a {
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.navbar-menu li  {
+    display: inline-block;
+}
+
+img {
+    cursor: pointer;
+}
+
+.line {
+    display: block; /* Makes the element behave like a block-level element */
+    width: 37px; /* Stretches the line to the full width of the container */
+    height: 4px; /* Sets the line height */
+    background-color: #00ACDC;
+    border-radius: 8px; /* Sets the line color */
+    margin-left: 498px;
+  }
+
+.container {
+    margin-left: 50px;
+    
+    line-height: 50%;
+}
+
+
+
+.active {
+    color: #00ACDC;
+}
+
