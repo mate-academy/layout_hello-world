@@ -1,0 +1,819 @@
+[33mcommit e136ada18c7ade9be7d52ea75d5060c363144c5e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mdevelop[m[33m, [m[1;31morigin/develop[m[33m)[m
+Author: Anna Agerone <olesnevych12@gmail.com>
+Date:   Mon May 20 12:46:54 2024 -0500
+
+    add blank line at the end
+
+[33mcommit bbb2c52f97069e1c2fd3a5d113bf750ca2a8f28a[m
+Author: Anna Agerone <olesnevych12@gmail.com>
+Date:   Mon May 20 12:29:27 2024 -0500
+
+    add solution
+
+[33mcommit 8bc01fa64e586ec1f5a6f0b5bfe8a86cf29068fa[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Misha Grinko <glukym@gmail.com>
+Date:   Mon Mar 11 16:04:46 2024 +0200
+
+    fix deps for node20
+
+[33mcommit 698d57eef5bbe8bf1df5211dddf36a58aeb6a06e[m
+Author: Misha Hrynko <glukym@gmail.com>
+Date:   Mon Mar 4 11:21:29 2024 +0200
+
+    Update package.json
+
+[33mcommit 47f6927d1df4e06241a550690240c83b17b49aa4[m
+Merge: 34eff90 cfda52a
+Author: Misha Hrynko <glukym@gmail.com>
+Date:   Thu Feb 22 17:27:35 2024 +0200
+
+    Merge pull request #6324 from mykhalenych/feature/prettier
+    
+    Feature/prettier
+
+[33mcommit cfda52a5c0179f20ddfa446d563443f4b81db5fa[m
+Author: Misha Grinko <glukym@gmail.com>
+Date:   Thu Feb 22 13:19:44 2024 +0200
+
+    fix eslint version and extensions test
+
+[33mcommit 13a7e3c81d39fe0b6c978a32427fbb606a4d4792[m
+Author: Misha Hrynko <glukym@gmail.com>
+Date:   Thu Feb 22 12:58:17 2024 +0200
+
+    Update readme.md
+
+[33mcommit 7f497d8d5834069359e634cd93566c1f1863a940[m
+Author: Misha Hrynko <glukym@gmail.com>
+Date:   Thu Feb 22 12:50:55 2024 +0200
+
+    Update readme.md
+
+[33mcommit 06a3e13d16d2f2c872d5eea3d2665cff70b654d2[m
+Author: mykhalenych <mykhalenych@gmail.com>
+Date:   Thu Feb 22 11:13:47 2024 +0200
+
+    feature/prettier updated configs
+
+[33mcommit e615c0a2b0cb581ea3403d11f0ae306ffc12256b[m
+Author: mykhalenych <mykhalenych@gmail.com>
+Date:   Wed Feb 21 13:06:50 2024 +0200
+
+    feature/prettier added prettier, updated packages
+
+[33mcommit 34eff90c468616c7b73aa9c50d04136874afeec7[m
+Merge: ab2f6bc aa80555
+Author: Misha Grinko <glukym@gmail.com>
+Date:   Mon Feb 12 10:43:24 2024 +0200
+
+    Merge pull request #6251 from Andriy-Shymkiv/fix/test-extention-naming
+    
+    Fix casing of extension name in test assertion
+
+[33mcommit aa80555e5cb08c19afe02990ab7a1b2088e22764[m
+Author: Andriy-Shymkiv <winamondezik@gmail.com>
+Date:   Fri Feb 9 18:56:57 2024 +0200
+
+    Fix casing of extension name in test assertion
+
+[33mcommit ab2f6bc0f055712fa1c2de5ff7a0b73b4ad2c41a[m
+Author: Misha Grinko <glukym@gmail.com>
+Date:   Wed Nov 29 12:56:07 2023 +0200
+
+    fix deps
+
+[33mcommit 9bb2537330f0cdfeb7b17256aef9e73c9c13c28f[m
+Author: Misha Grinko <glukym@gmail.com>
+Date:   Thu Nov 23 14:54:00 2023 +0200
+
+    add required deps
+
+[33mcommit b633ce16db4364a182a1aef3ad8cc879160fd094[m
+Merge: fcaacf6 b107449
+Author: Misha Grinko <glukym@gmail.com>
+Date:   Wed Nov 22 17:29:17 2023 +0200
+
+    Merge pull request #5798 from mate-academy/fix-tests
+    
+    fix tests
+
+[33mcommit b107449c416349a5c6811e0719b17711830c2790[m
+Author: Misha Grinko <glukym@gmail.com>
+Date:   Wed Nov 22 17:26:57 2023 +0200
+
+    fix tests
+
+[33mcommit fcaacf641c6ad29ac527e33e0eabbf732053f5d9[m
+Author: Misha Grinko <glukym@gmail.com>
+Date:   Mon Nov 20 12:03:19 2023 +0200
+
+    Update test.yml
+
+[33mcommit a13b615c83aab5ff77bb4e34e6318cb8347a03ca[m
+Author: Misha Hrynko <misha@mate.academy>
+Date:   Mon Nov 20 11:08:56 2023 +0200
+
+    fix lock file
+
+[33mcommit 0a4f46b4373034f37510341ee301c03cdb5c1a8f[m
+Merge: 3532c39 0ca0efb
+Author: Misha Grinko <glukym@gmail.com>
+Date:   Mon Nov 20 08:04:51 2023 +0200
+
+    Merge pull request #5733 from SerhiiKirik/deps-update
+    
+    update dependencies
+
+[33mcommit 0ca0efb785d02d77eec0da5afab44edbe8fc96f9[m
+Author: Sergey Kirichenko <s.kirichenko@m-dev.org>
+Date:   Sat Nov 11 10:10:13 2023 +0200
+
+    update stylelintrc
+
+[33mcommit 31aca6d6618b57904039f59f63007edaf7fa95a7[m
+Author: Sergey Kirichenko <s.kirichenko@m-dev.org>
+Date:   Sat Nov 11 09:35:31 2023 +0200
+
+    add package-lock.json related to 20 node
+
+[33mcommit aa9291cd28019552d3fd13c397a01d208ca44ef2[m
+Author: Sergey Kirichenko <s.kirichenko@m-dev.org>
+Date:   Sat Nov 11 09:31:56 2023 +0200
+
+    update package.json
+
+[33mcommit 168c565d0ccbbff06eef7ddfb5c9318790e52331[m
+Author: Sergey Kirichenko <s.kirichenko@m-dev.org>
+Date:   Sat Nov 11 09:28:56 2023 +0200
+
+    update dependencies
+
+[33mcommit 3532c39012b073b26c1334ccf3d29ef9e318df17[m
+Author: Misha Hrynko <misha@mate.academy>
+Date:   Thu Jun 8 07:47:05 2023 +0300
+
+    downgrade parcel to 1.12.3
+
+[33mcommit a3df7fd8b89373c924c5900667c5741595d5e74d[m
+Author: Misha Grinko <glukym@gmail.com>
+Date:   Thu Mar 2 15:28:35 2023 +0200
+
+    Update readme.md
+
+[33mcommit 4680865457655704dd875f265180ea09514fb876[m
+Author: Misha Grinko <glukym@gmail.com>
+Date:   Mon Oct 31 09:46:04 2022 +0200
+
+    Update checklist.md
+
+[33mcommit a95615986f41a92240505e654fce9ed271407855[m
+Author: Danylo Onishchuk <danylo.o@mate.academy>
+Date:   Thu Jul 14 11:36:11 2022 +0300
+
+    small fix test
+
+[33mcommit bc40dd1e2f09f7e12d58e6b0746b18963591f645[m
+Merge: 5684936 68947a5
+Author: Danylo Onishchuk <78209611+danylo-onishchuk@users.noreply.github.com>
+Date:   Wed Jul 13 22:12:26 2022 +0300
+
+    Merge pull request #2024 from mate-academy/add-test-for-check-deployment
+
+[33mcommit 68947a599016a4cea354411b245836f83967e3a0[m
+Author: Danylo Onishchuk <danylo.o@mate.academy>
+Date:   Wed Jul 13 18:03:19 2022 +0300
+
+    fix typo
+
+[33mcommit bc2d6d0725fa842092c9230bf8b544dbef8fd067[m
+Author: Danylo Onishchuk <danylo.o@mate.academy>
+Date:   Wed Jul 13 17:55:28 2022 +0300
+
+    add test
+
+[33mcommit 56849365aec5e42f2364521ab50ad51f2be62d9a[m
+Author: mgrinko <glukym@gmail.com>
+Date:   Thu Dec 16 08:18:33 2021 +0200
+
+    update linthtml
+
+[33mcommit d8a430b62e55e2b9273a078051c8d0a59321a307[m
+Author: Misha Grinko <glukym@gmail.com>
+Date:   Thu Dec 16 07:25:30 2021 +0200
+
+    Update readme.md
+
+[33mcommit f2206ceecc19a33c0839bac1d285b38c62332d16[m
+Author: OleksiiBlezniuk <84275496+OleksiiBlezniuk@users.noreply.github.com>
+Date:   Tue Dec 14 13:27:22 2021 +0200
+
+    ".linthtmlrc.json" now extended from "@mate-academy/linthtml" package, versions updated (#1202)
+
+[33mcommit a9842af44e8d14f9c278f3f8da3fb89956ddfd03[m
+Merge: 7ab6c7e 41207e4
+Author: Danylo Onishchuk <78209611+danylo-onishchuk@users.noreply.github.com>
+Date:   Wed Nov 24 14:45:31 2021 +0200
+
+    Merge pull request #1182 from danylo-onishchuk/developer-test
+
+[33mcommit 41207e411d0fa70124b15cd541e4c3cb080d4378[m
+Author: Danylo Onishchuk <danylo.o@mate.academy>
+Date:   Wed Nov 24 14:43:16 2021 +0200
+
+    delete code
+
+[33mcommit ffe0e834824eedc015bc735ec80c0d71a046b1d6[m
+Author: Danylo Onishchuk <danylo.o@mate.academy>
+Date:   Wed Nov 24 14:41:21 2021 +0200
+
+    fix test3
+
+[33mcommit 67b36c31fd4c77903a98089690896638ba29b2a6[m
+Author: Danylo Onishchuk <danylo.o@mate.academy>
+Date:   Wed Nov 24 14:38:44 2021 +0200
+
+    fix test2
+
+[33mcommit 84b9a12f6514b7e999bd532c625d7119b43e5e83[m
+Author: Danylo Onishchuk <danylo.o@mate.academy>
+Date:   Wed Nov 24 14:35:48 2021 +0200
+
+    fix test1
+
+[33mcommit dcf0d5d076716b2390f78f557951d9c1c6640a8e[m
+Author: Danylo Onishchuk <danylo.o@mate.academy>
+Date:   Wed Nov 24 14:21:55 2021 +0200
+
+    fix test
+
+[33mcommit f43a43bfcd6027e83d45a956c356fcee64580081[m
+Author: Danylo Onishchuk <danylo.o@mate.academy>
+Date:   Wed Nov 24 14:18:25 2021 +0200
+
+    add
+
+[33mcommit 494500c18b13dbe19f3b23e9ba43146eb8f3a906[m
+Author: Danylo Onishchuk <danylo.o@mate.academy>
+Date:   Wed Nov 24 13:53:02 2021 +0200
+
+    test
+
+[33mcommit 7ab6c7e09cfeb657770daac5394e9be22e23f993[m
+Merge: 9019370 de610fb
+Author: Danylo Onishchuk <78209611+danylo-onishchuk@users.noreply.github.com>
+Date:   Mon Nov 22 13:09:42 2021 +0200
+
+    Merge pull request #1181 from mate-academy/mate-scripts-update
+
+[33mcommit de610fbf8874934ff0df8ea5af30b9eaae920272[m
+Author: Danylo Onishchuk <danylo.o@mate.academy>
+Date:   Mon Nov 22 12:20:11 2021 +0200
+
+    Add version of backstop-config
+
+[33mcommit 9019370c6aa80672c0b1c5abad595fb4a448593a[m
+Merge: 17db966 88ed855
+Author: Ihor Karpyn <63306833+Ihor-Karpyn@users.noreply.github.com>
+Date:   Fri Nov 19 14:52:38 2021 +0200
+
+    Merge pull request #1178 from mate-academy/mate-scripts-update
+    
+    Add jest in package in devDependencies
+
+[33mcommit 88ed855abb227b2a4996d1f88287dba2db1d0914[m
+Author: Danylo Onishchuk <danylo.o@mate.academy>
+Date:   Fri Nov 19 14:47:22 2021 +0200
+
+    Add jest in package in devDependencies
+
+[33mcommit 17db966b64f3d25c45a1745fbbbd3822dd9dc183[m
+Merge: c632099 5532cb0
+Author: Danylo Onishchuk <78209611+danylo-onishchuk@users.noreply.github.com>
+Date:   Fri Oct 15 17:38:08 2021 +0300
+
+    Merge pull request #1124 from mate-academy/delete-uneccesary-function-from-env-tests
+
+[33mcommit 5532cb07033a73f10b5de19d2dda1a6f00bd19cf[m
+Author: Danylo Onishchuk <danylo.o@mate.academy>
+Date:   Fri Oct 15 17:01:13 2021 +0300
+
+    fix error
+
+[33mcommit 8bedde1315b440a96abc94ff6be137468ebd69e8[m
+Author: Danylo Onishchuk <danylo.o@mate.academy>
+Date:   Fri Oct 15 16:59:54 2021 +0300
+
+    delete function and refactoring tests
+
+[33mcommit c632099239e8b4138bcfc9e3748b785c4b411e8f[m
+Merge: d56776c b568582
+Author: Danylo Onishchuk <78209611+danylo-onishchuk@users.noreply.github.com>
+Date:   Wed Oct 13 17:28:04 2021 +0300
+
+    Merge pull request #1123 from mate-academy/add-ver-of-extension
+
+[33mcommit b5685825e29aa2197351310b78fb5f4b4cb40840[m
+Author: Danylo Onishchuk <danylo.o@mate.academy>
+Date:   Wed Oct 13 17:27:09 2021 +0300
+
+    fix console
+
+[33mcommit cb02ef15b6a5d75ae5bf7d85076a3cbae6ce75d9[m
+Author: Danylo Onishchuk <danylo.o@mate.academy>
+Date:   Wed Oct 13 17:26:16 2021 +0300
+
+    add ver
+
+[33mcommit d56776ca580a51742057eeebafe141bd17c00e29[m
+Merge: 9c8bcc4 78f2a66
+Author: Danylo Onishchuk <78209611+danylo-onishchuk@users.noreply.github.com>
+Date:   Wed Oct 13 16:44:10 2021 +0300
+
+    Merge pull request #1122 from mate-academy/refactoring-of-Environmental-tests
+
+[33mcommit 78f2a66aa041901224b47d016f797a6a7a3bf989[m
+Author: Danylo Onishchuk <danylo.o@mate.academy>
+Date:   Wed Oct 13 16:42:24 2021 +0300
+
+    fix unsafe zone
+
+[33mcommit 21f4a90cddc7c67c1b8a7b0701587d5ce559e1dd[m
+Author: Danylo Onishchuk <danylo.o@mate.academy>
+Date:   Tue Oct 12 13:43:45 2021 +0300
+
+    fix tests
+
+[33mcommit 9c8bcc47552e87a0ae1123704ba98505b21b17ec[m
+Author: Yurii Holiuk <bionicuss@gmail.com>
+Date:   Mon Oct 11 09:27:38 2021 +0300
+
+    Fix node version test (#1072)
+
+[33mcommit 218eb32986eaea5a533055de65518387d89599fb[m
+Merge: 5d6c554 a256eb6
+Author: Danylo Onishchuk <78209611+danylo-onishchuk@users.noreply.github.com>
+Date:   Sun Oct 10 20:54:14 2021 +0300
+
+    Merge pull request #1071 from mate-academy/win-test
+
+[33mcommit a256eb628486927882a5fbead7b84ceb23627fff[m
+Author: danylo <danylo.o@mate.academy>
+Date:   Sun Oct 10 19:11:53 2021 +0300
+
+    ver of scripts
+
+[33mcommit edb48b10db7712de23fcc6625f034634a2430ab6[m
+Author: danylo <danylo.o@mate.academy>
+Date:   Sun Oct 10 19:10:22 2021 +0300
+
+    add linux tests
+
+[33mcommit 3c834da336f1993bf95f365c88b587cb29006e27[m
+Author: Onishchuk <onishchuk.danil@gmail.com>
+Date:   Wed Oct 6 18:19:01 2021 +0300
+
+    add windows tests1
+
+[33mcommit df97cfa7d6b23093d1b2d84d9be852feeb1e7874[m
+Author: Onishchuk <onishchuk.danil@gmail.com>
+Date:   Wed Oct 6 18:16:54 2021 +0300
+
+    add windows tests
+
+[33mcommit 8303416704d239d162ac44b870937b4a797c4b37[m
+Author: Onishchuk <onishchuk.danil@gmail.com>
+Date:   Wed Oct 6 12:16:48 2021 +0300
+
+    fds
+
+[33mcommit 5d6c5548a73851554be3e4fbb34c8941655846dd[m
+Merge: f71c858 10be751
+Author: Danylo Onishchuk <78209611+danylo-onishchuk@users.noreply.github.com>
+Date:   Tue Oct 5 19:23:15 2021 +0300
+
+    Merge pull request #1069 from mate-academy/hot-fix-test-file
+
+[33mcommit 10be7518e5ffb0b45b940219f90ea5a4e34ff660[m
+Author: volodymyrpavlenko <solaryasha@gmail.com>
+Date:   Tue Oct 5 19:21:55 2021 +0300
+
+    disable no-undef linter rule
+
+[33mcommit f71c8587bb7d3cc512c3cf12df0f607c34e0e69f[m
+Merge: a512056 54f69b8
+Author: solaryasha <32794096+solaryasha@users.noreply.github.com>
+Date:   Tue Oct 5 19:16:32 2021 +0300
+
+    Merge pull request #1068 from mate-academy/develop
+
+[33mcommit 54f69b8ee18dc74eae7991a17ef652e7fc405fb1[m
+Author: Danylo Onishchuk <danylo.o@mate.academy>
+Date:   Tue Oct 5 19:10:37 2021 +0300
+
+    return
+
+[33mcommit 7c02e9683f13b3badecffc5dcbb1b0d6424a2547[m
+Author: Danylo Onishchuk <danylo.o@mate.academy>
+Date:   Tue Oct 5 19:09:20 2021 +0300
+
+    fix linter and tests
+
+[33mcommit b9bda004436951f32f09afd68d40b14513cae58e[m
+Author: Danylo Onishchuk <danylo.o@mate.academy>
+Date:   Tue Oct 5 18:45:04 2021 +0300
+
+    add test, change version of mate scripts
+
+[33mcommit a512056379c594e615f24752007ad09936dbdbcc[m
+Merge: 42d790d 98aabfe
+Author: solaryasha <32794096+solaryasha@users.noreply.github.com>
+Date:   Mon Sep 6 14:53:13 2021 +0300
+
+    Merge pull request #1058 from mate-academy/update-mate-scripts-version
+
+[33mcommit 98aabfee8b550c422d492ae5ee6727fe9388a2de[m
+Author: volodymyrpavlenko <solaryasha@gmail.com>
+Date:   Mon Sep 6 14:41:50 2021 +0300
+
+    update version of @mate-academy/scripts
+
+[33mcommit 42d790d3867875c4d6b28a1ef2e3ca80e51c0580[m
+Author: Misha Grinko <glukym@gmail.com>
+Date:   Tue Mar 23 08:02:22 2021 +0200
+
+    Update readme.md
+
+[33mcommit 02ad661e99a6480bda96854dc91895133bd6c868[m
+Author: Misha Grinko <glukym@gmail.com>
+Date:   Tue Mar 23 07:56:23 2021 +0200
+
+    Update readme.md
+
+[33mcommit 8fe1632656e40bec07d926416a113f8b9c4ecafc[m
+Author: Misha Grinko <glukym@gmail.com>
+Date:   Tue Mar 23 07:55:45 2021 +0200
+
+    Update readme.md
+
+[33mcommit 450f75ac4ee17f893855eab940c74dcf9359ba04[m
+Author: Misha Grinko <glukym@gmail.com>
+Date:   Tue Mar 23 07:52:50 2021 +0200
+
+    Update readme.md
+
+[33mcommit 40eda23deac5d0884060dc9b2ae3bdd7e2af5825[m
+Author: Misha Grinko <glukym@gmail.com>
+Date:   Tue Mar 23 07:52:03 2021 +0200
+
+    Update readme.md
+
+[33mcommit c72cf0cb2399169356d5bc563fab57ea3c4d82ed[m
+Merge: 207f913 34cb32a
+Author: Vladimir <60401137+Vladimir-Beliy@users.noreply.github.com>
+Date:   Wed Mar 17 13:16:57 2021 +0200
+
+    Merge pull request #779 from mate-academy/mate-scripts-update
+    
+    update @mate-academy/bemlint
+
+[33mcommit 34cb32ab0f414d17cfa2f680d3ccef7a00390f6b[m
+Author: Vladimir-Beliy <vovaazick@gmail.com>
+Date:   Wed Mar 17 13:16:52 2021 +0200
+
+    update @mate-academy/bemlint
+
+[33mcommit 207f913603973fbdf3f73b36070bded2385ddad7[m
+Merge: f30dd71 b942acc
+Author: Vladimir <60401137+Vladimir-Beliy@users.noreply.github.com>
+Date:   Tue Mar 16 20:09:41 2021 +0200
+
+    Merge pull request #772 from mate-academy/mate-scripts-update
+    
+    update @mate-academy/scripts to 0.8.0
+
+[33mcommit b942acca18a1e04490d93e0573f9568e1fe45127[m
+Author: Vladimir-Beliy <vovaazick@gmail.com>
+Date:   Tue Mar 16 20:09:37 2021 +0200
+
+    update @mate-academy/scripts to 0.8.0
+
+[33mcommit f30dd71789ead20ad783176e53df9ecf42e625df[m
+Merge: 7f8cd51 34fc4a3
+Author: Vladimir <60401137+Vladimir-Beliy@users.noreply.github.com>
+Date:   Tue Mar 16 19:52:59 2021 +0200
+
+    Merge pull request #766 from mate-academy/mate-scripts-update
+    
+    update @mate-academy/scripts to 0.8.0
+
+[33mcommit 34fc4a3194bd153c1362032c56cf81fc396ea315[m
+Author: Vladimir-Beliy <vovaazick@gmail.com>
+Date:   Tue Mar 16 19:52:54 2021 +0200
+
+    update @mate-academy/scripts to 0.8.0
+
+[33mcommit 7f8cd517ba6c4a948d231b7dd60b83fb88a9b7cb[m
+Author: Holovko Iryna <33497431+irenhh@users.noreply.github.com>
+Date:   Tue Jun 30 11:22:24 2020 +0300
+
+    Update checklist.md
+
+[33mcommit c8475d688658608fb38ce123d310be10b88ecac1[m
+Author: Holovko Iryna <33497431+irenhh@users.noreply.github.com>
+Date:   Tue Jun 30 11:11:29 2020 +0300
+
+    Update checklist.md
+
+[33mcommit 69bbd95560b5f68a63027daec42b2ddd9332c40e[m
+Author: Holovko Iryna <33497431+irenhh@users.noreply.github.com>
+Date:   Tue Jun 30 11:10:14 2020 +0300
+
+    Create checklist.md
+
+[33mcommit fd6ba43e16c05a358b5b7a93045c9603637ae8fa[m
+Merge: 68c1895 11258da
+Author: Misha Grinko <glukym@gmail.com>
+Date:   Tue Jun 30 08:41:46 2020 +0300
+
+    Merge pull request #486 from mgrinko/fix
+    
+    config fix
+
+[33mcommit 11258da763075bb520961548ea726f92750b291a[m
+Author: mgrinko <glukym@gmail.com>
+Date:   Tue Jun 30 08:40:51 2020 +0300
+
+    config fix
+
+[33mcommit 68c1895a17e00ddb167301fcbd7b4551dfcaceea[m
+Author: Misha Grinko <glukym@gmail.com>
+Date:   Fri Jun 26 19:09:24 2020 +0300
+
+    Create deploy.sh
+
+[33mcommit 8ccbba1f03fb3ac043cc2205b9f60f77a297aedf[m
+Author: mgrinko <glukym@gmail.com>
+Date:   Fri Jun 26 15:30:00 2020 +0300
+
+    Errors were fixed
+
+[33mcommit f08bf41a3cc658b0cb90f5637d564cbefd70da21[m
+Author: Misha Grinko <glukym@gmail.com>
+Date:   Fri Jun 26 14:20:10 2020 +0300
+
+    Delete package-lock.json
+
+[33mcommit ebb941721fd1d80d1f5b4ca331611409a78a08dc[m
+Merge: 7caafcd 23245cb
+Author: Yurii Holiuk <bionicuss@gmail.com>
+Date:   Mon May 25 12:08:17 2020 +0300
+
+    Merge pull request #448 from mate-academy/mate-scripts-update
+    
+    remove unneeded browser-sync
+
+[33mcommit 23245cb257acc920612a5de8b7b5590a24f69d09[m
+Author: Yurii Holiuk <bionicuss@gmail.com>
+Date:   Mon May 25 12:08:10 2020 +0300
+
+    remove unneeded browser-sync
+
+[33mcommit 7caafcd7f1a6a8e2b900323a028d5bb780bcf3b0[m
+Merge: 3faedf2 f92fa5e
+Author: Yurii Holiuk <bionicuss@gmail.com>
+Date:   Sun May 24 16:06:52 2020 +0300
+
+    Merge pull request #447 from mate-academy/mate-scripts-update
+    
+    fix npm vulnerabilities(npm audit fix --force)
+
+[33mcommit f92fa5e948ea77c71798696c38070f5e0b10600c[m
+Author: Yurii Holiuk <bionicuss@gmail.com>
+Date:   Sun May 24 16:06:45 2020 +0300
+
+    fix npm vulnerabilities(npm audit fix --force)
+
+[33mcommit 3faedf298ad83be6960c9f5158c0bf37e3d3bc33[m
+Author: Yurii Holiuk <bionicuss@gmail.com>
+Date:   Sun May 24 14:47:47 2020 +0300
+
+    upgrade to @mate-academy/scripts (#446)
+
+[33mcommit 74ed63f04ce282e0fe0fd262228c6191f03f6b73[m
+Author: Yurii Holiuk <bionicuss@gmail.com>
+Date:   Fri May 22 16:56:21 2020 +0300
+
+    update 0.1.7 (#445)
+
+[33mcommit aae1b0db5c5d72308b9c7467e96ae78bbfb5929b[m
+Author: Yurii Holiuk <bionicuss@gmail.com>
+Date:   Fri May 22 16:43:43 2020 +0300
+
+    update 0.1.5 (#444)
+
+[33mcommit b10bff202b94a0b4ba2f730d49c8e7adf3098eb3[m
+Author: Yurii Holiuk <bionicuss@gmail.com>
+Date:   Tue May 19 15:00:23 2020 +0300
+
+    migrate to mate-scripts (#443)
+
+[33mcommit 2557026c06d75fc75156a589b18572a54fa9cf4d[m
+Author: Yurii Holiuk <bionicuss@gmail.com>
+Date:   Mon May 18 18:16:50 2020 +0300
+
+    Update test.yml
+
+[33mcommit 6533017e7054dea31d40a37cff7a596a6e43416a[m
+Author: Yurii Holiuk <bionicuss@gmail.com>
+Date:   Mon May 18 18:09:42 2020 +0300
+
+    Create test.yml
+
+[33mcommit 18d20822f7caa689bcf50509795187675dc1c5fc[m
+Author: Yurii Holiuk <bionicuss@gmail.com>
+Date:   Mon Dec 16 16:50:21 2019 +0200
+
+    Update package.json
+
+[33mcommit 2142e42cbfc2c93b8f8a74d6516b8abdca56c616[m
+Author: mgrinko <glukym@gmail.com>
+Date:   Wed Oct 9 10:55:18 2019 +0300
+
+    Deploy was fixed
+
+[33mcommit d42433d25e91a0331aa43cbee39c9b4cc77f4adb[m
+Merge: e014608 7b6e3eb
+Author: Misha Grinko <glukym@gmail.com>
+Date:   Tue Oct 8 13:27:45 2019 +0300
+
+    Merge pull request #252 from mate-academy/simple-dev
+    
+    Simple development
+
+[33mcommit 7b6e3eb7438734b65bb8732760ece4e87253ac3a[m
+Author: mgrinko <glukym@gmail.com>
+Date:   Tue Oct 8 13:17:17 2019 +0300
+
+    Task description was updated
+
+[33mcommit 5439f0efb73fac7b745b34e53dc9b76c17ccd26d[m
+Author: mgrinko <glukym@gmail.com>
+Date:   Tue Oct 8 13:11:59 2019 +0300
+
+    .gitignore was restored
+
+[33mcommit fb81a08994f347374c7afc9699b6004403b0a1b6[m
+Author: mgrinko <glukym@gmail.com>
+Date:   Tue Oct 8 13:09:54 2019 +0300
+
+    Simple development
+
+[33mcommit e0146085ae96819dd521bbd07589eee0e99c019b[m
+Merge: 955dc36 4c5ddc5
+Author: Остап П'ятковський <44294945+gestap@users.noreply.github.com>
+Date:   Wed Jul 24 15:23:54 2019 +0300
+
+    Merge pull request #199 from mate-academy/backstopConfig
+    
+    Connected module with backstopConfig file.
+
+[33mcommit 4c5ddc59ce3fd2cfdae4be0341ed442deedb6f75[m
+Author: gestap <gestap9@gmail.com>
+Date:   Wed Jul 24 13:40:52 2019 +0300
+
+    fixed code after Vadim comments
+
+[33mcommit bcdfef5195bed1abd9ec22e1e4f21b71caed3f66[m
+Author: gestap <gestap9@gmail.com>
+Date:   Tue Jul 23 14:50:51 2019 +0300
+
+    rewritten code after review
+
+[33mcommit f0e1e2b3c27b5ba494480ac2c18e9a7850ded369[m
+Author: gestap <gestap9@gmail.com>
+Date:   Tue Jul 23 14:15:55 2019 +0300
+
+    Connected module with backstopConfig file.
+
+[33mcommit 955dc36f2e7bd07cbc96947990b3735dee822fe0[m
+Author: gestap <gestap9@gmail.com>
+Date:   Fri May 17 11:29:24 2019 +0300
+
+    fix backstopConfig
+
+[33mcommit 5ea19a8b25f33fbdb24dd1bc8ca5b1831607e952[m
+Merge: 049c36d f1e2980
+Author: Остап П'ятковський <44294945+gestap@users.noreply.github.com>
+Date:   Fri May 17 10:44:50 2019 +0300
+
+    Merge pull request #87 from gestap/patch-1
+    
+    updated url
+
+[33mcommit f1e2980b8fd993b52f73a36610d85812edca5628[m
+Author: Остап П'ятковський <44294945+gestap@users.noreply.github.com>
+Date:   Fri May 17 10:35:52 2019 +0300
+
+    updated url
+
+[33mcommit 049c36d23808224ea006f463f1ba8d9c8adfe979[m
+Author: Vadim Ilchenko <v.ilchenko@mate.academy>
+Date:   Fri Apr 26 14:57:24 2019 +0300
+
+    changed link to guideline, added ma-htmllint
+
+[33mcommit 626fac4ff1fed1bf820fab4abb1a92f4935c1856[m
+Author: Vadim Ilchenko <v.ilchenko@mate.academy>
+Date:   Thu Apr 25 16:57:47 2019 +0300
+
+    Update .gitignore
+
+[33mcommit 917e26e4c67f31ec44defacf460594699e62d689[m
+Author: Vadim Ilchenko <v.ilchenko@mate.academy>
+Date:   Thu Apr 25 16:51:11 2019 +0300
+
+    Update package.json
+
+[33mcommit f9491f989998bc97273344afeb97cbb71d5a9ba5[m
+Author: Vadim Ilchenko <v.ilchenko@mate.academy>
+Date:   Thu Apr 25 16:50:54 2019 +0300
+
+    Delete package-lock.json
+
+[33mcommit e7ee8623274d8716a912880fda5b5dba21e4bb5d[m
+Author: Roman Apostol <roman@mate.academy>
+Date:   Tue Apr 23 16:12:38 2019 +0300
+
+    Add dummy links to Demo and Test report.
+
+[33mcommit 6e25137bd9d677f6562b5ef45cb65f977ec75d37[m
+Author: Vadim Ilchenko <v.ilchenko@mate.academy>
+Date:   Tue Apr 23 11:57:29 2019 +0300
+
+    removed link to reference screenshots, updated formatting
+
+[33mcommit bcf401f2257212892af7ad67dca3de0acac3ea3e[m
+Author: Vadim Ilchenko <v.ilchenko@mate.academy>
+Date:   Tue Apr 23 11:14:51 2019 +0300
+
+    updated gitignore, removed reference screenshots
+
+[33mcommit a204d5a79c0bc41c5c9982866a0704f731fcafcc[m
+Author: Vadim Ilchenko <v.ilchenko@mate.academy>
+Date:   Tue Apr 23 10:50:40 2019 +0300
+
+    added dot before `DS_Store` in `.gitignore`
+
+[33mcommit 6cb6ef5083ed1d4e785ba6fe831cf665cd9e4ddb[m
+Author: Vadim Ilchenko <v.ilchenko@mate.academy>
+Date:   Tue Apr 23 10:42:33 2019 +0300
+
+    added option to disable cache in `http-server`
+
+[33mcommit 2a4715981ad899701cd5bd755231901412eef1f7[m
+Merge: ed77e94 78ceb41
+Author: Vadim Ilchenko <vvadimko@gmail.com>
+Date:   Tue Apr 23 10:25:53 2019 +0300
+
+    Merge pull request #7 from mate-academy/task
+    
+    removed docker from workflow
+
+[33mcommit 78ceb41babf0d6e2767cb4452976bf12805e6435[m
+Author: Vadim Ilchenko <v.ilchenko@mate.academy>
+Date:   Tue Apr 23 09:51:17 2019 +0300
+
+    removed docker from workflow
+
+[33mcommit ed77e94dfc08559fee2a4df09c700d24f098fd8e[m
+Author: Danylo Mysak <danmysak@gmail.com>
+Date:   Mon Apr 22 11:54:49 2019 +0300
+
+    Update readme.md
+
+[33mcommit 295c7159df1052a38c598d68f948ad6ac08e9f9e[m
+Merge: cfe44ea 306891d
+Author: Vadim Ilchenko <vvadimko@gmail.com>
+Date:   Wed Apr 17 12:20:01 2019 +0300
+
+    Merge pull request #1 from mate-academy/task
+    
+    implemented task & tests
+
+[33mcommit 306891d882eed1f9a888894b83aee89e7d30df1d[m
+Author: Vadim Ilchenko <v.ilchenko@mate.academy>
+Date:   Wed Apr 17 11:37:04 2019 +0300
+
+    added description
+
+[33mcommit 4753b484169ebacd158029bfb934ad6efe0afef4[m
+Author: Vadim Ilchenko <v.ilchenko@mate.academy>
+Date:   Wed Apr 17 11:35:24 2019 +0300
+
+    implemented task & tests
+
+[33mcommit cfe44ea0502f86f737ff68cd7cdb08691c651f92[m
+Author: Vadim Ilchenko <v.ilchenko@mate.academy>
+Date:   Wed Apr 17 10:56:53 2019 +0300
+
+    initial commit
