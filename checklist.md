@@ -178,9 +178,9 @@
 </details>
 
 <details>
-  <summary>Don't use spaces in links</summary>
+  <summary>Don't use spaces in `<a>` tag's `href` property</summary>
 
-  > Have you seen any link with literal space in it on the Internet? Remember, anchor links start with `#`
+  > Anchor links starts with the `#` symbol
 </details>
 
 ## CSS
@@ -194,7 +194,7 @@
 <details>
   <summary>Don't use tag names for styling (except <code>html</code> and <code>body</code>)</summary>
 
-  > Style all elements using `.classes` and if needed with `:pseudo-classes`, `pseudo-elements` and `[attributes]`
+  > Style all elements using `.class` and if needed with `:pseudo-class`, `pseudo-element` and `[attribute]`
 
   HTML Example
   ```html
@@ -231,9 +231,9 @@
 </details>
 
 <details>
-  <summary>Be consistent with your margins (Add only top or bottom, but not both)</summary>
+  <summary>Be consistent with your *vertical* margins (Add only top or only bottom margin, but not both)</summary>
 
-  > To avoid potential margin collapse
+  > Vertical margins can be collapsed in some cases
 </details>
 
 <details>
