@@ -1,10 +1,11 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto;
   margin: 0;
+
   /* background-color: #e3c0c0; */
 }
 
-.roboto-regular {
+/* .roboto-regular {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -14,7 +15,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
-}
+} */
 
 
 a {
@@ -46,9 +47,9 @@ a {
   list-style: none;
 }
 
-.nav_item {
+/* .nav_item {
 
-}
+} */
 
 .nav__link {
 margin-right: 20px;
