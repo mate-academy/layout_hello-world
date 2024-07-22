@@ -21,5 +21,5 @@ and use this [VSCode settings](https://mate-academy.github.io/fe-program/tools/v
 ## Demo Links
 
 Replace `<your_account>` DEMO LINK TEST REPORT LINK
-- [DEMO LINK](https://Marcel-Wajda.github.io/layout_hello-world/)
-- [TEST REPORT LINK](https://Marcel-Wajda.github.io/layout_hello-world/report/html_report/)
+- [DEMO LINK](https://<Marcel-Wajda>.github.io/layout_hello-world/)
+- [TEST REPORT LINK](https://<Marcel-Wajda>.github.io/layout_hello-world/report/html_report/)
