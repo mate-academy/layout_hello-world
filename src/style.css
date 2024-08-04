@@ -1,1 +1,79 @@
-/* styles go here */
+.roboto-medium {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+html {
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+
+  --color: #00acdc;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  width: 1200px;
+  top: -97px;
+  left: -601px;
+  line-height: 14.6px;
+
+  @media screen and (max-width: 1024px) {
+    width: 1024px;
+    top: 37px;
+    left: -601px;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  background-color: white;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+.nav {
+  display: inline-block;
+  text-align: center;
+  height: 60px;
+}
+
+.nav__list {
+  display: flex;
+  height: 15px;
+  margin: 0;
+  padding: 22px;
+  list-style: none;
+}
+
+.nav__link {
+  margin: 0 10px;
+  display: block;
+  top: 22px;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: var(--color);
+}
+
+.is-active::after {
+  content: '';
+  display: block;
+  height: 4px;
+  background-color: var(--color);
+  position: relative;
+  top: 18.5px;
+  border-radius: 8px;
+}
