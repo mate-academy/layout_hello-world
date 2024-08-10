@@ -1,6 +1,5 @@
 /* eslint-disable no-useless-escape */
 /* eslint-disable no-undef */
-
 'use strict';
 
 const fs = require('fs');
@@ -98,7 +97,7 @@ describe('Environmental Check', () => {
         .toBeTruthy();
     } else {
       expect(listOfExtensions)
-        .toContain('Editorconfig.Editorconfig');
+        .toContain('EditorConfig.EditorConfig');
     }
   });
 
