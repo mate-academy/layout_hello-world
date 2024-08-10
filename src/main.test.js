@@ -1,5 +1,6 @@
 /* eslint-disable no-useless-escape */
 /* eslint-disable no-undef */
+
 'use strict';
 
 const fs = require('fs');
@@ -96,8 +97,8 @@ describe('Environmental Check', () => {
       expect(true)
         .toBeTruthy();
     } else {
-      expect(listOfExtensions.toLowerCase())
-        .toContain('editorconfig.editorconfig');
+      expect(listOfExtensions)
+        .toContain('Editorconfig.Editorconfig');
     }
   });
 
@@ -106,7 +107,7 @@ describe('Environmental Check', () => {
       expect(true)
         .toBeTruthy();
     } else {
-      expect(listOfExtensions.toLowerCase())
+      expect(listOfExtensions)
         .toContain('dbaeumer.vscode-eslint');
     }
   });
@@ -118,7 +119,7 @@ describe('Environmental Check', () => {
       expect(true)
         .toBeTruthy();
     } else {
-      expect(listOfExtensions.toLowerCase())
+      expect(listOfExtensions)
         .toContain('kamikillerto.vscode-linthtml');
     }
   });
@@ -128,7 +129,7 @@ describe('Environmental Check', () => {
       expect(true)
         .toBeTruthy();
     } else {
-      expect(listOfExtensions.toLowerCase())
+      expect(listOfExtensions)
         .toContain('stylelint.vscode-stylelint');
     }
   });
