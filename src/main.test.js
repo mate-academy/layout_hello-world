@@ -96,8 +96,8 @@ describe('Environmental Check', () => {
       expect(true)
         .toBeTruthy();
     } else {
-      expect(listOfExtensions.toLowerCase())
-        .toContain('editorconfig.editorconfig');
+      expect(listOfExtensions)
+        .toContain('EditorConfig.EditorConfig');
     }
   });
 
@@ -106,7 +106,7 @@ describe('Environmental Check', () => {
       expect(true)
         .toBeTruthy();
     } else {
-      expect(listOfExtensions.toLowerCase())
+      expect(listOfExtensions)
         .toContain('dbaeumer.vscode-eslint');
     }
   });
@@ -118,7 +118,7 @@ describe('Environmental Check', () => {
       expect(true)
         .toBeTruthy();
     } else {
-      expect(listOfExtensions.toLowerCase())
+      expect(listOfExtensions)
         .toContain('kamikillerto.vscode-linthtml');
     }
   });
@@ -128,7 +128,7 @@ describe('Environmental Check', () => {
       expect(true)
         .toBeTruthy();
     } else {
-      expect(listOfExtensions.toLowerCase())
+      expect(listOfExtensions)
         .toContain('stylelint.vscode-stylelint');
     }
   });
