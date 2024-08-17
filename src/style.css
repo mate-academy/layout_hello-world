@@ -1,1 +1,86 @@
-/* styles go here */
+@font-face {
+  font-family: Roboto;
+  src: url(/src/font/Roboto-Medium.ttf);
+}
+
+.header {
+  background: #FFF;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.img {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+.container {
+  height: 15px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.is-active{
+  color: #000;
+}
+
+.nav {
+  display: flex;
+  margin-left: auto;
+  margin-right: 50px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.nav_no_space {
+  margin-right: 0;
+}
+
+.nav_space {
+  margin-right: 20px;
+}
+
+.a {
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  line-height: 14.06px;
+  white-space: nowrap;
+  max-width: none;
+  align-items: center;
+  position: relative;
+  display: inline-block;
+  padding: 30px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.nav_list {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+}
+
+.is-active:hover {
+  color: #00ACDC;
+}
+
+.is-active:target{
+color:#00ACDC;
+}
+
+.is-active:target::after {
+  content:"";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #00ACDC;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 8px;
+}
