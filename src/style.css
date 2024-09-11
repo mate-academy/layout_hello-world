@@ -2,7 +2,7 @@
 body{
   padding: 0;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   padding-bottom: 2000px;
 }
 
@@ -20,8 +20,8 @@ a {
   color: inherit;
   text-decoration: none;
 }
-/* #endregion ZERO */
 
+/* #endregion ZERO */
 
 .header {
   display: flex;
@@ -48,15 +48,15 @@ nav{
   list-style: none;
 }
 
-.nav__item:not(:last-child){
-  margin-right: 20px;
-}
-
-.nav__item{
+.nav_item{
   transition: all ease-in-out 0.15s;
 }
 
-.nav__item:hover {
+.nav_item:not(:last-child){
+  margin-right: 20px;
+}
+
+.nav_item:hover {
   color: #00ACDC;
 }
 
@@ -87,4 +87,3 @@ nav{
   bottom: 0;
   opacity: 1;
 }
-
