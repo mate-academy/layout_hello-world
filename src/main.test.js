@@ -6,7 +6,6 @@ const fs = require('fs');
 const childProcess = require('child_process');
 const minVersionOfGitOnMacAndLinux = 2311;
 const minVersionOfGitOnWindows = 23110;
-// const versionName = childProcess.execSync('node -v').toString();
 
 const getSiteBody = (startWord, finishWord) => {
   const fileContent = fs.readFileSync('readme.md', 'utf8');
@@ -41,17 +40,32 @@ describe('Environmental Check', () => {
     }
 
     try {
+      // Check for Windows
       childProcess.execSync('systeminfo');
       OS = 'Windows';
       allActiveProgrammes = childProcess.execSync('tasklist').toString();
     } catch (error) {
       try {
-        childProcess.execSync('lsb_release -a');
-        allProgrammes = childProcess.execSync('dpkg -l').toString();
-        // OS = 'Linux';
-        OS = 'Workflow';
+        // Check for Linux distributions
+        const osReleaseContent = childProcess.execSync('cat /etc/os-release').toString();
+
+        // Determine if it is Fedora
+        if (osReleaseContent.includes('Fedora')) {
+          OS = 'Fedora';
+          allProgrammes = childProcess.execSync('rpm -qa').toString();
+        } else {
+          OS = 'Linux';
+          allProgrammes = childProcess.execSync('dpkg -l').toString();
+        }
       } catch (e) {
-        OS = 'MacOS';
+        try {
+          // Check for Workflow
+          childProcess.execSync('lsb_release -a');
+          OS = 'Workflow';
+        } catch (e) {
+          // Default to MacOS if not Windows, Linux, Workflow, or Fedora
+          OS = 'MacOS';
+        }
       }
     }
   });
