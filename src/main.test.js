@@ -48,13 +48,14 @@ describe('Environmental Check', () => {
       try {
         // Check for Linux
         childProcess.execSync('cat /etc/os-release');
-        allProgrammes = childProcess.execSync('rpm -qa').toString();
         OS = 'Linux';
+        allProgrammes = childProcess.execSync('rpm -qa').toString();
       } catch (e) {
         try {
           // Check for Workflow
           childProcess.execSync('lsb_release -a');
           OS = 'Workflow';
+          allProgrammes = childProcess.execSync('dpkg -l').toString();
         } catch (e) {
           // Default to MacOS if not Windows, Linux, or Workflow
           OS = 'MacOS';
