@@ -68,7 +68,7 @@ describe('Environmental Check', () => {
           'code --list-extensions --show-versions',
         ).toString();
       } catch (error) {
-        listOfExtensions = null;
+        listOfExtensions = null; // Ensure it's null if command fails
       }
     }
   });
@@ -79,10 +79,10 @@ describe('Environmental Check', () => {
     ).toString().replace(/[^0-9]/g, '');
 
     if (OS === 'Windows') {
-      expect(version >= minVersionOfGitOnWindows)
+      expect(parseInt(version, 10) >= minVersionOfGitOnWindows)
         .toBeTruthy();
     } else {
-      expect(version >= minVersionOfGitOnMacAndLinux)
+      expect(parseInt(version, 10) >= minVersionOfGitOnMacAndLinux)
         .toBeTruthy();
     }
   });
@@ -106,7 +106,8 @@ describe('Environmental Check', () => {
         expect(!!VSCodeVersion)
           .toBeTruthy();
       } catch (error) {
-        expect(false).toBeTruthy(); // Ensure test fails if VSCode is not installed
+        // Report as failure if VS Code is not installed
+        expect.fail('Visual Studio Code is not installed or not in the PATH.');
       }
     }
   });
@@ -116,7 +117,7 @@ describe('Environmental Check', () => {
       expect(true)
         .toBeTruthy();
     } else {
-      expect(listOfExtensions?.toLowerCase())
+      expect(listOfExtensions?.toLowerCase() || '')
         .toContain('editorconfig.editorconfig');
     }
   });
@@ -126,7 +127,7 @@ describe('Environmental Check', () => {
       expect(true)
         .toBeTruthy();
     } else {
-      expect(listOfExtensions?.toLowerCase())
+      expect(listOfExtensions?.toLowerCase() || '')
         .toContain('dbaeumer.vscode-eslint');
     }
   });
@@ -136,7 +137,7 @@ describe('Environmental Check', () => {
       expect(true)
         .toBeTruthy();
     } else {
-      expect(listOfExtensions?.toLowerCase())
+      expect(listOfExtensions?.toLowerCase() || '')
         .toContain('kamikillerto.vscode-linthtml');
     }
   });
@@ -146,7 +147,7 @@ describe('Environmental Check', () => {
       expect(true)
         .toBeTruthy();
     } else {
-      expect(listOfExtensions?.toLowerCase())
+      expect(listOfExtensions?.toLowerCase() || '')
         .toContain('stylelint.vscode-stylelint');
     }
   });
