@@ -32,14 +32,6 @@ describe('Environmental Check', () => {
 
   beforeAll(() => {
     try {
-      listOfExtensions = childProcess.execSync(
-        'code --list-extensions --show-versions',
-      ).toString();
-    } catch (error) {
-      listOfExtensions = null;
-    }
-
-    try {
       // Check for Windows
       childProcess.execSync('systeminfo');
       OS = 'Windows';
@@ -66,6 +58,17 @@ describe('Environmental Check', () => {
           // Default to MacOS if not Windows, Linux, Workflow, or Fedora
           OS = 'MacOS';
         }
+      }
+    }
+
+    // Initialize listOfExtensions only if VS Code is expected
+    if (OS !== 'Workflow') {
+      try {
+        listOfExtensions = childProcess.execSync(
+          'code --list-extensions --show-versions',
+        ).toString();
+      } catch (error) {
+        listOfExtensions = null;
       }
     }
   });
@@ -96,12 +99,15 @@ describe('Environmental Check', () => {
       expect(true)
         .toBeTruthy();
     } else {
-      const VSCodeVersion = childProcess.execSync(
-        'code -v',
-      ).toString();
-
-      expect(!!VSCodeVersion)
-        .toBeTruthy();
+      try {
+        const VSCodeVersion = childProcess.execSync(
+          'code -v',
+        ).toString();
+        expect(!!VSCodeVersion)
+          .toBeTruthy();
+      } catch (error) {
+        expect(false).toBeTruthy(); // Ensure test fails if VSCode is not installed
+      }
     }
   });
 
@@ -110,7 +116,7 @@ describe('Environmental Check', () => {
       expect(true)
         .toBeTruthy();
     } else {
-      expect(listOfExtensions.toLowerCase())
+      expect(listOfExtensions?.toLowerCase())
         .toContain('editorconfig.editorconfig');
     }
   });
@@ -120,19 +126,17 @@ describe('Environmental Check', () => {
       expect(true)
         .toBeTruthy();
     } else {
-      expect(listOfExtensions.toLowerCase())
+      expect(listOfExtensions?.toLowerCase())
         .toContain('dbaeumer.vscode-eslint');
     }
   });
 
-  test(`
-      You should have LintHTML v.0.4.0 extension in VisualStudioCode
-    `, () => {
+  test(`You should have LintHTML v.0.4.0 extension in Visual Studio Code`, () => {
     if (OS === 'Workflow') {
       expect(true)
         .toBeTruthy();
     } else {
-      expect(listOfExtensions.toLowerCase())
+      expect(listOfExtensions?.toLowerCase())
         .toContain('kamikillerto.vscode-linthtml');
     }
   });
@@ -142,7 +146,7 @@ describe('Environmental Check', () => {
       expect(true)
         .toBeTruthy();
     } else {
-      expect(listOfExtensions.toLowerCase())
+      expect(listOfExtensions?.toLowerCase())
         .toContain('stylelint.vscode-stylelint');
     }
   });
@@ -198,7 +202,7 @@ describe('Environmental Check', () => {
       }
     }
 
-    if (OS === 'Linux') {
+    if (OS === 'Linux' || OS === 'Fedora') {
       const isGoogleChromeInstaled = allProgrammes.includes('google-chrome');
       const isFirefoxInstaled = allProgrammes.includes('firefox');
 
