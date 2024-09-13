@@ -46,7 +46,7 @@ describe('Environmental Check', () => {
       allActiveProgrammes = childProcess.execSync('tasklist').toString();
     } catch (error) {
       try {
-        childProcess.execSync('lsb_release -a');
+        childProcess.execSync('cat /etc/os-release');
         allProgrammes = childProcess.execSync('dpkg -l').toString();
         // OS = 'Linux';
         OS = 'Workflow';
