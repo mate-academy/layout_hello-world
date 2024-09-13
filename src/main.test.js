@@ -6,7 +6,6 @@ const fs = require('fs');
 const childProcess = require('child_process');
 const minVersionOfGitOnMacAndLinux = 2311;
 const minVersionOfGitOnWindows = 23110;
-// const versionName = childProcess.execSync('node -v').toString();
 
 const getSiteBody = (startWord, finishWord) => {
   const fileContent = fs.readFileSync('readme.md', 'utf8');
@@ -39,29 +38,22 @@ describe('Environmental Check', () => {
     } catch (error) {
       listOfExtensions = null;
     }
+
     try {
-      // Check for Windows
       childProcess.execSync('systeminfo');
       OS = 'Windows';
       allActiveProgrammes = childProcess.execSync('tasklist').toString();
     } catch (error) {
       try {
-        // Check for Linux
-        childProcess.execSync('cat /etc/os-release');
-        allProgrammes = childProcess.execSync('rpm -qa').toString();
-        OS = 'Linux';
+        childProcess.execSync('lsb_release -a');
+        allProgrammes = childProcess.execSync('dpkg -l').toString();
+        OS = 'Workflow';
       } catch (e) {
-        try {
-          // Check for Workflow
-          childProcess.execSync('lsb_release -a');
-          OS = 'Workflow';
-        } catch (e) {
-          // Default to MacOS if not Windows, Linux, or Workflow
-          OS = 'MacOS';
-        }
+        OS = 'Linux';
       }
     }
   });
+
   test('You should have Git of 2.31.1 version or newer', () => {
     const version = childProcess.execSync(
       'git --version',
