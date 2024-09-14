@@ -12,11 +12,72 @@
     />
     <title>Moyo header</title>
     <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="./style.css"
     />
   </head>
   <body>
-    <h1>Moyo header</h1>
+    <header class="header">
+      <div class="nav-logo">
+        <a href="homepage">
+          <img
+            src="images\logo.png"
+            alt="MOYO-logo"
+          />
+        </a>
+      </div>
+      <nav class="nav">
+        <div class="nav-links">
+          <ul>
+            <li class="nav-item is-active apple-active">
+              <a
+                href="APPLE"
+                class="is-active"
+              >
+                APPLE
+              </a>
+            </li>
+            <li class="nav-item is-active">
+              <a href="SAMSUNG">SAMSUNG</a>
+            </li>
+            <li class="nav-item is-active">
+              <a href="SMARTPHONES">SMARTPHONES</a>
+            </li>
+            <li class="nav-item is-active">
+              <a
+                href="LAPTOPS & COMPUTERS"
+                data-qa="hover"
+              >
+                LAPTOPS & COMPUTERS
+              </a>
+            </li>
+            <li class="nav-item is-active">
+              <a href="GADGETS">GADGETS</a>
+            </li>
+            <li class="nav-item is-active">
+              <a href="TABLETS">TABLETS</a>
+            </li>
+            <li class="nav-item is-active">
+              <a href="PHOTO">PHOTO</a>
+            </li>
+            <li class="nav-item is-active">
+              <a href="VIDEO">VIDEO</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
   </body>
 </html>

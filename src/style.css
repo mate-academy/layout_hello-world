@@ -1,3 +1,129 @@
+:root {
+  --link-color: #00acdc;
+}
+
+html {
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
 body {
   margin: 0;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 60px;
+  box-sizing: border-box;
+}
+
+.nav-logo a {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 60px;
+}
+
+li {
+  display: inline-block;
+  margin-left: 17px;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+}
+
+.nav a {
+  all: unset;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+}
+
+a[data-qa='hover'] {
+  /* color: var(--link-color); */
+}
+
+a[data-qa='hover']:hover {
+  color: var(--link-color);
+}
+
+a.is-active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--link-color);
+  border-radius: 2px;
+  transform: scaleX(1);
+  transition: transform 0.15s ease-in-out;
+}
+
+a.is-active:hover::after {
+  transform: scaleX(1);
+}
+
+li.is-active {
+  position: relative;
+}
+
+li.is-active:link {
+  color: black;
+}
+
+li.is-active:visited {
+  color: grey;
+}
+
+li.is-active:hover {
+  text-decoration-color: var(--link-color);
+}
+
+/* li.is-active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--link-color);
+  border-radius: 2px;
+  transform: scaleX(0);
+  transition: transform 0.15s ease-in-out;
+} */
+
+li.is-active:hover::after {
+  transform: scaleX(1);
+}
+
+li.nav-item.is-active.apple-active a {
+  color: var(--link-color);
 }
