@@ -3,7 +3,6 @@
 'use strict';
 
 const fs = require('fs');
-const os = require('os');
 const childProcess = require('child_process');
 const minVersionOfGitOnMacAndLinux = 2311;
 const minVersionOfGitOnWindows = 23110;
@@ -72,13 +71,7 @@ describe('Environmental Check', () => {
   });
 
   test('You should have Bash Shell', () => {
-    let bashPath;
-
-    if (os.platform() === 'win32') {
-      bashPath = childProcess.execSync('where bash').toString();
-    } else {
-      bashPath = childProcess.execSync('which bash').toString();
-    }
+    const bashPath = childProcess.execSync('which bash').toString();
 
     expect(!!bashPath)
       .toBeTruthy();
