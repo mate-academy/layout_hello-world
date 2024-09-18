@@ -1,4 +1,6 @@
 {
+  "generate-report": "npm run test -- --json > test_report.json && npm run html-report",
+  "html-report": "node generateHtmlReport.js",
   "name": "hello-world",
   "version": "1.0.0",
   "description": "Hello World",
