@@ -17,7 +17,9 @@
   "keywords": [],
   "author": "Mate Academy",
   "license": "GPL-3.0",
-  "dependencies": {},
+  "dependencies": {
+    "puppeteer": "^23.4.0"
+  },
   "devDependencies": {
     "@linthtml/linthtml": "^0.9.6",
     "@mate-academy/backstop-config": "latest",
