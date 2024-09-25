@@ -20,6 +20,6 @@ and use this [VSCode settings](https://mate-academy.github.io/fe-program/tools/v
 
 ## Demo Links
 
-Replace `<Ruslan Ivliev>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://Ruslan-Ivliev.github.io/layout_hello-world/)
-- [TEST REPORT LINK](https://Ruslan-Ivliev.github.io/layout_hello-world/report/html_report/)
+Replace `<Ruslan-Ivliev>` with your Github username and copy the links to Pull Request description:
+- [DEMO LINK](https://ruslan-ivliev.github.io/layout_hello-world/)
+- [TEST REPORT LINK](https://ruslan-ivliev.github.io/layout_hello-world/report/html_report/)
