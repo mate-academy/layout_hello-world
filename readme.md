@@ -2,7 +2,7 @@
 
 Implement the [Stars Block](https://www.figma.com/file/ojkArVazq7vsX0nbpn9CxZ/Moyo-%2F-Catalog-(ENG)?node-id=11325%3A2960) used in a card and catalog.
 
-Hold `Alt` (`Option` on MacOS) key to measure distances. 
+Hold `Alt` key (`Option` on MacOS) to measure distances in Figma. 
 
 > Here are the [Layout Tasks Instructions](https://mate-academy.github.io/layout_task-guideline)
 
