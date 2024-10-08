@@ -1,1 +1,19 @@
 /* styles go here */
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  color: red;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 4vh;
+  text-align: center;
+  background: black;
+  min-height: 100vh;
+  min-width: 100vw;
+  max-width: 100vw;
+}
