@@ -1,1 +1,32 @@
-/* styles go here */
+body {
+  background-color: #858585;
+  font-family: Roboto, sans-serif;
+  margin: 0;
+}
+
+.nav {
+  justify-content: flex-end;
+  font-size: 15px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.nav__link {
+  padding: 25px;
+  text-decoration: none;
+}
+
+.aimg {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+.is_active::after {
+  content: '';
+  height: 4px;
+  background-color: black;
+  display: block;
+  color: #00acdc;
+}
