@@ -21,5 +21,5 @@ and use this [VSCode settings](https://mate-academy.github.io/fe-program/tools/v
 ## Demo Links
 
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://TargoniyAnatoliy.github.io/layout_hello-world/)
-- [TEST REPORT LINK](https://TargoniyAnatoliy.github.io/layout_hello-world/report/html_report/)
+- [DEMO LINK](https://targoniyanatoliy.github.io/ma-hello-world/)https://targoniyanatoliy.github.io/ma-hello-world/
+- [TEST REPORT LINK](https://TargoniyAnatoliy.github.io/ma-layout_hello-world/report/html_report/)
