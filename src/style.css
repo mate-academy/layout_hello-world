@@ -1,1 +1,5 @@
 /* styles go here */
+body {
+  color: blue;
+  font-size: 18px;
+}
