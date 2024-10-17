@@ -202,6 +202,6 @@ describe('Environmental Check', () => {
 
       expect(!!googleChromePath || !!firefoxPath)
         .toBeTruthy();
-    }
+    }f
   });
 });
