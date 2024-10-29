@@ -126,4 +126,6 @@ describe('Environmental Check', () => {
         browserFound = false;
       }
     }
-    expect(browserFound).toBeTruthy
+    expect(browserFound).toBeTruthy();
+  });
+});
