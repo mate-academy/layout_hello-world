@@ -52,7 +52,7 @@ describe('Environmental Check', () => {
   });
 
   test('You should have Bash Shell', () => {
-    const bashPath = childProcess.execSync('where bash').toString();
+    const bashPath = OS === 'Windows' ? childProcess.execSync('where bash').toString() : childProcess.execSync('which bash').toString();
     expect(!!bashPath).toBeTruthy();
   });
 
@@ -64,22 +64,22 @@ describe('Environmental Check', () => {
   });
 
   test('You should have EditorConfig extension in Visual Studio Code', () => {
-    expect(listOfExtensions.toLowerCase())
+    expect(listOfExtensions && listOfExtensions.toLowerCase())
       .toContain('editorconfig.editorconfig');
   });
 
   test('You should have ESLint extension in Visual Studio Code', () => {
-    expect(listOfExtensions.toLowerCase())
+    expect(listOfExtensions && listOfExtensions.toLowerCase())
       .toContain('dbaeumer.vscode-eslint');
   });
 
   test('You should have LintHTML v.0.4.0 extension in VisualStudioCode', () => {
-    expect(listOfExtensions.toLowerCase())
+    expect(listOfExtensions && listOfExtensions.toLowerCase())
       .toContain('kamikillerto.vscode-linthtml');
   });
 
   test('You should have Stylelint extension in Visual Studio Code', () => {
-    expect(listOfExtensions.toLowerCase())
+    expect(listOfExtensions && listOfExtensions.toLowerCase())
       .toContain('stylelint.vscode-stylelint');
   });
 
@@ -96,14 +96,24 @@ describe('Environmental Check', () => {
   test('You should have Google Chrome or Firefox', () => {
     let browserFound = false;
     try {
-      childProcess.execSync('start chrome');
-      childProcess.execSync('taskkill /im chrome.exe');
-      browserFound = true;
+      if (OS === 'Windows') {
+        childProcess.execSync('start chrome');
+        childProcess.execSync('taskkill /im chrome.exe');
+        browserFound = true;
+      } else {
+        childProcess.execSync('google-chrome --version');
+        browserFound = true;
+      }
     } catch (error) {
       try {
-        childProcess.execSync('start firefox');
-        childProcess.execSync('taskkill /im firefox.exe');
-        browserFound = true;
+        if (OS === 'Windows') {
+          childProcess.execSync('start firefox');
+          childProcess.execSync('taskkill /im firefox.exe');
+          browserFound = true;
+        } else {
+          childProcess.execSync('firefox --version');
+          browserFound = true;
+        }
       } catch (e) {
         browserFound = false;
       }
