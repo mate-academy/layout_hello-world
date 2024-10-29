@@ -3,21 +3,30 @@
 'use strict';
 
 const fs = require('fs');
+const path = require('path');
 const childProcess = require('child_process');
 
+// Função para extrair conteúdo do site a partir de um link no README.md
 const getSiteBody = (startWord, finishWord) => {
   let fileContent;
   try {
-    fileContent = fs.readFileSync('README.md', 'utf8');
+    const readmePath = path.resolve(__dirname, 'README.md'); // Caminho absoluto para o README.md
+    console.log(`Verificando o README.md em: ${readmePath}`);
+    fileContent = fs.readFileSync(readmePath, 'utf8');
   } catch (error) {
-    console.error('README.md não encontrado', error);
+    console.error('Erro: README.md não encontrado', error);
     return '';
   }
 
   const firstIndex = fileContent.indexOf(startWord);
   const lastIndex = fileContent.indexOf(finishWord);
+  if (firstIndex === -1 || lastIndex === -1) {
+    console.error(`Erro: não foi possível localizar as palavras-chave ${startWord} ou ${finishWord} no README.md`);
+    return '';
+  }
+
   const url = fileContent.substring(
-    firstIndex + startWord.length + 1,  // +1 para ignorar o espaço
+    firstIndex + startWord.length + 1,
     lastIndex,
   ).trim();
   console.log(`Extraída URL: ${url}`);
@@ -26,6 +35,7 @@ const getSiteBody = (startWord, finishWord) => {
   return siteBody;
 };
 
+// Suite de testes de ambiente
 describe('Environmental Check', () => {
   let OS;
   let listOfExtensions = '';
@@ -36,7 +46,7 @@ describe('Environmental Check', () => {
         'code --list-extensions --show-versions',
       ).toString();
     } catch (error) {
-      console.error('VSCode não encontrado', error);
+      console.error('Erro: VSCode não encontrado', error);
     }
 
     try {
@@ -70,7 +80,7 @@ describe('Environmental Check', () => {
       VSCodeVersion = childProcess.execSync('code -v').toString();
     } catch (error) {
       VSCodeVersion = null;
-      console.error('VSCode não encontrado', error);
+      console.error('Erro: VSCode não encontrado', error);
     }
     expect(!!VSCodeVersion).toBeTruthy();
   });
