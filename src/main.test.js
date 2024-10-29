@@ -6,22 +6,29 @@ const fs = require('fs');
 const childProcess = require('child_process');
 
 const getSiteBody = (startWord, finishWord) => {
-  const fileContent = fs.readFileSync('README.md', 'utf8');
+  let fileContent;
+  try {
+    fileContent = fs.readFileSync('README.md', 'utf8');
+  } catch (error) {
+    console.error('README.md não encontrado', error);
+    return '';
+  }
+
   const firstIndex = fileContent.indexOf(startWord);
   const lastIndex = fileContent.indexOf(finishWord);
   const url = fileContent.substring(
-    firstIndex + startWord.length,
+    firstIndex + startWord.length + 1,  // +1 para ignorar o espaço
     lastIndex,
   ).trim();
-  const siteBody = childProcess.execSync(
-    `curl ${url}`,
-  ).toString();
+  console.log(`Extraída URL: ${url}`);
+
+  const siteBody = childProcess.execSync(`curl ${url}`).toString();
   return siteBody;
 };
 
 describe('Environmental Check', () => {
   let OS;
-  let listOfExtensions;
+  let listOfExtensions = '';
 
   beforeAll(() => {
     try {
@@ -29,8 +36,9 @@ describe('Environmental Check', () => {
         'code --list-extensions --show-versions',
       ).toString();
     } catch (error) {
-      listOfExtensions = null;
+      console.error('VSCode não encontrado', error);
     }
+
     try {
       childProcess.execSync('systeminfo');
       OS = 'Windows';
@@ -57,30 +65,30 @@ describe('Environmental Check', () => {
   });
 
   test('You should have Visual Studio Code', () => {
-    const VSCodeVersion = childProcess.execSync(
-      'code -v',
-    ).toString();
+    let VSCodeVersion;
+    try {
+      VSCodeVersion = childProcess.execSync('code -v').toString();
+    } catch (error) {
+      VSCodeVersion = null;
+      console.error('VSCode não encontrado', error);
+    }
     expect(!!VSCodeVersion).toBeTruthy();
   });
 
   test('You should have EditorConfig extension in Visual Studio Code', () => {
-    expect(listOfExtensions && listOfExtensions.toLowerCase())
-      .toContain('editorconfig.editorconfig');
+    expect(listOfExtensions.toLowerCase()).toContain('editorconfig.editorconfig');
   });
 
   test('You should have ESLint extension in Visual Studio Code', () => {
-    expect(listOfExtensions && listOfExtensions.toLowerCase())
-      .toContain('dbaeumer.vscode-eslint');
+    expect(listOfExtensions.toLowerCase()).toContain('dbaeumer.vscode-eslint');
   });
 
   test('You should have LintHTML v.0.4.0 extension in VisualStudioCode', () => {
-    expect(listOfExtensions && listOfExtensions.toLowerCase())
-      .toContain('kamikillerto.vscode-linthtml');
+    expect(listOfExtensions.toLowerCase()).toContain('kamikillerto.vscode-linthtml');
   });
 
   test('You should have Stylelint extension in Visual Studio Code', () => {
-    expect(listOfExtensions && listOfExtensions.toLowerCase())
-      .toContain('stylelint.vscode-stylelint');
+    expect(listOfExtensions.toLowerCase()).toContain('stylelint.vscode-stylelint');
   });
 
   test('You should deploy your site to GitHub pages', () => {
