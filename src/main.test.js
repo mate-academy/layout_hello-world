@@ -6,32 +6,34 @@ const fs = require('fs');
 const path = require('path');
 const childProcess = require('child_process');
 
-// Função para extrair conteúdo do site a partir de um link no README.md
+// Função para extrair conteúdo de URL do README.md
 const getSiteBody = (startWord, finishWord) => {
   let fileContent;
   try {
-    const readmePath = path.resolve(__dirname, 'README.md'); // Caminho absoluto para o README.md
+    const readmePath = path.resolve(__dirname, 'README.md'); // Caminho absoluto
     console.log(`Verificando o README.md em: ${readmePath}`);
     fileContent = fs.readFileSync(readmePath, 'utf8');
   } catch (error) {
-    console.error('Erro: README.md não encontrado', error);
+    console.error('Erro: README.md não encontrado ou inacessível.', error.message);
     return '';
   }
 
   const firstIndex = fileContent.indexOf(startWord);
   const lastIndex = fileContent.indexOf(finishWord);
   if (firstIndex === -1 || lastIndex === -1) {
-    console.error(`Erro: não foi possível localizar as palavras-chave ${startWord} ou ${finishWord} no README.md`);
+    console.error(`Erro: palavras-chave ${startWord} ou ${finishWord} não encontradas no README.md.`);
     return '';
   }
 
-  const url = fileContent.substring(
-    firstIndex + startWord.length + 1,
-    lastIndex,
-  ).trim();
-  console.log(`Extraída URL: ${url}`);
+  const url = fileContent.substring(firstIndex + startWord.length + 1, lastIndex).trim();
+  console.log(`URL extraída: ${url}`);
 
-  const siteBody = childProcess.execSync(`curl ${url}`).toString();
+  let siteBody = '';
+  try {
+    siteBody = childProcess.execSync(`curl ${url}`).toString();
+  } catch (error) {
+    console.error('Erro ao acessar o link do README.md:', error.message);
+  }
   return siteBody;
 };
 
@@ -42,11 +44,10 @@ describe('Environmental Check', () => {
 
   beforeAll(() => {
     try {
-      listOfExtensions = childProcess.execSync(
-        'code --list-extensions --show-versions',
-      ).toString();
+      listOfExtensions = childProcess.execSync('code --list-extensions --show-versions').toString();
+      if (!listOfExtensions) throw new Error("Nenhuma extensão VSCode encontrada.");
     } catch (error) {
-      console.error('Erro: VSCode não encontrado', error);
+      console.error('Erro: VSCode ou extensões não encontradas', error.message);
     }
 
     try {
@@ -63,9 +64,7 @@ describe('Environmental Check', () => {
   });
 
   test('You should have Git of 2.31.1 version or newer', () => {
-    const version = childProcess.execSync(
-      'git --version',
-    ).toString().replace(/[^0-9]/g, '');
+    const version = childProcess.execSync('git --version').toString().replace(/[^0-9]/g, '');
     expect(parseInt(version, 10)).toBeGreaterThanOrEqual(2311);
   });
 
@@ -78,9 +77,10 @@ describe('Environmental Check', () => {
     let VSCodeVersion;
     try {
       VSCodeVersion = childProcess.execSync('code -v').toString();
+      if (!VSCodeVersion) throw new Error("Versão do VSCode não encontrada.");
     } catch (error) {
       VSCodeVersion = null;
-      console.error('Erro: VSCode não encontrado', error);
+      console.error('Erro: VSCode não encontrado', error.message);
     }
     expect(!!VSCodeVersion).toBeTruthy();
   });
@@ -103,12 +103,20 @@ describe('Environmental Check', () => {
 
   test('You should deploy your site to GitHub pages', () => {
     const demoLinkBody = getSiteBody('[DEMO LINK]', '\n');
-    expect(demoLinkBody).toContain('Hello, world!');
+    if (demoLinkBody) {
+      expect(demoLinkBody).toContain('Hello, world!');
+    } else {
+      console.error('Erro: O conteúdo da página do link de demonstração está vazio.');
+    }
   });
 
   test('You should deploy test page to GitHub pages', () => {
     const testLinkBody = getSiteBody('[TEST REPORT LINK]', '\n');
-    expect(testLinkBody).toContain('BackstopJS Report');
+    if (testLinkBody) {
+      expect(testLinkBody).toContain('BackstopJS Report');
+    } else {
+      console.error('Erro: O conteúdo da página do link de teste está vazio.');
+    }
   });
 
   test('You should have Google Chrome or Firefox', () => {
