@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Hello World",
   "scripts": {
+    "start": "parcel src/index.html",
+    "start:mate": "mate-scripts start",
     "init": "mate-scripts init",
-    "start": "mate-scripts start",
     "format": "prettier --ignore-path .prettierignore --write './src/**/*.{html,css,scss}'",
     "lint": "npm run format && mate-scripts lint",
     "test:only": "mate-scripts test",
