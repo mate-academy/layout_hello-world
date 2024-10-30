@@ -91,13 +91,13 @@ describe('Environmental Check', () => {
     }
   });
 
-  test(`You should have EditorConfig extension in Visual Studio Code`, () => {
+  test(`You should have editorconfig extension in Visual Studio Code`, () => {
     if (OS === 'Workflow') {
       expect(true)
         .toBeTruthy();
     } else {
       expect(listOfExtensions)
-        .toContain('EditorConfig.EditorConfig');
+        .toContain('editorconfig.editorconfig');
     }
   });
 
