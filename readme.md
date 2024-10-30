@@ -19,6 +19,6 @@ Install [Prettier VSCode Extention](https://marketplace.visualstudio.com/items?i
 and use this [VSCode settings](https://mate-academy.github.io/fe-program/tools/vscode/settings.json) to enable format on save.
 
 ## Demo Links
-- [DEMO LINK](https://tecnicorikardo.github.io/layout_hello-world/) - Acesse para visualizar a página ao vivo.
+- [DEMO LINK](https://tecnicorikardo.github.io/layout_hello-world/) 
 - [TEST REPORT LINK](https://tecnicorikardo.github.io/layout_hello-world/report/)
- - Acesse para visualizar o relatório de testes gerado pelo BackstopJS.
+
