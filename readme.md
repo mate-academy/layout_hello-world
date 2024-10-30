@@ -20,4 +20,5 @@ and use this [VSCode settings](https://mate-academy.github.io/fe-program/tools/v
 
 ## Demo Links
 - [DEMO LINK](https://tecnicorikardo.github.io/layout_hello-world/) - Acesse para visualizar a página ao vivo.
-- [TEST REPORT LINK](https://tecnicorikardo.github.io/layout_hello-world/report/) - Acesse para visualizar o relatório de testes gerado pelo BackstopJS.
+- [TEST REPORT LINK](https://tecnicorikardo.github.io/layout_hello-world/backstop_data/html_report/index.html)
+ - Acesse para visualizar o relatório de testes gerado pelo BackstopJS.
