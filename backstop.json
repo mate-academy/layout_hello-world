@@ -15,7 +15,7 @@
   "scenarios": [
     {
       "label": "Homepage",
-      "url": "http://localhost:8080",
+      "url": "http://localhost:56193",
       "selectors": ["document"]
     }
   ],

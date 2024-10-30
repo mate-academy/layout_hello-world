@@ -6,17 +6,24 @@ const fs = require('fs');
 const childProcess = require('child_process');
 const minVersionOfGitOnMacAndLinux = 2311;
 const minVersionOfGitOnWindows = 23110;
-// const versionName = childProcess.execSync('node -v').toString();
 
 const getSiteBody = (startWord, finishWord) => {
   const fileContent = fs.readFileSync('readme.md', 'utf8');
   const firstIndex = fileContent.indexOf(startWord);
-  const lastIndex = fileContent.indexOf(finishWord);
+  const lastIndex = fileContent.indexOf(finishWord, firstIndex);
 
+  // Verifique se os índices foram encontrados
+  if (firstIndex === -1 || lastIndex === -1) {
+    throw new Error(`Could not find ${startWord} or ${finishWord} in readme.md`);
+  }
+
+  // Captura a URL
   const url = fileContent.substring(
     firstIndex + startWord.length + 1,
-    lastIndex + finishWord.length,
-  );
+    lastIndex + finishWord.length - 1,
+  ).trim(); // Remover espaços em branco
+
+  console.log("URL to fetch:", url); // Log para depuração
 
   const siteBody = childProcess.execSync(
     `curl ${url}`,
@@ -48,7 +55,6 @@ describe('Environmental Check', () => {
       try {
         childProcess.execSync('lsb_release -a');
         allProgrammes = childProcess.execSync('dpkg -l').toString();
-        // OS = 'Linux';
         OS = 'Workflow';
       } catch (e) {
         OS = 'MacOS';
@@ -111,9 +117,7 @@ describe('Environmental Check', () => {
     }
   });
 
-  test(`
-      You should have LintHTML v.0.4.0 extension in VisualStudioCode
-    `, () => {
+  test(`You should have LintHTML v.0.4.0 extension in Visual Studio Code`, () => {
     if (OS === 'Workflow') {
       expect(true)
         .toBeTruthy();
