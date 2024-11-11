@@ -10,7 +10,7 @@ Make sure that you installed all the required VSCode extensions:
 
 
 - ESLint (last  version)
-- EditorConfig (last version)
+- EditorConfig (last  version)
 - StyleLint (last version)
 - LintHTML (last version)
 
