@@ -1,1 +1,9 @@
 /* styles go here */
+.hello-world {
+  display: inline;
+}
+
+.hello-world::after {
+  content: ', world!';
+  color: pink;
+}
