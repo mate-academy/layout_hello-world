@@ -1,1 +1,9 @@
 /* styles go here */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 8px;
+}
