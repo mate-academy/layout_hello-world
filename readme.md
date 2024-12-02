@@ -14,12 +14,12 @@ Make sure that you installed all the required VSCode extensions:
 - LintHTML (last version)
 
 ## Linter
-
+// added for commit
 Install [Prettier VSCode Extention](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 and use this [VSCode settings](https://mate-academy.github.io/fe-program/tools/vscode/settings.json) to enable format on save.
 
 ## Demo Links
 
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://<your_account>.github.io/layout_hello-world/)
-- [TEST REPORT LINK](https://<your_account>.github.io/layout_hello-world/report/html_report/)
+- [DEMO LINK](https://mykhailonl.github.io/layout_hello-world/)
+- [TEST REPORT LINK](https://mykhailonl.github.io/layout_hello-world/report/html_report/)
