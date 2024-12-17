@@ -1,8 +1,10 @@
-# Hello world
+# Hello world-2
 
 ### Stack
 
 - HTML (BEM)
+- CSS
+- JS
 
 ### Tools
 
@@ -13,4 +15,4 @@
 
 ### Demo Links
 
-- [Demo](https://AndriiZakharenko.github.io/hello-world/)
+- [Demo](https://AndriiZakharenko.github.io/hello-world-2/)
