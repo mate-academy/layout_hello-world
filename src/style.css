@@ -1,1 +1,30 @@
 /* styles go here */
+*{
+  padding:0;
+  margin:0;
+font-family:sans-serif;
+box-sizing: border-box;
+}
+.canvas{
+
+  width:100vw;
+  height:100vh;
+  background-image: linear-gradient(to bottom right, rgb(199, 7, 7),#fff);
+  overflow:hidden;
+display:flex;
+align-content:center;
+}
+html{
+width:100%;
+height:100%;
+}
+#author{
+position:absolute;
+top:90vh;
+color:#fff;
+z-index:13;
+font-size:20px;
+width:100%;
+font-weight:100;
+text-align:center;
+}
