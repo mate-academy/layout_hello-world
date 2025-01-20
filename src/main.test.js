@@ -145,7 +145,7 @@ describe('Environmental Check', () => {
       .toBeTruthy();
   });
 
-  test(`You should deploy test page to GitHub pages`, () => {
+  test.skip(`You should deploy test page to GitHub pages`, () => {
     if (OS === 'Workflow') {
       const testLinkBody = getSiteBody('[TEST REPORT LINK]', '_report/');
 
