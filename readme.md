@@ -6,6 +6,7 @@ Add the basic page markup and the text `Hello, world!` into the body.
 
 ## Tests
 
+
 Make sure that you installed all the required VSCode extensions:
 
 - ESLint (last version)
