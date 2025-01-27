@@ -71,8 +71,8 @@ describe('Environmental Check', () => {
   });
 
   test('You should have Bash Shell', () => {
-    const bashPath = childProcess.execSync('which bash').toString();
-
+    const bashPath = childProcess.execSync('where bash').toString();
+    
     expect(!!bashPath)
       .toBeTruthy();
   });
