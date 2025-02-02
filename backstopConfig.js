@@ -3,7 +3,7 @@
 // https://github.com/garris/BackstopJS#advanced-scenarios
 
 const backstop = require('@mate-academy/backstop-config');
-
+const browser = await puppeteer.launch({ executablePath: '/path/to/Chrome' });
 const { basicScenario } = backstop;
 
 const config = {
