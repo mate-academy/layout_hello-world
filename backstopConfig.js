@@ -25,7 +25,7 @@ const config = {
   ],
   engineOptions: {
     puppeteer: {
-      executablePath: '/path/to/Chrome', // Specify the path to your Chrome installation here
+      executablePath: 'C:Program FilesGoogleChromeApplicationchrome.exe', // Specify the path to your Chrome installation here
     },
   },
 };
