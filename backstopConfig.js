@@ -3,7 +3,7 @@
 // https://github.com/garris/BackstopJS#advanced-scenarios
 
 const backstop = require('@mate-academy/backstop-config');
-const browser = await puppeteer.launch({ executablePath: '/path/to/Chrome' });
+
 const { basicScenario } = backstop;
 
 const config = {
@@ -23,6 +23,11 @@ const config = {
       referenceUrl: basicScenario.referenceUrl + '/hello-world/',
     },
   ],
+  engineOptions: {
+    puppeteer: {
+      executablePath: '/path/to/Chrome', // Specify the path to your Chrome installation here
+    },
+  },
 };
 
 module.exports = config;
