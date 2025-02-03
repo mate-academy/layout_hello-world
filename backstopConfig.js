@@ -14,14 +14,14 @@ const config = {
       name: 'custom-size',
       width: 200,
       height: 50,
-    },
+    }
   ],
   scenarios: [
     {
       ...basicScenario,
       label: 'Entire document',
       referenceUrl: basicScenario.referenceUrl + '/hello-world/',
-    },
+    }
   ],
 };
 
