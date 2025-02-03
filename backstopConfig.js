@@ -23,11 +23,6 @@ const config = {
       referenceUrl: basicScenario.referenceUrl + '/hello-world/',
     },
   ],
-  engineOptions: {
-    puppeteer: {
-      executablePath: 'C:Program FilesGoogleChromeApplicationchrome.exe', // Specify the path to your Chrome installation here
-    },
-  },
 };
 
 module.exports = config;
