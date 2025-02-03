@@ -1,1 +1,27 @@
-/* styles go here */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  background-color: #f1f1f1;
+}
