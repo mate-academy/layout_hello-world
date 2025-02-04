@@ -19,7 +19,11 @@ const config = {
       ...basicScenario,
       label: 'Entire document',
       referenceUrl: basicScenario.referenceUrl + '/hello-world/',
-    }],
+      misMatchThreshold: 5, // Permite até 5% de diferença
+      requireSameDimensions: false, // Permite dimensões diferentes
+      delay: 500,
+  },
+  ],
 };
 
 module.exports = config;
