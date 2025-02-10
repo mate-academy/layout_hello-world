@@ -1,17 +1,1 @@
 /* styles go here */
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background-color: #f0f0f0;
-  font-family: Arial, sans-serif;
-}
-
-h1 {
-  font-size: 3rem;
-  color: #333;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  animation: fadeIn 2s ease-in-out;
-}
