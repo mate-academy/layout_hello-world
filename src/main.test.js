@@ -13,21 +13,16 @@ const getSiteBody = (startWord, finishWord) => {
   const firstIndex = fileContent.indexOf(startWord);
   const lastIndex = fileContent.indexOf(finishWord);
 
-  if (firstIndex === -1 || lastIndex === -1) {
-    throw new Error(`Invalid markers [${startWord}] or [${finishWord}] in readme.md`);
-  }
-
   const url = fileContent.substring(
     firstIndex + startWord.length + 1,
     lastIndex + finishWord.length,
-  ).trim();
+  );
 
-  try {
-    const siteBody = childProcess.execSync(`curl -s ${url}`).toString();
-    return siteBody;
-  } catch (error) {
-    return 'Not Found';
-  }
+  const siteBody = childProcess.execSync(
+    `curl ${url}`,
+  ).toString();
+
+  return siteBody;
 };
 
 describe('Environmental Check', () => {
@@ -138,134 +133,17 @@ describe('Environmental Check', () => {
     }
   });
 
-  test('You should deploy test page to GitHub pages', () => {
-  if (OS === 'Workflow') {
-    try {
-      const testLinkBody = getSiteBody('[TEST REPORT LINK]', '_report/');
-      expect(testLinkBody).toContain('BackstopJS Report');
-    } catch (error) {
-      console.warn(`Test report page fetch failed: ${error.message}`);
-      expect(true).toBe(false);
+  test(`You should deploy your site to GitHub pages`, () => {
+    if (OS === 'Workflow') {
+      const demoLinkBody = getSiteBody('[DEMO LINK]', 'world/');
+
+      expect(demoLinkBody)
+        .toContain('Hello, world!');
     }
-  } else {
-    expect(true).toBeTruthy();
-  }
-});
 
-  test('You should deploy test page to GitHub pages', () => {
-  if (OS === 'Workflow') {
-    try {
-      const testLinkBody = getSiteBody('[TEST REPORT LINK]', '_report/');
-      expect(testLinkBody).toContain('BackstopJS Report');
-    } catch (error) {
-      console.warn(`Test report page fetch failed: ${error.message}`);
-      expect(true).toBe(false);
-    }
-  } else {
-    expect(true).toBeTruthy();
-  }
-});
-
-  test('You should deploy test page to GitHub pages', () => {
-  if (OS === 'Workflow') {
-    try {
-      const testLinkBody = getSiteBody('[TEST REPORT LINK]', '_report/');
-      expect(testLinkBody).toContain('BackstopJS Report');
-    } catch (error) {
-      console.warn(`Test report page fetch failed: ${error.message}`);
-      expect(true).toBe(false);
-    }
-  } else {
-    expect(true).toBeTruthy();
-  }
-});
-
-
-  test('You should deploy test page to GitHub pages', () => {
-  if (OS === 'Workflow') {
-    try {
-      const testLinkBody = getSiteBody('[TEST REPORT LINK]', '_report/');
-      expect(testLinkBody).toContain('BackstopJS Report');
-    } catch (error) {
-      console.warn(`Test report page fetch failed: ${error.message}`);
-      expect(true).toBe(false);
-    }
-  } else {
-    expect(true).toBeTruthy();
-  }
-});
-
-  test('You should deploy test page to GitHub pages', () => {
-  if (OS === 'Workflow') {
-    try {
-      const testLinkBody = getSiteBody('[TEST REPORT LINK]', '_report/');
-      expect(testLinkBody).toContain('BackstopJS Report');
-    } catch (error) {
-      console.warn(`Test report page fetch failed: ${error.message}`);
-      expect(true).toBe(false);
-    }
-  } else {
-    expect(true).toBeTruthy();
-  }
-});
-
-  test('You should deploy test page to GitHub pages', () => {
-  if (OS === 'Workflow') {
-    try {
-      const testLinkBody = getSiteBody('[TEST REPORT LINK]', '_report/');
-      expect(testLinkBody).toContain('BackstopJS Report');
-    } catch (error) {
-      console.warn(`Test report page fetch failed: ${error.message}`);
-      expect(true).toBe(false);
-    }
-  } else {
-    expect(true).toBeTruthy();
-  }
-});
-
-
-  test('You should deploy test page to GitHub pages', () => {
-  if (OS === 'Workflow') {
-    try {
-      const testLinkBody = getSiteBody('[TEST REPORT LINK]', '_report/');
-      expect(testLinkBody).toContain('BackstopJS Report');
-    } catch (error) {
-      console.warn(`Test report page fetch failed: ${error.message}`);
-      expect(true).toBe(false);
-    }
-  } else {
-    expect(true).toBeTruthy();
-  }
-});
-
-  test('You should deploy test page to GitHub pages', () => {
-  if (OS === 'Workflow') {
-    try {
-      const testLinkBody = getSiteBody('[TEST REPORT LINK]', '_report/');
-      expect(testLinkBody).toContain('BackstopJS Report');
-    } catch (error) {
-      console.warn(`Test report page fetch failed: ${error.message}`);
-      expect(true).toBe(false);
-    }
-  } else {
-    expect(true).toBeTruthy();
-  }
-});
-
-  test('You should deploy test page to GitHub pages', () => {
-  if (OS === 'Workflow') {
-    try {
-      const testLinkBody = getSiteBody('[TEST REPORT LINK]', '_report/');
-      expect(testLinkBody).toContain('BackstopJS Report');
-    } catch (error) {
-      console.warn(`Test report page fetch failed: ${error.message}`);
-      expect(true).toBe(false);
-    }
-  } else {
-    expect(true).toBeTruthy();
-  }
-});
-
+    expect(true)
+      .toBeTruthy();
+  });
 
   test(`You should deploy test page to GitHub pages`, () => {
     if (OS === 'Workflow') {
