@@ -20,6 +20,8 @@ const config = {
       label: 'Entire document',
       referenceUrl: basicScenario.referenceUrl + '/hello-world/',
     }],
+    
+
 };
 
 module.exports = config;
