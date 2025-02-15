@@ -13,10 +13,16 @@ const getSiteBody = (startWord, finishWord) => {
   const firstIndex = fileContent.indexOf(startWord);
   const lastIndex = fileContent.indexOf(finishWord);
 
+  if (firstIndex === -1 || lastIndex === -1) {
+    throw new Error(`Could not find URL in readme.md between ${startWord} and ${finishWord}`);
+  }
+
   const url = fileContent.substring(
     firstIndex + startWord.length + 1,
     lastIndex + finishWord.length,
   );
+
+  console.log(`Testing URL: ${url}`);  // Debugging
 
   const siteBody = childProcess.execSync(
     `curl ${url}`,
@@ -24,6 +30,7 @@ const getSiteBody = (startWord, finishWord) => {
 
   return siteBody;
 };
+
 
 describe('Environmental Check', () => {
   let OS;
