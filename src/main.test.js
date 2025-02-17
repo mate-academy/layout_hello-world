@@ -12,15 +12,26 @@ const getSiteBody = (startWord, finishWord) => {
   const firstIndex = fileContent.indexOf(startWord);
   const lastIndex = fileContent.indexOf(finishWord);
 
+  if (firstIndex === -1 || lastIndex === -1) {
+    console.error('Invalid start or finish word, URL extraction failed.');
+    return null;
+  }
+
   const url = fileContent.substring(
     firstIndex + startWord.length + 1,
     lastIndex + finishWord.length,
   );
 
+  if (!url) {
+    console.error('URL not found in the README file.');
+    return null;
+  }
+
   let siteBody;
   try {
     siteBody = childProcess.execSync(`curl ${url}`).toString();
   } catch (error) {
+    console.error('Error fetching the URL:', error.message);
     siteBody = null; // Handle curl failure gracefully
   }
 
@@ -110,8 +121,10 @@ describe('Environmental Check', () => {
   test('You should deploy your site to GitHub pages', () => {
     if (OS === 'Linux' || OS === 'MacOS') {
       const demoLinkBody = getSiteBody('[DEMO LINK]', 'world/');
-      expect(demoLinkBody)
-        .toContain('Hello, world!');
+      expect(demoLinkBody).not.toBeNull();
+      if (demoLinkBody) {
+        expect(demoLinkBody).toContain('Hello, world!');
+      }
     }
     expect(true).toBeTruthy(); // Placeholder for actual deployment check
   });
@@ -119,8 +132,10 @@ describe('Environmental Check', () => {
   test('You should deploy test page to GitHub pages', () => {
     if (OS === 'Linux' || OS === 'MacOS') {
       const testLinkBody = getSiteBody('[TEST REPORT LINK]', '_report/');
-      expect(testLinkBody)
-        .toContain('BackstopJS Report');
+      expect(testLinkBody).not.toBeNull();
+      if (testLinkBody) {
+        expect(testLinkBody).toContain('BackstopJS Report');
+      }
     }
     expect(true).toBeTruthy(); // Placeholder for actual deployment check
   });
