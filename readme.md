@@ -1,25 +1,32 @@
 # Hello world
 
-Add the basic page markup and the text `Hello, world!` into the body.
+## 🎮 About the Project
+A simple "Hello World" message displayed in the HTML body using modern web technologies.
 
-> Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
+## 🚀 Tech Stack
+- **HTML** (BEM methodology for structured markup)
+- **CSS** (Responsive & clean styles)
+- **JavaScript** (Basic interactivity)
 
-## Tests
+## 🛠️ Tools & Dependencies
+- **ESLint** – Ensuring code quality
+- **Prettier** – Code formatting for readability
+- **Jest** – Unit testing framework
+- **Parcel** – Bundler for fast development
 
-Make sure that you installed all the required VSCode extensions:
+## 📌 Features
+✅ Simple and clean design  
+✅ Responsive for both desktop and mobile  
 
-- ESLint (last version)
-- EditorConfig (last version)
-- StyleLint (last version)
-- LintHTML (last version)
+## 🌐 Demo
+🔗 [Live Demo](https://AndriiZakharenko.github.io/hello-world/)
 
-## Linter
+## 📜 License
+This project is forked from 💻 [Mate Academy](https://github.com/mate-academy/layout_hello-world)
 
-Install [Prettier VSCode Extention](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-and use this [VSCode settings](https://mate-academy.github.io/fe-program/tools/vscode/settings.json) to enable format on save.
 
-## Demo Links
 
-Replace `<your_account>` with your Github username and copy the links to Pull Request description:
-- [DEMO LINK](https://<your_account>.github.io/layout_hello-world/)
-- [TEST REPORT LINK](https://<your_account>.github.io/layout_hello-world/report/html_report/)
+
+
+
+
