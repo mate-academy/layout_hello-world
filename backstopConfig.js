@@ -12,7 +12,7 @@ const config = {
   viewports: [{
     name: 'custom-size',
     width: 200,
-    height: 50,
+    height: 5,
   }],
   scenarios: [
     {
