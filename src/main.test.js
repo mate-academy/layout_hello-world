@@ -179,6 +179,13 @@ describe('Environmental Check', () => {
             .toBeTruthy();
         }
 
+        if (!allActiveProgrammes.includes('opera.exe')) {
+          childProcess.execSync('start opera');
+          childProcess.execSync('taskkill /im opera.exe');
+
+          expect(true)
+            .toBeTruthy();
+        }
         expect(true)
           .toBeTruthy();
       }
