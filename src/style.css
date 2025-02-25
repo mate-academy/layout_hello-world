@@ -5,7 +5,8 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
 }
 
 :root {
@@ -38,7 +39,7 @@ body {
   padding: 10px 15px;
   display: flex;
   align-items: center;
-  height: 40px; 
+  height: 40px;
 }
 
 .nav-link:hover {
@@ -51,7 +52,8 @@ body {
 }
 
 .is-active::after {
-  content: "";
+  content: '';
+  display: block;
   position: absolute;
   bottom: -2px;
   left: 0;
