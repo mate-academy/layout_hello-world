@@ -1,14 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Document</title>
-  </head>
-  <body>
-    Hello, world!
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Perfect Header</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="src/images/logo.png" alt="Logo">
+        </a>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">Products</a></li>
+                <li><a href="#" class="nav-link">Services</a></li>
+                <li><a href="#" class="nav-link is-active" data-qa="hover">Laptops & Computers</a></li>
+                <li><a href="#" class="nav-link">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
 </html>
