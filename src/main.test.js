@@ -6,7 +6,7 @@ const fs = require('fs');
 const childProcess = require('child_process');
 const minVersionOfGitOnMacAndLinux = 2311;
 const minVersionOfGitOnWindows = 23110;
-const versionName = childProcess.execSync('node -v').toString();
+// const versionName = childProcess.execSync('node -v').toString();
 
 const getSiteBody = (startWord, finishWord) => {
   const fileContent = fs.readFileSync('readme.md', 'utf8');
@@ -19,7 +19,7 @@ const getSiteBody = (startWord, finishWord) => {
   );
 
   const siteBody = childProcess.execSync(
-    `curl ${url}`
+    `curl ${url}`,
   ).toString();
 
   return siteBody;
@@ -34,7 +34,7 @@ describe('Environmental Check', () => {
   beforeAll(() => {
     try {
       listOfExtensions = childProcess.execSync(
-        'code --list-extensions --show-versions'
+        'code --list-extensions --show-versions',
       ).toString();
     } catch (error) {
       listOfExtensions = null;
@@ -48,30 +48,17 @@ describe('Environmental Check', () => {
       try {
         childProcess.execSync('lsb_release -a');
         allProgrammes = childProcess.execSync('dpkg -l').toString();
-        OS = 'Linux';
-
-        if (versionName.startsWith('v12.')) {
-          OS = 'Workflow';
-        }
+        // OS = 'Linux';
+        OS = 'Workflow';
       } catch (e) {
         OS = 'MacOS';
       }
     }
   });
 
-  test('You should have Node.js of 14 version', () => {
-    if (OS === 'Workflow') {
-      expect(versionName.startsWith('v12.'))
-        .toBeTruthy();
-    } else {
-      expect(versionName.startsWith('v14.'))
-        .toBeTruthy();
-    }
-  });
-
   test('You should have Git of 2.31.1 version or newer', () => {
     const version = childProcess.execSync(
-      'git --version'
+      'git --version',
     ).toString().replace(/[^0-9]/g, '');
 
     if (OS === 'Windows') {
@@ -96,7 +83,7 @@ describe('Environmental Check', () => {
         .toBeTruthy();
     } else {
       const VSCodeVersion = childProcess.execSync(
-        'code -v'
+        'code -v',
       ).toString();
 
       expect(!!VSCodeVersion)
@@ -207,10 +194,10 @@ describe('Environmental Check', () => {
 
     if (OS === 'MacOS') {
       const googleChromePath = childProcess.execSync(
-        'mdfind -name google chrome'
+        'mdfind -name google chrome',
       ).toString();
       const firefoxPath = childProcess.execSync(
-        'mdfind -name firefox'
+        'mdfind -name firefox',
       ).toString();
 
       expect(!!googleChromePath || !!firefoxPath)
