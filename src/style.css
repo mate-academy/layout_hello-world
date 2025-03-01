@@ -1,16 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Roboto, sans-serif;
-  font-weight: 500;
-}
-
 :root {
-  --blue-color: #007bff;
+  --blue-color: #00ACDC;
 }
 
 .header {
@@ -18,7 +7,7 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 20px;
+  padding: 10px 20px;
   background-color: white;
 }
 
@@ -29,17 +18,18 @@ body {
 .nav-list {
   display: flex;
   list-style: none;
+  gap: 20px; 
 }
 
 .nav-link {
   text-decoration: none;
   color: black;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
-  padding: 10px 15px;
+  height: 40px;
   display: flex;
   align-items: center;
-  height: 40px;
+  transition: color 0.3s ease;
 }
 
 .nav-link:hover {
