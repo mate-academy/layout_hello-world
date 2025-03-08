@@ -9,7 +9,7 @@ const minVersionOfGitOnWindows = 23110;
 // const versionName = childProcess.execSync('node -v').toString();
 
 const getSiteBody = (startWord, finishWord) => {
-  const fileContent = fs.readFileSync('readme.m', 'utf8');
+  const fileContent = fs.readFileSync('readme.md', 'utf8');
   const firstIndex = fileContent.indexOf(startWord);
   const lastIndex = fileContent.indexOf(finishWord);
 
