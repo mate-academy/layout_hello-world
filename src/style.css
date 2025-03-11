@@ -1,1 +1,5 @@
-/* styles go here */
+h1 {
+  font-size: 1rem;
+  font-weight: lighter;
+  margin-top: 3px;
+}
