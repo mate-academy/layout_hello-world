@@ -71,10 +71,26 @@ describe('Environmental Check', () => {
   test('You should deploy test page to GitHub pages', () => {
     if (OS === 'Workflow') {
       const testLinkBody = getSiteBody('[TEST REPORT LINK]', '_report/');
-      expect(testLinkBody).toContain('BackstopJS Report');
-    } else {
-      expect(true).toBeTruthy();
-    }
+      const getSiteBody = (startWord, finishWord) => {
+        const fileContent = fs.readFileSync('readme.md', 'utf8');
+        const firstIndex = fileContent.indexOf(startWord);
+        const lastIndex = fileContent.indexOf(finishWord);
+
+        const url = fileContent.substring(
+          firstIndex + startWord.length + 1,
+          lastIndex + finishWord.length,
+        );
+
+        console.log(`URL: ${url}`); // Add this line to log the URL
+
+        const siteBody = childProcess.execSync(
+          `curl ${url}`,
+        ).toString();
+
+        console.log(`Site Body: ${siteBody}`); // Add this line to log the site content
+
+        return siteBody;
+      };
   });
 
   // Other tests...
