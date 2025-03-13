@@ -22,4 +22,4 @@ and use this [VSCode settings](https://mate-academy.github.io/fe-program/tools/v
 
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
 - [DEMO LINK](https://jdfloyd91.github.io/layout_hello-world/)
-- [TEST REPORT LINK](file:///C:/Users/jdflo/Desktop/projects/layout_hello-world/backstop_data/html_report/index.html)
+- [TEST REPORT LINK](https://jdfloyd91.github.io/layout_hello-world/report/html_report/)
