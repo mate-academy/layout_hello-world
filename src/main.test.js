@@ -91,7 +91,7 @@ describe('Environmental Check', () => {
 
         return siteBody;
       };
-  };
+  });
 
   // Other tests...
-});
+};
