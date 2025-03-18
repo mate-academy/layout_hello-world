@@ -1,7 +1,7 @@
-# Hello 
+# Hello
 
 Add the basic page markup and the text `Hello, world!` into the body.
-Replace https://github.com/sychayev/
+Replace https://github.com/sychayev/layout_hello-world#
 
 > Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
 
