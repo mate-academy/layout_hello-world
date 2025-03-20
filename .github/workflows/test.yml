@@ -1,4 +1,4 @@
-name: Test
+name: hello word
 
 on:
   pull_request:
