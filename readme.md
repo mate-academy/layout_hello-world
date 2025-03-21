@@ -4,8 +4,8 @@ Add the basic page markup and the text `Hello, world!` into the body.
 1. Replace https://github.com/sychayev
       -[DEMO LINK] https://github.com/sychayev/layout_hello-world# </br>
       -[TEST REPORT LINK]
-https://sychayev.github.io/layout_hello-world/report/html_report/
-
+<!-- https://sychayev.github.io/layout_hello-world/report/html_report/ -->
+https://snipboard.io/EDgQcN.jpg
 
 2. Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
 
