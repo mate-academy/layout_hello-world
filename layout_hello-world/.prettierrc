@@ -1,0 +1,20 @@
+{
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": false,
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "printWidth": 80,
+  "overrides": [
+    {
+      "files": "*.html",
+      "options": {
+        "parser": "html",
+        "insertPragma": false,
+        "endOfLine": "auto",
+        "singleAttributePerLine": true,
+        "htmlWhitespaceSensitivity": "ignore"
+      }
+    }
+  ]
+}
