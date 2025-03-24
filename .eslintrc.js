@@ -1,3 +1,11 @@
 module.exports = {
-  extends: '@mate-academy/eslint-config',
+  "extends": "airbnb-base",
+  "rules": {
+    "consistent-return": "off",
+    "import/extensions": "off"
+  },
+  "env": {
+    "node": true,
+    "es2021": true
+  }
 };
