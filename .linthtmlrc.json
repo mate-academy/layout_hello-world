@@ -1,12 +1,12 @@
 {
-  "attr-bans": [
+  "attr-bans": {
     "align",
     "background",
     "bgcolor",
     "border",
     "frameborder",
     "style"
-  ],
+  },
   "attr-name-ignore-regex": "viewBox",
   "attr-no-dup": true,
   "attr-quote-style": "double",
@@ -26,7 +26,7 @@
   "indent-width-cont": true,
   "input-radio-req-name": true,
   "spec-char-escape": true,
-  "tag-bans": [
+  "tag-bans": {
     "b",
     "i",
     "u",
@@ -35,7 +35,7 @@
     "marquee",
     "font",
     "s"
-  ],
+  },
   "tag-name-lowercase": true,
   "tag-name-match": true,
   "tag-self-close": false,
