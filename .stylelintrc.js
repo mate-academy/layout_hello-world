@@ -1,7 +1,10 @@
 module.exports = {
-  extends: "@mate-academy/stylelint-config",
+  extends": "stylelint-config-standard",
   plugins: [
     "stylelint-scss"
   ],
-  rules: {}
+   "rules": {
+    "selector-class-pattern": null,
+    "indentation": 2
+  }
 };
