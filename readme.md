@@ -13,7 +13,7 @@ Make sure that you installed all the required VSCode extensions:
 - StyleLint (last version)
 - LintHTML (last version)
 
-## Linter
+## Linter Leo
 
 Install [Prettier VSCode Extention](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 and use this [VSCode settings](https://mate-academy.github.io/fe-program/tools/vscode/settings.json) to enable format on save.
