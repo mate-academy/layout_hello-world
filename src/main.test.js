@@ -70,12 +70,12 @@ describe('Environmental Check', () => {
     }
   });
 
-  // test('You should have Bash Shell', () => {
-  //   const bashPath = childProcess.execSync('which bash').toString();
+  test('You should have Bash Shell', () => {
+    const bashPath = childProcess.execSync('which bash').toString();
 
-  //   expect(!!bashPath)
-  //     .toBeTruthy();
-  // });
+    expect(!!bashPath)
+      .toBeTruthy();
+  });
 
   test('You should have Visual Studio Code', () => {
     if (OS === 'Workflow') {
