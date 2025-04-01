@@ -17,7 +17,7 @@ Make sure that you installed all the required VSCode extensions:
 
 Install [Prettier VSCode Extention](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 and use this [VSCode settings](https://mate-academy.github.io/fe-program/tools/vscode/settings.json) to enable format on save.
-
+ 
 ## Demo Links
 
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
