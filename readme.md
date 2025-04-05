@@ -15,7 +15,7 @@ Make sure that you installed all the required VSCode extensions:
 
 ## Linter
 
-Install [Prettier VSCode Extention](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+Install [Prettier VSCode Extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 and use this [VSCode settings](https://mate-academy.github.io/fe-program/tools/vscode/settings.json) to enable format on save.
 
 ## Demo Links
