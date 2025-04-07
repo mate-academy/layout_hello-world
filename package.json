@@ -1,19 +1,8 @@
 {
   "name": "hello-world",
   "version": "1.0.0",
-<<<<<<< HEAD
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^5.1.0"
-=======
   "description": "Hello World",
+  "main": "index.js",
   "scripts": {
     "init": "mate-scripts init",
     "start": "mate-scripts start",
@@ -29,6 +18,9 @@
   "keywords": [],
   "author": "Mate Academy",
   "license": "GPL-3.0",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
   "devDependencies": {
     "@linthtml/linthtml": "^0.9.6",
     "@mate-academy/backstop-config": "latest",
@@ -49,6 +41,5 @@
       "javascript": false,
       "bem": false
     }
->>>>>>> e200f8a3982e41bbf9214857a6f5175c531fb97c
   }
 }
