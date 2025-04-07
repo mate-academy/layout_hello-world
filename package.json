@@ -1,6 +1,18 @@
 {
   "name": "hello-world",
   "version": "1.0.0",
+<<<<<<< HEAD
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+=======
   "description": "Hello World",
   "scripts": {
     "init": "mate-scripts init",
@@ -37,5 +49,6 @@
       "javascript": false,
       "bem": false
     }
+>>>>>>> e200f8a3982e41bbf9214857a6f5175c531fb97c
   }
 }
