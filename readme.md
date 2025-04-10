@@ -3,11 +3,9 @@
 Add the basic page markup and the text `Hello, world!` into the body.
 1. Replace https://github.com/sychayev
       -[DEMO LINK]
-      <!-- https://github.com/sychayev/layout_hello-world# -->
       (https://sychayev.github.io/layout_hello-world/)
        </br>
       -[TEST REPORT LINK]
-      <!-- file:///C:/Users/Petr/layout_hello-world/backstop_data/html_report/index.html -->
       (https://sychayev.github.io/layout_hello-world/report/html_report/)
 <!-- https://snipboard.io/EDgQcN.jpg -->
 
