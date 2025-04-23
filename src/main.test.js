@@ -13,13 +13,17 @@ const getSiteBody = (startWord) => {
   const match = fileContent.match(regex);
 
   if (!match || !match[1]) {
-    throw new Error(`Nie udało się znaleźć URL dla ${startWord}`);
+    throw new Error(`URL for ${startWord} not found in readme.md`);
   }
 
   const url = match[1];
 
-  const siteBody = childProcess.execSync(`curl -s ${url}`).toString();
-  return siteBody;
+  try {
+    const siteBody = childProcess.execSync(`curl -s --fail "${url}"`).toString();
+    return siteBody;
+  } catch (error) {
+    throw new Error(`Failed to fetch URL: ${url} — ${error.message}`);
+  }
 };
 
 describe('Environmental Check', () => {
@@ -115,11 +119,11 @@ describe('Environmental Check', () => {
         const demoLinkBody = getSiteBody('DEMO LINK');
         expect(demoLinkBody).toContain('Hello, world!');
       } catch (e) {
-        console.error('DEMO LINK not accessible:', e.message);
+        console.error('❌ DEMO LINK not accessible or invalid:', e.message);
         expect(false).toBeTruthy();
       }
     } else {
-      expect(true).toBeTruthy();
+      expect(true).toBeTruthy(); // Skip on non-Linux
     }
   });
 

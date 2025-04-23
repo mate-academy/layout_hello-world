@@ -15,6 +15,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      # Debugging readme.md content
+      - name: Debug readme content
+        run: cat readme.md
+
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
