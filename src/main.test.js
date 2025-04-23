@@ -8,19 +8,21 @@ const minVersionOfGitOnMacAndLinux = 2311;
 const minVersionOfGitOnWindows = 23110;
 // const versionName = childProcess.execSync('node -v').toString();
 
-const getSiteBody = (startWord, finishWord) => {
+const getSiteBody = (startWord) => {
   const fileContent = fs.readFileSync('readme.md', 'utf8');
-  const firstIndex = fileContent.indexOf(startWord);
-  const lastIndex = fileContent.indexOf(finishWord);
+  const regex = new RegExp(`\\[${startWord}\\]\\((.*?)\\)`, 'i');
+  const match = fileContent.match(regex);
 
-  const url = fileContent.substring(
-    firstIndex + startWord.length + 1,
-    lastIndex + finishWord.length,
-  );
+  if (!match || !match[1]) {
+    throw new Error(`Nie udało się znaleźć URL dla ${startWord}`);
+  }
+
+  const url = match[1];
 
   const siteBody = childProcess.execSync(
-    `curl ${url}`,
+    `curl -s ${url}`,
   ).toString();
+
   return siteBody;
 };
 
@@ -134,10 +136,8 @@ describe('Environmental Check', () => {
 
   test(`You should deploy your site to GitHub pages`, () => {
     if (OS === 'Workflow') {
-      const demoLinkBody = getSiteBody('[DEMO LINK]', 'world/');
-
-      expect(demoLinkBody)
-        .toContain('Hello, world!');
+      const demoLinkBody = getSiteBody('DEMO LINK');
+      expect(demoLinkBody).toContain('Hello, world!');
     }
 
     expect(true)
@@ -146,10 +146,8 @@ describe('Environmental Check', () => {
 
   test(`You should deploy test page to GitHub pages`, () => {
     if (OS === 'Workflow') {
-      const testLinkBody = getSiteBody('[TEST REPORT LINK]', '_report/');
-
-      expect(testLinkBody)
-        .toContain('BackstopJS Report');
+      const testLinkBody = getSiteBody('TEST REPORT LINK');
+      expect(testLinkBody).toContain('BackstopJS Report');
     }
 
     expect(true)
