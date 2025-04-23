@@ -15,20 +15,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      # Instalacja VS Code + CLI (code)
-      - name: Install Visual Studio Code
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y software-properties-common apt-transport-https wget gpg
-          wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | gpg --dearmor | sudo tee /usr/share/keyrings/packages.microsoft.gpg > /dev/null
-          echo "deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/vscode stable main" | sudo tee /etc/apt/sources.list.d/vscode.list
-          sudo apt-get update
-          sudo apt-get install -y code
-
-      # Debug info (opcjonalne, możesz usunąć)
-      - name: VS Code version check
-        run: code -v
-
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
@@ -38,9 +24,21 @@ jobs:
 
       - run: npm test
 
+      - name: Verify backstop_data existence
+        run: ls -la backstop_data || echo "backstop_data directory not found"
+
       - name: Upload HTML report (backstop data)
         if: ${{ always() }}
         uses: actions/upload-artifact@v4
         with:
           name: report
           path: backstop_data
+
+      - name: Install Visual Studio Code (for test compatibility)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y software-properties-common apt-transport-https wget
+          wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+          sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+          sudo apt-get update
+          sudo apt-get install -y code
