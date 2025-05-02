@@ -1,1 +1,5 @@
 /* styles go here */
+.header {
+  padding: 20px; /* Maybe was 15px in reference */
+  color: black; /* Maybe was #222 in reference */
+}
