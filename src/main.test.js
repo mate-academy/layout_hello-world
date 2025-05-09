@@ -193,9 +193,7 @@ describe('Environmental Check', () => {
     }
 
     if (OS === 'MacOS') {
-      const googleChromePath = childProcess.execSync(
-        'mdfind -name google chrome',
-      ).toString();
+      const googleChromePath = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
       const firefoxPath = childProcess.execSync(
         'mdfind -name firefox',
       ).toString();
