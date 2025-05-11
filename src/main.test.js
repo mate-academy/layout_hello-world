@@ -150,7 +150,7 @@ describe('Environmental Check', () => {
       const testLinkBody = getSiteBody('[TEST REPORT LINK]', '_report/');
 
       expect(testLinkBody)
-        .toContain('BackstopJS Report');
+        .toBe('BackstopJS Report');
     }
 
     expect(true)
