@@ -20,6 +20,7 @@ const config = {
       label: 'Entire document',
       referenceUrl: basicScenario.referenceUrl + '/hello-world/',
     }],
+      openReport: true,
 };
 
 module.exports = config;
