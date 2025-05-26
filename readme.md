@@ -1,17 +1,5 @@
 # Hello world
 
-Add the basic page markup and the text `Hello, world!` into the body.
-
-> Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
-
-## Tests
-
-Make sure that you installed all the required VSCode extensions:
-
-- ESLint (last version)
-- EditorConfig (last version)
-- StyleLint (last version)
-- LintHTML (last version)
 
 ## Linter
 
