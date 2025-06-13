@@ -1,11 +1,5 @@
-/* styles go here */
-body {
-  background-color: #f0f0f0;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin-top: 100px;
-}
-
 h1 {
-  color: #007acc;
+  color: black;
+  font-size: 16px;
+  font-weight: normal;
 }
