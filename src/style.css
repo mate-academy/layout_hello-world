@@ -1,1 +1,5 @@
-/* styles go here */
+h1 {
+  color: black;
+  font-size: 16px;
+  font-weight: normal;
+}
