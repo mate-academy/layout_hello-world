@@ -8,3 +8,8 @@ node_modules
 # MacOS
 .DS_Store
 
+# Generated files
+backstop_data
+dist
+.cache
+.parcel-cache
