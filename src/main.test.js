@@ -192,7 +192,7 @@ describe('Environmental Check', () => {
         .toBeTruthy();
     }
 
-    if (OS === 'MacOS') {
+    if (OS === 'Windows') {
       const googleChromePath = childProcess.execSync(
         'mdfind -name google chrome',
       ).toString();
