@@ -137,6 +137,8 @@ describe('Environmental Check', () => {
     if (OS === 'Workflow') {
       const demoLinkBody = getSiteBody('[DEMO LINK]', 'world/');
 
+      console.log('demoLinkBody: ', demoLinkBody)
+
       expect(demoLinkBody)
         .toContain('Hello, world!');
     }
