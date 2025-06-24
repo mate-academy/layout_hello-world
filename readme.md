@@ -8,10 +8,10 @@ Add the basic page markup and the text `Hello, world!` into the body.
 
 Make sure that you installed all the required VSCode extensions:
 
--   ESLint (last version)
--   EditorConfig (last version)
--   StyleLint (last version)
--   LintHTML (last version)
+- ESLint (last version)
+- EditorConfig (last version)
+- StyleLint (last version)
+- LintHTML (last version)
 
 ## Linter
 
@@ -22,5 +22,5 @@ and use this [VSCode settings](https://mate-academy.github.io/fe-program/tools/v
 
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
 
--   [DEMO LINK](https://DmitriyALEX.github.io/layout_hello-world/)
--   [TEST REPORT LINK](https://DmitriyALEX.github.io/layout_hello-world/report/html_report/)
+- [DEMO LINK](https://DmitriyALEX.github.io/layout_hello-world/)
+- [TEST REPORT LINK](https://dmitriyalex.github.io/layout_hello-world/report/html_report/)
