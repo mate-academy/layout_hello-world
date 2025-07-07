@@ -1,12 +1,12 @@
 # Hello world
 
-Add  the basic page markup and the text `Hello, world!` into the body.
+Add  the   basic page markup and the text `Hello, world!` into the body.
 
 > Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
 
-## Tests
+## Tests і
 
-Make  sure that you installed all the required VSCode extensions:
+Make    sure that you installed all the required VSCode extensions:
 
 - ESLint (last version)
 - EditorConfig (last version)
@@ -20,6 +20,6 @@ and use this [VSCode settings](https://mate-academy.github.io/fe-program/tools/v
 
 ## Demo Links
 
-Replace `<your_account>` with your Github username and copy the links to Pull Request description:
+Replace   `<your_account>`   with your Github username and copy the links to Pull Request description:
 - [DEMO LINK](https://<your_account>.github.io/layout_hello-world/)
 - [TEST REPORT LINK](https://<your_account>.github.io/layout_hello-world/report/html_report/)
