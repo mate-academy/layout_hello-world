@@ -1,1 +1,10 @@
-/* styles go here */
+body {
+  font-family: serif;
+  font-size: 16px;
+  color: black;
+  background: white;
+}
+
+p {
+  margin: 0;
+}
