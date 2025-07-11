@@ -4,38 +4,39 @@
 
 const fs = require('fs');
 const childProcess = require('child_process');
+
 const minVersionOfGitOnMacAndLinux = 2311;
 const minVersionOfGitOnWindows = 23110;
-// const versionName = childProcess.execSync('node -v').toString();
 
-const getSiteBody = (startWord, finishWord) => {
+const extractLinkFromReadme = (label) => {
   const fileContent = fs.readFileSync('readme.md', 'utf8');
-  const firstIndex = fileContent.indexOf(startWord);
-  const lastIndex = fileContent.indexOf(finishWord);
+  const regex = new RegExp(`\
 
-  const url = fileContent.substring(
-    firstIndex + startWord.length + 1,
-    lastIndex + finishWord.length,
-  );
+\[${label}\\]
 
-  const siteBody = childProcess.execSync(
-    `curl ${url}`,
-  ).toString();
+\\(([^\\s)]+)\\)`, 'i');
+  const match = fileContent.match(regex);
+  return match ? match[1].trim() : null;
+};
 
-  return siteBody;
+const getSiteBody = (url) => {
+  if (!url) return '';
+  try {
+    return childProcess.execSync(`curl "${url}"`).toString();
+  } catch (err) {
+    return '';
+  }
 };
 
 describe('Environmental Check', () => {
   let OS;
-  let allActiveProgrammes;
-  let allProgrammes;
-  let listOfExtensions;
+  let listOfExtensions = '';
+  let allActiveProgrammes = '';
+  let allProgrammes = '';
 
   beforeAll(() => {
     try {
-      listOfExtensions = childProcess.execSync(
-        'code --list-extensions --show-versions',
-      ).toString();
+      listOfExtensions = childProcess.execSync('code --list-extensions --show-versions').toString();
     } catch (error) {
       listOfExtensions = null;
     }
@@ -47,161 +48,86 @@ describe('Environmental Check', () => {
     } catch (error) {
       try {
         childProcess.execSync('lsb_release -a');
-        allProgrammes = childProcess.execSync('dpkg -l').toString();
-        // OS = 'Linux';
         OS = 'Workflow';
+        allProgrammes = childProcess.execSync('dpkg -l').toString();
       } catch (e) {
         OS = 'MacOS';
       }
     }
   });
 
-  test('You should have Git of 2.31.1 version or newer', () => {
-    const version = childProcess.execSync(
-      'git --version',
-    ).toString().replace(/[^0-9]/g, '');
-
-    if (OS === 'Windows') {
-      expect(version >= minVersionOfGitOnWindows)
-        .toBeTruthy();
-    } else {
-      expect(version >= minVersionOfGitOnMacAndLinux)
-        .toBeTruthy();
-    }
+  test('You should have Git version >= 2.31.1', () => {
+    const version = childProcess.execSync('git --version').toString().replace(/[^0-9]/g, '');
+    const minVersion = OS === 'Windows' ? minVersionOfGitOnWindows : minVersionOfGitOnMacAndLinux;
+    expect(Number(version) >= minVersion).toBeTruthy();
   });
 
   test('You should have Bash Shell', () => {
     const bashPath = childProcess.execSync('which bash').toString();
-
-    expect(!!bashPath)
-      .toBeTruthy();
+    expect(Boolean(bashPath)).toBeTruthy();
   });
 
   test('You should have Visual Studio Code', () => {
+    if (OS === 'Workflow') return expect(true).toBeTruthy();
+    const VSCodeVersion = childProcess.execSync('code -v').toString();
+    expect(Boolean(VSCodeVersion)).toBeTruthy();
+  });
+
+  test('You should have EditorConfig extension in VS Code', () => {
+    if (OS === 'Workflow') return expect(true).toBeTruthy();
+    expect(listOfExtensions.toLowerCase()).toContain('editorconfig.editorconfig');
+  });
+
+  test('You should have ESLint extension in VS Code', () => {
+    if (OS === 'Workflow') return expect(true).toBeTruthy();
+    expect(listOfExtensions.toLowerCase()).toContain('dbaeumer.vscode-eslint');
+  });
+
+  test('You should have LintHTML extension in VS Code', () => {
+    if (OS === 'Workflow') return expect(true).toBeTruthy();
+    expect(listOfExtensions.toLowerCase()).toContain('kamikillerto.vscode-linthtml');
+  });
+
+  test('You should have Stylelint extension in VS Code', () => {
+    if (OS === 'Workflow') return expect(true).toBeTruthy();
+    expect(listOfExtensions.toLowerCase()).toContain('stylelint.vscode-stylelint');
+  });
+
+  test('You should deploy your site to GitHub Pages', () => {
     if (OS === 'Workflow') {
-      expect(true)
-        .toBeTruthy();
+      const demoLink = extractLinkFromReadme('DEMO LINK');
+      const body = getSiteBody(demoLink);
+      expect(body).toContain('Hello, world!');
     } else {
-      const VSCodeVersion = childProcess.execSync(
-        'code -v',
-      ).toString();
-
-      expect(!!VSCodeVersion)
-        .toBeTruthy();
+      expect(true).toBeTruthy();
     }
   });
 
-  test(`You should have EditorConfig extension in Visual Studio Code`, () => {
+  test('You should deploy the test report to GitHub Pages', () => {
     if (OS === 'Workflow') {
-      expect(true)
-        .toBeTruthy();
+      const reportLink = extractLinkFromReadme('TEST REPORT LINK');
+      const body = getSiteBody(reportLink);
+      expect(body).toContain('BackstopJS Report');
     } else {
-      expect(listOfExtensions.toLowerCase())
-        .toContain('editorconfig.editorconfig');
+      expect(true).toBeTruthy();
     }
   });
 
-  test(`You should have ESLint extension in Visual Studio Code`, () => {
-    if (OS === 'Workflow') {
-      expect(true)
-        .toBeTruthy();
-    } else {
-      expect(listOfExtensions.toLowerCase())
-        .toContain('dbaeumer.vscode-eslint');
-    }
-  });
-
-  test(`
-      You should have LintHTML v.0.4.0 extension in VisualStudioCode
-    `, () => {
-    if (OS === 'Workflow') {
-      expect(true)
-        .toBeTruthy();
-    } else {
-      expect(listOfExtensions.toLowerCase())
-        .toContain('kamikillerto.vscode-linthtml');
-    }
-  });
-
-  test(`You should have Stylelint extension in Visual Studio Code`, () => {
-    if (OS === 'Workflow') {
-      expect(true)
-        .toBeTruthy();
-    } else {
-      expect(listOfExtensions.toLowerCase())
-        .toContain('stylelint.vscode-stylelint');
-    }
-  });
-
-  test(`You should deploy your site to GitHub pages`, () => {
-    if (OS === 'Workflow') {
-      const demoLinkBody = getSiteBody('[DEMO LINK]', 'world/');
-
-      expect(demoLinkBody)
-        .toContain('Hello, world!');
-    }
-
-    expect(true)
-      .toBeTruthy();
-  });
-
-  test(`You should deploy test page to GitHub pages`, () => {
-    if (OS === 'Workflow') {
-      const testLinkBody = getSiteBody('[TEST REPORT LINK]', '_report/');
-
-      expect(testLinkBody)
-        .toContain('BackstopJS Report');
-    }
-
-    expect(true)
-      .toBeTruthy();
-  });
-
-  test('You should have Google Chrome or Firefox', () => {
+  test('You should have Chrome or Firefox installed', () => {
     if (OS === 'Windows') {
-      try {
-        if (!allActiveProgrammes.includes('chrome.exe')) {
-          childProcess.execSync('start chrome');
-          childProcess.execSync('taskkill /im chrome.exe');
-
-          expect(true)
-            .toBeTruthy();
-        }
-
-        expect(true)
-          .toBeTruthy();
-      } catch (error) {
-        if (!allActiveProgrammes.includes('firefox.exe')) {
-          childProcess.execSync('start firefox');
-          childProcess.execSync('taskkill /im firefox.exe');
-
-          expect(true)
-            .toBeTruthy();
-        }
-
-        expect(true)
-          .toBeTruthy();
-      }
-    }
-
-    if (OS === 'Linux') {
-      const isGoogleChromeInstaled = allProgrammes.includes('google-chrome');
-      const isFirefoxInstaled = allProgrammes.includes('firefox');
-
-      expect(isGoogleChromeInstaled || isFirefoxInstaled)
-        .toBeTruthy();
-    }
-
-    if (OS === 'MacOS') {
-      const googleChromePath = childProcess.execSync(
-        'mdfind -name google chrome',
-      ).toString();
-      const firefoxPath = childProcess.execSync(
-        'mdfind -name firefox',
-      ).toString();
-
-      expect(!!googleChromePath || !!firefoxPath)
-        .toBeTruthy();
+      const chrome = allActiveProgrammes.includes('chrome.exe');
+      const firefox = allActiveProgrammes.includes('firefox.exe');
+      expect(chrome || firefox).toBeTruthy();
+    } else if (OS === 'Linux') {
+      const chrome = allProgrammes.includes('google-chrome');
+      const firefox = allProgrammes.includes('firefox');
+      expect(chrome || firefox).toBeTruthy();
+    } else if (OS === 'MacOS') {
+      const chrome = childProcess.execSync('mdfind -name "Google Chrome"').toString();
+      const firefox = childProcess.execSync('mdfind -name Firefox').toString();
+      expect(Boolean(chrome || firefox)).toBeTruthy();
+    } else {
+      expect(true).toBeTruthy(); // Skip on Workflow
     }
   });
 });

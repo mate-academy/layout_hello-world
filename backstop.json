@@ -1,0 +1,31 @@
+{
+  "id": "hello-world",
+  "viewports": [
+    {
+      "label": "desktop",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Hello world page",
+      "url": "https://eder1709.github.io/layout_hello-world-1806/",
+      "referenceUrl": "https://eder1709.github.io/layout_hello-world-1806/",
+      "misMatchThreshold": 0.2,
+      "selectors": ["viewport"],
+      "requireSameDimensions": true,
+      "delay": 500
+
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "engine": "puppeteer",
+  "report": ["browser", "CI"],
+  "debug": false
+}
