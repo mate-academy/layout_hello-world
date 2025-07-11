@@ -12,10 +12,11 @@
       "label": "Hello world page",
       "url": "https://eder1709.github.io/layout_hello-world-1806/",
       "referenceUrl": "https://eder1709.github.io/layout_hello-world-1806/",
-      "selectors": ["viewport"],
       "misMatchThreshold": 0.2,
+      "selectors": ["viewport"],
       "requireSameDimensions": true,
       "delay": 500
+
     }
   ],
   "paths": {
