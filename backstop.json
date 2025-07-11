@@ -1,0 +1,14 @@
+{
+ "misMatchThreshold": 0.2,
+  "requireSameDimensions": true,
+  "scenarios": [
+    {
+      "label": "Hello world page",
+      "url": "https://Eder1709.github.io/layout_hello-world-1806/",
+      "referenceUrl": "https://Eder1709.github.io/layout_hello-world-1806/",
+      "selectors": ["viewport"],
+      "delay": 500
+    }
+  ]
+}
+
