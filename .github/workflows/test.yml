@@ -6,7 +6,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -14,16 +13,32 @@ jobs:
         node-version: [20.x]
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm install
-    - run: npm test
-    - name: Upload HTML report(backstop data)
-      if: ${{ always() }}
-      uses: actions/upload-artifact@v4
-      with:
-        name: report
-        path: backstop_data
+      # 1 Клонуємо репозиторій PR
+      - uses: actions/checkout@v2
+
+      # 2 Встановлюємо потрібну версію Node.js
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      # 3 Встановлюємо залежності
+      - run: npm install
+
+      # 4 Підкладаємо фіктивну команду `code`, щоб mate‑scripts не впав
+      - name: Stub VS Code CLI
+        run: |
+          echo -e '#!/usr/bin/env bash\nexit 0' > code
+          chmod +x code
+          echo "$PWD" >> $GITHUB_PATH
+
+      # 5 Запускаємо лінтер і тести
+      - run: npm test
+
+      # 6 Заливаємо html‑звіт Backstop як artifact (завжди, навіть якщо job упав)
+      - name: Upload HTML report (backstop data)
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: report
+          path: backstop_data
