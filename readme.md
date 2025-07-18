@@ -1,4 +1,4 @@
-# Hello world
+# Hello World!
 
 Add the basic page markup and the text `Hello, world!` into the body.
 
