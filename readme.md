@@ -24,4 +24,3 @@ Replace `<your_account>` with your Github username and copy the links to Pull Re
 
 - [DEMO LINK](https://Vitaligna.github.io/layout_hello-world/)
 - [TEST REPORT LINK](https://Vitaligna.github.io/layout_hello-world/report/html_report/)
-<!-- Зміни для поновлення автотестів -->
