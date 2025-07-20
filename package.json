@@ -13,6 +13,8 @@
     "update": "mate-scripts update",
     "postinstall": "npm run update",
     "test": "npm run lint && npm run test:only"
+    "test:report": "mate-scripts test:report"
+
   },
   "keywords": [],
   "author": "Mate Academy",
