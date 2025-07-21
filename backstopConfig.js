@@ -9,25 +9,17 @@ const { basicScenario } = backstop;
 const config = {
   ...backstop,
   fileNameTemplate: '{scenarioLabel}',
-  viewports: [
-    {
-      name: 'desktop',
-      width: 1280,
-      height: 720,
-    },
-    {
-      name: 'mobile',
-      width: 375,
-      height: 667,
-    }
-  ],
+  viewports: [{
+    name: 'custom-size',
+    width: 200,
+    height: 50,
+  }],
   scenarios: [
     {
       ...basicScenario,
       label: 'Entire document',
       referenceUrl: basicScenario.referenceUrl + '/hello-world/',
-    }
-  ],
+    }],
 };
 
 module.exports = config;
