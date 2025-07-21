@@ -26,9 +26,9 @@ Replace `<your_account>` with your Github username and copy the links to Pull Re
 
 ## WTF I NEED TO DO ???
 
-npx puppeteer browsers install chrome
-npm install --save-dev backstopjs
-npx backstop init
-npx backstop reference
-npx backstop test
-
+- npx puppeteer browsers install chrome
+- npm install --save-dev backstopjs
+- npx backstop init
+- npx backstop reference
+- npx backstop test
+- create symlink for backstop_data/html_report to ../../src/report/html_report
