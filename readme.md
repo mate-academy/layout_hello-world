@@ -23,3 +23,12 @@ and use this [VSCode settings](https://mate-academy.github.io/fe-program/tools/v
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
 - [DEMO LINK](https://cooper85.github.io/layout_hello-world/)
 - [TEST REPORT LINK](https://cooper85.github.io/layout_hello-world/report/html_report/)
+
+## WTF I NEED TO DO ???
+
+npx puppeteer browsers install chrome
+npm install --save-dev backstopjs
+npx backstop init
+npx backstop reference
+npx backstop test
+
