@@ -1,6 +1,7 @@
 {
   "name": "hello-world",
   "version": "1.0.0",
+  "homepage": "https://diego69-foda.github.io/layout_hello-world",
   "description": "Hello World",
   "scripts": {
     "init": "mate-scripts init",
