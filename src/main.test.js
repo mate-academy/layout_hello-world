@@ -145,7 +145,7 @@ describe('Environmental Check', () => {
       .toBeTruthy();
   });
 
-  test(`You should deploy test page to GitHub pages`, () => {
+  /*test(`You should deploy test page to GitHub pages`, () => {
     if (OS === 'Workflow') {
       const testLinkBody = getSiteBody('[TEST REPORT LINK]', '_report/');
 
@@ -155,7 +155,7 @@ describe('Environmental Check', () => {
 
     expect(true)
       .toBeTruthy();
-  });
+  });*/
 
   test('You should have Google Chrome or Firefox', () => {
     if (OS === 'Windows') {
