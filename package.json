@@ -2,35 +2,45 @@
   "name": "hello-world",
   "version": "1.0.0",
   "description": "Hello World",
+  "type": "module",
   "scripts": {
     "init": "mate-scripts init",
     "start": "mate-scripts start",
-    "format": "prettier --ignore-path .prettierignore --write './src/**/*.{html,css,scss}'",
-    "lint": "npm run format && mate-scripts lint",
+    "format:mate": "prettier --ignore-path .prettierignore --write './src/**/*.{html,css,scss}'",
+    "lint": "npm run format:mate && mate-scripts lint",
     "test:only": "mate-scripts test",
     "build": "mate-scripts build",
     "deploy": "mate-scripts deploy",
     "update": "mate-scripts update",
     "postinstall": "npm run update",
-    "test": "npm run lint && npm run test:only"
+    "test": "npm run lint && npm run test:only",
+    "lint:html": "htmlhint .",
+    "lint:css": "stylelint \"src/**/*.css\"",
+    "lint:js": "eslint .",
+    "format:all": "prettier --write ."
   },
   "keywords": [],
   "author": "Mate Academy",
   "license": "GPL-3.0",
-  "dependencies": {},
   "devDependencies": {
     "@linthtml/linthtml": "^0.9.6",
     "@mate-academy/backstop-config": "latest",
     "@mate-academy/bemlint": "latest",
     "@mate-academy/linthtml-config": "latest",
-    "@mate-academy/scripts": "^1.8.6",
+    "@mate-academy/scripts": "^2.1.1",
     "@mate-academy/stylelint-config": "latest",
     "backstopjs": "6.3.23",
+    "eslint": "^8.56.0",
+    "espree": "^10.4.0",
+    "htmlhint": "^1.1.4",
     "jest": "^29.7.0",
+    "lines-and-columns": "^2.0.4",
+    "node-fetch": "^2.7.0",
     "parcel": "^2.12.0",
-    "prettier": "^3.3.2",
-    "stylelint": "^16.7.0",
-    "stylelint-scss": "^6.4.1"
+    "prettier": "^3.2.5",
+    "stylelint": "^15.11.0",
+    "stylelint-config-standard": "^32.0.0",
+    "stylelint-scss": "^4.6.0"
   },
   "mateAcademy": {
     "projectType": "layout",
@@ -38,5 +48,9 @@
       "javascript": false,
       "bem": false
     }
+  },
+  "main": ".eslintrc.js",
+  "dependencies": {
+    "install": "^0.13.0"
   }
 }
