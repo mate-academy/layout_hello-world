@@ -1,3 +1,7 @@
 {
-  "extends": "stylelint-config-standard-scss"
+  "extends": ["stylelint-config-standard-scss"],
+  "rules": {
+    "scss/load-no-partial-leading-underscore": true,
+    "scss/at-import-no-partial-leading-underscore": null
+  }
 }

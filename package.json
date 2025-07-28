@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint:css": "stylelint \"src/**/*.css\""
+    "test": "stylelint \"src/**/*.css\""
   },
   "keywords": [],
   "author": "",
