@@ -4,6 +4,7 @@
   "description": "Hello World",
   "type": "module",
   "homepage": "https://ivanivaldo.github.io/layout_hello-world",
+  "main": ".eslintrc.js",
   "scripts": {
     "init": "mate-scripts init",
     "start": "live-server",
@@ -24,6 +25,11 @@
   "keywords": [],
   "author": "Mate Academy",
   "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ivanivaldo/layout_hello-world.git"
+  },
+  "bugs": "https://github.com/ivanivaldo/layout_hello-world/issues",
   "devDependencies": {
     "@linthtml/linthtml": "^0.9.6",
     "@mate-academy/backstop-config": "latest",
@@ -52,6 +58,5 @@
       "javascript": false,
       "bem": false
     }
-  },
-  "main": ".eslintrc.js"
+  }
 }
