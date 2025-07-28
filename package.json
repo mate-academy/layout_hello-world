@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Hello World",
   "type": "module",
+  "homepage": "https://ivanivaldo.github.io/layout_hello-world",
   "scripts": {
     "init": "mate-scripts init",
     "start": "mate-scripts start",
@@ -10,7 +11,7 @@
     "lint": "npm run format:mate && mate-scripts lint",
     "test:only": "mate-scripts test",
     "build": "mate-scripts build",
-    "deploy": "mate-scripts deploy",
+    "deploy": "gh-pages -d docs",
     "update": "mate-scripts update",
     "postinstall": "npm run update",
     "test": "npm run lint && npm run test:only",
@@ -40,7 +41,9 @@
     "prettier": "^3.2.5",
     "stylelint": "^15.11.0",
     "stylelint-config-standard": "^32.0.0",
-    "stylelint-scss": "^6.4.1"
+    "stylelint-scss": "^6.4.1",
+    "gh-pages": "^6.3.0",
+    "live-server": "^1.2.1"
   },
   "mateAcademy": {
     "projectType": "layout",
