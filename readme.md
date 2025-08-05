@@ -8,10 +8,11 @@ Add the basic page markup and the text `Hello, world!` into the body.
 
 Make sure that you installed all the required VSCode extensions:
 
--  (last versESLintion)
-- EditorConfig (last version)
-- StyleLint (last version)
-- LintHTML (last version)
+- ESLint (última versão)
+- EditorConfig (última versão)
+- StyleLint (última versão)
+- LintHTML (última versão)
+
 
 ## Linter
 
