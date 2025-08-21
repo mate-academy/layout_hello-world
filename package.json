@@ -37,5 +37,8 @@
       "javascript": false,
       "bem": false
     }
+  },
+  "dependencies": {
+    "puppeteer": "^24.16.1"
   }
 }
