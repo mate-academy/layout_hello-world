@@ -12,6 +12,7 @@
     "deploy": "mate-scripts deploy",
     "update": "mate-scripts update",
     "postinstall": "npm run update",
+    "backstop-test": "backstop test",
     "test": "npm run lint && npm run test:only"
   },
   "keywords": [],
