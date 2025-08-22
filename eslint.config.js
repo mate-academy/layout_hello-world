@@ -1,13 +1,3 @@
-
-module.exports = {
-  parser: '@html-eslint/parser',
-  plugins: ['@html-eslint'],
-  extends: ['@mate-academy/eslint-config',],
-  rules: {
-    '@html-eslint/indent': ['error', 2],
-    '@html-eslint/require-lang': 'error',
-  },
-};
 import html from '@html-eslint/eslint-plugin';
 import parser from '@html-eslint/parser';
 
