@@ -19,7 +19,6 @@ const config = {
       ...basicScenario,
       label: 'Entire document',
       referenceUrl: basicScenario.referenceUrl + '/hello-world/',
-      misMatchThreshold: 5,
     }],
 };
 
