@@ -25,5 +25,5 @@ Replace `<your_account>` with your Github username and copy the links to Pull Re
 - [DEMO LINK](https://arianebittencourt.github.io/layout_hello-world/)
 - [TEST REPORT LINK][def]
 
-
-[def]: https://arianebittencourt.github.io/layout_hello-world/report/html_report/
+- [DEMO LINK] (https://arianebittencourt.github.io/layout_hello-world/)
+- [TEST REPORT LINK][def]: https://arianebittencourt.github.io/layout_hello-world/report/html_report/
