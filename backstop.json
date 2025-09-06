@@ -1,0 +1,27 @@
+{
+  "id": "my_project",
+  "viewports": [
+    {
+      "label": "desktop",
+      "width": 1024,
+      "height": 768
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Homepage",
+      "url": "http://localhost:8080"
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "engine": "puppeteer",
+  "report": ["browser", "CI"],
+  "debug": false,
+  "debugWindow": false
+}
