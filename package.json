@@ -7,6 +7,11 @@
     "start": "mate-scripts start",
     "format": "prettier --ignore-path .prettierignore --write './src/**/*.{html,css,scss}'",
     "lint": "npm run format && mate-scripts lint",
+  "main": "src/main.js",
+  "scripts": {
+    "init": "mate-scripts init",
+    "start": "mate-scripts start",
+    "lint": "mate-scripts lint",
     "test:only": "mate-scripts test",
     "build": "mate-scripts build",
     "deploy": "mate-scripts deploy",
@@ -30,6 +35,23 @@
     "prettier": "^3.6.2",
     "stylelint": "^16.7.0",
     "stylelint-scss": "^6.4.1"
+  "devDependencies": {
+    "@linthtml/linthtml": "^0.8.3",
+    "@mate-academy/backstop-config": "^1.0.0",
+    "@mate-academy/bemlint": "^0.1.1",
+    "@mate-academy/eslint-config": "*",
+    "@mate-academy/linthtml-config": "0.0.2",
+    "@mate-academy/scripts": "^0.9.13",
+    "@mate-academy/stylelint-config": "0.0.9",
+    "backstopjs": "^5.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-jest": "^22.4.1",
+    "eslint-plugin-node": "^8.0.1",
+    "jest": "^24.9.0",
+    "node-sass": "^4.14.1",
+    "parcel": "^1.12.4",
+    "stylelint": "^13.5.0",
+    "stylelint-scss": "^3.17.2"
   },
   "mateAcademy": {
     "projectType": "layout",
@@ -38,4 +60,9 @@
       "bem": false
     }
   }
+
+      "bem": false
+    }
+  },
+  "dependencies": {}
 }
