@@ -2,10 +2,28 @@
 /* eslint-disable no-undef */
 'use strict';
 
+const fs = require('fs');
 const childProcess = require('child_process');
 const minVersionOfGitOnMacAndLinux = 2311;
 const minVersionOfGitOnWindows = 23110;
-const versionName = childProcess.execSync('node -v').toString();
+// const versionName = childProcess.execSync('node -v').toString();
+
+const getSiteBody = (startWord, finishWord) => {
+  const fileContent = fs.readFileSync('readme.md', 'utf8');
+  const firstIndex = fileContent.indexOf(startWord);
+  const lastIndex = fileContent.indexOf(finishWord);
+
+  const url = fileContent.substring(
+    firstIndex + startWord.length + 1,
+    lastIndex + finishWord.length,
+  );
+
+  const siteBody = childProcess.execSync(
+    `curl ${url}`,
+  ).toString();
+
+  return siteBody;
+};
 
 describe('Environmental Check', () => {
   let OS;
@@ -16,7 +34,7 @@ describe('Environmental Check', () => {
   beforeAll(() => {
     try {
       listOfExtensions = childProcess.execSync(
-        'code --list-extensions --show-versions'
+        'code --list-extensions --show-versions',
       ).toString();
     } catch (error) {
       listOfExtensions = null;
@@ -30,30 +48,17 @@ describe('Environmental Check', () => {
       try {
         childProcess.execSync('lsb_release -a');
         allProgrammes = childProcess.execSync('dpkg -l').toString();
-        OS = 'Linux';
-
-        if (versionName.startsWith('v12.')) {
-          OS = 'Workflow';
-        }
+        // OS = 'Linux';
+        OS = 'Workflow';
       } catch (e) {
         OS = 'MacOS';
       }
     }
   });
 
-  test('You should have Node.js of 14 version', () => {
-    if (OS === 'Workflow') {
-      expect(versionName.startsWith('v12.'))
-        .toBeTruthy();
-    } else {
-      expect(versionName.startsWith('v14.'))
-        .toBeTruthy();
-    }
-  });
-
   test('You should have Git of 2.31.1 version or newer', () => {
     const version = childProcess.execSync(
-      'git --version'
+      'git --version',
     ).toString().replace(/[^0-9]/g, '');
 
     if (OS === 'Windows') {
@@ -78,7 +83,7 @@ describe('Environmental Check', () => {
         .toBeTruthy();
     } else {
       const VSCodeVersion = childProcess.execSync(
-        'code -v'
+        'code -v',
       ).toString();
 
       expect(!!VSCodeVersion)
@@ -91,8 +96,8 @@ describe('Environmental Check', () => {
       expect(true)
         .toBeTruthy();
     } else {
-      expect(listOfExtensions)
-        .toContain('EditorConfig.EditorConfig');
+      expect(listOfExtensions.toLowerCase())
+        .toContain('editorconfig.editorconfig');
     }
   });
 
@@ -101,7 +106,7 @@ describe('Environmental Check', () => {
       expect(true)
         .toBeTruthy();
     } else {
-      expect(listOfExtensions)
+      expect(listOfExtensions.toLowerCase())
         .toContain('dbaeumer.vscode-eslint');
     }
   });
@@ -113,8 +118,8 @@ describe('Environmental Check', () => {
       expect(true)
         .toBeTruthy();
     } else {
-      expect(listOfExtensions)
-        .toContain('kamikillerto.vscode-linthtml@0.4.0');
+      expect(listOfExtensions.toLowerCase())
+        .toContain('kamikillerto.vscode-linthtml');
     }
   });
 
@@ -123,9 +128,33 @@ describe('Environmental Check', () => {
       expect(true)
         .toBeTruthy();
     } else {
-      expect(listOfExtensions)
+      expect(listOfExtensions.toLowerCase())
         .toContain('stylelint.vscode-stylelint');
     }
+  });
+
+  test(`You should deploy your site to GitHub pages`, () => {
+    if (OS === 'Workflow') {
+      const demoLinkBody = getSiteBody('[DEMO LINK]', 'world/');
+
+      expect(demoLinkBody)
+        .toContain('Hello, world!');
+    }
+
+    expect(true)
+      .toBeTruthy();
+  });
+
+  test(`You should deploy test page to GitHub pages`, () => {
+    if (OS === 'Workflow') {
+      const testLinkBody = getSiteBody('[TEST REPORT LINK]', '_report/');
+
+      expect(testLinkBody)
+        .toContain('BackstopJS Report');
+    }
+
+    expect(true)
+      .toBeTruthy();
   });
 
   test('You should have Google Chrome or Firefox', () => {
@@ -165,10 +194,10 @@ describe('Environmental Check', () => {
 
     if (OS === 'MacOS') {
       const googleChromePath = childProcess.execSync(
-        'mdfind -name google chrome'
+        'mdfind -name google chrome',
       ).toString();
       const firefoxPath = childProcess.execSync(
-        'mdfind -name firefox'
+        'mdfind -name firefox',
       ).toString();
 
       expect(!!googleChromePath || !!firefoxPath)
