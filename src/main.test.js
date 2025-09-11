@@ -6,13 +6,16 @@ const fs = require('fs');
 const childProcess = require('child_process');
 const minVersionOfGitOnMacAndLinux = 2311;
 const minVersionOfGitOnWindows = 23110;
-const url = 'https://sek1robtw.github.io/layout_hello-world';
 // const versionName = childProcess.execSync('node -v').toString();
 
 const getSiteBody = (startWord, finishWord) => {
   const fileContent = fs.readFileSync('readme.md', 'utf8');
   const firstIndex = fileContent.indexOf(startWord);
   const lastIndex = fileContent.indexOf(finishWord);
+
+  if (firstIndex === -1 || lastIndex === -1) {
+    throw new Error(`Markers '${startWord}' or '${finishWord}' not found in readme.md`);
+  }
 
   const url = fileContent.substring(
     firstIndex + startWord.length + 1,
