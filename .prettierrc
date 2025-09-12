@@ -12,9 +12,10 @@
         "parser": "html",
         "insertPragma": false,
         "endOfLine": "auto",
-        "singleAttributePerLine": true,
+        "singleAttributePerLine": false,
         "htmlWhitespaceSensitivity": "ignore"
       }
     }
   ]
 }
+
