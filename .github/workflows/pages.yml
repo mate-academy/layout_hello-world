@@ -1,0 +1,41 @@
+name: Deploy Pages (static)
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Jeśli generujesz raport Backstopa w CI – dodaj kroki buildu tutaj
+      # i skopiuj wynik do docs/_report
+
+      - name: Ensure docs structure
+        run: |
+          mkdir -p docs/hello-world docs/_report
+          printf "" > docs/.nojekyll
+          cp src/index.html docs/hello-world/index.html
+          cp src/style.css docs/hello-world/style.css
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
