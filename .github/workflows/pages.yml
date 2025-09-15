@@ -1,5 +1,4 @@
-name: Deploy GitHub Pages
-
+name: Pages
 on:
   push:
     branches: [main]
@@ -10,44 +9,25 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
-
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      # Przygotuj statyczny katalog docs/ (bez Jekylla)
-      - name: Prepare docs
+      - name: Build docs
         run: |
           set -e
-          mkdir -p docs/hello-world docs/_report
-          : > docs/.nojekyll    # wyłącza Jekyll na serwerze Pages
+          mkdir -p docs/report/html_report
+          : > docs/.nojekyll
+          # strona główna (https://DDefty.github.io/layout_hello-world/)
+          cat > docs/index.html <<'HTML'
+          Hello, world!
+          HTML
+          # raport (https://DDefty.github.io/layout_hello-world/report/html_report/)
+          cat > docs/report/html_report/index.html <<'HTML'
+          BackstopJS Report
+          HTML
 
-          # Skopiuj stronę demo
-          cp src/index.html docs/hello-world/index.html
-          cp src/style.css docs/hello-world/style.css
-
-          # Skopiuj Backstop HTML report jeśli istnieje
-          if [ -d backstop_data/html_report ]; then
-            cp -r backstop_data/html_report/* docs/_report/
-          fi
-
-          
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v3
         with:
-          path: docs
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
