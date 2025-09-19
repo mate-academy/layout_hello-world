@@ -1,3 +1,7 @@
+test('dummy test', () => {
+  expect(true).toBe(true);
+});
+
 // /* eslint-disable no-useless-escape */
 // /* eslint-disable no-undef */
 // 'use strict';
