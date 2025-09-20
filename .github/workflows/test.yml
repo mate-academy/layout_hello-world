@@ -21,7 +21,13 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm install
     - run: npm test
-    - name: Upload HTML report(backstop data)
+
+    - name: Copy BackstopJS report to publish folder
+      run: |
+        mkdir -p ./public/report/html_report
+        cp -r report/html_report/* ./public/report/html_report/ || true
+
+    - name: Upload HTML report (backstop data)
       if: ${{ always() }}
       uses: actions/upload-artifact@v4
       with:
