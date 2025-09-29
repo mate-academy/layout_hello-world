@@ -1,12 +1,4 @@
 {
-  "attr-bans": [
-    "align",
-    "background",
-    "bgcolor",
-    "border",
-    "frameborder",
-    "style"
-  ],
   "attr-name-ignore-regex": "viewBox",
   "attr-no-dup": true,
   "attr-quote-style": "double",
@@ -46,4 +38,6 @@
   "attr-new-line": 2,
   "attr-name-style": "dash",
   "attr-no-unsafe-char": true
+=======
+  "extends": "@mate-academy/linthtml-config"
 }
