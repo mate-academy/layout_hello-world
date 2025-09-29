@@ -1,7 +1,13 @@
 {
+<<<<<<< HEAD
   "name": "hello-world",
   "version": "1.0.0",
   "description": "Hello World",
+=======
+  "name": "stars",
+  "version": "1.0.0",
+  "description": "Create reusable stars block",
+>>>>>>> bfc531d1f57d1fe105544f4ed93fe7641d5c64a4
   "scripts": {
     "init": "mate-scripts init",
     "start": "mate-scripts start",
