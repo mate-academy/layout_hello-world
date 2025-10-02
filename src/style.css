@@ -1,1 +1,14 @@
-/* styles go here */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 3;
+  padding: 5;
+  font-size: 1em;
+}
