@@ -1,1 +1,8 @@
-/* styles go here */
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 3;
+  padding: 6;
+}
