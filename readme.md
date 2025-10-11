@@ -3,7 +3,8 @@
 Add the basic page markup and the text `Hello, world!` into the body.
 
 > Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
-
+- DEMO LINK: https://fpinedar1.github.io/layout_hello-world/
+- TEST REPORT LINK: https://fpinedar1.github.io/layout_hello-world/report/html_report/
 ## Tests
 
 Make sure that you installed all the required VSCode extensions:
