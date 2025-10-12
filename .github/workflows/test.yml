@@ -27,7 +27,8 @@ jobs:
       with:
         name: report
         path: backstop_data
-        pull_request:
-        branches: [ master ]
+ on:
+      pull_request:
+         branches: [ master ]
         
         
