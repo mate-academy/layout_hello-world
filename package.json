@@ -1,11 +1,11 @@
 {
   "name": "hello-world",
   "version": "1.0.0",
-  "description": "Hello World",
+  "description": "Hello world",
   "scripts": {
     "init": "mate-scripts init",
     "start": "mate-scripts start",
-    "format": "prettier --ignore-path .prettierignore --write './index.html'"
+    "format": "prettier --ignore-path .prettierignore --write './index.html'",
     "lint": "npm run format && mate-scripts lint",
     "test:only": "mate-scripts test",
     "build": "mate-scripts build",
