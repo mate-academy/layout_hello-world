@@ -5,7 +5,8 @@
   "scripts": {
     "init": "mate-scripts init",
     "start": "mate-scripts start",
-    "format": "prettier --ignore-path .prettierignore --write './src/**/*.{html,css,scss}'",
+    "format": "prettier --ignore-path .prettierignore --write './src/**/*.html'"
+  },
     "lint": "npm run format && mate-scripts lint",
     "test:only": "mate-scripts test",
     "build": "mate-scripts build",
