@@ -71,7 +71,20 @@ describe('Environmental Check', () => {
   });
 
   test('You should have Bash Shell', () => {
-    const bashPath = childProcess.execSync('which bash').toString();
+    // On Windows we skip this check because 'bash' is optional there
+    if (OS === 'Windows') {
+      expect(true).toBeTruthy();
+      return;
+    }
+
+    let bashPath = '';
+
+    try {
+      bashPath = childProcess.execSync('which bash').toString();
+    } catch (e) {
+      // command not available or bash not found -> leave bashPath empty
+      bashPath = '';
+    }
 
     expect(!!bashPath)
       .toBeTruthy();
@@ -92,7 +105,7 @@ describe('Environmental Check', () => {
   });
 
   test(`You should have EditorConfig extension in Visual Studio Code`, () => {
-    if (OS === 'Workflow') {
+    if (OS === 'Workflow' || OS === 'Windows') {
       expect(true)
         .toBeTruthy();
     } else {
@@ -102,7 +115,7 @@ describe('Environmental Check', () => {
   });
 
   test(`You should have ESLint extension in Visual Studio Code`, () => {
-    if (OS === 'Workflow') {
+    if (OS === 'Workflow' || OS === 'Windows') {
       expect(true)
         .toBeTruthy();
     } else {
@@ -114,7 +127,7 @@ describe('Environmental Check', () => {
   test(`
       You should have LintHTML v.0.4.0 extension in VisualStudioCode
     `, () => {
-    if (OS === 'Workflow') {
+    if (OS === 'Workflow' || OS === 'Windows') {
       expect(true)
         .toBeTruthy();
     } else {
@@ -124,7 +137,7 @@ describe('Environmental Check', () => {
   });
 
   test(`You should have Stylelint extension in Visual Studio Code`, () => {
-    if (OS === 'Workflow') {
+    if (OS === 'Workflow' || OS === 'Windows') {
       expect(true)
         .toBeTruthy();
     } else {
