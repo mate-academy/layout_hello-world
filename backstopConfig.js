@@ -1,26 +1,25 @@
 'use strict';
 
-// Імпортуємо базову конфігурацію від Mate Academy
+// https://github.com/garris/BackstopJS#advanced-scenarios
+
 const backstop = require('@mate-academy/backstop-config');
+
 const { basicScenario } = backstop;
 
 const config = {
-  ...backstop, // залишаємо всі базові налаштування
+  ...backstop,
   fileNameTemplate: '{scenarioLabel}',
-  viewports: [
-    {
-      name: 'custom-size',
-      width: 200,
-      height: 50,
-    },
-  ],
+  viewports: [{
+    name: 'custom-size',
+    width: 200,
+    height: 50,
+  }],
   scenarios: [
     {
       ...basicScenario,
       label: 'Entire document',
-      url: "http://127.0.0.1:8080/index.html", // <- твій локальний сервер
-    },
-  ],
+      referenceUrl: basicScenario.referenceUrl + '/hello-world/',
+    }],
 };
 
 module.exports = config;
