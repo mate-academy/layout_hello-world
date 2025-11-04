@@ -4,6 +4,8 @@
 
 const fs = require('fs');
 const childProcess = require('child_process');
+const os = require('os');
+
 const minVersionOfGitOnMacAndLinux = 2311;
 const minVersionOfGitOnWindows = 23110;
 // const versionName = childProcess.execSync('node -v').toString();
@@ -18,12 +20,37 @@ const getSiteBody = (startWord, finishWord) => {
     lastIndex + finishWord.length,
   );
 
-  const siteBody = childProcess.execSync(
-    `curl ${url}`,
-  ).toString();
-
+  const siteBody = childProcess.execSync(`curl ${url}`).toString();
   return siteBody;
 };
+
+function getBashPath() {
+  const platform = os.platform();
+
+  // Em pipelines (como o GitHub Actions)
+  if (process.env.CI === 'true' && platform !== 'win32') {
+    return '/bin/bash';
+  }
+
+  try {
+    const path = childProcess.execSync('which bash', { stdio: 'pipe' }).toString().trim();
+    if (path) return path;
+  } catch {
+    console.warn('⚠️ Não foi possível encontrar o Bash automaticamente.');
+  }
+
+  // Fallbacks
+  switch (platform) {
+    case 'darwin':
+    case 'linux':
+      return '/bin/bash';
+    case 'win32':
+      return 'C:\\Program Files\\Git\\bin\\bash.exe';
+    default:
+      return null;
+  }
+}
+
 
 describe('Environmental Check', () => {
   let OS;
@@ -36,7 +63,7 @@ describe('Environmental Check', () => {
       listOfExtensions = childProcess.execSync(
         'code --list-extensions --show-versions',
       ).toString();
-    } catch (error) {
+    } catch {
       listOfExtensions = null;
     }
 
@@ -44,7 +71,7 @@ describe('Environmental Check', () => {
       childProcess.execSync('systeminfo');
       OS = 'Windows';
       allActiveProgrammes = childProcess.execSync('tasklist').toString();
-    } catch (error) {
+    } catch {
       try {
         childProcess.execSync('lsb_release -a');
         allProgrammes = childProcess.execSync('dpkg -l').toString();
@@ -57,19 +84,18 @@ describe('Environmental Check', () => {
   });
 
   test('You should have Git of 2.31.1 version or newer', () => {
-    const version = childProcess.execSync(
-      'git --version',
-    ).toString().replace(/[^0-9]/g, '');
+    const version = childProcess.execSync('git --version')
+      .toString()
+      .replace(/[^0-9]/g, '');
 
     if (OS === 'Windows') {
-      expect(version >= minVersionOfGitOnWindows)
-        .toBeTruthy();
+      expect(version >= minVersionOfGitOnWindows).toBeTruthy();
     } else {
-      expect(version >= minVersionOfGitOnMacAndLinux)
-        .toBeTruthy();
+      expect(version >= minVersionOfGitOnMacAndLinux).toBeTruthy();
     }
   });
 
+  // 🔹 Corrigido: teste isolado para Bash
   test('You should have Bash Shell', () => {
     const childProcess = require('child_process');
 const os = require('os');
@@ -110,77 +136,65 @@ describe('Teste de detecção e execução do Bash', () => {
     expect(typeof bashPath).toBe('string');
     expect(bashPath.length).toBeGreaterThan(0);
 
-    // Testa se o Bash executa um comando simples
-    const output = childProcess.execSync(`${bashPath} -c "echo ok"`, { encoding: 'utf-8' }).trim();
+    const output = childProcess
+      .execSync(`${bashPath} -c "echo ok"`, { encoding: 'utf-8' })
+      .trim();
+
     expect(output).toBe('ok');
   });
-});
-    expect(!!bashPath)
+  expect(!!bashPath)
       .toBeTruthy();
-  });
+      console.log('🧩 Testando Bash:', bashPath);
+
+
+});
+
 
   test('You should have Visual Studio Code', () => {
     if (OS === 'Workflow') {
-      expect(true)
-        .toBeTruthy();
+      expect(true).toBeTruthy();
     } else {
-      const VSCodeVersion = childProcess.execSync(
-        'code -v',
-      ).toString();
-
-      expect(!!VSCodeVersion)
-        .toBeTruthy();
+      const VSCodeVersion = childProcess.execSync('code -v').toString();
+      expect(!!VSCodeVersion).toBeTruthy();
     }
   });
 
-  test(`You should have EditorConfig extension in Visual Studio Code`, () => {
+  test('You should have EditorConfig extension in VS Code', () => {
     if (OS === 'Workflow') {
-      expect(true)
-        .toBeTruthy();
+      expect(true).toBeTruthy();
     } else {
-      expect(listOfExtensions.toLowerCase())
-        .toContain('editorconfig.editorconfig');
+      expect(listOfExtensions.toLowerCase()).toContain('editorconfig.editorconfig');
     }
   });
 
-  test(`You should have ESLint extension in Visual Studio Code`, () => {
+  test('You should have ESLint extension in VS Code', () => {
     if (OS === 'Workflow') {
-      expect(true)
-        .toBeTruthy();
+      expect(true).toBeTruthy();
     } else {
-      expect(listOfExtensions.toLowerCase())
-        .toContain('dbaeumer.vscode-eslint');
+      expect(listOfExtensions.toLowerCase()).toContain('dbaeumer.vscode-eslint');
     }
   });
 
-  test(`
-      You should have LintHTML v.0.4.0 extension in VisualStudioCode
-    `, () => {
+  test('You should have LintHTML v0.4.0 extension', () => {
     if (OS === 'Workflow') {
-      expect(true)
-        .toBeTruthy();
+      expect(true).toBeTruthy();
     } else {
-      expect(listOfExtensions.toLowerCase())
-        .toContain('kamikillerto.vscode-linthtml');
+      expect(listOfExtensions.toLowerCase()).toContain('kamikillerto.vscode-linthtml');
     }
   });
 
-  test(`You should have Stylelint extension in Visual Studio Code`, () => {
+  test('You should have Stylelint extension in VS Code', () => {
     if (OS === 'Workflow') {
-      expect(true)
-        .toBeTruthy();
+      expect(true).toBeTruthy();
     } else {
-      expect(listOfExtensions.toLowerCase())
-        .toContain('stylelint.vscode-stylelint');
+      expect(listOfExtensions.toLowerCase()).toContain('stylelint.vscode-stylelint');
     }
   });
 
-  test(`You should deploy your site to GitHub pages`, () => {
+  test('You should deploy your site to GitHub Pages', () => {
     if (OS === 'Workflow') {
       const demoLinkBody = getSiteBody('[DEMO LINK]', 'world/');
-
-      expect(demoLinkBody)
-        .toContain('Hello, world!');
+      expect(demoLinkBody).toContain('Hello, world!');
     }
 
     expect(true)
@@ -227,23 +241,17 @@ describe('Teste de detecção e execução do Bash', () => {
     }
 
     if (OS === 'Linux') {
-      const isGoogleChromeInstaled = allProgrammes.includes('google-chrome');
-      const isFirefoxInstaled = allProgrammes.includes('firefox');
+  const isGoogleChromeInstalled = allProgrammes.includes('google-chrome');
+  const isFirefoxInstalled = allProgrammes.includes('firefox');
+  expect(isGoogleChromeInstalled || isFirefoxInstalled).toBeTruthy();
+}
 
-      expect(isGoogleChromeInstaled || isFirefoxInstaled)
-        .toBeTruthy();
-    }
+if (OS === 'MacOS') {
+  const googleChromePath = childProcess.execSync('mdfind -name "Google Chrome"', { encoding: 'utf-8' }).toString();
+  const firefoxPath = childProcess.execSync('mdfind -name "Firefox"', { encoding: 'utf-8' }).toString();
+  expect(!!googleChromePath || !!firefoxPath).toBeTruthy();
+}
 
-    if (OS === 'MacOS') {
-      const googleChromePath = childProcess.execSync(
-        'mdfind -name google chrome',
-      ).toString();
-      const firefoxPath = childProcess.execSync(
-        'mdfind -name firefox',
-      ).toString();
-
-      expect(!!googleChromePath || !!firefoxPath)
-        .toBeTruthy();
-    }
   });
+});
 });
