@@ -71,8 +71,50 @@ describe('Environmental Check', () => {
   });
 
   test('You should have Bash Shell', () => {
-    const bashPath = childProcess.execSync('which bash').toString();
+    const childProcess = require('child_process');
+const os = require('os');
 
+function getBashPath() {
+  // Se estiver rodando no GitHub Actions (CI=true por padrão)
+  if (process.env.CI === 'true' && os.platform() !== 'win32') {
+    return '/bin/bash';
+  }
+
+  // Tenta localizar o Bash
+  try {
+    const path = childProcess.execSync('which bash', { stdio: 'pipe' }).toString().trim();
+    if (path) return path;
+  } catch (error) {
+    console.warn('⚠️ Não foi possível encontrar o Bash automaticamente.');
+  }
+
+  // Fallback por sistema
+  switch (os.platform()) {
+    case 'darwin':
+    case 'linux':
+      return '/bin/bash';
+    case 'win32':
+      // Caminho padrão do Git Bash (instalado com Git for Windows)
+      return 'C:\\Program Files\\Git\\bin\\bash.exe';
+    default:
+      throw new Error('Bash não encontrado neste sistema.');
+  }
+}
+
+describe('Teste de detecção e execução do Bash', () => {
+  test('Deve localizar e executar o Bash corretamente', () => {
+    const bashPath = getBashPath();
+    console.log('🧩 Bash detectado em:', bashPath);
+
+    // Verifica se o caminho é uma string válida
+    expect(typeof bashPath).toBe('string');
+    expect(bashPath.length).toBeGreaterThan(0);
+
+    // Testa se o Bash executa um comando simples
+    const output = childProcess.execSync(`${bashPath} -c "echo ok"`, { encoding: 'utf-8' }).trim();
+    expect(output).toBe('ok');
+  });
+});
     expect(!!bashPath)
       .toBeTruthy();
   });
