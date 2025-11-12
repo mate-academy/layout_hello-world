@@ -28,9 +28,7 @@
     "backstopjs": "6.3.23",
     "jest": "^29.7.0",
     "prettier": "^3.3.2",
-    "sass": "^1.93.2",
     "stylelint": "^16.7.0",
-    "stylelint-scss": "^6.4.1",
     "vite": "^6.3.6"
   },
   "mateAcademy": {
