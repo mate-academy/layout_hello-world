@@ -22,4 +22,4 @@ and use this [VSCode settings](https://mate-academy.github.io/fe-program/tools/v
 
 Replace `<gadyka08-lab>` with your Github username and copy the links to Pull Request description:
 - [DEMO LINK](https://gadyka08-lab.github.io/layout_hello-world/)
-- [TEST REPORT LINK](https://gadyka08-lab.github.io/layout_hello-world/report/html_report/)
+- [TEST REPORT LINK](https://gadyka08-lab.github.io/layout_hello-world/report/html_report/)   
