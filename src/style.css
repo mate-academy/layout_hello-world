@@ -1,1 +1,6 @@
-/* styles go here */
+h1 {
+  font-family: serif;
+  font-size: 2em;
+  text-align: left;
+  font-weight: bold;
+}
