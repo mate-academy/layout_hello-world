@@ -1,0 +1,31 @@
+{
+  "id": "layout_hello_world",
+  "viewports": [
+    {
+      "label": "desktop",
+      "width": 1280,
+      "height": 800
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Hello World Page",
+      "url": "https://jk-npc.github.io/layout_hello-world/",
+      "selectors": ["body"],
+      "readyEvent": null,
+      "delay": 500,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "misMatchThreshold": 0.01
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": ["html"],
+  "engine": "puppeteer"
+}
