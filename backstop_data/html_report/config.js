@@ -4,7 +4,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/Entire_document.png",
-        "test": "../bitmaps_test/20240229-145635/Entire_document.png",
+        "test": "../bitmaps_test/20240305-144630/Entire_document.png",
         "selector": "document",
         "fileName": "Entire_document.png",
         "label": "Entire document",
