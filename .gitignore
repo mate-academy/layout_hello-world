@@ -9,7 +9,7 @@ node_modules
 .DS_Store
 
 # Generated files
-backstop_data
+# backstop_data
 dist
 .cache
 .parcel-cache
