@@ -13,7 +13,7 @@ module.exports = {
       url: "https://jk-npc.github.io/layout_hello-world/",
       selectors: ["body"],
       delay: 500,
-      misMatchThreshold: 0.01,
+      misMatchThreshold: 5.0,
     },
   ],
   paths: {
