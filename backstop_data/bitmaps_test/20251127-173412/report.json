@@ -4,7 +4,7 @@
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\layout_hello_world_Hello_World_Page_0_body_0_desktop.png",
-        "test": "..\\bitmaps_test\\20251124-232700\\layout_hello_world_Hello_World_Page_0_body_0_desktop.png",
+        "test": "..\\bitmaps_test\\20251127-173412\\layout_hello_world_Hello_World_Page_0_body_0_desktop.png",
         "selector": "body",
         "fileName": "layout_hello_world_Hello_World_Page_0_body_0_desktop.png",
         "label": "Hello World Page",

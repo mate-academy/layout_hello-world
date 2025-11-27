@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" errors="1" skipped="0">
+  <testsuite name="BackstopJS" tests="1" failures="1" errors="1" skipped="0">
+    <testcase classname="body" name=" ›› Hello World Page">
+      <failure message="Design deviation ›› Hello World Page (body) component"/>
+      <error message="Design deviation ›› Hello World Page (body) component"/>
+    </testcase>
+  </testsuite>
+</testsuites>

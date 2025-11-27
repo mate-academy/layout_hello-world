@@ -1,25 +1,28 @@
-'use strict';
-
-// https://github.com/garris/BackstopJS#advanced-scenarios
-
-const backstop = require('@mate-academy/backstop-config');
-
-const { basicScenario } = backstop;
-
-const config = {
-  ...backstop,
-  fileNameTemplate: '{scenarioLabel}',
-  viewports: [{
-    name: 'custom-size',
-    width: 200,
-    height: 50,
-  }],
+module.exports = {
+  id: "layout_hello_world",
+  viewports: [
+    {
+      label: "desktop",
+      width: 1280,
+      height: 800,
+    },
+  ],
   scenarios: [
     {
-      ...basicScenario,
-      label: 'Entire document',
-      referenceUrl: basicScenario.referenceUrl + '/hello-world/',
-    }],
+      label: "Hello World Page",
+      url: "https://jk-npc.github.io/layout_hello-world/",
+      selectors: ["body"],
+      delay: 500,
+      misMatchThreshold: 0.01,
+    },
+  ],
+  paths: {
+    bitmaps_reference: "backstop_data/bitmaps_reference",
+    bitmaps_test: "backstop_data/bitmaps_test",
+    engine_scripts: "backstop_data/engine_scripts",
+    html_report: "backstop_data/html_report",
+    ci_report: "backstop_data/ci_report",
+  },
+  report: ["CI"],
+  engine: "puppeteer",
 };
-
-module.exports = config;

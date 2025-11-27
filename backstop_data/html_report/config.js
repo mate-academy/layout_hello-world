@@ -4,7 +4,7 @@ report({
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\layout_hello_world_Hello_World_Page_0_body_0_desktop.png",
-        "test": "..\\bitmaps_test\\20251125-175229\\layout_hello_world_Hello_World_Page_0_body_0_desktop.png",
+        "test": "..\\bitmaps_test\\20251127-173412\\layout_hello_world_Hello_World_Page_0_body_0_desktop.png",
         "selector": "body",
         "fileName": "layout_hello_world_Hello_World_Page_0_body_0_desktop.png",
         "label": "Hello World Page",
@@ -13,16 +13,9 @@ report({
         "url": "https://jk-npc.github.io/layout_hello-world/",
         "expect": 0,
         "viewportLabel": "desktop",
-        "diff": {
-          "isSameDimensions": true,
-          "dimensionDifference": {
-            "width": 0,
-            "height": 0
-          },
-          "misMatchPercentage": "0.00"
-        }
+        "error": "Reference file not found C:\\projects\\layout_hello-world\\backstop_data\\bitmaps_reference\\layout_hello_world_Hello_World_Page_0_body_0_desktop.png"
       },
-      "status": "pass"
+      "status": "fail"
     }
   ],
   "id": "layout_hello_world"
