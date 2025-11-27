@@ -25,4 +25,7 @@ module.exports = {
   },
   report: ["CI"],
   engine: "puppeteer",
+  engineOptions: {
+    args: ["--no-sandbox"],
+  },
 };
