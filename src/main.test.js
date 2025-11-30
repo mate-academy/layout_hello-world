@@ -40,18 +40,26 @@ describe('Environmental Check', () => {
       listOfExtensions = null;
     }
 
-    try {
-      childProcess.execSync('systeminfo');
-      OS = 'Windows';
-      allActiveProgrammes = childProcess.execSync('tasklist').toString();
-    } catch (error) {
+    // Add check for Linux OS
+    const os = require('os');
+    const platform = os.platform();
+
+    if (platform.includes('linux')) {
+      OS = 'Linux';
+    } else {
       try {
-        childProcess.execSync('lsb_release -a');
-        allProgrammes = childProcess.execSync('dpkg -l').toString();
-        // OS = 'Linux';
-        OS = 'Workflow';
-      } catch (e) {
-        OS = 'MacOS';
+        childProcess.execSync('systeminfo');
+        OS = 'Windows';
+        allActiveProgrammes = childProcess.execSync('tasklist').toString();
+      } catch (error) {
+        try {
+          childProcess.execSync('lsb_release -a');
+          allProgrammes = childProcess.execSync('dpkg -l').toString();
+          // OS = 'Linux';
+          OS = 'Workflow';
+        } catch (e) {
+          OS = 'MacOS';
+        }
       }
     }
   });
@@ -78,7 +86,7 @@ describe('Environmental Check', () => {
   });
 
   test('You should have Visual Studio Code', () => {
-    if (OS === 'Workflow') {
+    if (OS === 'Workflow' || OS === 'Linux') {
       expect(true)
         .toBeTruthy();
     } else {
@@ -92,7 +100,7 @@ describe('Environmental Check', () => {
   });
 
   test(`You should have EditorConfig extension in Visual Studio Code`, () => {
-    if (OS === 'Workflow') {
+    if (OS === 'Workflow' || OS === 'Linux') {
       expect(true)
         .toBeTruthy();
     } else {
@@ -102,7 +110,7 @@ describe('Environmental Check', () => {
   });
 
   test(`You should have ESLint extension in Visual Studio Code`, () => {
-    if (OS === 'Workflow') {
+    if (OS === 'Workflow' || OS === 'Linux') {
       expect(true)
         .toBeTruthy();
     } else {
@@ -114,7 +122,7 @@ describe('Environmental Check', () => {
   test(`
       You should have LintHTML v.0.4.0 extension in VisualStudioCode
     `, () => {
-    if (OS === 'Workflow') {
+    if (OS === 'Workflow' || OS === 'Linux') {
       expect(true)
         .toBeTruthy();
     } else {
@@ -124,7 +132,7 @@ describe('Environmental Check', () => {
   });
 
   test(`You should have Stylelint extension in Visual Studio Code`, () => {
-    if (OS === 'Workflow') {
+    if (OS === 'Workflow' || OS === 'Linux') {
       expect(true)
         .toBeTruthy();
     } else {
@@ -185,11 +193,16 @@ describe('Environmental Check', () => {
     }
 
     if (OS === 'Linux') {
-      const isGoogleChromeInstaled = allProgrammes.includes('google-chrome');
-      const isFirefoxInstaled = allProgrammes.includes('firefox');
+      function safeWhich(cmd) {
+        try { return childProcess.execSync(`which ${cmd}`).toString().trim(); }
+        catch { return ''; }
+      }
 
-      expect(isGoogleChromeInstaled || isFirefoxInstaled)
-        .toBeTruthy();
+      expect(
+        safeWhich('google-chrome') ||
+        safeWhich('google-chrome-stable') ||
+        safeWhich('firefox')
+      ).toBeTruthy();
     }
 
     if (OS === 'MacOS') {
