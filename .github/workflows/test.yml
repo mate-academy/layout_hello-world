@@ -22,6 +22,9 @@ jobs:
       - run: npm run start &
       - run: npx wait-on http://localhost:8080/hello-world/
       - run: npm test
+      - name: Deploy to gh-pages
+        if: ${{ always() }}
+        run: npm run deploy
       - name: Upload HTML report(backstop data)
         if: ${{ always() }}
         uses: actions/upload-artifact@v4
