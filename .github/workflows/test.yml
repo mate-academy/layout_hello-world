@@ -28,6 +28,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./backstop_data
+          permissions: write-all
       - name: Upload HTML report(backstop data)
         if: ${{ always() }}
         uses: actions/upload-artifact@v4
