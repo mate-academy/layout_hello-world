@@ -18,7 +18,7 @@ const config = {
     {
       ...basicScenario,
       label: 'Entire document',
-      url: 'http://localhost:5173/hello-world/',
+      url: 'http://localhost:8080/hello-world/',
       referenceUrl:
         'https://mate-academy.github.io/layout_solutions/hello-world/',
     },
