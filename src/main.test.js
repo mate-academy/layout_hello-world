@@ -149,14 +149,14 @@ describe('Environmental Check', () => {
 
   test(`You should deploy test page to GitHub pages`, () => {
     if (OS === 'Workflow') {
+      expect(true)
+        .toBeTruthy();
+    } else {
       const testLinkBody = getSiteBody('[TEST REPORT LINK]');
 
       expect(testLinkBody)
         .toContain('BackstopJS Report');
     }
-
-    expect(true)
-      .toBeTruthy();
   });
 
   test('You should have Google Chrome or Firefox', () => {
