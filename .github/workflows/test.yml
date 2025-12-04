@@ -6,6 +6,7 @@ on:
 
 permissions:
   contents: write
+  pages: write
 
 jobs:
   build:
@@ -16,7 +17,10 @@ jobs:
         node-version: [20.x]
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
@@ -27,10 +31,13 @@ jobs:
       - run: npm test
       - name: Deploy to gh-pages
         if: ${{ always() }}
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./backstop_data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -B gh-pages
+          git add -A
+          git commit -m "Update gh-pages [skip ci]" || echo "No changes to commit"
+          git push --force origin gh-pages
       - name: Upload HTML report(backstop data)
         if: ${{ always() }}
         uses: actions/upload-artifact@v4
