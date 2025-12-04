@@ -30,7 +30,7 @@ jobs:
       - run: npx wait-on http://localhost:8080/hello-world/
       - run: npm test
       - name: Deploy to gh-pages
-        if: ${{ always() }}
+        if: ${{ github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository) }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
