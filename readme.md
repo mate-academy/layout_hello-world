@@ -15,12 +15,12 @@ Make sure that you installed all the required VSCode extensions:
 
 ## Linter
 
-Install [Prettier VSCode Extention](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+Install [Prettier VSCode Extention](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)`
 and use this [VSCode settings](https://mate-academy.github.io/fe-program/tools/vscode/settings.json) to enable format on save.
 
 ## Demo Links
 
 Replace `<your_account>` with your Github username and copy the links to Pull Request description:
 
-- DEMO LINK: https://h3depl.github.io/layout_hello-world/
+- DEMO LINK: https://h3dePL.github.io/layout_hello-world/
 - TEST REPORT LINK: https://h3dePL.github.io/layout_hello-world/report/html_report/
