@@ -4,7 +4,7 @@
   "description": "Hello World",
   "scripts": {
     "init": "mate-scripts init",
-    "start": "mate-scripts start",
+    "start": "parcel serve index.html",
     "format": "prettier --ignore-path .prettierignore --write './**/*.{html,css,scss}'",
     "lint": "npm run format && mate-scripts lint",
     "test:only": "mate-scripts test",
