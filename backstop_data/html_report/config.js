@@ -4,7 +4,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/Entire_document.png",
-        "test": "../bitmaps_test/20251215-161533/Entire_document.png",
+        "test": "../bitmaps_test/20251215-164108/Entire_document.png",
         "selector": "",
         "fileName": "Entire_document.png",
         "label": "Entire document",
@@ -25,7 +25,7 @@ report({
           "misMatchPercentage": "23.87",
           "analysisTime": 3
         },
-        "diffImage": "../bitmaps_test/20251215-161533/failed_diff_Entire_document.png"
+        "diffImage": "../bitmaps_test/20251215-164108/failed_diff_Entire_document.png"
       },
       "status": "fail"
     }
