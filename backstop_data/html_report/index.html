@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <!-- Disable Cache -->
@@ -18,33 +18,12 @@
 
     <title>BackstopJS Report</title>
 
-    <style>
-      @font-face {
-        font-family: 'latoregular';
-        src:
-          url('./assets/fonts/lato-regular-webfont.woff2') format('woff2'),
-          url('./assets/fonts/lato-regular-webfont.woff') format('woff');
-        font-weight: 400;
-        font-style: normal;
-      }
-      @font-face {
-        font-family: 'latobold';
-        src:
-          url('./assets/fonts/lato-bold-webfont.woff2') format('woff2'),
-          url('./assets/fonts/lato-bold-webfont.woff') format('woff');
-        font-weight: 700;
-        font-style: normal;
-      }
-
-      .ReactModal__Body--open {
-        overflow: hidden;
-      }
-      .ReactModal__Body--open .header {
-        display: none;
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="./styles.css"
+    />
   </head>
-  <body style="background-color: #e2e7ea">
+  <body>
     <div id="root"></div>
     <script>
       function report(report) {
