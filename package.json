@@ -37,8 +37,5 @@
       "javascript": false,
       "bem": false
     }
-  },
-  "dependencies": {
-    "@parcel/transformer-sass": "^2.16.0"
   }
 }
