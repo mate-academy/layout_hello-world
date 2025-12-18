@@ -13,8 +13,3 @@ backstop_data
 dist
 .cache
 .parcel-cache
-
-backstop_data/
-node_modules/
-.parcel-cache/
-dist/
