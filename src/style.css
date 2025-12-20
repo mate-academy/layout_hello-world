@@ -1,15 +1,1 @@
-* {
-  margin-top: 3px;
-  box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 16px; /* Verifique se é este o tamanho no protótipo */
-}
+/*Não funciona*/
