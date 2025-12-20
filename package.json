@@ -17,20 +17,13 @@
   "keywords": [],
   "author": "Mate Academy",
   "license": "GPL-3.0",
-<<<<<<< HEAD
-=======
   "dependencies": {},
->>>>>>> 49ea96acf73aa47feb4f9f1e0fed0693a43f36be
   "devDependencies": {
     "@linthtml/linthtml": "^0.9.6",
     "@mate-academy/backstop-config": "latest",
     "@mate-academy/bemlint": "latest",
     "@mate-academy/linthtml-config": "latest",
-<<<<<<< HEAD
     "@mate-academy/scripts": "^2.1.3",
-=======
-    "@mate-academy/scripts": "^1.8.6",
->>>>>>> 49ea96acf73aa47feb4f9f1e0fed0693a43f36be
     "@mate-academy/stylelint-config": "latest",
     "backstopjs": "6.3.23",
     "jest": "^29.7.0",
