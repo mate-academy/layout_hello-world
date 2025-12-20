@@ -17,6 +17,6 @@ body {
 }
 
 h1 {
-  font-size: 32px; /* Verifique se é este o tamanho no protótipo */
+  font-size: 16px; /* Verifique se é este o tamanho no protótipo */
   line-height: 1.2;
 }
