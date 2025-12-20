@@ -1,5 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* Se o exercício exigir centralização total: */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  
+  /* Se o exercício exigir apenas no topo, remova as 3 linhas acima */
+  
+  font-family: sans-serif; 
+}
+
 h1 {
-  font-size: 16px;
-  font-weight: normal;
-  margin-top: 3px;
+  font-size: 32px; /* Verifique se é este o tamanho no protótipo */
+  line-height: 1.2;
 }
