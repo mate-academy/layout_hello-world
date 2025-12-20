@@ -1,0 +1,8 @@
+/* styles go here */
+* {
+  margin: 8px;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: normal;
+  box-sizing: border-box;
+} 
