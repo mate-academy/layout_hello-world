@@ -15,7 +15,6 @@ git push --delete origin gh-pages
 
 echo "git subtree push --prefix ${DEST} origin gh-pages"
 git subtree push --prefix ${DEST} origin gh-pages
-
 # Clean up
 echo "git reset --soft HEAD^"
 git reset --soft HEAD^
