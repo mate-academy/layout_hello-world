@@ -71,7 +71,10 @@ describe('Environmental Check', () => {
   });
 
   test('You should have Bash Shell', () => {
-    const bashPath = childProcess.execSync('which bash').toString();
+    const isWindows = process.platform === 'win32';
+    const command = isWindows ? 'where bash' : 'which bash';
+    const bashPath = childProcess.execSync(command).toString();
+
 
     expect(!!bashPath)
       .toBeTruthy();
