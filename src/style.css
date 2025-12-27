@@ -1,1 +1,85 @@
-/* styles go here */
+* {
+  box-sizing: border-box;
+}
+
+body,
+ul {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+}
+
+.header {
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.logo {
+  display: block;
+  width: auto;
+  height: auto;
+  margin-right: 50px;
+}
+
+img {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.nav__bar-ul {
+  display: flex;
+  font-size: 0;
+  list-style: none;
+}
+
+.nav__bar-list {
+  margin-left: 20px;
+}
+
+.nav__bar-list:first-child {
+  margin-left: 0;
+}
+
+.nav__bar-link {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  padding: 22.5px 0;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  height: 60px;
+}
+
+.nav__bar-link.is-active {
+  color: #00acdc;
+}
+
+.nav__bar-link.is-active::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 37px;
+  height: 4px;
+  background-color: #00acdc;
+  border-radius: 8px;
+}
+
+.nav__bar-link:hover,
+.nav__bar-link[data-qa='hover'] {
+  color: #00acdc;
+}
