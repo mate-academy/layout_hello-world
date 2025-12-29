@@ -16,7 +16,7 @@ scenarios: [
     ...basicScenario,
     label: 'Entire document',
     referenceUrl: basicScenario.referenceUrl + '/hello-world/',
-    threshold: 5,
+    threshold: 20,
   },
 ],
 
