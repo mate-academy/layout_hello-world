@@ -8,7 +8,7 @@ const { basicScenario } = backstop;
 
 const config = {
   ...backstop,
-   fileNameTemplate: '{scenarioLabel}',
+  fileNameTemplate: '{scenarioLabel}',
   viewports: [{
     name: 'custom-size',
     width: 200,
@@ -20,8 +20,7 @@ const config = {
       ...basicScenario,
       label: 'Entire document',
       referenceUrl: basicScenario.referenceUrl + '/hello-world/',
-    },
-  ],
+    }],
 };
 
 module.exports = config;
