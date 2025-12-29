@@ -14,19 +14,12 @@ const config = {
     width: 200,
     height: 50,
   }],
-
   scenarios: [
     {
       ...basicScenario,
       label: 'Entire document',
       referenceUrl: basicScenario.referenceUrl + '/hello-world/',
-      },
-  ],
-  engine: 'puppeteer',
-  engineOptions: {
-    executablePath: "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
-    args: ["--no-sandbox"]
-  },
+    }],
 };
 
 module.exports = config;
