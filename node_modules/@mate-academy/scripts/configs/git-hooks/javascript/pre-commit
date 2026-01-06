@@ -1,0 +1,26 @@
+#!/bin/bash
+
+function join_by { local IFS="$1"; shift; echo "$*"; }
+
+PASS=true
+
+# ESLint
+STAGED_JS_FILES=$(git diff --cached --name-only --diff-filter=ACM ./src | grep ".\(j\|t\)sx\{0,1\}$")
+
+if [[ "$STAGED_JS_FILES" != "" ]]; then
+  echo "Linting javascript files"
+
+  npx mate-scripts lint --javascript $(join_by " " ${STAGED_JS_FILES})
+
+  if [[ "$?" == 0 ]]; then
+    printf "\033[32mESLint Passed\033[0m\n\n"
+  else
+    printf "\033[031mESLint Failed\033[0m\n\n"
+    PASS=false
+  fi
+fi
+
+if ! ${PASS}; then
+  printf "Pre-commits check failed. Fix problems above before commit.\n\n"
+  exit 1
+fi

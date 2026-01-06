@@ -1,0 +1,72 @@
+#!/bin/bash
+
+function join_by { local IFS="$1"; shift; echo "$*"; }
+
+PASS=true
+
+# ESLint
+STAGED_JS_FILES=$(git diff --cached --name-only --diff-filter=ACM ./src | grep ".\(j\|t\)sx\{0,1\}$")
+
+if [[ "$STAGED_JS_FILES" != "" ]]; then
+  echo "Linting javascript files"
+
+  npx mate-scripts lint --javascript $(join_by " " ${STAGED_JS_FILES})
+
+  if [[ "$?" == 0 ]]; then
+    printf "\033[32mESLint Passed\033[0m\n\n"
+  else
+    printf "\033[031mESLint Failed\033[0m\n\n"
+    PASS=false
+  fi
+fi
+
+# StyleLint
+STAGED_CSS_FILES=$(git diff --cached --name-only --diff-filter=ACM ./src | grep ".s\?css$")
+
+if [[ "$STAGED_CSS_FILES" != "" ]]; then
+  echo "Linting CSS files"
+
+  npx mate-scripts lint --styles $(join_by " " ${STAGED_CSS_FILES})
+
+  if [[ "$?" == 0 ]]; then
+    printf "\033[32mStyleLint Passed\033[0m\n\n"
+  else
+    printf "\033[031mStyleLint Failed\033[0m\n\n"
+    PASS=false
+  fi
+fi
+
+# HTMLLint
+STAGED_HTML_FILES=$(git diff --cached --name-only --diff-filter=ACM ./src | grep ".html$")
+
+if [[ "$STAGED_HTML_FILES" != "" ]]; then
+  echo "Linting HTML files"
+
+  npx mate-scripts lint --html $(join_by " " ${STAGED_HTML_FILES})
+
+  if [[ "$?" == 0 ]]; then
+    printf "\033[32mHTMLLint Passed\033[0m\n\n"
+  else
+    printf "\033[031mHTMLLint Failed\033[0m\n\n"
+    PASS=false
+  fi
+fi
+
+# BEMlint
+if [[ "$STAGED_HTML_FILES" != "" ]]; then
+  echo "Linting (BEM) HTML files"
+
+  npx mate-scripts lint --bem $(join_by " " ${STAGED_HTML_FILES})
+
+  if [[ "$?" == 0 ]]; then
+    printf "\033[32mBEMlint Passed\033[0m\n\n"
+  else
+    printf "\033[031mBEMlint Failed\033[0m\n\n"
+    PASS=false
+  fi
+fi
+
+if ! ${PASS}; then
+  printf "Pre-commits check failed. Fix problems above before commit.\n\n"
+  exit 1
+fi
