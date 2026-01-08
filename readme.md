@@ -1,8 +1,11 @@
 # Hello world
 
 Add the basic page markup and the text `Hello, world!` into the body.
+- [DEMO LINK](https://EduardvLeite.github.io/layout_hello-world/report/html_report/)
+- [TEST REPORT LINK](https://EduardvLeite.github.io/layout_hello-world/report/html_report/)
 
 > Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/#how-to-solve-the-layout-tasks-on-github)
+
 
 ## Tests
 
