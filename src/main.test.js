@@ -6,6 +6,7 @@ const fs = require('fs');
 const childProcess = require('child_process');
 const minVersionOfGitOnMacAndLinux = 2311;
 const minVersionOfGitOnWindows = 23110;
+const url = 'https://sek1robtw.github.io/layout_hello-world';
 // const versionName = childProcess.execSync('node -v').toString();
 
 const getSiteBody = (startWord, finishWord) => {
@@ -19,7 +20,7 @@ const getSiteBody = (startWord, finishWord) => {
   );
 
   const siteBody = childProcess.execSync(
-    `curl ${url}`,
+    `curl "${url}"`,
   ).toString();
 
   return siteBody;
