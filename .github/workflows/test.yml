@@ -27,3 +27,17 @@ jobs:
       with:
         name: report
         path: backstop_data
+ on:
+      pull_request:
+         branches: [ master ]
+         pull_request:
+
+      on:
+         pull_request:
+          branches: [ master ] 
+
+          on:
+  pull_request:
+    branches: [ master ]
+        
+        
