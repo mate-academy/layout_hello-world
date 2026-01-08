@@ -11,8 +11,9 @@ const config = {
   fileNameTemplate: '{scenarioLabel}',
   viewports: [{
     name: 'custom-size',
-    width: 200,
-    height: 50,
+    width: 1200,
+    height: 800,
+    "delay": 2000
   }],
   scenarios: [
     {
