@@ -2,6 +2,19 @@
   "name": "hello-world",
   "version": "1.0.0",
   "description": "Hello World",
+  "keywords": [],
+  "homepage": "https://github.com/Driirhmnn/layout_hello-world#readme",
+  "bugs": {
+    "url": "https://github.com/Driirhmnn/layout_hello-world/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Driirhmnn/layout_hello-world.git"
+  },
+  "license": "GPL-3.0",
+  "author": "Mate Academy",
+  "type": "commonjs",
+  "main": ".eslintrc.js",
   "scripts": {
     "init": "mate-scripts init",
     "start": "mate-scripts start",
@@ -14,10 +27,6 @@
     "postinstall": "npm run update",
     "test": "npm run lint && npm run test:only"
   },
-  "keywords": [],
-  "author": "Mate Academy",
-  "license": "GPL-3.0",
-  "dependencies": {},
   "devDependencies": {
     "@linthtml/linthtml": "^0.9.6",
     "@mate-academy/backstop-config": "latest",
