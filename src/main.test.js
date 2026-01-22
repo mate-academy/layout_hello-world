@@ -135,7 +135,7 @@ describe('Environmental Check', () => {
 
   test(`You should deploy your site to GitHub pages`, () => {
     if (OS === 'Workflow') {
-      const demoLinkBody = getSiteBody('[DEMO LINK]', 'world/');
+      const demoLinkBody = getSiteBody('[DEMO LINK]', 'world2/');
 
       expect(demoLinkBody)
         .toContain('Hello, world!');
