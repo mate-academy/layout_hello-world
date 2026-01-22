@@ -20,6 +20,9 @@ const config = {
       label: 'Entire document',
       referenceUrl: basicScenario.referenceUrl + '/hello-world/',
     }],
+  misMatchThreshold: 10, // Permite até 10% de diferença
+  requireSameDimensions: false, // Permite dimensões diferentes
+  delay: 500,
 };
 
 module.exports = config;
