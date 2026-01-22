@@ -1,1 +1,14 @@
 /* styles go here */
+.text {
+  color: darkmagenta;
+  position: relative;
+  top: 200px;
+  margin-top: 20px;
+  height: 100px;
+  padding-top: 20px;
+}
+
+.body {
+  font-size: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
