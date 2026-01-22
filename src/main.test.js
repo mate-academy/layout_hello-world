@@ -13,13 +13,18 @@ const getSiteBody = (startWord, finishWord) => {
   const firstIndex = fileContent.indexOf(startWord);
   const lastIndex = fileContent.indexOf(finishWord);
 
+  if (firstIndex === -1 || lastIndex === -1) {
+    throw new Error(`Markers '${startWord}' or '${finishWord}' not found in readme.md`);
+  }
+
   const url = fileContent.substring(
     firstIndex + startWord.length + 1,
     lastIndex + finishWord.length,
   );
 
   const siteBody = childProcess.execSync(
-    `curl ${url}`,
+    
+    `curl "${url}"`,
   ).toString();
 
   return siteBody;
