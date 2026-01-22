@@ -71,10 +71,15 @@ describe('Environmental Check', () => {
   });
 
   test('You should have Bash Shell', () => {
-    const bashPath = childProcess.execSync('which bash').toString();
+    let bashPath;
 
-    expect(!!bashPath)
-      .toBeTruthy();
+    if (process.platform === 'win32') {
+      bashPath = childProcess.execSync('where bash').toString();
+    } else {
+      bashPath = childProcess.execSync('which bash').toString();
+    }
+
+    expect(!!bashPath).toBeTruthy();
   });
 
   test('You should have Visual Studio Code', () => {
