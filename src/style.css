@@ -1,1 +1,12 @@
-/* styles go here */
+
+body {
+  background-color: #E2E7EA;
+}
+
+.ReactModal__Body--open {
+  overflow: hidden;
+}
+
+.ReactModal__Body--open .header {
+  display: none;
+}
