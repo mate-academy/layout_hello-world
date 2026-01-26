@@ -5,5 +5,6 @@ body {
 
   font-family: Arial, sans-serif;
   color: black;
+  /* stylelint-disable-next-line order/properties-order */
   size: auto;
 }
