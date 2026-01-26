@@ -1,0 +1,1 @@
+{"mappings":"ACCA","sources":["index.ac639465.css","src/style.css"],"sourcesContent":[".div {\n  color: #000;\n  font-size: 1px;\n}\n/*# sourceMappingURL=index.ac639465.css.map */\n","/* styles go here */\r\n.div {\r\n  font-size: 1;\r\n  color: black;\r\n}\r\n"],"names":[],"version":3,"file":"index.ac639465.css.map"}
