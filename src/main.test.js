@@ -34,7 +34,7 @@ describe('Environmental Check', () => {
   beforeAll(() => {
     try {
       listOfExtensions = childProcess.execSync(
-        'code --list-extensions --show-versions',
+        'code-Insiders --list-extensions --show-versions',
       ).toString();
     } catch (error) {
       listOfExtensions = null;
@@ -83,7 +83,7 @@ describe('Environmental Check', () => {
         .toBeTruthy();
     } else {
       const VSCodeVersion = childProcess.execSync(
-        'code -v',
+        'code-insiders -v',
       ).toString();
 
       expect(!!VSCodeVersion)
