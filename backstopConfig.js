@@ -9,17 +9,47 @@ const { basicScenario } = backstop;
 const config = {
   ...backstop,
   fileNameTemplate: '{scenarioLabel}',
-  viewports: [{
-    name: 'custom-size',
-    width: 200,
-    height: 50,
-  }],
+  viewports: [
+    {
+      name: '1024px',
+      width: 1024,
+      height: 768,
+    },
+    {
+      name: '1200px',
+      width: 1200,
+      height: 768,
+    },
+  ],
   scenarios: [
     {
       ...basicScenario,
       label: 'Entire document',
       referenceUrl: basicScenario.referenceUrl + '/hello-world/',
-    }],
+    },
+    {
+      ...basicScenario,
+      label: 'Header tag',
+      selectors: ['header'],
+    },
+    {
+      ...basicScenario,
+      label: 'Nav tag',
+      selectors: ['nav'],
+    },
+    {
+      ...basicScenario,
+      label: 'Link with data-qa_hover',
+      selectors: ['[data-qa="hover"]'],
+      hoverSelector: '[data-qa="hover"]',
+      postInteractionWait: 1000,
+    },
+    {
+      ...basicScenario,
+      label: 'Link with class_is-active',
+      selectors: ['a.is-active'],
+    },
+  ],
 };
 
 module.exports = config;
