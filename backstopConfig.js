@@ -25,29 +25,14 @@ const config = {
     {
       ...basicScenario,
       label: 'Entire document',
-      referenceUrl: basicScenario.referenceUrl + '/hello-world/',
-    },
-    {
-      ...basicScenario,
-      label: 'Header tag',
-      selectors: ['header'],
-    },
-    {
-      ...basicScenario,
-      label: 'Nav tag',
-      selectors: ['nav'],
-    },
-    {
-      ...basicScenario,
-      label: 'Link with data-qa_hover',
-      selectors: ['[data-qa="hover"]'],
-      hoverSelector: '[data-qa="hover"]',
-      postInteractionWait: 1000,
-    },
-    {
-      ...basicScenario,
-      label: 'Link with class_is-active',
-      selectors: ['a.is-active'],
+      // referenceUrl: basicScenario.referenceUrl + '/hello-world/',
+      // delay: 500,
+      // selector: ['viewport'],
+      // misMatchThreshold: 0.1,
+      url: './src/index.html',
+      misMatchThreshold: 0.1,
+      delay: 500,
+      selectors: ['document'],
     },
   ],
 };
