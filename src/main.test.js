@@ -131,7 +131,7 @@ describe('Environmental Check', () => {
 //      expect(listOfExtensions.toLowerCase())
 //        .toContain('stylelint.vscode-stylelint');
 //    }
-/  });
+//  });
 
   test(`You should deploy your site to GitHub pages`, () => {
     if (OS === 'Workflow') {
