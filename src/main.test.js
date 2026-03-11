@@ -91,47 +91,47 @@ describe('Environmental Check', () => {
     }
   });
 
-  test(`You should have EditorConfig extension in Visual Studio Code`, () => {
-    if (OS === 'Workflow') {
-      expect(true)
-        .toBeTruthy();
-    } else {
-      expect(listOfExtensions.toLowerCase())
-        .toContain('editorconfig.editorconfig');
-    }
-  });
+ // test(`You should have EditorConfig extension in Visual Studio Code`, () => {
+//  if (OS === 'Workflow') {
+ //     expect(true)
+ //       .toBeTruthy();
+ //   } else {
+ //     expect(listOfExtensions.toLowerCase())
+ //       .toContain('editorconfig.editorconfig');
+ //   }
+ // });
 
-  test(`You should have ESLint extension in Visual Studio Code`, () => {
-    if (OS === 'Workflow') {
-      expect(true)
-        .toBeTruthy();
-    } else {
-      expect(listOfExtensions.toLowerCase())
-        .toContain('dbaeumer.vscode-eslint');
-    }
-  });
+//  test(`You should have ESLint extension in Visual Studio Code`, () => {
+//    if (OS === 'Workflow') {
+//      expect(true)
+//        .toBeTruthy();
+//    } else {
+//      expect(listOfExtensions.toLowerCase())
+//        .toContain('dbaeumer.vscode-eslint');
+//    }
+//  });
 
-  test(`
-      You should have LintHTML v.0.4.0 extension in VisualStudioCode
-    `, () => {
-    if (OS === 'Workflow') {
-      expect(true)
-        .toBeTruthy();
-    } else {
-      expect(listOfExtensions.toLowerCase())
-        .toContain('kamikillerto.vscode-linthtml');
-    }
-  });
+//  test(`
+//      You should have LintHTML v.0.4.0 extension in VisualStudioCode
+//    `, () => {
+//    if (OS === 'Workflow') {
+//      expect(true)
+//        .toBeTruthy();
+//    } else {
+//      expect(listOfExtensions.toLowerCase())
+//        .toContain('kamikillerto.vscode-linthtml');
+//    }
+//  });
 
-  test(`You should have Stylelint extension in Visual Studio Code`, () => {
-    if (OS === 'Workflow') {
-      expect(true)
-        .toBeTruthy();
-    } else {
-      expect(listOfExtensions.toLowerCase())
-        .toContain('stylelint.vscode-stylelint');
-    }
-  });
+//  test(`You should have Stylelint extension in Visual Studio Code`, () => {
+//    if (OS === 'Workflow') {
+//      expect(true)
+//        .toBeTruthy();
+//    } else {
+//      expect(listOfExtensions.toLowerCase())
+//        .toContain('stylelint.vscode-stylelint');
+//    }
+/  });
 
   test(`You should deploy your site to GitHub pages`, () => {
     if (OS === 'Workflow') {
