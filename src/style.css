@@ -1,1 +1,8 @@
-/* styles go here */
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+h1 {
+  margin: 0;
+}
