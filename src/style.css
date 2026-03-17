@@ -1,16 +1,15 @@
 /* style.css - versão simples e segura para o exercício */
-/* reset mínimo para evitar margens inesperadas */
 html, body {
   margin: 0;
   padding: 0;
   background: #fff;
   color: #000;
 }
-/* mantém h1 com estilo padrão do navegador, apenas garante legibilidade */
+
 h1 {
-  font-size: 2rem; /* valor razoável, não obrigatório */
+  font-size: 2rem;
   font-weight: 700;
   line-height: 1.2;
-  margin: 0; /* remove margem default se quiser controlar layout manualmente */
-  padding: 16px; /* pequeno espaçamento para ficar legível em screenshots */
+  margin: 0;
+  padding: 16px;
 }
