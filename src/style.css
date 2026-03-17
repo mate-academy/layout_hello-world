@@ -1,15 +1,5 @@
 /* style.css - versão simples e segura para o exercício */
-html, body {
-  margin: 0;
-  padding: 0;
-  background: #fff;
-  color: #000;
-}
 
 h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 1.2;
   margin: 0;
-  padding: 16px;
 }
