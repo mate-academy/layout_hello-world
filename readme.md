@@ -22,4 +22,4 @@ and use this [VSCode settings](https://mate-academy.github.io/fe-program/tools/v
 
 Replace `wiliammunchen` with your Github username and copy the links to Pull Request description:
 - [DEMO LINK](https://wiliammunchen.github.io/layout_hello-world/)
-- [TEST REPORT LINK](hhttps://github.com/mate-academy/layout_hello-world/actions/runs/23225422654/job/67506987985?pr=10152)
+- [TEST REPORT LINK](https://wiliammunchen.github.io/layout_hello-world/report/html_report/)
