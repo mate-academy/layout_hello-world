@@ -3,7 +3,7 @@
 .vscode
 
 # Node
-node_modules
+node_modules/
 
 # MacOS
 .DS_Store
@@ -13,3 +13,8 @@ backstop_data
 dist
 .cache
 .parcel-cache
+
+dist/
+report/
+html_report/
+*.log
