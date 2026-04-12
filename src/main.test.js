@@ -45,7 +45,13 @@ describe('Environmental Check', () => {
   OS = 'Windows';
   allActiveProgrammes = childProcess.execSync('tasklist').toString();
 } catch (error) {
-  OS = 'Workflow';
+  try {
+    childProcess.execSync('lsb_release -a');
+    OS = 'Workflow';
+    allProgrammes = '';
+  } catch (e) {
+    OS = 'MacOS';
+  }
 }
 
   test('You should have Git of 2.31.1 version or newer', () => {
