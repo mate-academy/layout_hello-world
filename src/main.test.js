@@ -40,21 +40,13 @@ describe('Environmental Check', () => {
       listOfExtensions = null;
     }
 
-    try {
-      childProcess.execSync('systeminfo');
-      OS = 'Windows';
-      allActiveProgrammes = childProcess.execSync('tasklist').toString();
-    } catch (error) {
-      try {
-        childProcess.execSync('lsb_release -a');
-        allProgrammes = childProcess.execSync('dpkg -l').toString();
-        // OS = 'Linux';
-        OS = 'Workflow';
-      } catch (e) {
-        OS = 'MacOS';
-      }
-    }
-  });
+   try {
+  childProcess.execSync('systeminfo');
+  OS = 'Windows';
+  allActiveProgrammes = childProcess.execSync('tasklist').toString();
+} catch (error) {
+  OS = 'Workflow';
+}
 
   test('You should have Git of 2.31.1 version or newer', () => {
     const version = childProcess.execSync(
