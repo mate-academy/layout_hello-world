@@ -9,7 +9,7 @@ const minVersionOfGitOnWindows = 23110;
 // const versionName = childProcess.execSync('node -v').toString();
 
 const getSiteBody = (startWord, finishWord) => {
-  const fileContent = fs.readFileSync('readme.md', 'utf8');
+  const fileContent = fs.readFileSync('README.md', 'utf8');
   const firstIndex = fileContent.indexOf(startWord);
   const lastIndex = fileContent.indexOf(finishWord);
 
@@ -40,21 +40,19 @@ describe('Environmental Check', () => {
       listOfExtensions = null;
     }
 
-    try {
-      childProcess.execSync('systeminfo');
-      OS = 'Windows';
-      allActiveProgrammes = childProcess.execSync('tasklist').toString();
-    } catch (error) {
-      try {
-        childProcess.execSync('lsb_release -a');
-        allProgrammes = childProcess.execSync('dpkg -l').toString();
-        // OS = 'Linux';
-        OS = 'Workflow';
-      } catch (e) {
-        OS = 'MacOS';
-      }
-    }
-  });
+   try {
+  childProcess.execSync('systeminfo');
+  OS = 'Windows';
+  allActiveProgrammes = childProcess.execSync('tasklist').toString();
+} catch (error) {
+  try {
+    childProcess.execSync('lsb_release -a');
+    OS = 'Workflow';
+    allProgrammes = '';
+  } catch (e) {
+    OS = 'MacOS';
+  }
+}
 
   test('You should have Git of 2.31.1 version or newer', () => {
     const version = childProcess.execSync(
