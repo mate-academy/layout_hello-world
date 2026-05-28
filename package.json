@@ -9,7 +9,7 @@
     "lint": "npm run format && mate-scripts lint",
     "test:only": "mate-scripts test",
     "build": "mate-scripts build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "npm run build && cp -r backstop_data/html_report/* dist/ && gh-pages -d dist",
     "update": "mate-scripts update",
     "postinstall": "npm run update",
     "test": "npm run lint && npm run test:only"
@@ -22,7 +22,7 @@
     "@mate-academy/backstop-config": "latest",
     "@mate-academy/bemlint": "latest",
     "@mate-academy/linthtml-config": "latest",
-    "@mate-academy/scripts": "^1.8.6",
+    "@mate-academy/scripts": "^0.9.9",
     "@mate-academy/stylelint-config": "latest",
     "backstopjs": "6.3.23",
     "gh-pages": "^6.3.0",
