@@ -45,8 +45,8 @@
   "report": ["browser"],
   "engine": "puppeteer",
   "engineOptions": {
-    "args": ["--no-sandbox"]
-  },
+  "executablePath": "C:/Program Files/Google/Chrome/Application/chrome.exe"
+},
   "asyncCaptureLimit": 5,
   "asyncCompareLimit": 50,
   "debug": false,
