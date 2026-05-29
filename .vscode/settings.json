@@ -1,0 +1,12 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  "editor.formatOnSave": true,
+  "stylelint.validate": [
+    "css",
+    "scss"
+  ],
+  "linthtml.config": ".linthtmlrc.json"
+}
