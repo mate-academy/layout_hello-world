@@ -34,7 +34,7 @@ describe('Environmental Check', () => {
   beforeAll(() => {
     try {
       listOfExtensions = childProcess.execSync(
-        'code --list-extensions --show-versions',
+        'code.cmd --list-extensions --show-versions',
       ).toString();
     } catch (error) {
       listOfExtensions = null;
