@@ -1,0 +1,52 @@
+{
+  "attr-name-ignore-regex": "viewBox",
+  "text-ignore-regex": "&",
+  "rules": {
+    "attr-bans": ["error", [
+      "align",
+      "background",
+      "bgcolor",
+      "border",
+      "frameborder",
+      "style"
+    ]],
+    "attr-name-style": [true, "dash"],
+    "attr-new-line": ["error", 3],
+    "attr-no-dup": true,
+    "attr-no-unsafe-char": true,
+    "attr-quote-style": [true, "double"],
+    "attr-req-value": true,
+    "class-no-dup": true,
+    "doctype-first": true,
+    "doctype-html5": true,
+    "fig-req-figcaption": true,
+    "head-req-title": true,
+    "html-req-lang": true,
+    "id-class-style": false,
+    "id-no-dup": true,
+    "img-req-src": true,
+    "img-req-alt": true,
+    "indent-width": ["error", 2],
+    "indent-style": [true, "spaces"],
+    "indent-width-cont": true,
+    "input-radio-req-name": true,
+    "input-req-label": true,
+    "line-end-style": [true, "lf"],
+    "spec-char-escape": true,
+    "tag-bans": ["error", [
+      "b",
+      "i",
+      "u",
+      "center",
+      "style",
+      "marquee",
+      "font",
+      "s"
+    ]],
+    "tag-close": true,
+    "tag-name-lowercase": true,
+    "tag-name-match": true,
+    "tag-self-close": [true, "never"],
+    "title-no-dup": true
+  }
+}

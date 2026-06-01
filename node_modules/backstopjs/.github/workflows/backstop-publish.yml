@@ -1,0 +1,29 @@
+name: Backstop Publish
+#doesnt work :(
+
+on:
+  workflow_dispatch:
+  workflow_call:
+
+
+permissions:
+  actions: write
+  checks: write
+  contents: write
+  pull-requests: write
+  packages: write
+
+env:
+  BRANCH_NAME: ${{ github.event.pull_request.head.sha || github.head_ref || github.ref_name }}
+  NODE_VERSION: 20
+
+jobs:
+  backstop-publish-flow:
+    name: publish-flow
+    runs-on: ubuntu-latest
+    steps:
+      - name: publish to npm
+        uses: ./.github/workflows/npm-push.yml
+
+      - name: publish to dockerhub
+        uses: ./.github/workflows/dockerhub-build-push.yml

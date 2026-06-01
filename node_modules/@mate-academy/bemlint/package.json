@@ -1,0 +1,50 @@
+{
+  "name": "@mate-academy/bemlint",
+  "version": "0.1.2",
+  "main": "bin/bemlint.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mate-academy/fed.git"
+  },
+  "keywords": [
+    "bemlint",
+    "bemlinter",
+    "bem-lint",
+    "bem-linter",
+    "bem",
+    "lint",
+    "linter"
+  ],
+  "bin": {
+    "bemlint": "bin/bemlint.js"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "package.json",
+    "package-lock.json",
+    "README.md",
+    "rules-description.md"
+  ],
+  "author": "dev@mate.academy",
+  "license": "MIT",
+  "homepage": "https://github.com/mate-academy/fed/bemlint#README.md",
+  "scripts": {
+    "lint": "eslint ./",
+    "test": "jest ./lib/tests",
+    "prepublishOnly": "npm run lint && npm run test"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^7.1.0",
+    "cosmiconfig": "^7.0.0",
+    "parse5": "^6.0.1",
+    "table-layout": "^1.0.1"
+  },
+  "devDependencies": {
+    "@mate-academy/eslint-config": "0.0.16",
+    "eslint": "^7.21.0",
+    "eslint-plugin-node": "^11.1.0",
+    "jest": "^26.6.3"
+  }
+}
