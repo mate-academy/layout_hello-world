@@ -1,0 +1,20 @@
+#!/bin/bash
+
+PASS=true
+
+# Tests
+echo "Testing javascript"
+
+npx mate-scripts test
+
+if [[ "$?" == 0 ]]; then
+  printf "\033[32mTests Passed\033[0m\n\n"
+else
+  printf "\033[031mTests Failed\033[0m\n\n"
+  PASS=false
+fi
+
+if ! ${PASS}; then
+  printf "Pre-push check failed. Fix problems above before commit.\n\n"
+  exit 1
+fi
