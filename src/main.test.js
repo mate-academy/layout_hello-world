@@ -71,7 +71,28 @@ describe('Environmental Check', () => {
   });
 
   test('You should have Bash Shell', () => {
-    const bashPath = childProcess.execSync('which bash').toString();
+    let bashPath = '';
+    try {
+      bashPath = childProcess.execSync('which bash').toString();
+    } catch (error) {
+      if (OS === 'Windows') {
+        const commonPaths = [
+          'where bash',
+          'dir "C:\\Program Files\\Git\\bin\\bash.exe" /b',
+          'dir "C:\\Program Files (x86)\\Git\\bin\\bash.exe" /b',
+          'dir "B:\\Git\\bin\\bash.exe" /b',
+          'dir "%USERPROFILE%\\AppData\\Local\\Programs\\Git\\bin\\bash.exe" /b'
+        ];
+        for (const cmd of commonPaths) {
+          try {
+            bashPath = childProcess.execSync(cmd, { stdio: ['pipe', 'pipe', 'ignore'] }).toString();
+            if (bashPath.trim()) {
+              break;
+            }
+          } catch (err) {}
+        }
+      }
+    }
 
     expect(!!bashPath)
       .toBeTruthy();
