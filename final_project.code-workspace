@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../final_project"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "itstep"
+	}
+}
