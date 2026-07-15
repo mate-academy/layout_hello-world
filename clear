@@ -1,0 +1,134 @@
+[33ma73e861[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mdevelop[m[33m)[m Merge pull request #9750 from mykhalenych/revert-9623-feature/vite
+[33mfcbb4f4[m Revert "Feature/vite"
+[33mf76774a[m Merge pull request #9623 from mykhalenych/feature/vite
+[33m788469a[m feature/vite deleted sass packages
+[33md7dd949[m feature/vite replaced parcel with vite
+[33me200f8a[m Update test.yml
+[33mc145df6[m Update test.yml
+[33m55116d7[m Merge pull request #6940 from mate-academy/node20
+[33mcc575d6[m add latest deps
+[33m8bc01fa[m fix deps for node20
+[33m698d57e[m Update package.json
+[33m47f6927[m Merge pull request #6324 from mykhalenych/feature/prettier
+[33mcfda52a[m fix eslint version and extensions test
+[33m13a7e3c[m Update readme.md
+[33m7f497d8[m Update readme.md
+[33m06a3e13[m feature/prettier updated configs
+[33me615c0a[m feature/prettier added prettier, updated packages
+[33m34eff90[m Merge pull request #6251 from Andriy-Shymkiv/fix/test-extention-naming
+[33maa80555[m Fix casing of extension name in test assertion
+[33mab2f6bc[m fix deps
+[33m9bb2537[m add required deps
+[33mb633ce1[m Merge pull request #5798 from mate-academy/fix-tests
+[33mb107449[m fix tests
+[33mfcaacf6[m Update test.yml
+[33ma13b615[m fix lock file
+[33m0a4f46b[m Merge pull request #5733 from SerhiiKirik/deps-update
+[33m0ca0efb[m update stylelintrc
+[33m31aca6d[m add package-lock.json related to 20 node
+[33maa9291c[m update package.json
+[33m168c565[m update dependencies
+[33m3532c39[m downgrade parcel to 1.12.3
+[33ma3df7fd[m Update readme.md
+[33m4680865[m Update checklist.md
+[33ma956159[m small fix test
+[33mbc40dd1[m Merge pull request #2024 from mate-academy/add-test-for-check-deployment
+[33m68947a5[m fix typo
+[33mbc2d6d0[m add test
+[33m5684936[m update linthtml
+[33md8a430b[m Update readme.md
+[33mf2206ce[m ".linthtmlrc.json" now extended from "@mate-academy/linthtml" package, versions updated (#1202)
+[33ma9842af[m Merge pull request #1182 from danylo-onishchuk/developer-test
+[33m41207e4[m delete code
+[33mffe0e83[m fix test3
+[33m67b36c3[m fix test2
+[33m84b9a12[m fix test1
+[33mdcf0d5d[m fix test
+[33mf43a43b[m add
+[33m494500c[m test
+[33m7ab6c7e[m Merge pull request #1181 from mate-academy/mate-scripts-update
+[33mde610fb[m Add version of backstop-config
+[33m9019370[m Merge pull request #1178 from mate-academy/mate-scripts-update
+[33m88ed855[m Add jest in package in devDependencies
+[33m17db966[m Merge pull request #1124 from mate-academy/delete-uneccesary-function-from-env-tests
+[33m5532cb0[m fix error
+[33m8bedde1[m delete function and refactoring tests
+[33mc632099[m Merge pull request #1123 from mate-academy/add-ver-of-extension
+[33mb568582[m fix console
+[33mcb02ef1[m add ver
+[33md56776c[m Merge pull request #1122 from mate-academy/refactoring-of-Environmental-tests
+[33m78f2a66[m fix unsafe zone
+[33m21f4a90[m fix tests
+[33m9c8bcc4[m Fix node version test (#1072)
+[33m218eb32[m Merge pull request #1071 from mate-academy/win-test
+[33ma256eb6[m ver of scripts
+[33medb48b1[m add linux tests
+[33m3c834da[m add windows tests1
+[33mdf97cfa[m add windows tests
+[33m8303416[m fds
+[33m5d6c554[m Merge pull request #1069 from mate-academy/hot-fix-test-file
+[33m10be751[m disable no-undef linter rule
+[33mf71c858[m Merge pull request #1068 from mate-academy/develop
+[33m54f69b8[m return
+[33m7c02e96[m fix linter and tests
+[33mb9bda00[m add test, change version of mate scripts
+[33ma512056[m Merge pull request #1058 from mate-academy/update-mate-scripts-version
+[33m98aabfe[m update version of @mate-academy/scripts
+[33m42d790d[m Update readme.md
+[33m02ad661[m Update readme.md
+[33m8fe1632[m Update readme.md
+[33m450f75a[m Update readme.md
+[33m40eda23[m Update readme.md
+[33mc72cf0c[m Merge pull request #779 from mate-academy/mate-scripts-update
+[33m34cb32a[m update @mate-academy/bemlint
+[33m207f913[m Merge pull request #772 from mate-academy/mate-scripts-update
+[33mb942acc[m update @mate-academy/scripts to 0.8.0
+[33mf30dd71[m Merge pull request #766 from mate-academy/mate-scripts-update
+[33m34fc4a3[m update @mate-academy/scripts to 0.8.0
+[33m7f8cd51[m Update checklist.md
+[33mc8475d6[m Update checklist.md
+[33m69bbd95[m Create checklist.md
+[33mfd6ba43[m Merge pull request #486 from mgrinko/fix
+[33m11258da[m config fix
+[33m68c1895[m Create deploy.sh
+[33m8ccbba1[m Errors were fixed
+[33mf08bf41[m Delete package-lock.json
+[33mebb9417[m Merge pull request #448 from mate-academy/mate-scripts-update
+[33m23245cb[m remove unneeded browser-sync
+[33m7caafcd[m Merge pull request #447 from mate-academy/mate-scripts-update
+[33mf92fa5e[m fix npm vulnerabilities(npm audit fix --force)
+[33m3faedf2[m upgrade to @mate-academy/scripts (#446)
+[33m74ed63f[m update 0.1.7 (#445)
+[33maae1b0d[m update 0.1.5 (#444)
+[33mb10bff2[m migrate to mate-scripts (#443)
+[33m2557026[m Update test.yml
+[33m6533017[m Create test.yml
+[33m18d2082[m Update package.json
+[33m2142e42[m Deploy was fixed
+[33md42433d[m Merge pull request #252 from mate-academy/simple-dev
+[33m7b6e3eb[m Task description was updated
+[33m5439f0e[m .gitignore was restored
+[33mfb81a08[m Simple development
+[33me014608[m Merge pull request #199 from mate-academy/backstopConfig
+[33m4c5ddc5[m fixed code after Vadim comments
+[33mbcdfef5[m rewritten code after review
+[33mf0e1e2b[m Connected module with backstopConfig file.
+[33m955dc36[m fix backstopConfig
+[33m5ea19a8[m Merge pull request #87 from gestap/patch-1
+[33mf1e2980[m updated url
+[33m049c36d[m changed link to guideline, added ma-htmllint
+[33m626fac4[m Update .gitignore
+[33m917e26e[m Update package.json
+[33mf9491f9[m Delete package-lock.json
+[33me7ee862[m Add dummy links to Demo and Test report.
+[33m6e25137[m removed link to reference screenshots, updated formatting
+[33mbcf401f[m updated gitignore, removed reference screenshots
+[33ma204d5a[m added dot before `DS_Store` in `.gitignore`
+[33m6cb6ef5[m added option to disable cache in `http-server`
+[33m2a47159[m Merge pull request #7 from mate-academy/task
+[33m78ceb41[m removed docker from workflow
+[33med77e94[m Update readme.md
+[33m295c715[m Merge pull request #1 from mate-academy/task
+[33m306891d[m added description
+[33m4753b48[m implemented task & tests
+[33mcfe44ea[m initial commit
