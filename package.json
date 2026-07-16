@@ -2,6 +2,11 @@
   "name": "hello-world",
   "version": "1.0.0",
   "description": "Hello World",
+  "homepage": "https://agftasrd-ui.github.io/layout_hello-world",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agftasrd-ui/layout_hello-world.git"
+  },
   "scripts": {
     "init": "mate-scripts init",
     "start": "mate-scripts start",
