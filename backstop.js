@@ -14,12 +14,18 @@ const config = {
     width: 200,
     height: 50,
   }],
-  scenarios: [
+
+  "scenarios": [
     {
-      ...basicScenario,
-      label: 'Entire document',
-      referenceUrl: basicScenario.referenceUrl + '/hello-world/',
-    }],
+      "label": "Entire document",
+      "url": "/index.html",
+      "referenceUrl": "/index.html",
+    }
+  ]
 };
 
 module.exports = config;
+
+
+
+
