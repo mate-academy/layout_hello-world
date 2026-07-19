@@ -8,6 +8,10 @@ const { basicScenario } = backstop;
 
 const config = {
   ...backstop,
+  engineOptions: {
+    ...(backstop.engineOptions || {}),
+    executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
+  },
   fileNameTemplate: '{scenarioLabel}',
   viewports: [{
     name: 'custom-size',
