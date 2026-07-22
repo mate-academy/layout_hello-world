@@ -20,5 +20,5 @@ and use this [VSCode settings](https://mate-academy.github.io/fe-program/tools/v
 
 ## Demo Links
 
-- [DEMO LINK] https://naineesh9.github.io/layout_hello-world/
-- [TEST REPORT LINK] https://naineesh9.github.io/layout_hello-world/report/
+- [DEMO LINK](https://naineesh9.github.io/layout_hello-world/)
+- [TEST REPORT LINK](https://naineesh9.github.io/layout_hello-world/report/)
