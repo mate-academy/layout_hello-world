@@ -172,8 +172,8 @@ describe('Environmental Check', () => {
           .toBeTruthy();
       } catch (error) {
         if (!allActiveProgrammes.includes('firefox.exe')) {
-          childProcess.execSync('start firefox');
-          childProcess.execSync('taskkill /im firefox.exe');
+          childProcess.execSync('start chrome');
+          childProcess.execSync('taskkill /im chrome.exe');
 
           expect(true)
             .toBeTruthy();
