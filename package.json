@@ -37,5 +37,8 @@
       "javascript": false,
       "bem": false
     }
+  },
+  "dependencies": {
+    "start": "^5.1.0"
   }
 }
