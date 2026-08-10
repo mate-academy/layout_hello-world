@@ -15,7 +15,7 @@ const getSiteBody = (startWord, finishWord) => {
 
   const url = fileContent.substring(
     firstIndex + startWord.length + 1,
-    lastIndex, // Changed: removed + finishWord.length,
+    lastIndex + finishWord.length,
   ).trim();
 
   const siteBody = childProcess.execSync(
