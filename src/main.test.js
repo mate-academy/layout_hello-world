@@ -15,8 +15,8 @@ const getSiteBody = (startWord, finishWord) => {
 
   const url = fileContent.substring(
     firstIndex + startWord.length + 1,
-    lastIndex + finishWord.length,
-  );
+    lastIndex, // Changed: removed + finishWord.length,
+  ).trim();
 
   const siteBody = childProcess.execSync(
     `curl ${url}`,
