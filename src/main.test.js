@@ -151,10 +151,10 @@ describe('Environmental Check', () => {
 
       expect(testLinkBody)
         .toContain('BackstopJS Report');
-    } else {
+    }
       expect(true)
       .toBeTruthy();
-    }
+
   });
 
   test('You should have Google Chrome or Firefox', () => {
