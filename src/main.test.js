@@ -13,6 +13,10 @@ const getSiteBody = (startWord, finishWord) => {
   const firstIndex = fileContent.indexOf(startWord);
   const lastIndex = fileContent.indexOf(finishWord);
 
+  if (firstIndex === -1 || lastIndex === -1 || firstIndex >= lastIndex) {
+    throw new Error(`Could not find markers: "${startWord}" and "${finishWord}"`);
+  }
+
   const url = fileContent.substring(
     firstIndex + startWord.length + 1,
     lastIndex + finishWord.length,
@@ -152,9 +156,9 @@ describe('Environmental Check', () => {
       expect(testLinkBody)
         .toContain('BackstopJS Report');
     }
-
-    expect(true)
+      expect(true)
       .toBeTruthy();
+
   });
 
   test('You should have Google Chrome or Firefox', () => {
