@@ -20,7 +20,7 @@ const getSiteBody = (startWord, finishWord) => {
   const url = fileContent.substring(
     firstIndex + startWord.length + 1,
     lastIndex + finishWord.length,
-  ).trim();
+  );
 
   const siteBody = childProcess.execSync(
     `curl ${url}`,
