@@ -9,9 +9,10 @@
     {
       "files": "*.html",
       "options": {
+
         "parser": "html",
         "insertPragma": false,
-        "endOfLine": "auto",
+        "endOfLine": "crlf",
         "singleAttributePerLine": true,
         "htmlWhitespaceSensitivity": "ignore"
       }
