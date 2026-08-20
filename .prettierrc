@@ -11,7 +11,7 @@
       "options": {
         "parser": "html",
         "insertPragma": false,
-        "endOfLine": "crlf",
+        "endOfLine": "auto",
         "singleAttributePerLine": true,
         "htmlWhitespaceSensitivity": "ignore"
       }
