@@ -1,0 +1,47 @@
+{
+  "id": "hello-world",
+  "viewports": [
+    {
+      "name": "custom-size",
+      "width": 200,
+      "height": 50
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Entire document",
+      "url": "http://localhost:8080/index.html",
+      "referenceUrl": "https://mate-academy.github.io/layout_solutions/hello-world/",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 1000,
+      "hideSelectors": ["[data-qa-hidden]"],
+      "removeSelectors": ["[data-qa-remove]"],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": "",
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold": 1.5,
+      "requireSameDimensions": false
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": ["browser"],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": ["--no-sandbox"]
+  },
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false,
+  "fileNameTemplate": "{scenarioLabel}"
+}

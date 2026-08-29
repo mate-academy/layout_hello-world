@@ -147,7 +147,7 @@ describe('Environmental Check', () => {
 
   test(`You should deploy test page to GitHub pages`, () => {
     if (OS === 'Workflow') {
-      const testLinkBody = getSiteBody('[TEST REPORT LINK]', '_report/');
+      const testLinkBody = getSiteBody('[TEST REPORT LINK]', 'report/');
 
       expect(testLinkBody)
         .toContain('BackstopJS Report');
