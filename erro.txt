@@ -1,0 +1,21 @@
+
+> hello-world@1.0.0 test:only
+> mate-scripts test
+
+BackstopJS v6.3.23
+Loading config:  C:\Users\IVAM\Documents\MateAcademy\layout_hello-world\backstopConfig.js 
+
+COMMAND | Executing core for "reference"
+  clean | backstop_data/bitmaps_reference was cleaned.
+createBitmaps | Selected 1 of 1 scenarios.
+      COMMAND | Command "reference" ended with an error after [0.035s]
+      COMMAND | Error: Could not find Chrome (ver. 126.0.6478.182). This can occur if either
+                 1. you did not perform an installation before running the script (e.g. `npx puppeteer browsers install chrome`) or
+                 2. your cache path is incorrectly configured (which is: C:\Users\IVAM\.cache\puppeteer).
+                For (2), check out our guide on configuring puppeteer at https://pptr.dev/guides/configuration.
+                    at ChromeLauncher.resolveExecutablePath (C:\Users\IVAM\Documents\MateAcademy\layout_hello-world\node_modules\puppeteer-core\lib\cjs\puppeteer\node\ProductLauncher.js:290:27)
+                    at ChromeLauncher.executablePath (C:\Users\IVAM\Documents\MateAcademy\layout_hello-world\node_modules\puppeteer-core\lib\cjs\puppeteer\node\ChromeLauncher.js:209:25)
+                    at ChromeLauncher.computeLaunchArguments (C:\Users\IVAM\Documents\MateAcademy\layout_hello-world\node_modules\puppeteer-core\lib\cjs\puppeteer\node\ChromeLauncher.js:89:37)
+                    at async ChromeLauncher.launch (C:\Users\IVAM\Documents\MateAcademy\layout_hello-world\node_modules\puppeteer-core\lib\cjs\puppeteer\node\ProductLauncher.js:70:28)
+                    at async processScenarioView (C:\Users\IVAM\Documents\MateAcademy\layout_hello-world\node_modules\backstopjs\core\util\runPuppet.js:88:19)
+                    at async C:\Users\IVAM\Documents\MateAcademy\layout_hello-world\node_modules\p-map\index.js:57:22
