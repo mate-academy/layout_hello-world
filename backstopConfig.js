@@ -20,6 +20,11 @@ const config = {
       label: 'Entire document',
       referenceUrl: basicScenario.referenceUrl + '/hello-world/',
     }],
+  puppeteer: {
+    executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
+  }
 };
 
 module.exports = config;
+
+
