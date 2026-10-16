@@ -1,9 +1,12 @@
 
+```yaml
 name: Deploy static content to Pages
 
 on:
   push:
-    branches: ["master", "nova-tentativa"]
+    branches:
+      - master
+      - nova-tentativa
   workflow_dispatch:
 
 permissions:
@@ -12,7 +15,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: false
 
 jobs:
@@ -26,19 +29,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload artifact
+      - name: Upload site files
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './src'
+          path: ./src
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v5
+        uses: actions/deploy-pages@v4
+```
