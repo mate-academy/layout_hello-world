@@ -1,9 +1,7 @@
+
 body {
   margin: 0;
-  min-height: 100vh;
   font-family: Arial, sans-serif;
-  color: #1f2937;
-  background-color: #f3f4f6;
 }
 
 .greeting {
@@ -14,5 +12,4 @@ body {
 
 h1 {
   margin: 0;
-  font-size: clamp(2rem, 8vw, 4rem);
 }
