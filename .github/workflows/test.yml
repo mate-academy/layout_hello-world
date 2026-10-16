@@ -1,4 +1,4 @@
-```yaml
+
 name: Test
 
 on:
@@ -49,4 +49,4 @@ jobs:
           name: report
           path: backstop_data
           if-no-files-found: ignore
-```
+
