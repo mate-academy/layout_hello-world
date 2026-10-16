@@ -1,4 +1,4 @@
-'use strict';
+ 'use strict';
 
 // https://github.com/garris/BackstopJS#advanced-scenarios
 
@@ -9,17 +9,20 @@ const { basicScenario } = backstop;
 const config = {
   ...backstop,
   fileNameTemplate: '{scenarioLabel}',
-  viewports: [{
-    name: 'custom-size',
-    width: 200,
-    height: 50,
-  }],
+  viewports: [
+    {
+      name: 'custom-size',
+      width: 200,
+      height: 50,
+    },
+  ],
   scenarios: [
     {
       ...basicScenario,
       label: 'Entire document',
-      referenceUrl: basicScenario.referenceUrl + '/hello-world/',
-    }],
+      referenceUrl: basicScenario.referenceUrl,
+    },
+  ],
 };
 
 module.exports = config;
