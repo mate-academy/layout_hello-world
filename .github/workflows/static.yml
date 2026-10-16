@@ -35,10 +35,10 @@ jobs:
         run: npm install
 
       - name: Generate BackstopJS reference
-        run: npx backstop reference
+        run: npx backstop reference --config=backstopConfig.js
 
       - name: Generate BackstopJS report
-        run: npx backstop test
+        run: npx backstop test --config=backstopConfig.js
 
       - name: Copy report to published directory
         run: |
