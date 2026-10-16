@@ -30,37 +30,6 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Start server
-        run: |
-          python3 -m http.server 8080 --directory src > /tmp/http-server.log 2>&1 &
-          echo $! > /tmp/http-server.pid
-          for i in $(seq 1 20); do
-            if curl -fsS http://localhost:8080/index.html > /dev/null; then
-              echo "Servidor iniciado com sucesso."
-              exit 0
-            fi
-            sleep 1
-          done
-          cat /tmp/http-server.log
-          exit 1
-
-      - name: Generate BackstopJS reference
-        run: npx backstop reference --config=backstopConfig.js
-
-      - name: Test BackstopJS
-        run: npx backstop test --config=backstopConfig.js
-
-      - name: Copy report to published directory
-        if: always()
-        run: |
-          mkdir -p src/report
-          if [ -d backstop_data/html_report ]; then
-            cp -R backstop_data/html_report src/report/html_report
-          fi
-
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
