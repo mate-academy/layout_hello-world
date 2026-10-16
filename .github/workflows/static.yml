@@ -1,10 +1,9 @@
-# Simple workflow for deploying static content to GitHub Pages
+# Deploy page and BackstopJS report to GitHub Pages
 name: Deploy static content to Pages
 
 on:
   push:
     branches: ["master", "nova-tentativa"]
-
   workflow_dispatch:
 
 permissions:
@@ -22,9 +21,29 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Generate BackstopJS reference
+        run: npx backstop reference
+
+      - name: Generate BackstopJS report
+        run: npx backstop test
+
+      - name: Copy report to published directory
+        run: |
+          mkdir -p src/report
+          cp -R backstop_data/html_report src/report/html_report
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
