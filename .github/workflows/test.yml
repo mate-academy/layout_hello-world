@@ -1,9 +1,9 @@
-
 name: Test
 
 on:
   pull_request:
     branches: [master]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -25,28 +25,33 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Start server and run tests
+      - name: Start server
         run: |
           python3 -m http.server 8080 --directory src > /tmp/http-server.log 2>&1 &
           SERVER_PID=$!
-          trap 'kill "$SERVER_PID" 2>/dev/null || true' EXIT
+          echo "$SERVER_PID" > /tmp/http-server.pid
 
           for i in $(seq 1 20); do
             if curl -fsS http://localhost:8080/index.html > /dev/null; then
               echo "Servidor iniciado com sucesso."
-              break
+              exit 0
             fi
             sleep 1
           done
 
-          curl -fsS http://localhost:8080/index.html > /dev/null
-          npm test
+          cat /tmp/http-server.log
+          exit 1
+
+      - name: Run lint
+        run: npm run lint
+
+      - name: Run BackstopJS test
+        run: npx backstop test --config=backstopConfig.js
 
       - name: Upload HTML report
-        if: ${{ always() }}
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: report
           path: backstop_data
           if-no-files-found: ignore
-
