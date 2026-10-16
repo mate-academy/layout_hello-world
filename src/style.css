@@ -1,1 +1,15 @@
-/* styles go here */
+
+
+body {
+  margin: 0;
+}
+
+.greeting {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+}
+
+h1 {
+  margin: 0;
+}
