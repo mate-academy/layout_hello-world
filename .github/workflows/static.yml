@@ -1,5 +1,4 @@
 ```yaml
-# Deploy page and BackstopJS report to GitHub Pages
 name: Deploy static content to Pages
 
 on:
@@ -31,24 +30,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Generate BackstopJS reference
-        run: npx backstop reference --config=backstopConfig.js
-
-      - name: Generate BackstopJS report
-        run: npx backstop test --config=backstopConfig.js
-        continue-on-error: true
-
-      - name: Copy report to published directory
-        if: always()
-        run: |
-          mkdir -p src/report
-          if [ -d backstop_data/html_report ]; then
-            cp -R backstop_data/html_report src/report/
-          fi
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
