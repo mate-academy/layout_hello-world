@@ -1,4 +1,5 @@
- 'use strict';
+ 
+'use strict';
 
 // https://github.com/garris/BackstopJS#advanced-scenarios
 
@@ -20,7 +21,7 @@ const config = {
     {
       ...basicScenario,
       label: 'Entire document',
-      referenceUrl: basicScenario.referenceUrl,
+      referenceUrl: basicScenario.referenceUrl + '/hello-world/',
     },
   ],
 };
