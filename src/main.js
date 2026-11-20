@@ -1,2 +1,2 @@
 'use strict';
-console.log('script file is enabled!')
+console.log('script file is enabled!!!')
